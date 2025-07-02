@@ -1,0 +1,111 @@
+{
+  "id": "byangoma-byangomi",
+  "title_en": "Byangoma and Byangomi",
+  "title_bn": "ব্যাঙ্গমা আর ব্যাঙ্গমী",
+  "description_en": "A classic Bengali folktale about two magical birds, Byangoma and Byangomi, and their adventures.",
+  "description_bn": "ব্যাঙ্গমা আর ব্যাঙ্গমী, দুটি জাদুকরী পাখির দুঃসাহসিক অভিযান নিয়ে একটি ক্লাসিক বাংলা লোককাহিনী।",
+  "image": "byangoma_byangomi.jpg",
+  "scenes": [
+    {
+      "id": "intro",
+      "text_en": "Once upon a time, in a dense forest, lived two magical birds, Byangoma and Byangomi. They were known for their wisdom and their ability to grant wishes. One day, a young prince, lost in the forest, stumbled upon their tree.",
+      "text_bn": "একদা এক ঘন জঙ্গলে বাস করত দুটি জাদুকরী পাখি, ব্যাঙ্গমা আর ব্যাঙ্গমী। তারা তাদের জ্ঞান এবং ইচ্ছা পূরণের ক্ষমতার জন্য পরিচিত ছিল। একদিন, এক তরুণ রাজপুত্র জঙ্গলে পথ হারিয়ে তাদের গাছের কাছে এসে পড়ল।",
+      "image": "forest_prince.jpg",
+      "choices": [
+        {
+          "text_en": "Approach the birds cautiously.",
+          "text_bn": "সাবধানে পাখিদের কাছে যান।",
+          "next_scene": "approach_cautiously"
+        },
+        {
+          "text_en": "Observe them from a distance.",
+          "text_bn": "দূর থেকে তাদের পর্যবেক্ষণ করুন।",
+          "next_scene": "observe_distance"
+        }
+      ]
+    },
+    {
+      "id": "approach_cautiously",
+      "text_en": "The prince slowly walked towards the tree. Byangoma, seeing his respectful approach, spoke in a melodious voice, 'Young man, why do you wander in our forest?'",
+      "text_bn": "রাজপুত্র ধীরে ধীরে গাছের দিকে হেঁটে গেল। ব্যাঙ্গমা, তার শ্রদ্ধাপূর্ণ আগমন দেখে, মধুর কণ্ঠে বলল, 'যুবক, তুমি কেন আমাদের বনে বিচরণ করছ?'",
+      "image": "byangoma_speaking.jpg",
+      "choices": [
+        {
+          "text_en": "Explain his predicament.",
+          "text_bn": "তার দুর্দশার কথা বলুন।",
+          "next_scene": "explain_predicament"
+        },
+        {
+          "text_en": "Ask for their help directly.",
+          "text_bn": "সরাসরি তাদের সাহায্য চান।",
+          "next_scene": "ask_for_help"
+        }
+      ]
+    },
+    {
+      "id": "observe_distance",
+      "text_en": "The prince hid behind a bush, observing the birds. He saw them transform into human forms and discuss ancient prophecies. He realized they were no ordinary birds.",
+      "text_bn": "রাজপুত্র একটি ঝোপের আড়ালে লুকিয়ে পাখিদের পর্যবেক্ষণ করল। সে দেখল তারা মানুষের রূপ ধারণ করে প্রাচীন ভবিষ্যদ্বাণী নিয়ে আলোচনা করছে। সে বুঝতে পারল তারা সাধারণ পাখি নয়।",
+      "image": "birds_transforming.jpg",
+      "choices": [
+        {
+          "text_en": "Reveal himself and seek guidance.",
+          "text_bn": "নিজেকে প্রকাশ করুন এবং নির্দেশনা চান।",
+          "next_scene": "explain_predicament"
+        },
+        {
+          "text_en": "Leave the forest quietly.",
+          "text_bn": "চুপচাপ বন ছেড়ে চলে যান।",
+          "next_scene": "ending_leave"
+        }
+      ]
+    },
+    {
+      "id": "explain_predicament",
+      "text_en": "The prince explained how he got lost while hunting and sought their guidance to return to his kingdom. Byangomi, with a gentle smile, offered him a magical compass.",
+      "text_bn": "রাজপুত্র ব্যাখ্যা করল কিভাবে সে শিকার করতে গিয়ে পথ হারিয়েছিল এবং তার রাজ্যে ফিরে যাওয়ার জন্য তাদের নির্দেশনা চাইল। ব্যাঙ্গমী, মৃদু হাসি দিয়ে, তাকে একটি জাদুকরী কম্পাস দিল।",
+      "image": "magical_compass.jpg",
+      "choices": [
+        {
+          "text_en": "Thank them and follow the compass.",
+          "text_bn": "তাদের ধন্যবাদ জানান এবং কম্পাস অনুসরণ করুন।",
+          "next_scene": "ending_compass"
+        }
+      ]
+    },
+    {
+      "id": "ask_for_help",
+      "text_en": "The prince directly asked for their help to find his way back. Byangoma, impressed by his directness, told him to follow the river, which would lead him home.",
+      "text_bn": "রাজপুত্র সরাসরি তাদের সাহায্য চাইল তার পথ খুঁজে পেতে। ব্যাঙ্গমা, তার স্পষ্টবাদিতায় মুগ্ধ হয়ে, তাকে নদী অনুসরণ করতে বলল, যা তাকে বাড়িতে নিয়ে যাবে।",
+      "image": "follow_river.jpg",
+      "choices": [
+        {
+          "text_en": "Thank them and follow the river.",
+          "text_bn": "তাদের ধন্যবাদ জানান এবং নদী অনুসরণ করুন।",
+          "next_scene": "ending_river"
+        }
+      ]
+    },
+    {
+      "id": "ending_compass",
+      "text_en": "Following the magical compass, the prince safely returned to his kingdom, forever grateful to Byangoma and Byangomi. He ruled wisely and often visited the forest to pay his respects.",
+      "text_bn": "জাদুকরী কম্পাস অনুসরণ করে, রাজপুত্র নিরাপদে তার রাজ্যে ফিরে এল, ব্যাঙ্গমা আর ব্যাঙ্গমীর প্রতি চিরকৃতজ্ঞ। সে বিজ্ঞতার সাথে শাসন করত এবং প্রায়শই তাদের শ্রদ্ধা জানাতে বনে যেত।",
+      "image": "prince_returns.jpg",
+      "choices": []
+    },
+    {
+      "id": "ending_river",
+      "text_en": "The prince followed the river, and true to Byangoma's words, it led him directly to the outskirts of his kingdom. He learned the importance of trusting nature and its wisdom.",
+      "text_bn": "রাজপুত্র নদী অনুসরণ করল, এবং ব্যাঙ্গমার কথা অনুযায়ী, এটি তাকে সরাসরি তার রাজ্যের উপকণ্ঠে নিয়ে গেল। সে প্রকৃতির এবং তার জ্ঞানের উপর আস্থা রাখার গুরুত্ব শিখল।",
+      "image": "prince_returns.jpg",
+      "choices": []
+    },
+    {
+      "id": "ending_leave",
+      "text_en": "The prince quietly left the forest, deciding not to disturb the magical birds. He eventually found his way back, but the encounter left him with a sense of wonder and respect for the unknown.",
+      "text_bn": "রাজপুত্র চুপচাপ বন ছেড়ে চলে গেল, জাদুকরী পাখিদের বিরক্ত না করার সিদ্ধান্ত নিল। সে অবশেষে তার পথ খুঁজে পেল, কিন্তু এই মুখোমুখি হওয়া তাকে বিস্ময় এবং অজানার প্রতি শ্রদ্ধার অনুভূতি দিয়ে গেল।",
+      "image": "prince_returns.jpg",
+      "choices": []
+    }
+  ]
+}

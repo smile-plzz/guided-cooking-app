@@ -1,0 +1,109 @@
+[
+  {
+    "id": "1",
+    "name": "Spaghetti Aglio e Olio",
+    "image": "/images/spaghetti.jpg",
+    "time": "20 min",
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "item": "Spaghetti",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "item": "Garlic",
+        "quantity": 4,
+        "unit": "cloves"
+      },
+      {
+        "item": "Olive Oil",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "Red Pepper Flakes",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "Fresh Parsley",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "Black Pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Boil 4 cups of water in a pot. Add salt.",
+      "Cook spaghetti according to package directions until al dente.",
+      "While pasta cooks, thinly slice garlic.",
+      "In a large skillet, heat olive oil over medium-low heat. Add garlic and red pepper flakes. Cook until garlic is fragrant and lightly golden, about 2-3 minutes. Do not burn the garlic.",
+      "Drain pasta, reserving 1/2 cup of pasta water.",
+      "Add cooked spaghetti to the skillet with garlic and oil. Toss to combine.",
+      "Add reserved pasta water, a little at a time, until a light sauce forms and coats the pasta.",
+      "Stir in fresh parsley, salt, and black pepper. Serve immediately."
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Pancakes",
+    "image": "/images/pancakes.jpg",
+    "time": "25 min",
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "item": "All-purpose flour",
+        "quantity": 1.5,
+        "unit": "cups"
+      },
+      {
+        "item": "Baking powder",
+        "quantity": 3.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "Salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "White sugar",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Egg",
+        "quantity": 1,
+        "unit": "large"
+      },
+      {
+        "item": "Milk",
+        "quantity": 1.25,
+        "unit": "cups"
+      },
+      {
+        "item": "Melted butter",
+        "quantity": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "In a large bowl, sift together flour, baking powder, salt, and sugar.",
+      "In a separate bowl, beat the egg. Stir in the milk and melted butter.",
+      "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix; a few lumps are okay.",
+      "Heat a lightly oiled griddle or frying pan over medium-high heat.",
+      "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.",
+      "Cook for 2 to 3 minutes per side, or until golden brown and cooked through.",
+      "Serve hot with your favorite toppings."
+    ]
+  }
+]
