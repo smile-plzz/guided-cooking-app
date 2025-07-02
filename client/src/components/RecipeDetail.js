@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import '../App.css'; // Import App.css for general styling
 import Timer from './Timer'; // Import the Timer component
 
 function RecipeDetail({ darkMode }) {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -18,20 +19,18 @@ function RecipeDetail({ darkMode }) {
   useEffect(() => {
     const fetchRecipeDetails = async () => {
       try {
+        // Removed source parameter from fetch call
         const response = await fetch(`http://localhost:5000/api/recipe/${id}`);
         if (!response.ok) {
-          // Attempt to parse error message from backend if available
           const errorData = await response.json();
           throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         setRecipe(data);
-        // Initialize servings with the recipe's default servings, or 1 if not available
         setServings(data.servings || 1);
 
-        // Check if recipe is in favorites
         const favorites = JSON.parse(localStorage.getItem('favoriteRecipes') || '[]');
-        setIsFavorite(favorites.includes(data.id.toString())); // Ensure ID is string for comparison
+        setIsFavorite(favorites.includes(data.id.toString()));
 
       } catch (e) {
         console.error('Error fetching recipe details:', e);
@@ -42,17 +41,17 @@ function RecipeDetail({ darkMode }) {
     };
 
     fetchRecipeDetails();
-  }, [id]);
+  }, [id]); // Removed location.search from dependency array
 
   const handleNextStep = () => {
-    setShowTimer(false); // Hide timer when navigating to next step
+    setShowTimer(false);
     if (recipe.analyzedInstructions[0].steps && currentStep < recipe.analyzedInstructions[0].steps.length - 1) {
       setCurrentStep(prevStep => prevStep + 1);
     }
   };
 
   const handlePreviousStep = () => {
-    setShowTimer(false); // Hide timer when navigating to previous step
+    setShowTimer(false);
     if (currentStep > 0) {
       setCurrentStep(prevStep => prevStep - 1);
     }
@@ -63,7 +62,7 @@ function RecipeDetail({ darkMode }) {
     if (!isNaN(newServings) && newServings > 0) {
       setServings(newServings);
     } else if (e.target.value === '') {
-      setServings(''); // Allow empty input temporarily for user to type
+      setServings('');
     }
   };
 
@@ -75,13 +74,13 @@ function RecipeDetail({ darkMode }) {
   };
 
   const getAdjustedQuantity = (originalQuantity, originalServings) => {
-    if (originalServings === 0 || servings === '') return originalQuantity; // Avoid division by zero or empty input
-    return (originalQuantity / originalServings * servings).toFixed(2); // Adjust and format to 2 decimal places
+    if (originalServings === 0 || servings === '') return originalQuantity;
+    return (originalQuantity / originalServings * servings).toFixed(2);
   };
 
   const extractMinutesFromStep = (stepText) => {
     const match = stepText.match(/(\d+)\s*(?:minutes?|min)/i);
-    return match ? parseInt(match[1], 10) : 0; // Default to 0 if no time found
+    return match ? parseInt(match[1], 10) : 0;
   };
 
   const toggleFavorite = () => {
@@ -111,12 +110,11 @@ function RecipeDetail({ darkMode }) {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        // Remove from favorites if it was a favorite
         let favorites = JSON.parse(localStorage.getItem('favoriteRecipes') || '[]');
         favorites = favorites.filter(favId => favId !== id.toString());
         localStorage.setItem('favoriteRecipes', JSON.stringify(favorites));
 
-        navigate('/'); // Redirect to home page after deletion
+        navigate('/');
       } catch (e) {
         console.error('Error deleting recipe:', e);
         setError(`Failed to delete recipe: ${e.message}`);
@@ -205,10 +203,11 @@ function RecipeDetail({ darkMode }) {
             <div className="instruction-step-container">
               <h3>{currentStepText}</h3>
               <div className="step-visuals">
+                {/* Removed conditional rendering for Spoonacular images */}
                 {currentStepData.ingredients && currentStepData.ingredients.map((item, idx) => (
                   item.image && (
                     <div key={`ing-${idx}`} className="step-visual-item">
-                      <img src={`https://spoonacular.com/cdn/ingredients_100x100/${item.image}`} alt={item.name} />
+                      <img src={item.image} alt={item.name} />
                       <span>{item.name}</span>
                     </div>
                   )
@@ -216,7 +215,7 @@ function RecipeDetail({ darkMode }) {
                 {currentStepData.equipment && currentStepData.equipment.map((item, idx) => (
                   item.image && (
                     <div key={`eq-${idx}`} className="step-visual-item">
-                      <img src={`https://spoonacular.com/cdn/equipment_100x100/${item.image}`} alt={item.name} />
+                      <img src={item.image} alt={item.name} />
                       <span>{item.name}</span>
                     </div>
                   )

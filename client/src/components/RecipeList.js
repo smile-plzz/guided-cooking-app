@@ -17,21 +17,36 @@ function RecipeList({ darkMode, toggleDarkMode }) {
 
       setError(null); 
       try {
-        const url = searchQuery 
-          ? `http://localhost:5000/api/search-recipes?query=${searchQuery}`
-          : `http://localhost:5000/api/recipes`; 
-        
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
+        const localRecipesPromise = fetch(`http://localhost:5000/api/recipes`).then(res => res.json());
+        const spoonacularRecipesPromise = searchQuery 
+          ? fetch(`http://localhost:5000/api/search-recipes?query=${searchQuery}`).then(res => res.json())
+          : Promise.resolve({ results: [] }); 
 
-        if (searchQuery) {
-          setRecipes(data.results || []);
+        const [localData, spoonacularData] = await Promise.allSettled([
+          localRecipesPromise,
+          spoonacularRecipesPromise
+        ]);
+
+        let combinedRecipes = [];
+
+        if (localData.status === 'fulfilled') {
+          combinedRecipes = [...combinedRecipes, ...localData.value];
         } else {
-          setRecipes(data);
+          console.error('Error fetching local recipes:', localData.reason);
         }
+
+        if (spoonacularData.status === 'fulfilled') {
+          combinedRecipes = [...combinedRecipes, ...(spoonacularData.value.results || [])];
+        } else {
+          console.error('Error fetching Spoonacular recipes:', spoonacularData.reason);
+        }
+
+        // Filter out duplicates if any (e.g., by ID or title)
+        const uniqueRecipes = Array.from(new Map(combinedRecipes.map(recipe =>
+          [recipe.id, { ...recipe, source: recipe.source || 'local' }]) // Add source if missing
+        ).values());
+
+        setRecipes(uniqueRecipes);
 
       } catch (error) {
         console.error('Error fetching recipes:', error);
@@ -88,8 +103,8 @@ function RecipeList({ darkMode, toggleDarkMode }) {
     setShowFavorites(false); 
   };
 
-  const handleRecipeClick = (id) => {
-    navigate(`/recipe/${id}`);
+  const handleRecipeClick = (id, source) => {
+    navigate(`/recipe/${id}?source=${source}`);
   };
 
   const toggleShowFavorites = () => {
@@ -119,7 +134,7 @@ function RecipeList({ darkMode, toggleDarkMode }) {
         <div className="recipe-list-container">
           {recipesToDisplay.length > 0 ? (
             recipesToDisplay.map(recipe => (
-              <div key={recipe.id} className="recipe-card" onClick={() => handleRecipeClick(recipe.id)}>
+              <div key={recipe.id} className="recipe-card" onClick={() => handleRecipeClick(recipe.id, recipe.source)}>
                 <img src={recipe.image} alt={recipe.title || recipe.name} className="recipe-thumbnail" />
                 <h2>{recipe.title || recipe.name}</h2>
               </div>

@@ -84,7 +84,7 @@ app.delete('/api/recipes/:id', (req, res) => {
   }
 });
 
-// New endpoint to search recipes from Spoonacular API
+// Endpoint to search recipes from Spoonacular API
 app.get('/api/search-recipes', async (req, res) => {
   const { query } = req.query;
   const apiKey = process.env.SPOONACULAR_API_KEY;
@@ -105,7 +105,7 @@ app.get('/api/search-recipes', async (req, res) => {
   }
 });
 
-// New endpoint to get detailed recipe information from Spoonacular API
+// Endpoint to get detailed recipe information from Spoonacular API
 app.get('/api/recipe/:id', async (req, res) => {
   const { id } = req.params;
   const apiKey = process.env.SPOONACULAR_API_KEY;
