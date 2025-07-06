@@ -1,18 +1,31 @@
 {
-  "name": "banglatales-backend",
+  "name": "guided-cooking-app-server",
   "version": "1.0.0",
-  "description": "Node.js/Express backend for BanglaTales",
+  "description": "Node.js/Express backend for the Guided Cooking App",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "express",
+    "nodejs",
+    "guided-cooking"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^17.0.1",
-    "express": "^4.21.2",
-    "node-fetch": "^2.6.1"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "memory-cache": "^0.2.0",
+    "node-fetch": "^2.7.0",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }

@@ -1,34 +1,11 @@
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const fetch = require('node-fetch');
-const fs = require('fs');
-const path = require('path');
+const { sequelize, Recipe } = require('./database');
+
 const app = express();
 const PORT = process.env.PORT || 5000;
-
-// Define the path to the recipes.json file
-const RECIPES_FILE = path.join(__dirname, 'data', 'recipes.json');
-
-// Helper function to read recipes from file
-const readRecipes = () => {
-  try {
-    const data = fs.readFileSync(RECIPES_FILE, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    console.error('Error reading recipes.json:', error);
-    return []; // Return empty array if file doesn't exist or is invalid
-  }
-};
-
-// Helper function to write recipes to file
-const writeRecipes = (recipes) => {
-  try {
-    fs.writeFileSync(RECIPES_FILE, JSON.stringify(recipes, null, 2), 'utf8');
-  } catch (error) {
-    console.error('Error writing recipes.json:', error);
-  }
-};
 
 app.use(cors());
 app.use(express.json());
@@ -37,95 +14,152 @@ app.get('/', (req, res) => {
   res.send('Guided Cooking Backend API');
 });
 
-// Get all recipes (from local file)
-app.get('/api/recipes', (req, res) => {
-  const recipes = readRecipes();
-  res.json(recipes);
+// Get all recipes
+app.get('/api/recipes', async (req, res) => {
+  try {
+    const recipes = await Recipe.findAll();
+    res.json(recipes);
+  } catch (error) {
+    res.status(500).json({ message: 'Error getting recipes', error });
+  }
 });
 
 // Add a new recipe
-app.post('/api/recipes', (req, res) => {
-  const newRecipe = req.body;
-  const recipes = readRecipes();
-  newRecipe.id = Date.now().toString(); // Simple ID generation
-  recipes.push(newRecipe);
-  writeRecipes(recipes);
-  res.status(201).json(newRecipe);
+app.post('/api/recipes', async (req, res) => {
+  try {
+    const recipe = await Recipe.create(req.body);
+    res.status(201).json(recipe);
+  } catch (error) {
+    res.status(500).json({ message: 'Error creating recipe', error });
+  }
 });
 
 // Update an existing recipe
-app.put('/api/recipes/:id', (req, res) => {
-  const { id } = req.params;
-  const updatedRecipe = req.body;
-  let recipes = readRecipes();
-  const index = recipes.findIndex(r => r.id === id);
-
-  if (index !== -1) {
-    recipes[index] = { ...recipes[index], ...updatedRecipe, id: id }; // Ensure ID remains the same
-    writeRecipes(recipes);
-    res.json(recipes[index]);
-  } else {
-    res.status(404).json({ message: 'Recipe not found' });
+app.put('/api/recipes/:id', async (req, res) => {
+  try {
+    const recipe = await Recipe.findByPk(req.params.id);
+    if (recipe) {
+      await recipe.update(req.body);
+      res.json(recipe);
+    } else {
+      res.status(404).json({ message: 'Recipe not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Error updating recipe', error });
   }
 });
 
 // Delete a recipe
-app.delete('/api/recipes/:id', (req, res) => {
-  const { id } = req.params;
-  let recipes = readRecipes();
-  const initialLength = recipes.length;
-  recipes = recipes.filter(r => r.id !== id);
-
-  if (recipes.length < initialLength) {
-    writeRecipes(recipes);
-    res.status(204).send(); // No content for successful deletion
-  } else {
-    res.status(404).json({ message: 'Recipe not found' });
+app.delete('/api/recipes/:id', async (req, res) => {
+  try {
+    const recipe = await Recipe.findByPk(req.params.id);
+    if (recipe) {
+      await recipe.destroy();
+      res.status(204).send();
+    } else {
+      res.status(404).json({ message: 'Recipe not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Error deleting recipe', error });
   }
 });
 
-// Endpoint to search recipes from Spoonacular API
-app.get('/api/search-recipes', async (req, res) => {
-  const { query } = req.query;
-  const apiKey = process.env.SPOONACULAR_API_KEY;
-  const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${apiKey}`;
 
+const fetch = require('node-fetch');
+const cache = require('memory-cache');
+
+// Spoonacular API Proxy
+const SPOONACULAR_API_KEY = process.env.SPOONACULAR_API_KEY;
+const cacheMiddleware = (duration) => {
+  return (req, res, next) => {
+    const key = '__express__' + req.originalUrl || req.url;
+    const cachedBody = cache.get(key);
+    if (cachedBody) {
+      res.send(cachedBody);
+      return;
+    }
+    res.sendResponse = res.send;
+    res.send = (body) => {
+      cache.put(key, body, duration * 1000);
+      res.sendResponse(body);
+    };
+    next();
+  };
+};
+const SPOONACULAR_BASE_URL = 'https://api.spoonacular.com';
+
+if (!SPOONACULAR_API_KEY) {
+  console.warn('SPOONACULAR_API_KEY is not set. Spoonacular API requests will fail.');
+}
+
+app.get('/api/search-recipes', cacheMiddleware(3600), async (req, res) => {
+  const { query, cuisine, diet, intolerances } = req.query;
+  const url = `${SPOONACULAR_BASE_URL}/recipes/complexSearch?apiKey=${SPOONACULAR_API_KEY}&query=${query}&cuisine=${cuisine}&diet=${diet}&intolerances=${intolerances}`;
   try {
     const response = await fetch(url);
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error(`Spoonacular API error: ${response.status} ${response.statusText} - ${errorText}`);
-      throw new Error(`Spoonacular API returned ${response.status}: ${errorText}`);
-    }
     const data = await response.json();
     res.json(data);
   } catch (error) {
-    console.error('Error fetching from Spoonacular API:', error.message);
-    res.status(500).json({ message: 'Error fetching recipes from external API', details: error.message });
+    res.status(500).json({ message: 'Error fetching from Spoonacular', error });
   }
 });
 
-// Endpoint to get detailed recipe information from Spoonacular API
-app.get('/api/recipe/:id', async (req, res) => {
+app.get('/api/recipe/:id', cacheMiddleware(3600), async (req, res) => {
   const { id } = req.params;
-  const apiKey = process.env.SPOONACULAR_API_KEY;
-  const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`;
-
+  const url = `${SPOONACULAR_BASE_URL}/recipes/${id}/information?apiKey=${SPOONACULAR_API_KEY}`;
   try {
     const response = await fetch(url);
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error(`Spoonacular API error: ${response.status} ${response.statusText} - ${errorText}`);
-      throw new Error(`Spoonacular API returned ${response.status}: ${errorText}`);
-    }
     const data = await response.json();
     res.json(data);
   } catch (error) {
-    console.error('Error fetching detailed recipe from Spoonacular API:', error.message);
-    res.status(500).json({ message: 'Error fetching detailed recipe from external API', details: error.message });
+    res.status(500).json({ message: 'Error fetching from Spoonacular', error });
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.get('/api/recipe/:id/nutrition', cacheMiddleware(3600), async (req, res) => {
+  const { id } = req.params;
+  const url = `${SPOONACULAR_BASE_URL}/recipes/${id}/nutritionWidget.json?apiKey=${SPOONACULAR_API_KEY}`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching from Spoonacular', error });
+  }
 });
+
+app.get('/api/ingredient-substitutes', cacheMiddleware(3600), async (req, res) => {
+  const { ingredientName } = req.query;
+  const url = `${SPOONACULAR_BASE_URL}/food/ingredients/substitutes?apiKey=${SPOONACULAR_API_KEY}&ingredientName=${ingredientName}`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching from Spoonacular', error });
+  }
+});
+
+if (require.main === module) {
+  sequelize.sync({ force: true }).then(async () => {
+    // Check if the Recipe table is empty
+    const recipeCount = await Recipe.count();
+    if (recipeCount === 0) {
+      console.log('Seeding database with initial recipes...');
+      const recipesData = require('./data/recipes.json');
+      for (const recipe of recipesData) {
+        await Recipe.create(recipe);
+      }
+      console.log('Database seeding complete.');
+    }
+
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  });
+}
+
+module.exports = { app, sequelize };
+
+
+

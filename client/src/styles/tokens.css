@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --color-primary: #2E7D32;
+  --color-secondary: #F5F5F5;
+  --color-accent1: #FFB300;
+  --color-accent2: #0288D1;
+  --color-background: #FFFFFF;
+  --color-text: #212121;
+  --color-text-secondary: #757575;
+
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 40px;
+  --spacing-6: 48px;
+  --spacing-7: 56px;
+  --spacing-8: 64px;
+  --spacing-9: 72px;
+  --spacing-10: 80px;
+
+  /* Typography */
+  --font-family-inter: 'Inter', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-body: 16px;
+  --font-size-caption: 14px;
+
+  --line-height-heading: 1.2;
+  --line-height-body: 1.5;
+
+  --letter-spacing-body: 0.5px;
+  --letter-spacing-heading: 1px;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 24px;
+    --font-size-h2: 20px;
+    --font-size-h3: 18px;
+    --font-size-body: 14px;
+    --font-size-caption: 12px;
+  }
+}

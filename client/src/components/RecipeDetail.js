@@ -1,47 +1,86 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import '../App.css'; // Import App.css for general styling
-import Timer from './Timer'; // Import the Timer component
+import React, { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import Timer from './Timer';
 
-function RecipeDetail({ darkMode }) {
+const fetchRecipeDetails = async ({ queryKey }) => {
+  const [, id] = queryKey;
+  const response = await fetch(`http://localhost:5000/api/recipe/${id}`);
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+};
+
+const fetchNutritionDetails = async ({ queryKey }) => {
+  const [, id] = queryKey;
+  const response = await fetch(`http://localhost:5000/api/recipe/${id}/nutrition`);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+};
+
+const deleteRecipe = async (id) => {
+  const response = await fetch(`http://localhost:5000/api/recipes/${id}`, {
+    method: 'DELETE',
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+};
+
+function RecipeDetail({ showNotification }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
-  const [recipe, setRecipe] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [currentStep, setCurrentStep] = useState(0); // State to track current instruction step
-  const [servings, setServings] = useState(1); // State for customizable servings
-  const [checkedIngredients, setCheckedIngredients] = useState({}); // State for ingredient checkboxes
-  const [showTimer, setShowTimer] = useState(false); // State to control timer visibility
-  const [isFavorite, setIsFavorite] = useState(false); // State for favorite status
+  const queryClient = useQueryClient();
+  const [currentStep, setCurrentStep] = useState(0);
+  const [servings, setServings] = useState(1);
+  const [checkedIngredients, setCheckedIngredients] = useState({});
+  const [showTimer, setShowTimer] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [unitSystem, setUnitSystem] = useState('metric');
 
-  useEffect(() => {
-    const fetchRecipeDetails = async () => {
-      try {
-        // Removed source parameter from fetch call
-        const response = await fetch(`http://localhost:5000/api/recipe/${id}`);
-        if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setRecipe(data);
-        setServings(data.servings || 1);
+  const { data: recipe, error, isLoading } = useQuery({
+    queryKey: ['recipe', id],
+    queryFn: fetchRecipeDetails,
+    onSuccess: (data) => {
+      setServings(data.servings || 1);
+      const favorites = JSON.parse(localStorage.getItem('favoriteRecipes') || '[]');
+      setIsFavorite(favorites.includes(data.id.toString()));
+    },
+    onError: (err) => {
+      showNotification(`Error loading recipe: ${err.message}`, 'error');
+    },
+  });
 
-        const favorites = JSON.parse(localStorage.getItem('favoriteRecipes') || '[]');
-        setIsFavorite(favorites.includes(data.id.toString()));
+  const { data: nutrition, error: nutritionError, isLoading: nutritionLoading } = useQuery({
+    queryKey: ['nutrition', id],
+    queryFn: fetchNutritionDetails,
+    onError: (err) => {
+      showNotification(`Error loading nutrition data: ${err.message}`, 'error');
+    },
+  });
 
-      } catch (e) {
-        console.error('Error fetching recipe details:', e);
-        setError(`Failed to load recipe details: ${e.message}`);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const deleteMutation = useMutation({
+    mutationFn: deleteRecipe,
+    onSuccess: () => {
+      queryClient.invalidateQueries(['recipes']);
+      let favorites = JSON.parse(localStorage.getItem('favoriteRecipes') || '[]');
+      favorites = favorites.filter(favId => favId !== id.toString());
+      localStorage.setItem('favoriteRecipes', JSON.stringify(favorites));
+      showNotification('Recipe deleted successfully!', 'success');
+      navigate('/');
+    },
+    onError: (err) => {
+      showNotification(`Error deleting recipe: ${err.message}`, 'error');
+    },
+  });
 
-    fetchRecipeDetails();
-  }, [id]); // Removed location.search from dependency array
+  
 
   const handleNextStep = () => {
     setShowTimer(false);
@@ -61,8 +100,6 @@ function RecipeDetail({ darkMode }) {
     const newServings = parseInt(e.target.value, 10);
     if (!isNaN(newServings) && newServings > 0) {
       setServings(newServings);
-    } else if (e.target.value === '') {
-      setServings('');
     }
   };
 
@@ -73,14 +110,39 @@ function RecipeDetail({ darkMode }) {
     }));
   };
 
-  const getAdjustedQuantity = (originalQuantity, originalServings) => {
-    if (originalServings === 0 || servings === '') return originalQuantity;
-    return (originalQuantity / originalServings * servings).toFixed(2);
+  const getAdjustedQuantity = (originalQuantity, originalServings, unit, targetUnitSystem) => {
+    if (originalServings === 0) return originalQuantity;
+
+    let adjustedQuantity = (originalQuantity / originalServings * servings);
+
+    if (targetUnitSystem === 'imperial') {
+      if (unit.toLowerCase().includes('g')) {
+        adjustedQuantity *= 0.00220462;
+        unit = 'lbs';
+      } else if (unit.toLowerCase().includes('ml')) {
+        adjustedQuantity *= 0.00422675;
+        unit = 'cups';
+      }
+    } else if (targetUnitSystem === 'metric') {
+      if (unit.toLowerCase().includes('cup')) {
+        adjustedQuantity *= 240;
+        unit = 'ml';
+      } else if (unit.toLowerCase().includes('lb')) {
+        adjustedQuantity *= 453.592;
+        unit = 'g';
+      }
+    }
+
+    return `${adjustedQuantity.toFixed(2)} ${unit}`;
   };
 
   const extractMinutesFromStep = (stepText) => {
-    const match = stepText.match(/(\d+)\s*(?:minutes?|min)/i);
+    const match = stepText.match(/(\d+)\s*minutes/i);
     return match ? parseInt(match[1], 10) : 0;
+  };
+
+  const handleUnitSystemChange = (e) => {
+    setUnitSystem(e.target.value);
   };
 
   const toggleFavorite = () => {
@@ -90,9 +152,11 @@ function RecipeDetail({ darkMode }) {
     if (favorites.includes(recipeIdStr)) {
       favorites = favorites.filter(favId => favId !== recipeIdStr);
       setIsFavorite(false);
+      showNotification('Recipe removed from favorites!', 'success');
     } else {
       favorites.push(recipeIdStr);
       setIsFavorite(true);
+      showNotification('Recipe added to favorites!', 'success');
     }
     localStorage.setItem('favoriteRecipes', JSON.stringify(favorites));
   };
@@ -101,143 +165,127 @@ function RecipeDetail({ darkMode }) {
     navigate(`/edit-recipe/${id}`);
   };
 
-  const handleDeleteRecipe = async () => {
+  const handleDeleteRecipe = () => {
     if (window.confirm('Are you sure you want to delete this recipe?')) {
-      try {
-        const response = await fetch(`http://localhost:5000/api/recipes/${id}`, {
-          method: 'DELETE',
-        });
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        let favorites = JSON.parse(localStorage.getItem('favoriteRecipes') || '[]');
-        favorites = favorites.filter(favId => favId !== id.toString());
-        localStorage.setItem('favoriteRecipes', JSON.stringify(favorites));
-
-        navigate('/');
-      } catch (e) {
-        console.error('Error deleting recipe:', e);
-        setError(`Failed to delete recipe: ${e.message}`);
-      }
+      deleteMutation.mutate(id);
     }
   };
 
-  if (loading) {
-    return <div className={`recipe-detail-page ${darkMode ? 'dark-mode' : ''}`}>Loading recipe...</div>;
+  const handleAddIngredientsToShoppingList = () => {
+    const currentShoppingList = JSON.parse(localStorage.getItem('shoppingList') || '[]');
+    const newItems = recipe.extendedIngredients.map(ingredient => ({
+      name: ingredient.name,
+      quantity: getAdjustedQuantity(ingredient.amount, recipe.servings, ingredient.unit, unitSystem),
+      unit: unitSystem,
+      checked: false,
+    }));
+    const updatedShoppingList = [...currentShoppingList, ...newItems];
+    localStorage.setItem('shoppingList', JSON.stringify(updatedShoppingList));
+    showNotification('Ingredients added to shopping list!', 'success');
+  };
+
+  if (isLoading) {
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div className={`recipe-detail-page ${darkMode ? 'dark-mode' : ''}`}><p className="error-message">{error}</p></div>;
+    return <div>Error: {error.message}</div>;
   }
 
   if (!recipe) {
-    return <div className={`recipe-detail-page ${darkMode ? 'dark-mode' : ''}`}><p className="error-message">Recipe not found or could not be loaded.</p></div>;
+    return <div>Recipe not found</div>;
   }
 
-  const totalSteps = recipe.analyzedInstructions && recipe.analyzedInstructions.length > 0 
-    ? recipe.analyzedInstructions[0].steps.length 
+  const totalSteps = recipe.analyzedInstructions && recipe.analyzedInstructions.length > 0
+    ? recipe.analyzedInstructions[0].steps.length
     : 0;
 
-  const currentStepData = totalSteps > 0 
-    ? recipe.analyzedInstructions[0].steps[currentStep] 
+  const currentStepData = totalSteps > 0
+    ? recipe.analyzedInstructions[0].steps[currentStep]
     : {};
   const currentStepText = currentStepData.step || '';
   const timerMinutes = extractMinutesFromStep(currentStepText);
 
-  const progressPercentage = totalSteps > 0 ? ((currentStep + 1) / totalSteps) * 100 : 0;
-
   return (
-    <div className={`recipe-detail-page ${darkMode ? 'dark-mode' : ''}`}>
-      <h1 className="recipe-title">{recipe.title}</h1>
-      <img src={recipe.image} alt={recipe.title} className="recipe-detail-image" />
-      <p className="recipe-meta">Time: {recipe.readyInMinutes} minutes</p>
-      <div className="recipe-actions">
-        <button onClick={toggleFavorite} className="favorite-button">
-          {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
-        </button>
-        <button onClick={handleEditRecipe} className="edit-recipe-button">
-          Edit Recipe
-        </button>
-        <button onClick={handleDeleteRecipe} className="delete-recipe-button">
-          Delete Recipe
-        </button>
-      </div>
+    <div className="container mx-auto p-4">
+      <button onClick={() => navigate('/')} className="bg-gray-500 text-white p-2 mb-4">Home</button>
+      <button onClick={toggleFavorite} className="bg-yellow-500 text-white p-2 mb-4 ml-2">{isFavorite ? 'Unfavorite' : 'Favorite'}</button>
+      <button onClick={handleEditRecipe} className="bg-blue-500 text-white p-2 mb-4 ml-2">Edit</button>
+      <button onClick={handleDeleteRecipe} className="bg-red-500 text-white p-2 mb-4 ml-2" disabled={deleteMutation.isLoading}>
+        {deleteMutation.isLoading ? 'Deleting...' : 'Delete'}
+      </button>
+      <h1 className="text-3xl font-bold">{recipe.title}</h1>
+      <LazyLoadImage
+        alt={recipe.title}
+        effect="blur"
+        src={recipe.image}
+        className="w-full h-96 object-cover my-4"
+      />
+      <p>Time: {recipe.readyInMinutes} minutes</p>
 
-      <div className="ingredients-section">
-        <h2>Ingredients</h2>
-        <div className="servings-input">
-          <label htmlFor="servings">Servings:</label>
-          <input
-            type="number"
-            id="servings"
-            value={servings}
-            onChange={handleServingsChange}
-            min="1"
-          />
+      <div className="my-4">
+        <h2 className="text-2xl font-bold">Ingredients</h2>
+        <div className="flex items-center my-2">
+          <label className="mr-2">Servings:</label>
+          <input type="number" value={servings} onChange={handleServingsChange} min="1" className="p-2 border w-20" />
+        </div>
+        <div className="flex items-center my-2">
+          <label className="mr-2">Units:</label>
+          <select value={unitSystem} onChange={handleUnitSystemChange} className="p-2 border">
+            <option value="metric">Metric</option>
+            <option value="imperial">Imperial</option>
+          </select>
         </div>
         <ul>
           {recipe.extendedIngredients && recipe.extendedIngredients.map((ingredient, index) => (
-            <li key={index} className={checkedIngredients[index] ? 'checked' : ''}>
+            <li key={index} className={`flex items-center ${checkedIngredients[index] ? 'line-through' : ''}`}>
               <input
                 type="checkbox"
-                id={`ingredient-${index}`}
                 checked={checkedIngredients[index] || false}
                 onChange={() => handleIngredientCheck(index)}
+                className="mr-2"
               />
-              <label htmlFor={`ingredient-${index}`}>
-                {getAdjustedQuantity(ingredient.amount, recipe.servings)} {ingredient.unit} {ingredient.name}
-              </label>
+              {getAdjustedQuantity(ingredient.amount, recipe.servings, ingredient.unit, unitSystem)} {ingredient.name}
             </li>
           ))}
         </ul>
+        <button onClick={handleAddIngredientsToShoppingList} className="bg-green-500 text-white p-2 mt-2">Add to Shopping List</button>
       </div>
 
-      <div className="instructions-section">
-        <h2>Instructions</h2>
+      {nutritionLoading && <p>Loading nutrition...</p>}
+      {nutritionError && <p>Error loading nutrition.</p>}
+      {nutrition && nutrition.nutrients && (
+        <div className="my-4">
+          <h2 className="text-2xl font-bold">Nutrition</h2>
+          <ul>
+            {nutrition.nutrients.map(nutrient => (
+              <li key={nutrient.name}>{nutrient.name}: {nutrient.amount}{nutrient.unit}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div className="my-4">
+        <h2 className="text-2xl font-bold">Instructions</h2>
         {totalSteps > 0 ? (
-          <>
-            <div className="progress-bar-container">
-              <div className="progress-bar" style={{ width: `${progressPercentage}%` }}></div>
+          <div>
+            <p>Step {currentStep + 1} of {totalSteps}</p>
+            <p>{currentStepText}</p>
+            {timerMinutes > 0 && (
+              <button onClick={() => setShowTimer(!showTimer)} className="bg-blue-500 text-white p-2 my-2">
+                {showTimer ? 'Hide Timer' : `Start ${timerMinutes} Min Timer`}
+              </button>
+            )}
+            {showTimer && timerMinutes > 0 && (
+              <Timer initialMinutes={timerMinutes} onComplete={() => setShowTimer(false)} />
+            )}
+            <div className="flex justify-between mt-2">
+              <button onClick={handlePreviousStep} disabled={currentStep === 0} className="bg-gray-500 text-white p-2">Previous</button>
+              <button onClick={handleNextStep} disabled={currentStep === totalSteps - 1} className="bg-gray-500 text-white p-2">Next</button>
             </div>
-            <p className="progress-text">Step {currentStep + 1} of {totalSteps}</p>
-            <div className="instruction-step-container">
-              <h3>{currentStepText}</h3>
-              <div className="step-visuals">
-                {/* Removed conditional rendering for Spoonacular images */}
-                {currentStepData.ingredients && currentStepData.ingredients.map((item, idx) => (
-                  item.image && (
-                    <div key={`ing-${idx}`} className="step-visual-item">
-                      <img src={item.image} alt={item.name} />
-                      <span>{item.name}</span>
-                    </div>
-                  )
-                ))}
-                {currentStepData.equipment && currentStepData.equipment.map((item, idx) => (
-                  item.image && (
-                    <div key={`eq-${idx}`} className="step-visual-item">
-                      <img src={item.image} alt={item.name} />
-                      <span>{item.name}</span>
-                    </div>
-                  )
-                ))}
-              </div>
-              {timerMinutes > 0 && (
-                <button onClick={() => setShowTimer(!showTimer)} className="toggle-timer-button">
-                  {showTimer ? 'Hide Timer' : `Start ${timerMinutes} Min Timer`}
-                </button>
-              )}
-              {showTimer && timerMinutes > 0 && (
-                <Timer initialMinutes={timerMinutes} onComplete={() => setShowTimer(false)} />
-              )}
-              
-              <div className="instruction-navigation">
-                <button onClick={handlePreviousStep} disabled={currentStep === 0}>Previous</button>
-                <button onClick={handleNextStep} disabled={currentStep === totalSteps - 1}>Next</button>
-              </div>
-            </div>
-          </>
+          </div>
         ) : (
-          <p>No detailed instructions available.</p>
+          <p>No instructions available.</p>
         )}
       </div>
     </div>

@@ -5,6 +5,7 @@
     "image": "/images/spaghetti.jpg",
     "time": "20 min",
     "difficulty": "Easy",
+    "starred": false,
     "ingredients": [
       {
         "item": "Spaghetti",
@@ -54,80 +55,27 @@
     ]
   },
   {
-    "id": "2",
-    "name": "Pancakes",
-    "image": "/images/pancakes.jpg",
-    "time": "25 min",
-    "difficulty": "Easy",
-    "ingredients": [
-      {
-        "item": "All-purpose flour",
-        "quantity": 1.5,
-        "unit": "cups"
-      },
-      {
-        "item": "Baking powder",
-        "quantity": 3.5,
-        "unit": "tsp"
-      },
-      {
-        "item": "Salt",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "item": "White sugar",
-        "quantity": 1,
-        "unit": "tbsp"
-      },
-      {
-        "item": "Egg",
-        "quantity": 1,
-        "unit": "large"
-      },
-      {
-        "item": "Milk",
-        "quantity": 1.25,
-        "unit": "cups"
-      },
-      {
-        "item": "Melted butter",
-        "quantity": 3,
-        "unit": "tbsp"
-      }
-    ],
-    "steps": [
-      "In a large bowl, sift together flour, baking powder, salt, and sugar.",
-      "In a separate bowl, beat the egg. Stir in the milk and melted butter.",
-      "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix; a few lumps are okay.",
-      "Heat a lightly oiled griddle or frying pan over medium-high heat.",
-      "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.",
-      "Cook for 2 to 3 minutes per side, or until golden brown and cooked through.",
-      "Serve hot with your favorite toppings."
-    ]
-  },
-  {
-    "title": "dasdsa",
-    "image": "dasdas",
-    "readyInMinutes": "1212",
-    "servings": "3",
+    "title": "asdsadsadsad",
+    "image": "",
+    "readyInMinutes": "",
+    "servings": "",
     "extendedIngredients": [
       {
-        "name": "132",
-        "amount": "13",
-        "unit": "3123"
+        "name": "dsadsadsdsa",
+        "amount": "2121",
+        "unit": "212121"
       }
     ],
     "analyzedInstructions": [
       {
         "steps": [
           {
-            "step": "1312312",
+            "step": "jghikjhyk",
             "number": 1
           }
         ]
       }
     ],
-    "id": "1751446242624"
+    "id": "1751548042453"
   }
 ]

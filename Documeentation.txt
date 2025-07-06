@@ -1,0 +1,77 @@
+Guided Cooking Assistant Web App: Feature List
+
+**Application Core and Navigation**
+
+*   **Purpose:** Provide a structured, performant app with intuitive navigation for accessing all features.
+*   **Main Entry Point:** Initialize the app via a main React component (`App.js`) using React Router (v6) to navigate between routes for recipe search, recipe details, guided cooking, add/edit recipe forms, and favorites list.
+*   **Lazy Loading:** Load components (e.g., recipe details, search results) and images on-demand using `React.lazy` and dynamic imports to reduce initial load time and improve performance.
+*   **Navigation Bar:** Offer a navigation bar with a search input field for quick recipe searches, a button to access the add recipe form, and a toggle for enabling/disabling dark mode.
+*   **Dark Mode:** Switch between light and dark themes by applying different CSS styles, with the user’s preference saved in local storage.
+*   **Notifications:** Display feedback for user actions (e.g., “Recipe saved,” “Search completed”) using a toast notification system.
+*   **Data Fetching:** Integrated `@tanstack/react-query` for efficient data fetching and caching.
+
+**Recipe Search and Discovery**
+
+*   **Purpose:** Enable users to find recipes based on search terms, preferences, or local data.
+*   **Keyword Search:** Users input keywords (e.g., “pasta”) to query Spoonacular’s `/recipes/complexSearch` endpoint or fetch matching recipes from the local SQLite database via an Express API endpoint (`GET /api/recipes`).
+*   **Filters:** Users select cuisine (e.g., Italian, Mexican), diet (e.g., vegetarian), max cooking time, or nutritional criteria (e.g., max calories), appended as query parameters to the Spoonacular API or filtered client-side for local recipes.
+*   **Recipe List:** Display a list of recipes from the Spoonacular API or local database, including title, image, cooking time, and servings.
+*   **Favorites:** Users save recipes to a favorites list by clicking a button, storing the recipe ID and metadata in local storage, retrievable during the session.
+*   **Autocomplete Suggestions:** Fetch query completions from Spoonacular’s `/recipes/autocomplete` endpoint as users type, displaying suggestions to streamline searches.
+
+**Customizable Ingredient Quantities**
+
+*   **Purpose:** Allow users to adjust ingredient quantities based on desired servings.
+*   **Serving Size Input:** Users enter a number (e.g., 1, 4) in a numeric input to calculate a scaling factor.
+*   **Dynamic Scaling:** Multiply ingredient amounts from Spoonacular’s `/recipes/{id}/information` or local database by the scaling factor to compute adjusted quantities.
+*   **Unit Conversion:** Toggle between metric (grams) and imperial (cups) units, converting values using predefined rules.
+*   **Ingredient Display:** Show a list of ingredients with adjusted quantities and units, alongside original amounts for reference, updated dynamically based on user input.
+
+**Personalized Input for Recipe Customization**
+
+*   **Purpose:** Tailor recipes to user preferences or available ingredients.
+*   **Dietary Preferences:** Users select dietary preferences (e.g., low-carb, nut-free) via checkboxes, appended to Spoonacular API queries or used for client-side filtering of local recipes.
+*   **Ingredient Substitution:** Fetch alternative ingredients (e.g., olive oil for butter) from Spoonacular’s `/recipes/{id}/ingredientSubstitutes` or predefined rules for local recipes, allowing users to select substitutes to modify ingredient lists.
+*   **Pantry Mode:** Users input available ingredients in a text field, triggering Spoonacular’s `/recipes/findByIngredients` or client-side filtering of local recipes to find or adjust recipes based on available items.
+*   **Custom Notes:** Users add notes (e.g., “use less spice”) in a text input, stored in local storage and linked to specific recipes for reference.
+
+**Guided Cooking Mode**
+
+*   **Purpose:** Provide a step-by-step cooking experience with interactive support.
+*   **Step-by-Step Instructions:** Display one step at a time from Spoonacular’s `/recipes/{id}/information` or local database, with a step index tracking progress.
+*   **Progress Navigation:** Offer “Next” and “Previous” buttons to increment/decrement the step index.
+*   **Timers:** Parse recipe steps for time durations (e.g., “bake for 20 minutes”) using regex, providing a clickable button to start a countdown timer that alerts users when complete.
+*   **Visual Aids:** Include images or videos from the Spoonacular API response (if available) or local database metadata to accompany steps, enhancing clarity.
+
+**Shopping List Generator**
+
+*   **Purpose:** Help users prepare by creating a shopping list for missing ingredients.
+*   **Ingredient Checklist:** List ingredients from Spoonacular’s `/recipes/{id}/information` or local database, with checkboxes to mark items as “have” or “need.”
+*   **Pantry Integration:** Exclude user-specified pantry items from the shopping list by comparing against ingredient names.
+*   **Scaling Support:** Adjust ingredient quantities based on the user-defined servings scaling factor from the Customizable Ingredient Quantities feature.
+*   **Export Options:** Generate a PDF of “need” ingredients or copy the list to the clipboard for external use.
+
+**Nutritional Information**
+
+*   **Purpose:** Provide nutritional details for recipes to support dietary goals.
+*   **Nutrition Data:** Fetch nutritional information (calories, protein, carbs, etc.) from Spoonacular’s `/recipes/{id}/nutritionWidget.json` or extended local database data, displayed per serving.
+*   **Customization:** Adjust nutritional values based on user-defined serving sizes or substituted ingredients.
+*   **Visual Summary:** Generate a macronutrient breakdown (e.g., percentage of calories from protein, carbs, fats) from API or local data.
+*   **Filter Integration:** Allow filtering recipes by nutritional criteria (e.g., max calories) in Recipe Search and Discovery.
+
+**Local Recipe Management**
+
+*   **Purpose:** Allow users to add, edit, and delete recipes, synced with the local database.
+*   **Add Recipe:** Users input recipe details (title, ingredients, steps, optional nutritional data) via a form, sent to the Express server via a `POST /api/recipes` request to update the SQLite database.
+*   **Edit Recipe:** Users modify existing local recipes through a form pre-filled with recipe data, sending a `PUT /api/recipes/:id` request to update the database.
+*   **Delete Recipe:** Users remove local recipes with a confirmation prompt, sending a `DELETE /api/recipes/:id` request to remove from the database.
+*   **Server Sync:** Use RESTful API endpoints (`POST /api/recipes`, `PUT /api/recipes/:id`, `DELETE /api/recipes/:id`) to manage the local SQLite database, ensuring data persistence.
+
+**Backend API and Storage**
+
+*   **Express Server:** Run a RESTful API via `server.js` with endpoints for CRUD operations (`GET /api/recipes`, `POST /api/recipes`, `PUT /api/recipes/:id`, `DELETE /api/recipes/:id`) to manage local recipes in the SQLite database.
+*   **Spoonacular Proxy:** Proxy Spoonacular API requests (e.g., `/recipes/complexSearch`, `/recipes/{id}/information`, `/recipes/{id}/nutritionWidget.json`) through Express endpoints (e.g., `GET /api/search-recipes`) to secure the API key and handle rate limits.
+*   **Local Storage:** Store user-specific data (favorites, shopping list, pantry items, custom notes) in the browser’s `localStorage`.
+
+**Removed Components:**
+*   The `new_client` (Vue.js) application has been removed from the project.

@@ -1,0 +1,41 @@
+# Project Context and History
+
+This document summarizes the recent development history and current state of the Guided Cooking App.
+
+## Key Changes and Fixes:
+
+### Backend (`server/`)
+- **Database Migration:** Migrated from `recipes.json` file storage to SQLite database using Sequelize ORM. This involved:
+    - Adding `sequelize` and `sqlite3` as dependencies.
+    - Creating `server/config/config.json` for database configuration.
+    - Creating `server/database.js` to define the Sequelize models and database connection.
+    - Updating `server/server.js` to use the `Recipe` model for CRUD operations instead of file I/O.
+- **API Key Handling:** Added a warning if `SPOONACULAR_API_KEY` is missing in the `.env` file.
+- **Improved Error Handling:** Standardized API error responses to return JSON objects with a `message` property.
+- **Dependency Updates:** Updated `dotenv` and `express` to their latest versions.
+- **Removed Redundancy:** Removed the unused `node-fetch` dependency.
+
+### Frontend (`client/`)
+- **Dependency Updates:** Updated various dependencies, including `react`, `react-dom`, `react-router-dom`, and `@tanstack/react-query`.
+- **React Router v6 API:** Updated routing in `client/src/App.js` to correctly use the `react-router-dom` v6 API.
+- **QueryClientProvider:** Wrapped the application with `QueryClientProvider` in `client/src/index.js`.
+- **Tailwind CSS Integration:** Removed the custom `build:tailwind` script and `index.module.css`. Integrated Tailwind CSS directly by importing its directives in `client/src/index.css`.
+- **Dependency Reinstallation:** Performed a forced reinstallation of `npm` dependencies to resolve `react-scripts` not found issues.
+
+### `new_client` (Vue.js Application)
+- **Removal:** The `new_client` directory (Vue.js application) has been removed from the project as it was an alternative client no longer needed.
+
+## Current Status & Next Steps:
+
+- **Server Status:** The backend server is running and using the SQLite database. Backend tests have been initiated.
+- **Client Status:** The React frontend is running and partially functional.
+- **API Connectivity:** The API is connecting successfully.
+- **Outstanding Issues:**
+    - **Backend Tests:** Complete unit and integration tests for the backend API.
+    - **API Enhancements:** Discuss and implement enhancements to the existing API endpoints.
+    - **Frontend Functionality:** Thoroughly test all features in the React frontend to ensure they work as expected with the updated backend logic.
+    - **Landing Page Design:** The landing page needs further design improvements to be minimalistic and display all recipes effectively.
+    - **WebSocket Errors:** Persistent `WebSocket connection to 'ws://localhost:3000/ws' failed` errors are still appearing in the browser console. These typically relate to the frontend development server's hot-reloading and need further investigation.
+
+## Next Action:
+- Project paused. Will resume development later, focusing on completing backend tests and then moving to API enhancements and frontend functionality.

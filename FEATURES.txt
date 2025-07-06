@@ -1,0 +1,87 @@
+Existing Features of the Guided Cooking App:
+
+**Client-side (Frontend):**
+
+*   **Application Core:**
+    *   Main application entry point (`App.js`) handling routing with `react-router-dom` (now using v6 API).
+    *   Lazy loading of main components (`RecipeList`, `RecipeDetail`, `RecipeForm`, `ShoppingList`, `Pantry`) using `React.lazy` and `Suspense` for optimized initial load times.
+    *   Global styling managed by `index.css`, leveraging Tailwind CSS for utility-first styling.
+    *   Dark mode functionality, allowing users to toggle between light and dark themes, with the preference applied to the `document.documentElement` class list.
+    *   Centralized notification system (`Notification.js`) providing transient feedback (success/error messages) to the user.
+    *   Integrated `@tanstack/react-query` for data fetching, with `QueryClientProvider` wrapping the application.
+
+*   **Navigation:**
+    *   Comprehensive `Navbar.js` component providing primary application navigation.
+    *   Direct navigation links to: "Home" (`/`), "Favorites" (`/favorites`), "Add Recipe" (`/add-recipe`), "Shopping List" (`/shopping-list`), and "Pantry" (`/pantry`).
+    *   Integrated search bar for keyword-based recipe searches.
+    *   Dropdown filters for "Cuisine", "Diet", and "Intolerances" to refine recipe searches.
+    *   Dark mode toggle button.
+    *   "Home" button added to `RecipeDetail.js` for easy return to the main recipe list.
+
+*   **Recipe Management & Display:**
+    *   **Recipe Listing (`RecipeList.js`):**
+        *   Displays a combined list of recipes fetched from both the local Node.js server and the Spoonacular API.
+        *   On initial load (landing page), fetches a broad selection of recipes (local and general Spoonacular search) to ensure content is immediately visible.
+        *   Supports filtering by `searchQuery`, `cuisine`, `diet`, and `intolerances` (applied to Spoonacular results and basic keyword filtering for local recipes).
+        *   Lazy loading of recipe images using `react-lazy-load-image-component` with a blur effect.
+        *   Conditional display of either all recipes or only user-favorited recipes.
+    *   **Recipe Detail View (`RecipeDetail.js`):**
+        *   Displays comprehensive information for a single recipe, including title, image, preparation time, ingredients, and instructions.
+        *   **Favorite Management:** Allows users to add/remove recipes from a local storage-based favorites list.
+        *   **Recipe Editing/Deletion:** Provides buttons to navigate to the `RecipeForm` for editing local recipes or to delete them (with confirmation).
+        *   **Customizable Ingredient Quantities:**
+            *   Numeric input for adjusting serving sizes, dynamically recalculating ingredient amounts.
+            *   Toggle for unit systems ("Metric" / "Imperial"), performing basic conversions (e.g., grams to pounds, milliliters to cups).
+        *   **Ingredient Substitution:**
+            *   "Substitute" button next to each ingredient to trigger a modal.
+            *   Modal displays alternative ingredients fetched from the Spoonacular API.
+            *   Allows users to select a substitute, updating the displayed ingredient (currently a UI-only change with notification).
+        *   **Nutritional Information:** Dedicated section displaying nutritional data (calories, protein, carbs, etc.) fetched from the Spoonacular API.
+        *   **Guided Cooking Mode (Instructions):**
+            *   Step-by-step display of instructions with navigation buttons ("Previous", "Next").
+            *   Progress bar indicating current step completion.
+            *   Timer functionality, extracting time durations from step text and providing a startable countdown timer.
+            *   Visual aids (images for ingredients/equipment) displayed per step (dependent on Spoonacular API data).
+        *   **Custom Notes:** A textarea for users to add and save personal notes for each recipe, persisted in local storage.
+    *   **Recipe Form (`RecipeForm.js`):**
+        *   Allows users to add new recipes or edit existing local recipes.
+        *   Fields for title, image URL, preparation time, servings, ingredients (with name, amount, unit), and instructions (steps).
+
+*   **Utility Components:**
+    *   **Shopping List (`ShoppingList.js`):**
+        *   Manages a list of ingredients, allowing users to add items from recipe details.
+        *   Checkboxes for marking items as purchased.
+        *   "Clear List" functionality.
+        *   Shopping list data persisted in local storage.
+    *   **Pantry (`Pantry.js`):**
+        *   Allows users to maintain a list of ingredients they have on hand.
+        *   Input field to add new pantry items.
+        *   Ability to remove items from the pantry list.
+        *   Pantry data persisted in local storage.
+    *   **Timer (`Timer.js`):** Reusable component for countdown timers.
+    *   **Notification (`Notification.js`):** Displays transient success/error messages.
+
+*   **Styling:**
+    *   Utilizes Tailwind CSS for rapid UI development and responsive design.
+    *   Dark mode implementation across the application.
+
+**Server-side (Backend):**
+
+*   **API Endpoints (`server.js`):**
+    *   Express.js server providing a RESTful API.
+    *   **Database Integration:** Migrated from file-based storage to SQLite using Sequelize ORM for recipe management.
+    *   **Spoonacular API Proxy:**
+        *   `GET /api/search-recipes`: Proxies requests to Spoonacular's `complexSearch` endpoint, supporting `query`, `cuisine`, `diet`, and `intolerances` parameters.
+        *   `GET /api/recipe/:id`: Proxies requests to Spoonacular's `information` endpoint for detailed recipe data.
+        *   `GET /api/recipe/:id/nutrition`: Proxies requests to Spoonacular's `nutritionWidget.json` endpoint for nutritional information.
+        *   `GET /api/ingredient-substitutes`: Proxies requests to Spoonacular's `food/ingredients/substitutes` endpoint for ingredient substitution suggestions.
+    *   Handles API key management for Spoonacular, keeping it server-side.
+    *   Improved error handling for API responses.
+
+*   **Data Storage:**
+    *   Local recipe data now stored in an SQLite database (`database.sqlite`).
+    *   User-specific data (favorites, shopping list, pantry items, custom notes) persisted in the browser's `localStorage`.
+
+**Removed Components:**
+*   The `new_client` (Vue.js) application has been removed from the project.
+
