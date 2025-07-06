@@ -75,18 +75,23 @@ async function fetchFavoriteRecipes() {
 
 function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
   const [searchQuery, setSearchQuery] = useState('');
+  const [submittedSearchQuery, setSubmittedSearchQuery] = useState('');
   const [cuisine, setCuisine] = useState('');
   const [diet, setDiet] = useState('');
   const [intolerances, setIntolerances] = useState('');
   const navigate = useNavigate();
 
+  const onSearchSubmit = () => {
+    setSubmittedSearchQuery(searchQuery);
+  };
+
   const { data: recipesData, error: recipesError, isLoading: recipesLoading } = useQuery({
-    queryKey: ['recipes', searchQuery, cuisine, diet, intolerances],
+    queryKey: ['recipes', submittedSearchQuery, cuisine, diet, intolerances],
     queryFn: fetchRecipes,
     enabled: !favoritesOnly,
   });
 
-  const recipes = searchQuery ? recipesData?.results : recipesData;
+  const recipes = submittedSearchQuery ? recipesData?.results : recipesData;
 
   const filteredRecipes = recipes;
 
@@ -96,10 +101,6 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
     enabled: favoritesOnly,
   });
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-
   const handleRecipeClick = (id, source) => {
     navigate(`/recipe/${id}?source=${source}`);
   };
@@ -108,37 +109,77 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
   const isLoading = favoritesOnly ? favoritesLoading : recipesLoading;
   const error = favoritesOnly ? favoritesError : recipesError;
 
+  console.log('recipesToDisplay:', recipesToDisplay);
+  console.log('isLoading:', isLoading);
+
+  const cuisines = ["Italian", "Mexican", "Chinese", "Indian", "American"];
+  const diets = ["Vegetarian", "Vegan", "Gluten-Free", "Keto", "Paleo"];
+  const intolerancesOptions = ["Dairy", "Egg", "Gluten", "Grain", "Peanut", "Seafood", "Sesame", "Shellfish", "Soy", "Sulfite", "Tree Nut", "Wheat"];
+
   return (
     <div className="min-h-screen bg-background text-text dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 font-inter">
       <Navbar
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
-        searchQuery={searchQuery}
-        handleSearchChange={handleSearchChange}
-        cuisine={cuisine}
-        setCuisine={setCuisine}
-        diet={diet}
-        setDiet={setDiet}
-        intolerances={intolerances}
-        setIntolerances={setIntolerances}
       />
-      <main className="container mx-auto p-6 pt-24">
+      <main className="container mx-auto p-6 pt-56">
+        <section className="text-center py-16 bg-gradient-to-r from-primary to-accent2 text-white rounded-lg shadow-xl mb-8">
+          <h1 className="text-h1 font-bold mb-4">Your Culinary Journey Starts Here</h1>
+          <p className="text-body mb-6 max-w-2xl mx-auto">
+            Discover, create, and manage your favorite recipes with ease. From quick meals to gourmet dishes, Guided Cooking helps you every step of the way.
+          </p>
+        </section>
+        <div className="flex flex-wrap items-center gap-4 mb-6 p-4 bg-secondary/70 dark:bg-gray-800/70 rounded-lg shadow-md backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50">
+          <div className="relative flex-grow">
+            <input
+              type="text"
+              placeholder="Search recipes..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') {
+                  onSearchSubmit();
+                }
+              }}
+              className="p-2 pl-10 rounded-full border border-gray-300 text-base w-full bg-white text-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 transition-all duration-300 focus:ring-2 focus:ring-primary focus:border-transparent font-inter"
+            />
+            <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <button
+            onClick={onSearchSubmit}
+            className="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out flex-shrink-0"
+          >
+            Search
+          </button>
+          <select value={cuisine} onChange={(e) => setCuisine(e.target.value)} className="p-2 rounded-full border border-gray-300 text-base bg-white text-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 transition-all duration-300 font-inter">
+            <option value="">All Cuisines</option>
+            {cuisines.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
+          <select value={diet} onChange={(e) => setDiet(e.target.value)} className="p-2 rounded-full border border-gray-300 text-base bg-white text-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 transition-all duration-300 font-inter">
+            <option value="">All Diets</option>
+            {diets.map(d => <option key={d} value={d}>{d}</option>)}
+          </select>
+          <select value={intolerances} onChange={(e) => setIntolerances(e.target.value)} className="p-2 rounded-full border border-gray-300 text-base bg-white text-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 transition-all duration-300 font-inter">
+            <option value="">All Intolerances</option>
+            {intolerancesOptions.map(i => <option key={i} value={i}>{i}</option>)}
+          </select>
+        </div>
         <AnimatePresence>
           <div className="flex flex-wrap gap-2 mb-4">
-            {searchQuery && (
+            {submittedSearchQuery && (
               <motion.div
                 className="flex items-center bg-primary text-white text-sm px-3 py-1 rounded-full shadow-md transition-all duration-300 font-caption"
                 initial={{ opacity: 1, scale: 1 }}
                 exit="exit"
                 variants={chipRemove}
               >
-                Search: {searchQuery}
+                Search: {submittedSearchQuery}
                 <motion.button
-                  onClick={() => setSearchQuery('')}
+                  onClick={() => setSubmittedSearchQuery('')}
                   className="ml-2 cursor-pointer font-bold"
                   whileHover={{ scale: 1.2 }}
                   transition={{ duration: 0.2 }}
-                  aria-label={`Remove search filter: ${searchQuery}`}
+                  aria-label={`Remove search filter: ${submittedSearchQuery}`}
                 >&times;</motion.button>
               </motion.div>
             )}
@@ -229,7 +270,7 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
             {recipesToDisplay.map(recipe => (
               <motion.div
                 key={recipe.id}
-                className="bg-white/70 dark:bg-gray-800/70 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 focus:outline-none focus:ring-2 focus:ring-accent2 focus:ring-offset-2"
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300 ease-in-out border border-gray-200 dark:border-gray-700 min-h-[280px] max-h-[320px] flex flex-col"
                 onClick={() => handleRecipeClick(recipe.id, recipe.source)}
                 variants={cardHover}
                 whileHover="hover"
@@ -241,7 +282,7 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
                   src={recipe.image}
                   className="w-full h-48 object-cover"
                 />
-                <h2 className="text-h3 font-bold text-text dark:text-gray-100 mt-2 p-4">{recipe.title || recipe.name}</h2>
+                <h2 className="text-h3 font-bold text-text dark:text-gray-100 mt-2 p-4 line-clamp-2">{recipe.title || recipe.name}</h2>
               </motion.div>
             ))}
           </div>

@@ -1,60 +1,155 @@
 [
   {
     "id": "1",
-    "name": "Spaghetti Aglio e Olio",
-    "image": "/images/spaghetti.jpg",
-    "time": "20 min",
+    "title": "Spaghetti Aglio e Olio",
+    "image": "http://localhost:3000/images/spaghetti.jpg",
+    "readyInMinutes": 20,
+    "servings": 2,
     "difficulty": "Easy",
     "starred": false,
-    "ingredients": [
-      {
-        "item": "Spaghetti",
-        "quantity": 200,
-        "unit": "g"
-      },
-      {
-        "item": "Garlic",
-        "quantity": 4,
-        "unit": "cloves"
-      },
-      {
-        "item": "Olive Oil",
-        "quantity": 0.25,
-        "unit": "cup"
-      },
-      {
-        "item": "Red Pepper Flakes",
-        "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "item": "Fresh Parsley",
-        "quantity": 2,
-        "unit": "tbsp"
-      },
-      {
-        "item": "Salt",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "item": "Black Pepper",
-        "quantity": 0.5,
-        "unit": "tsp"
-      }
+    "extendedIngredients": [
+      { "name": "Spaghetti", "amount": 200, "unit": "g" },
+      { "name": "Garlic", "amount": 4, "unit": "cloves" },
+      { "name": "Olive Oil", "amount": 0.25, "unit": "cup" },
+      { "name": "Red Pepper Flakes", "amount": 0.5, "unit": "tsp" },
+      { "name": "Fresh Parsley", "amount": 2, "unit": "tbsp" },
+      { "name": "Salt", "amount": 1, "unit": "tsp" },
+      { "name": "Black Pepper", "amount": 0.5, "unit": "tsp" }
     ],
-    "steps": [
-      "Boil 4 cups of water in a pot. Add salt.",
-      "Cook spaghetti according to package directions until al dente.",
-      "While pasta cooks, thinly slice garlic.",
-      "In a large skillet, heat olive oil over medium-low heat. Add garlic and red pepper flakes. Cook until garlic is fragrant and lightly golden, about 2-3 minutes. Do not burn the garlic.",
-      "Drain pasta, reserving 1/2 cup of pasta water.",
-      "Add cooked spaghetti to the skillet with garlic and oil. Toss to combine.",
-      "Add reserved pasta water, a little at a time, until a light sauce forms and coats the pasta.",
-      "Stir in fresh parsley, salt, and black pepper. Serve immediately."
+    "analyzedInstructions": [
+      {
+        "steps": [
+          { "number": 1, "step": "Boil 4 cups of water in a pot. Add salt." },
+          { "number": 2, "step": "Cook spaghetti according to package directions until al dente." },
+          { "number": 3, "step": "While pasta cooks, thinly slice garlic." },
+          { "number": 4, "step": "In a large skillet, heat olive oil over medium-low heat. Add garlic and red pepper flakes. Cook until garlic is fragrant and lightly golden, about 2-3 minutes. Do not burn the garlic." },
+          { "number": 5, "step": "Drain pasta, reserving 1/2 cup of pasta water." },
+          { "number": 6, "step": "Add cooked spaghetti to the skillet with garlic and oil. Toss to combine." },
+          { "number": 7, "step": "Add reserved pasta water, a little at a time, until a light sauce forms and coats the pasta." },
+          { "number": 8, "step": "Stir in fresh parsley, salt, and black pepper. Serve immediately." }
+        ]
+      }
     ]
   },
   {
+    "id": "2",
+    "title": "Classic Pancakes",
+    "image": "http://localhost:3000/images/pancakes.jpg",
+    "readyInMinutes": 15,
+    "servings": 4,
+    "difficulty": "Easy",
+    "starred": false,
+    "extendedIngredients": [
+      { "name": "All-purpose flour", "amount": 1.5, "unit": "cups" },
+      { "name": "Baking powder", "amount": 3.5, "unit": "tsp" },
+      { "name": "Salt", "amount": 1, "unit": "tsp" },
+      { "name": "White sugar", "amount": 1, "unit": "tbsp" },
+      { "name": "Egg", "amount": 1, "unit": "large" },
+      { "name": "Milk", "amount": 1.25, "unit": "cups" },
+      { "name": "Vegetable oil", "amount": 3, "unit": "tbsp" }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          { "number": 1, "step": "In a large bowl, sift together the flour, baking powder, salt, and sugar." },
+          { "number": 2, "step": "In a separate bowl, beat the egg, then stir in the milk and vegetable oil." },
+          { "number": 3, "step": "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix; a few lumps are fine." },
+          { "number": 4, "step": "Heat a lightly oiled griddle or frying pan over medium-high heat." },
+          { "number": 5, "step": "Pour or scoop the batter onto the griddle, using about 1/4 cup for each pancake." },
+          { "number": 6, "step": "Cook for 2-3 minutes per side, or until golden brown and cooked through." },
+          { "number": 7, "step": "Serve immediately with your favorite toppings." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Gourmet Grilled Cheese",
+    "image": "http://localhost:3000/images/grilled-cheese.jpg",
+    "readyInMinutes": 10,
+    "servings": 1,
+    "difficulty": "Easy",
+    "starred": false,
+    "extendedIngredients": [
+      { "name": "Sourdough bread", "amount": 2, "unit": "slices" },
+      { "name": "Cheddar cheese", "amount": 2, "unit": "slices" },
+      { "name": "Gruyere cheese", "amount": 1, "unit": "slice" },
+      { "name": "Butter", "amount": 2, "unit": "tbsp" },
+      { "name": "Dijon mustard", "amount": 0.5, "unit": "tsp" }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          { "number": 1, "step": "Butter one side of each slice of bread." },
+          { "number": 2, "step": "Spread Dijon mustard on the unbuttered side of one slice." },
+          { "number": 3, "step": "Place cheese slices on top of the mustard-coated bread." },
+          { "number": 4, "step": "Top with the other slice of bread, buttered side up." },
+          { "number": 5, "step": "Heat a non-stick pan over medium heat. Place the sandwich in the pan." },
+          { "number": 6, "step": "Cook for 3-4 minutes per side, or until golden brown and cheese is melted and bubbly." },
+          { "number": 7, "step": "Slice in half and serve immediately." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Chicken Stir-Fry",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "difficulty": "Medium",
+    "starred": false,
+    "extendedIngredients": [
+      { "name": "Chicken breast", "amount": 1, "unit": "lb" },
+      { "name": "Broccoli florets", "amount": 2, "unit": "cups" },
+      { "name": "Carrots", "amount": 1, "unit": "cup", "description": "sliced" },
+      { "name": "Soy sauce", "amount": 0.25, "unit": "cup" },
+      { "name": "Ginger", "amount": 1, "unit": "tbsp", "description": "grated" },
+      { "name": "Garlic", "amount": 2, "unit": "cloves", "description": "minced" },
+      { "name": "Sesame oil", "amount": 1, "unit": "tbsp" }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          { "number": 1, "step": "Cut chicken into bite-sized pieces." },
+          { "number": 2, "step": "In a large skillet or wok, heat sesame oil over medium-high heat." },
+          { "number": 3, "step": "Add chicken and cook until browned and cooked through." },
+          { "number": 4, "step": "Add broccoli, carrots, ginger, and garlic. Stir-fry for 3-5 minutes until vegetables are tender-crisp." },
+          { "number": 5, "step": "Pour in soy sauce and toss to coat. Serve immediately." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Tomato Basil Pasta",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+    "readyInMinutes": 25,
+    "servings": 3,
+    "difficulty": "Easy",
+    "starred": false,
+    "extendedIngredients": [
+      { "name": "Pasta", "amount": 250, "unit": "g" },
+      { "name": "Cherry tomatoes", "amount": 2, "unit": "cups" },
+      { "name": "Fresh basil", "amount": 0.5, "unit": "cup", "description": "chopped" },
+      { "name": "Garlic", "amount": 3, "unit": "cloves", "description": "minced" },
+      { "name": "Olive oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Parmesan cheese", "amount": 0.25, "unit": "cup", "description": "grated" }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          { "number": 1, "step": "Cook pasta according to package directions." },
+          { "number": 2, "step": "While pasta cooks, heat olive oil in a large skillet over medium heat." },
+          { "number": 3, "step": "Add garlic and cherry tomatoes. Cook until tomatoes soften and burst." },
+          { "number": 4, "step": "Drain pasta and add to the skillet with the tomato mixture." },
+          { "number": 5, "step": "Stir in fresh basil and Parmesan cheese. Toss to combine and serve." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1751548042453",
     "title": "asdsadsadsad",
     "image": "",
     "readyInMinutes": "",
@@ -75,7 +170,6 @@
           }
         ]
       }
-    ],
-    "id": "1751548042453"
+    ]
   }
 ]

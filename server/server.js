@@ -65,6 +65,23 @@ app.delete('/api/recipes/:id', async (req, res) => {
 });
 
 
+app.post('/api/recipes/favorites', async (req, res) => {
+  try {
+    const { ids } = req.body;
+    if (!ids || !Array.isArray(ids) || ids.length === 0) {
+      return res.status(400).json({ message: 'No recipe IDs provided.' });
+    }
+    const recipes = await Recipe.findAll({
+      where: {
+        id: ids,
+      },
+    });
+    res.json(recipes);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching favorite recipes', error });
+  }
+});
+
 const fetch = require('node-fetch');
 const cache = require('memory-cache');
 
@@ -141,14 +158,19 @@ app.get('/api/ingredient-substitutes', cacheMiddleware(3600), async (req, res) =
 });
 
 if (require.main === module) {
-  sequelize.sync({ force: true }).then(async () => {
+  sequelize.sync().then(async () => {
     // Check if the Recipe table is empty
     const recipeCount = await Recipe.count();
     if (recipeCount === 0) {
       console.log('Seeding database with initial recipes...');
       const recipesData = require('./data/recipes.json');
       for (const recipe of recipesData) {
-        await Recipe.create(recipe);
+        try {
+          await Recipe.create(recipe);
+          console.log(`Successfully seeded recipe: ${recipe.name || recipe.title}`);
+        } catch (seedError) {
+          console.error(`Error seeding recipe ${recipe.name || recipe.title}:`, seedError);
+        }
       }
       console.log('Database seeding complete.');
     }

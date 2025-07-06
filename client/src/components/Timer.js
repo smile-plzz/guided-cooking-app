@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Timer.module.css';
 
 function Timer({ initialMinutes = 0, initialSeconds = 0, onComplete }) {
   const [minutes, setMinutes] = useState(initialMinutes);
@@ -53,11 +52,11 @@ function Timer({ initialMinutes = 0, initialSeconds = 0, onComplete }) {
   };
 
   return (
-    <div className={`${styles.timerContainer} dark:bg-gray-700/70 dark:border-gray-600/50`}>
-      <div className={`${styles.timerDisplay} dark:text-gray-100`}>
+    <div className="timer-container dark:bg-gray-700/70 dark:border-gray-600/50">
+      <div className="timer-display dark:text-gray-100">
         {formatTime(minutes)}:{formatTime(seconds)}
       </div>
-      <div className={styles.timerControls}>
+      <div className="timer-controls">
         {!isRunning && (minutes > 0 || seconds > 0) ? (
           <button onClick={startTimer} className="bg-gray-600 text-white px-5 py-2 rounded-full cursor-pointer text-lg font-semibold transition-all duration-300 mx-2 hover:bg-gray-700 -translate-y-0.5">
             Start

@@ -207,86 +207,136 @@ function RecipeDetail({ showNotification }) {
   const timerMinutes = extractMinutesFromStep(currentStepText);
 
   return (
-    <div className="container mx-auto p-4">
-      <button onClick={() => navigate('/')} className="bg-gray-500 text-white p-2 mb-4">Home</button>
-      <button onClick={toggleFavorite} className="bg-yellow-500 text-white p-2 mb-4 ml-2">{isFavorite ? 'Unfavorite' : 'Favorite'}</button>
-      <button onClick={handleEditRecipe} className="bg-blue-500 text-white p-2 mb-4 ml-2">Edit</button>
-      <button onClick={handleDeleteRecipe} className="bg-red-500 text-white p-2 mb-4 ml-2" disabled={deleteMutation.isLoading}>
-        {deleteMutation.isLoading ? 'Deleting...' : 'Delete'}
-      </button>
-      <h1 className="text-3xl font-bold">{recipe.title}</h1>
-      <LazyLoadImage
-        alt={recipe.title}
-        effect="blur"
-        src={recipe.image}
-        className="w-full h-96 object-cover my-4"
-      />
-      <p>Time: {recipe.readyInMinutes} minutes</p>
-
-      <div className="my-4">
-        <h2 className="text-2xl font-bold">Ingredients</h2>
-        <div className="flex items-center my-2">
-          <label className="mr-2">Servings:</label>
-          <input type="number" value={servings} onChange={handleServingsChange} min="1" className="p-2 border w-20" />
-        </div>
-        <div className="flex items-center my-2">
-          <label className="mr-2">Units:</label>
-          <select value={unitSystem} onChange={handleUnitSystemChange} className="p-2 border">
-            <option value="metric">Metric</option>
-            <option value="imperial">Imperial</option>
-          </select>
-        </div>
-        <ul>
-          {recipe.extendedIngredients && recipe.extendedIngredients.map((ingredient, index) => (
-            <li key={index} className={`flex items-center ${checkedIngredients[index] ? 'line-through' : ''}`}>
-              <input
-                type="checkbox"
-                checked={checkedIngredients[index] || false}
-                onChange={() => handleIngredientCheck(index)}
-                className="mr-2"
-              />
-              {getAdjustedQuantity(ingredient.amount, recipe.servings, ingredient.unit, unitSystem)} {ingredient.name}
-            </li>
-          ))}
-        </ul>
-        <button onClick={handleAddIngredientsToShoppingList} className="bg-green-500 text-white p-2 mt-2">Add to Shopping List</button>
-      </div>
-
-      {nutritionLoading && <p>Loading nutrition...</p>}
-      {nutritionError && <p>Error loading nutrition.</p>}
-      {nutrition && nutrition.nutrients && (
-        <div className="my-4">
-          <h2 className="text-2xl font-bold">Nutrition</h2>
-          <ul>
-            {nutrition.nutrients.map(nutrient => (
-              <li key={nutrient.name}>{nutrient.name}: {nutrient.amount}{nutrient.unit}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      <div className="my-4">
-        <h2 className="text-2xl font-bold">Instructions</h2>
-        {totalSteps > 0 ? (
-          <div>
-            <p>Step {currentStep + 1} of {totalSteps}</p>
-            <p>{currentStepText}</p>
-            {timerMinutes > 0 && (
-              <button onClick={() => setShowTimer(!showTimer)} className="bg-blue-500 text-white p-2 my-2">
-                {showTimer ? 'Hide Timer' : `Start ${timerMinutes} Min Timer`}
-              </button>
-            )}
-            {showTimer && timerMinutes > 0 && (
-              <Timer initialMinutes={timerMinutes} onComplete={() => setShowTimer(false)} />
-            )}
-            <div className="flex justify-between mt-2">
-              <button onClick={handlePreviousStep} disabled={currentStep === 0} className="bg-gray-500 text-white p-2">Previous</button>
-              <button onClick={handleNextStep} disabled={currentStep === totalSteps - 1} className="bg-gray-500 text-white p-2">Next</button>
-            </div>
+    <div className="min-h-screen bg-background text-text dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 font-inter pt-64 pb-8">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center mb-6">
+          <button onClick={() => navigate('/')} className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+            &larr; Back to Recipes
+          </button>
+          <div className="flex space-x-2">
+            <button onClick={toggleFavorite} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+              {isFavorite ? 'Unfavorite' : 'Favorite'}
+            </button>
+            <button onClick={handleEditRecipe} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+              Edit
+            </button>
+            <button onClick={handleDeleteRecipe} className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" disabled={deleteMutation.isLoading}>
+              {deleteMutation.isLoading ? 'Deleting...' : 'Delete'}
+            </button>
           </div>
-        ) : (
-          <p>No instructions available.</p>
-        )}
+        </div>
+
+        <h1 className="text-h1 font-bold text-text dark:text-gray-100 mb-4">{recipe.title}</h1>
+        <LazyLoadImage
+          alt={recipe.title}
+          effect="blur"
+          src={recipe.image}
+          className="w-full h-96 object-cover rounded-lg shadow-md mb-6"
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="bg-secondary/70 dark:bg-gray-800/70 p-6 rounded-lg shadow-md backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50">
+            <h2 className="text-h3 font-bold text-text dark:text-gray-100 mb-2">Overview</h2>
+            <p className="text-body text-text-secondary dark:text-gray-300">
+              <span className="font-semibold">Time:</span> {recipe.readyInMinutes} minutes
+            </p>
+            <p className="text-body text-text-secondary dark:text-gray-300">
+              <span className="font-semibold">Servings:</span> {recipe.servings}
+            </p>
+            {recipe.difficulty && (
+              <p className="text-body text-text-secondary dark:text-gray-300">
+                <span className="font-semibold">Difficulty:</span> {recipe.difficulty}
+              </p>
+            )}
+          </div>
+
+          <div className="bg-secondary/70 dark:bg-gray-800/70 p-6 rounded-lg shadow-md backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50">
+            <h2 className="text-h3 font-bold text-text dark:text-gray-100 mb-2">Ingredients</h2>
+            <div className="flex items-center mb-4">
+              <label htmlFor="servings-input" className="mr-2 text-body text-text dark:text-gray-100">Servings:</label>
+              <input
+                id="servings-input"
+                type="number"
+                value={servings}
+                onChange={handleServingsChange}
+                min="1"
+                className="p-2 border w-20 bg-white dark:bg-gray-800 text-text dark:text-gray-100 border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+              />
+            </div>
+            <div className="flex items-center mb-4">
+              <label htmlFor="unit-system-select" className="mr-2 text-body text-text dark:text-gray-100">Units:</label>
+              <select
+                id="unit-system-select"
+                value={unitSystem}
+                onChange={handleUnitSystemChange}
+                className="p-2 border bg-white dark:bg-gray-800 text-text dark:text-gray-100 border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+              >
+                <option value="metric">Metric</option>
+                <option value="imperial">Imperial</option>
+              </select>
+            </div>
+            <ul className="list-disc pl-5 space-y-2">
+              {recipe.extendedIngredients && recipe.extendedIngredients.map((ingredient, index) => (
+                <li key={index} className={`flex items-center text-body text-text dark:text-gray-100 ${checkedIngredients[index] ? 'line-through text-text-secondary dark:text-gray-500' : ''}`}>
+                  <input
+                    type="checkbox"
+                    checked={checkedIngredients[index] || false}
+                    onChange={() => handleIngredientCheck(index)}
+                    className="mr-2 h-4 w-4 text-primary rounded border-gray-300 focus:ring-primary"
+                  />
+                  {getAdjustedQuantity(ingredient.amount, recipe.servings, ingredient.unit, unitSystem)} {ingredient.name}
+                </li>
+              ))}
+            </ul>
+            <button onClick={handleAddIngredientsToShoppingList} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out mt-4">
+              Add to Shopping List
+            </button>
+          </div>
+
+          {nutrition && nutrition.nutrients && (
+            <div className="bg-secondary/70 dark:bg-gray-800/70 p-6 rounded-lg shadow-md backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50">
+              <h2 className="text-h3 font-bold text-text dark:text-gray-100 mb-2">Nutrition</h2>
+              <ul className="list-disc pl-5 space-y-2">
+                {nutrition.nutrients.map(nutrient => (
+                  <li key={nutrient.name} className="text-body text-text-secondary dark:text-gray-300">
+                    <span className="font-semibold">{nutrient.name}:</span> {nutrient.amount}{nutrient.unit}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <div className="bg-secondary/70 dark:bg-gray-800/70 p-6 rounded-lg shadow-md backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 mb-8">
+          <h2 className="text-h3 font-bold text-text dark:text-gray-100 mb-4">Instructions</h2>
+          {totalSteps > 0 ? (
+            <div>
+              <p className="text-body text-text dark:text-gray-100 mb-4">
+                <span className="font-semibold">Step {currentStep + 1} of {totalSteps}:</span> {currentStepText}
+              </p>
+              {timerMinutes > 0 && (
+                <div className="flex items-center space-x-4 mb-4">
+                  <button onClick={() => setShowTimer(!showTimer)} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    {showTimer ? 'Hide Timer' : `Start ${timerMinutes} Min Timer`}
+                  </button>
+                  {showTimer && (
+                    <Timer initialMinutes={timerMinutes} onComplete={() => setShowTimer(false)} />
+                  )}
+                </div>
+              )}
+              <div className="flex justify-between mt-4">
+                <button onClick={handlePreviousStep} disabled={currentStep === 0} className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed">
+                  Previous Step
+                </button>
+                <button onClick={handleNextStep} disabled={currentStep === totalSteps - 1} className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed">
+                  Next Step
+                </button>
+              </div>
+            </div>
+          ) : (
+            <p className="text-body text-text-secondary dark:text-gray-300">No instructions available for this recipe.</p>
+          )}
+        </div>
       </div>
     </div>
   );
