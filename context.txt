@@ -39,6 +39,7 @@ This document summarizes the recent development history and current state of the
     - Improved search and filter section with better visual grouping and consistent input styling.
     - Increased top padding of the main content area to prevent overlapping with the fixed Navbar.
     - Applied fixed height to recipe cards and truncated long titles to prevent inconsistent card heights.
+- **Removed Unused Files:** Deleted `client/src/logo.svg`, `client/src/setupTests.js`, and `client/src/App.test.js` to clean up the project.
 
 ### `new_client` (Vue.js Application)
 - **Removal:** The `new_client` directory (Vue.js application) has been removed from the project as it was an alternative client no longer needed.
