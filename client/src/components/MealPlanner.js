@@ -14,7 +14,7 @@ const fetchRecipes = async () => {
   return response.json();
 };
 
-const MealPlanner = () => {
+const MealPlanner = ({ showNotification }) => {
   const { data: recipes, isLoading, error } = useQuery({
     queryKey: ['recipes'],
     queryFn: fetchRecipes,
@@ -40,13 +40,33 @@ const MealPlanner = () => {
     setShowModal(true);
   };
 
-  const handleSelectRecipe = (recipe) => {
+  const handleSelectRecipe = async (recipe) => {
     if (selectedSlot) {
+      let fullRecipeDetails = recipe;
+      // If the recipe is from Spoonacular API (doesn't have extendedIngredients initially),
+      // fetch full details
+      if (!recipe.extendedIngredients && recipe.id) {
+        try {
+          const response = await fetch(`http://localhost:5000/api/recipe/${recipe.id}`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch full recipe details');
+          }
+          fullRecipeDetails = await response.json();
+        } catch (err) {
+          console.error('Error fetching full recipe details:', err);
+          // Optionally show a notification to the user
+          showNotification('Failed to load full recipe details.', 'error');
+          setShowModal(false);
+          setSelectedSlot(null);
+          return;
+        }
+      }
+
       setMealPlan((prevMealPlan) => ({
         ...prevMealPlan,
         [selectedSlot.day]: {
           ...(prevMealPlan[selectedSlot.day] || {}),
-          [selectedSlot.mealType]: recipe,
+          [selectedSlot.mealType]: fullRecipeDetails,
         },
       }));
       setShowModal(false);
@@ -73,7 +93,8 @@ const MealPlanner = () => {
   };
 
   const generateShoppingList = () => {
-    const shoppingList = {};
+    const shoppingList = {}; // Use an object to store aggregated ingredients
+
     Object.values(mealPlan).forEach((dayPlan) => {
       Object.values(dayPlan).forEach((recipe) => {
         if (recipe.extendedIngredients) {
@@ -82,18 +103,28 @@ const MealPlanner = () => {
             const amount = ingredient.amount;
             const unit = ingredient.unit;
 
-            if (shoppingList[name]) {
-              // Simple aggregation for now, can be improved with unit conversion
-              shoppingList[name].amount += amount;
-            } else {
-              shoppingList[name] = { amount, unit };
+            if (name) { // Ensure ingredient has a name
+              const key = `${name}-${unit}`; // Use name and unit as key for aggregation
+              if (shoppingList[key]) {
+                shoppingList[key].amount += amount;
+              } else {
+                shoppingList[key] = { name, amount, unit };
+              }
             }
           });
         }
       });
     });
+
+    // Format for display
+    let formattedList = '';
+    for (const key in shoppingList) {
+      const item = shoppingList[key];
+      formattedList += `- ${item.amount} ${item.unit} ${item.name}\n`;
+    }
+
     alert(`Generated Shopping List (check console for details):
-${JSON.stringify(shoppingList, null, 2)}`);
+${formattedList}`);
     console.log('Generated Shopping List:', shoppingList);
   };
 

@@ -51,6 +51,10 @@ This document summarizes the recent development history and current state of the
     - **Feature Refinement:** Replaced drag-and-drop functionality with a selection-based approach using a modal (`client/src/components/RecipeSelectionModal.js`) for improved usability.
     - **Feature Enhancement:** Enabled `RecipeSelectionModal` to search and fetch recipes from the Spoonacular API, combining them with local recipes for selection.
     - **Bug Fix:** Fixed `SyntaxError: Identifier 'searchTerm' has already been declared` in `client/src/components/RecipeSelectionModal.js` by removing the duplicate declaration.
+    - **Shopping List Improvement:** Implemented fetching of full recipe details for API recipes when added to the meal plan, ensuring `extendedIngredients` are available for accurate shopping list generation.
+    - **Shopping List Improvement:** Improved ingredient aggregation in `generateShoppingList` function in `client/src/components/MealPlanner.js` to group by name and unit.
+    - **Bug Fix:** Fixed `showNotification` not defined error in `client/src/components/MealPlanner.js` by destructuring it from props.
+- **Design Refinement:** Renamed CSS color variables in `client/src/styles/tokens.css` by removing the `--color-` prefix for consistency.
 
 ### `new_client` (Vue.js Application)
 - **Removal:** The `new_client` directory (Vue.js application) has been removed from the project as it was an alternative client no longer needed.
