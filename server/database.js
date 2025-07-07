@@ -9,13 +9,13 @@ const sequelize = new Sequelize(config);
 const Recipe = sequelize.define('Recipe', {
   title: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   image: {
     type: DataTypes.STRING,
   },
-  time: {
-    type: DataTypes.STRING,
+  readyInMinutes: {
+    type: DataTypes.INTEGER,
   },
   difficulty: {
     type: DataTypes.STRING,
@@ -23,25 +23,13 @@ const Recipe = sequelize.define('Recipe', {
   starred: {
     type: DataTypes.BOOLEAN,
   },
-  ingredients: {
-    type: DataTypes.TEXT,
+  extendedIngredients: {
+    type: DataTypes.JSON,
     allowNull: true,
-    get: function() {
-      return JSON.parse(this.getDataValue('ingredients'));
-    },
-    set: function(value) {
-      this.setDataValue('ingredients', JSON.stringify(value));
-    }
   },
-  instructions: {
-    type: DataTypes.TEXT,
+  analyzedInstructions: {
+    type: DataTypes.JSON,
     allowNull: true,
-    get: function() {
-      return JSON.parse(this.getDataValue('instructions'));
-    },
-    set: function(value) {
-      this.setDataValue('instructions', JSON.stringify(value));
-    }
   },
 });
 

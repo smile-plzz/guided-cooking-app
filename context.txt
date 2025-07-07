@@ -16,6 +16,14 @@ This document summarizes the recent development history and current state of the
 - **Removed Redundancy:** Removed the unused `node-fetch` dependency.
 - **Database Seeding:** Added logging to the database seeding process in `server/server.js` to confirm successful recipe insertion.
 - **Data Consistency:** Standardized `id` types in `server/data/recipes.json` to strings to ensure consistency with React keys and prevent rendering issues.
+- **Backend Testing:**
+    - Enhanced `server/tests/recipes.test.js` to include comprehensive tests for CRUD operations with full recipe data (image, readyInMinutes, servings, extendedIngredients, analyzedInstructions).
+    - Added tests for error handling (invalid data, non-existent recipes).
+    - Added tests for the `/api/recipes/favorites` endpoint.
+    - Refactored seeding logic in `server/server.js` into an exportable `seedDatabase` function for proper testing.
+    - Fixed `Recipe` model in `server/database.js` to correctly handle `extendedIngredients` and `analyzedInstructions` as `DataTypes.JSON`.
+    - Corrected `title` field in `Recipe` model to be `allowNull: false` and renamed `time` to `readyInMinutes` with `DataTypes.INTEGER`.
+    - All backend tests are now passing.
 
 ### Frontend (`client/`)
 - **Dependency Updates:** Updated various dependencies, including `react`, `react-dom`, `react-router-dom`, and `@tanstack/react-query`.
@@ -57,6 +65,8 @@ This document summarizes the recent development history and current state of the
 - **Design Refinement:** Renamed CSS color variables in `client/src/styles/tokens.css` by removing the `--color-` prefix for consistency.
 - **Design Refinement:** Applied `page-content-padding` class to `MealPlanner.js` and removed redundant `margin-top` from its CSS module for consistent global spacing.
 - **Design Refinement:** Refined dark mode toggle button styling in `client/src/components/Navbar.js` to use CSS variables for consistency.
+- **Design Refinement:** Improved form element styling in `client/src/components/RecipeForm.js` by applying consistent Tailwind classes, leveraging CSS variables, and enhancing focus states.
+- **Design Refinement:** Increased font sizes in `client/src/styles/tokens.css` for improved readability across the application.
 - **Design Refinement Limitation:** Unable to directly modify `client/src/index.css` for global dark mode color refinement or form element styling due to tool limitations in reading/writing the file.
 
 ### `new_client` (Vue.js Application)
@@ -64,11 +74,10 @@ This document summarizes the recent development history and current state of the
 
 ## Current Status & Next Steps:
 
-- **Server Status:** The backend server is running and using the SQLite database. Backend tests have been initiated.
+- **Server Status:** The backend server is running and all tests are passing.
 - **Client Status:** The React frontend is running and significantly improved in terms of design and layout.
 - **API Connectivity:** The API is connecting successfully.
 - **Outstanding Issues:**
-    - **Backend Tests:** Complete unit and integration tests for the backend API.
     - **API Enhancements:** Discuss and implement enhancements to the existing API endpoints.
     - **Frontend Functionality:** Thoroughly test all features in the React frontend to ensure they work as expected with the updated backend logic.
     - **WebSocket Errors:** Persistent `WebSocket connection to 'ws://localhost:3000/ws' failed` errors are still appearing in the browser console. These typically relate to the frontend development server's hot-reloading and need further investigation.

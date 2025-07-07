@@ -139,78 +139,75 @@ function RecipeForm({ showNotification }) {
   }
 
   return (
-    <div className="container mx-auto p-4 pt-40">
-      <h1 className="text-3xl font-bold mb-4">{isEditMode ? 'Edit Recipe' : 'Add New Recipe'}</h1>
+    <div className="container mx-auto p-4 page-content-padding">
+      <h1 className="text-3xl font-bold mb-4 text-text dark:text-gray-100">{isEditMode ? 'Edit Recipe' : 'Add New Recipe'}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label className="block">Title:</label>
-        <input type="text" name="title" value={recipe.title} onChange={handleChange} required className="w-full p-2
-          border" />
+      <div className="form-group">
+        <label className="block text-text dark:text-gray-300">Title:</label>
+        <input type="text" name="title" value={recipe.title} onChange={handleChange} required className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" />
       </div>
-      <div>
-        <label className="block">Image URL:</label>
-        <input type="text" name="image" value={recipe.image} onChange={handleChange} className="w-full p-2 border"
+      <div className="form-group">
+        <label className="block text-text dark:text-gray-300">Image URL:</label>
+        <input type="text" name="image" value={recipe.image} onChange={handleChange} className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
           />
       </div>
-      <div>
-        <label className="block">Ready In Minutes:</label>
+      <div className="form-group">
+        <label className="block text-text dark:text-gray-300">Ready In Minutes:</label>
         <input type="number" name="readyInMinutes" value={recipe.readyInMinutes} onChange={handleChange}
-          className="w-full p-2 border" />
+          className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" />
       </div>
-      <div>
-        <label className="block">Servings:</label>
-        <input type="number" name="servings" value={recipe.servings} onChange={handleChange} className="w-full p-2
-          border" />
+      <div className="form-group">
+        <label className="block text-text dark:text-gray-300">Servings:</label>
+        <input type="number" name="servings" value={recipe.servings} onChange={handleChange} className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+          />
       </div>
 
-    <h2 className="text-2xl font-bold">Ingredients</h2>
+    <h2 className="text-2xl font-bold mb-2 text-text dark:text-gray-100">Ingredients</h2>
       {recipe.extendedIngredients.map((ingredient, index) => (
-        <div key={index} className="flex space-x-2">
+        <div key={index} className="flex space-x-2 mb-2">
           <input
             type="text"
             placeholder="Name"
             value={ingredient.name || ''}
             onChange={(e) => handleIngredientChange(index, 'name', e.target.value)}
             required
-            className="w-full p-2 border"
+            className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
           />
           <input
             type="number"
             placeholder="Amount"
             value={ingredient.amount || ''}
             onChange={(e) => handleIngredientChange(index, 'amount', e.target.value)}
-            className="w-full p-2 border"
+            className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
           />
           <input
             type="text"
             placeholder="Unit"
             value={ingredient.unit || ''}
             onChange={(e) => handleIngredientChange(index, 'unit', e.target.value)}
-            className="w-full p-2 border"
+            className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
           />
-        <button type="button" onClick={() => removeIngredient(index)} className="bg-red-500 text-white
-          p-2">Remove</button>
+        <button type="button" onClick={() => removeIngredient(index)} className="btn-danger p-2">Remove</button>
         </div>
       ))}
-      <button type="button" onClick={addIngredient} className="bg-blue-500 text-white p-2">Add Ingredient</button>
+      <button type="button" onClick={addIngredient} className="btn-primary p-2">Add Ingredient</button>
 
-    <h2 className="text-2xl font-bold">Instructions</h2>
+    <h2 className="text-2xl font-bold mb-2 text-text dark:text-gray-100">Instructions</h2>
       {recipe.analyzedInstructions[0].steps.map((step, index) => (
-        <div key={index} className="flex space-x-2">
+        <div key={index} className="flex space-x-2 mb-2">
           <textarea
             placeholder={`Step ${index + 1}`}
             value={step.step || ''}
             onChange={(e) => handleStepChange(index, e.target.value)}
             required
-            className="w-full p-2 border"
+            className="w-full p-2 border border-border-color rounded-md bg-input-background text-text focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
           />
-        <button type="button" onClick={() => removeStep(index)} className="bg-red-500 text-white
-          p-2">Remove</button>
+        <button type="button" onClick={() => removeStep(index)} className="btn-danger p-2">Remove</button>
         </div>
       ))}
-      <button type="button" onClick={addStep} className="bg-blue-500 text-white p-2">Add Step</button>
+      <button type="button" onClick={addStep} className="btn-primary p-2">Add Step</button>
 
-      <button type="submit" className="bg-green-500 text-white p-2" disabled={mutation.isLoading}>
+      <button type="submit" className="btn-primary p-2" disabled={mutation.isLoading}>
         {mutation.isLoading ? 'Saving...' : (isEditMode ? 'Update Recipe' : 'Create Recipe')}
       </button>
     </form>

@@ -157,31 +157,33 @@ app.get('/api/ingredient-substitutes', cacheMiddleware(3600), async (req, res) =
   }
 });
 
+async function seedDatabase() {
+  const recipeCount = await Recipe.count();
+  if (recipeCount === 0) {
+    console.log('Seeding database with initial recipes...');
+    const recipesData = require('./data/recipes.json');
+    for (const recipe of recipesData) {
+      try {
+        await Recipe.create(recipe);
+        console.log(`Successfully seeded recipe: ${recipe.name || recipe.title}`);
+      } catch (seedError) {
+        console.error(`Error seeding recipe ${recipe.name || recipe.title}:`, seedError);
+      }
+    }
+    console.log('Database seeding complete.');
+  }
+}
+
 if (require.main === module) {
   sequelize.sync().then(async () => {
-    // Check if the Recipe table is empty
-    const recipeCount = await Recipe.count();
-    if (recipeCount === 0) {
-      console.log('Seeding database with initial recipes...');
-      const recipesData = require('./data/recipes.json');
-      for (const recipe of recipesData) {
-        try {
-          await Recipe.create(recipe);
-          console.log(`Successfully seeded recipe: ${recipe.name || recipe.title}`);
-        } catch (seedError) {
-          console.error(`Error seeding recipe ${recipe.name || recipe.title}:`, seedError);
-        }
-      }
-      console.log('Database seeding complete.');
-    }
-
+    await seedDatabase();
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
   });
 }
 
-module.exports = { app, sequelize };
+module.exports = { app, sequelize, seedDatabase };
 
 
 
