@@ -46,6 +46,11 @@ This document summarizes the recent development history and current state of the
     - Integrated Meal Planner route (`/meal-planner`) into `client/src/App.js`.
     - Added a navigation link to the Meal Planner in `client/src/components/Navbar.js`.
     - **Bug Fix:** Fixed `SyntaxError: Unterminated string constant` in `client/src/components/MealPlanner.js` by converting a multi-line string to a template literal.
+    - **UI Enhancement:** Increased top margin to the "Generate Shopping List" button in `client/src/components/MealPlanner.module.css` to `6rem` for better spacing.
+    - **UI Enhancement:** Increased top margin to the `.mealPlannerContainer` in `client/src/components/MealPlanner.module.css` to `8rem` to clear the fixed navigation bar.
+    - **Feature Refinement:** Replaced drag-and-drop functionality with a selection-based approach using a modal (`client/src/components/RecipeSelectionModal.js`) for improved usability.
+    - **Feature Enhancement:** Enabled `RecipeSelectionModal` to search and fetch recipes from the Spoonacular API, combining them with local recipes for selection.
+    - **Bug Fix:** Fixed `SyntaxError: Identifier 'searchTerm' has already been declared` in `client/src/components/RecipeSelectionModal.js` by removing the duplicate declaration.
 
 ### `new_client` (Vue.js Application)
 - **Removal:** The `new_client` directory (Vue.js application) has been removed from the project as it was an alternative client no longer needed.

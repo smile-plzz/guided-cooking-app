@@ -1,7 +1,7 @@
 .mealPlannerContainer {
   padding: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 8rem auto 0 auto; /* Increased margin-top to clear navbar */
   font-family: 'Inter', sans-serif;
 }
 
@@ -22,7 +22,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: block;
-  margin: 0 auto 2rem auto;
+  margin: 6rem auto 2rem auto; /* Increased margin-top to 6rem */
   border: none;
 }
 
@@ -72,6 +72,11 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 0.5rem;
+  cursor: pointer; /* Indicate clickable */
+}
+
+.mealSlot:hover {
+  background-color: var(--background-hover);
 }
 
 .placeholder {
@@ -129,15 +134,48 @@
   background-color: var(--danger-dark);
 }
 
-.recipeListSection {
-  margin-top: 3rem;
-  background-color: var(--card-background);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: var(--shadow-elevation-low);
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-.sectionTitle {
+.modalContent {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.modalCloseButton:hover {
+  color: var(--text-color);
+}
+
+.modalTitle {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-color);
@@ -145,18 +183,28 @@
   text-align: center;
 }
 
-.recipeList {
+.modalSearchInput {
+  width: calc(100% - 2rem);
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--input-background);
+  color: var(--text-color);
+}
+
+.modalRecipeList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 1rem;
 }
 
-.recipeCard {
-  background-color: var(--background-light);
+.modalRecipeCard {
+  background-color: var(--card-background);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow-elevation-low);
-  cursor: grab;
+  cursor: pointer;
   transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -164,32 +212,30 @@
   padding: 0.8rem;
 }
 
-.recipeCard:hover {
+.modalRecipeCard:hover {
   transform: translateY(-3px);
 }
 
-.recipeImage {
+.modalRecipeImage {
   width: 100%;
-  height: 100px;
+  height: 80px;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
 
-.recipeCardTitle {
-  font-size: 0.9rem;
+.modalRecipeCardTitle {
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-color);
   text-align: center;
   word-break: break-word;
 }
 
-.loading,
-.error {
+.noResults {
   text-align: center;
-  font-size: 1.2rem;
-  color: var(--text-color);
-  padding: 2rem;
+  color: var(--text-secondary);
+  grid-column: 1 / -1; /* Span across all columns */
 }
 
 /* Responsive adjustments */

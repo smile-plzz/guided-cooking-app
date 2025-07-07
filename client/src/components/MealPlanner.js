@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import MealPlannerStyles from './MealPlanner.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import RecipeSelectionModal from './RecipeSelectionModal';
 
 const fetchRecipes = async () => {
   const response = await fetch('http://localhost:5000/api/recipes');
@@ -31,24 +32,31 @@ const MealPlanner = () => {
     localStorage.setItem('mealPlan', JSON.stringify(mealPlan));
   }, [mealPlan]);
 
-  const handleDragStart = (e, recipe) => {
-    e.dataTransfer.setData('recipe', JSON.stringify(recipe));
+  const [showModal, setShowModal] = useState(false);
+  const [selectedSlot, setSelectedSlot] = useState(null);
+
+  const handleClickSlot = (day, mealType) => {
+    setSelectedSlot({ day, mealType });
+    setShowModal(true);
   };
 
-  const handleDragOver = (e) => {
-    e.preventDefault();
+  const handleSelectRecipe = (recipe) => {
+    if (selectedSlot) {
+      setMealPlan((prevMealPlan) => ({
+        ...prevMealPlan,
+        [selectedSlot.day]: {
+          ...(prevMealPlan[selectedSlot.day] || {}),
+          [selectedSlot.mealType]: recipe,
+        },
+      }));
+      setShowModal(false);
+      setSelectedSlot(null);
+    }
   };
 
-  const handleDrop = (e, day, mealType) => {
-    e.preventDefault();
-    const recipe = JSON.parse(e.dataTransfer.getData('recipe'));
-    setMealPlan((prevMealPlan) => ({
-      ...prevMealPlan,
-      [day]: {
-        ...(prevMealPlan[day] || {}),
-        [mealType]: recipe,
-      },
-    }));
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedSlot(null);
   };
 
   const handleRemoveMeal = (day, mealType) => {
@@ -114,8 +122,7 @@ ${JSON.stringify(shoppingList, null, 2)}`);
               <div
                 key={mealType}
                 className={MealPlannerStyles.mealSlot}
-                onDragOver={handleDragOver}
-                onDrop={(e) => handleDrop(e, day, mealType)}
+                onClick={() => handleClickSlot(day, mealType)}
               >
                 {mealPlan[day] && mealPlan[day][mealType] ? (
                   <div className={MealPlannerStyles.plannedMeal}>
@@ -136,35 +143,20 @@ ${JSON.stringify(shoppingList, null, 2)}`);
                     </button>
                   </div>
                 ) : (
-                  <p className={MealPlannerStyles.placeholder}>Drag recipe here</p>
+                  <p className={MealPlannerStyles.placeholder}>Click to add recipe</p>
                 )}
               </div>
             ))}
           </div>
         ))}
       </div>
-
-      <div className={MealPlannerStyles.recipeListSection}>
-        <h2 className={MealPlannerStyles.sectionTitle}>Available Recipes</h2>
-        <div className={MealPlannerStyles.recipeList}>
-          {recipes.map((recipe) => (
-            <div
-              key={recipe.id}
-              className={MealPlannerStyles.recipeCard}
-              draggable
-              onDragStart={(e) => handleDragStart(e, recipe)}
-            >
-              <LazyLoadImage
-                src={recipe.image}
-                alt={recipe.title}
-                effect="blur"
-                className={MealPlannerStyles.recipeImage}
-              />
-              <p className={MealPlannerStyles.recipeCardTitle}>{recipe.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      {showModal && (
+        <RecipeSelectionModal
+          recipes={recipes}
+          onSelectRecipe={handleSelectRecipe}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 };
