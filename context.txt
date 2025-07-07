@@ -68,6 +68,7 @@ This document summarizes the recent development history and current state of the
 - **Design Refinement:** Improved form element styling in `client/src/components/RecipeForm.js` by applying consistent Tailwind classes, leveraging CSS variables, and enhancing focus states.
 - **Design Refinement:** Increased font sizes in `client/src/styles/tokens.css` for improved readability across the application.
 - **Design Refinement Limitation:** Unable to directly modify `client/src/index.css` for global dark mode color refinement or form element styling due to tool limitations in reading/writing the file.
+- **WebSocket Error Investigation:** Disabled service worker in `client/src/index.js` to investigate persistent WebSocket connection errors.
 
 ### `new_client` (Vue.js Application)
 - **Removal:** The `new_client` directory (Vue.js application) has been removed from the project as it was an alternative client no longer needed.
@@ -81,7 +82,6 @@ This document summarizes the recent development history and current state of the
     - **API Enhancements:** Discuss and implement enhancements to the existing API endpoints.
     - **Frontend Functionality:** Thoroughly test all features in the React frontend to ensure they work as expected with the updated backend logic.
     - **WebSocket Errors:** Persistent `WebSocket connection to 'ws://localhost:3000/ws' failed` errors are still appearing in the browser console. These typically relate to the frontend development server's hot-reloading and need further investigation.
-    - **Documentation Update:** Updated `README.md` with extensive, A-Z details about the project, consolidating information from `context.txt` and other sources.
 
 ## Next Action:
 - Project paused. Will resume development later, focusing on completing backend tests and then moving to API enhancements and frontend functionality.
