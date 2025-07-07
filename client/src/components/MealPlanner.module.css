@@ -1,7 +1,7 @@
 .mealPlannerContainer {
   padding: 2rem;
   max-width: 1200px;
-  margin: 8rem auto 0 auto; /* Increased margin-top to clear navbar */
+  margin: 0 auto; /* Removed margin-top */
   font-family: 'Inter', sans-serif;
 }
 

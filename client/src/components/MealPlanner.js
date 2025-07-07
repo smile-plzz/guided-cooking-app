@@ -132,7 +132,7 @@ ${formattedList}`);
   if (error) return <div className={MealPlannerStyles.error}>Error: {error.message}</div>;
 
   return (
-    <div className={MealPlannerStyles.mealPlannerContainer}>
+    <div className={`${MealPlannerStyles.mealPlannerContainer} page-content-padding`}>
       <h1 className={MealPlannerStyles.title}>Meal Planner</h1>
       <button onClick={generateShoppingList} className={MealPlannerStyles.generateListButton}>
         Generate Shopping List
