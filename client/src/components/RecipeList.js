@@ -279,7 +279,7 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
                 <LazyLoadImage
                   alt={recipe.title || recipe.name}
                   effect="blur"
-                  src={recipe.image}
+                  src={recipe.image || '/images/placeholder.jpg'} // Use placeholder if image is missing
                   className="w-full h-48 object-cover"
                 />
                 <h2 className="text-h3 font-bold text-text dark:text-gray-100 mt-2 p-4 line-clamp-2">{recipe.title || recipe.name}</h2>
