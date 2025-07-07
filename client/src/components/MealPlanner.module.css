@@ -1,0 +1,264 @@
+.mealPlannerContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.generateListButton {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border: none;
+}
+
+.generateListButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.plannerGrid {
+  display: grid;
+  grid-template-columns: 100px repeat(4, 1fr); /* Day column + 4 meal types */
+  gap: 1px;
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gridHeader,
+.dayRow {
+  display: contents;
+}
+
+.gridHeader div,
+.dayHeader,
+.mealTypeHeader,
+.mealSlot {
+  padding: 0.8rem;
+  background-color: var(--background-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.dayHeader {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.mealSlot {
+  background-color: var(--card-background);
+  min-height: 120px;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+.placeholder {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.plannedMeal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.plannedMeal a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mealImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.mealTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+.removeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: var(--danger-dark);
+}
+
+.recipeListSection {
+  margin-top: 3rem;
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-elevation-low);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.recipeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.recipeCard {
+  background-color: var(--background-light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevation-low);
+  cursor: grab;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.recipeCard:hover {
+  transform: translateY(-3px);
+}
+
+.recipeImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.recipeCardTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+  word-break: break-word;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  padding: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .plannerGrid {
+    grid-template-columns: 80px repeat(4, 1fr);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .mealSlot {
+    min-height: 100px;
+  }
+
+  .mealImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mealTitle {
+    font-size: 0.8rem;
+  }
+
+  .recipeList {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .recipeImage {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plannerGrid {
+    grid-template-columns: 60px repeat(4, 1fr);
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .mealSlot {
+    min-height: 80px;
+  }
+
+  .mealImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mealTitle {
+    font-size: 0.7rem;
+  }
+
+  .recipeList {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .recipeImage {
+    height: 70px;
+  }
+}

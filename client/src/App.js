@@ -10,6 +10,7 @@ import RecipeDetail from './components/RecipeDetail';
 import RecipeForm from './components/RecipeForm';
 import ShoppingList from './components/ShoppingList';
 import Pantry from './components/Pantry';
+import MealPlanner from './components/MealPlanner';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -60,6 +61,7 @@ function App() {
           <Route path="/favorites" element={<RecipeList darkMode={darkMode} toggleDarkMode={toggleDarkMode} showNotification={showNotification} favoritesOnly />} />
           <Route path="/shopping-list" element={<ShoppingList darkMode={darkMode} showNotification={showNotification} />} />
           <Route path="/pantry" element={<Pantry darkMode={darkMode} showNotification={showNotification} />} />
+          <Route path="/meal-planner" element={<MealPlanner darkMode={darkMode} showNotification={showNotification} />} />
         </Routes>
       </div>
     </Router>
