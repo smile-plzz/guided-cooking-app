@@ -56,6 +56,8 @@ This document summarizes the recent development history and current state of the
     - **Bug Fix:** Fixed `showNotification` not defined error in `client/src/components/MealPlanner.js` by destructuring it from props.
 - **Design Refinement:** Renamed CSS color variables in `client/src/styles/tokens.css` by removing the `--color-` prefix for consistency.
 - **Design Refinement:** Applied `page-content-padding` class to `MealPlanner.js` and removed redundant `margin-top` from its CSS module for consistent global spacing.
+- **Design Refinement:** Refined dark mode toggle button styling in `client/src/components/Navbar.js` to use CSS variables for consistency.
+- **Design Refinement Limitation:** Unable to directly modify `client/src/index.css` for global dark mode color refinement or form element styling due to tool limitations in reading/writing the file.
 
 ### `new_client` (Vue.js Application)
 - **Removal:** The `new_client` directory (Vue.js application) has been removed from the project as it was an alternative client no longer needed.
