@@ -1,6 +1,8 @@
 
 require('dotenv').config();
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const { sequelize, Recipe } = require('./database');
 
@@ -160,10 +162,12 @@ app.get('/api/ingredient-substitutes', cacheMiddleware(3600), async (req, res) =
 // New endpoint for Bangla recipes
 app.get('/api/bangla-recipes', (req, res) => {
   try {
-    const banglaRecipes = require('../bangla.txt'); // Assuming bangla.txt is in the root
+        const banglaRecipesPath = path.join(__dirname, '..', 'Bangla.json');
+    const banglaRecipes = JSON.parse(fs.readFileSync(banglaRecipesPath, 'utf8'));
     res.json(banglaRecipes);
   } catch (error) {
-    res.status(500).json({ message: 'Error loading Bangla recipes', error });
+    console.error("Error loading Bangla recipes:", error);
+    res.status(500).json({ message: 'Error loading Bangla recipes', error: error.message });
   }
 });
 

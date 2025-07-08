@@ -40,6 +40,10 @@ function Navbar({ darkMode, toggleDarkMode }) {
           Meal Planner
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-accent1 transition-all duration-300 group-hover:w-full"></span>
         </NavLink>
+        <NavLink to="/bangla-recipes" className={({ isActive }) => `relative font-inter font-medium text-body no-underline ${isActive ? 'text-primary dark:text-accent1' : 'text-text dark:text-gray-100'} hover:text-primary dark:hover:text-accent1 group`}>
+          Bangla Recipes
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-accent1 transition-all duration-300 group-hover:w-full"></span>
+        </NavLink>
       </div>
       <div className="flex items-center gap-4">
         <button

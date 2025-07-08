@@ -29,28 +29,56 @@ const chipRemove = {
 
 async function fetchRecipes({ queryKey }) {
   const [, searchQuery, cuisine, diet, intolerances] = queryKey;
-  let url;
-  let params = {};
+  let allRecipes = [];
 
+  // Fetch from Spoonacular (if search query is present)
   if (searchQuery) {
-    url = new URL('http://localhost:5000/api/search-recipes');
-    params.query = searchQuery;
+    const spoonacularUrl = new URL('http://localhost:5000/api/search-recipes');
+    let params = { query: searchQuery };
+    if (cuisine) params.cuisine = cuisine;
+    if (diet) params.diet = diet;
+    if (intolerances) params.intolerances = intolerances;
+    spoonacularUrl.search = new URLSearchParams(params).toString();
+
+    try {
+      const response = await fetch(spoonacularUrl);
+      if (!response.ok) {
+        throw new Error('Network response from Spoonacular was not ok');
+      }
+      const data = await response.json();
+      allRecipes = allRecipes.concat(data.results.map(recipe => ({ ...recipe, source: 'spoonacular' })));
+    } catch (error) {
+      console.error("Error fetching from Spoonacular:", error);
+    }
   } else {
-    url = new URL('http://localhost:5000/api/recipes');
+    // Fetch from local database if no search query
+    try {
+      const response = await fetch('http://localhost:5000/api/recipes');
+      if (!response.ok) {
+        throw new Error('Network response from local API was not ok');
+      }
+      const data = await response.json();
+      allRecipes = allRecipes.concat(data.map(recipe => ({ ...recipe, source: 'local' })));
+    } catch (error) {
+      console.error("Error fetching from local API:", error);
+    }
   }
 
-  if (cuisine) params.cuisine = cuisine;
-  if (diet) params.diet = diet;
-  if (intolerances) params.intolerances = intolerances;
+  return allRecipes;
+}
 
-  url.search = new URLSearchParams(params).toString();
-
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error('Network response was not ok');
+async function fetchBanglaRecipes() {
+  try {
+    const response = await fetch('http://localhost:5000/api/bangla-recipes');
+    if (!response.ok) {
+      throw new Error('Network response from Bangla recipes API was not ok');
+    }
+    const data = await response.json();
+    return data.map(recipe => ({ ...recipe, source: 'bangla' }));
+  } catch (error) {
+    console.error("Error fetching Bangla recipes:", error);
+    return [];
   }
-  const data = await response.json();
-  return data;
 }
 
 async function fetchFavoriteRecipes() {
@@ -91,9 +119,17 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
     enabled: !favoritesOnly,
   });
 
-  const recipes = submittedSearchQuery ? recipesData?.results : recipesData;
+  const recipes = recipesData || [];
 
-  const filteredRecipes = recipes;
+  const filteredRecipes = recipes.filter(recipe => {
+    const matchesSearch = submittedSearchQuery ? 
+      (recipe.title && recipe.title.toLowerCase().includes(submittedSearchQuery.toLowerCase())) ||
+      (recipe.name && recipe.name.toLowerCase().includes(submittedSearchQuery.toLowerCase()))
+      : true;
+    const matchesCuisine = cuisine ? (recipe.cuisine && recipe.cuisine.toLowerCase() === cuisine.toLowerCase()) : true;
+    // Add diet and intolerances filtering if applicable to local/bangla recipes
+    return matchesSearch && matchesCuisine;
+  });
 
   const { data: favoriteRecipesData, error: favoritesError, isLoading: favoritesLoading } = useQuery({
     queryKey: ['favoriteRecipes'],
@@ -109,7 +145,6 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
   const isLoading = favoritesOnly ? favoritesLoading : recipesLoading;
   const error = favoritesOnly ? favoritesError : recipesError;
 
-  console.log('recipesToDisplay:', recipesToDisplay);
   console.log('isLoading:', isLoading);
 
   const cuisines = ["Italian", "Mexican", "Chinese", "Indian", "American"];
@@ -264,31 +299,41 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
             ))}
           </div>
         )}
+
         {error && <p className="text-accent1 text-center mt-6 font-body">{error.message}</p>}
-        {!isLoading && recipesToDisplay?.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recipesToDisplay.map(recipe => (
-              <motion.div
-                key={recipe.id}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300 ease-in-out border border-gray-200 dark:border-gray-700 min-h-[280px] max-h-[320px] flex flex-col"
-                onClick={() => handleRecipeClick(recipe.id, recipe.source)}
-                variants={cardHover}
-                whileHover="hover"
-                whileTap="tap"
-              >
-                <LazyLoadImage
-                  alt={recipe.title || recipe.name}
-                  effect="blur"
-                  src={recipe.image || '/images/placeholder.jpg'} // Use placeholder if image is missing
-                  className="w-full h-48 object-cover"
-                />
-                <h2 className="text-h3 font-bold text-text dark:text-gray-100 mt-2 p-4 line-clamp-2">{recipe.title || recipe.name}</h2>
-              </motion.div>
-            ))}
-          </div>
-        ) : (!isLoading && (
-          <p className="text-center text-lg text-text-secondary dark:text-gray-300 font-body">{favoritesOnly ? 'No favorite recipes yet.' : 'No recipes found. Try searching for something!'}</p>
-        ))}
+
+        {!isLoading && !error && (
+          <>
+            {(submittedSearchQuery || favoritesOnly) ? (
+              filteredRecipes?.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredRecipes.map(recipe => (
+                    <motion.div
+                      key={recipe.id}
+                      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300 ease-in-out border border-gray-200 dark:border-gray-700 min-h-[280px] max-h-[320px] flex flex-col"
+                      onClick={() => handleRecipeClick(recipe.id, recipe.source)}
+                      variants={cardHover}
+                      whileHover="hover"
+                      whileTap="tap"
+                    >
+                      <LazyLoadImage
+                        alt={recipe.title || recipe.name}
+                        effect="blur"
+                        src={recipe.image || '/images/placeholder.jpg'} // Use placeholder if image is missing
+                        className="w-full h-48 object-cover"
+                      />
+                      <h2 className="text-h3 font-bold text-text dark:text-gray-100 mt-2 p-4 line-clamp-2">{recipe.title || recipe.name}</h2>
+                    </motion.div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-center text-lg text-text-secondary dark:text-gray-300 font-body">{favoritesOnly ? 'No favorite recipes yet.' : 'No recipes found for your search criteria.'}</p>
+              )
+            ) : (
+              <p className="text-center text-lg text-text-secondary dark:text-gray-300 font-body">No recipes found. Try searching for something!</p>
+            )}
+          </>
+        )}
       </main>
     </div>
   );

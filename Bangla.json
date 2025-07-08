@@ -882,7 +882,8 @@
       {
         "id": 4053,
         "aisle": "Oil, Vinegar, Salad Dressing",
-        "image": "oil-red.consistency": "liquid",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
         "name": "সর্ষের তেল",
         "nameClean": "mustard oil",
         "original": "২ টেবিল চামচ সর্ষের তেল",

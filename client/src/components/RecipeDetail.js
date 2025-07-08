@@ -6,8 +6,27 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Timer from './Timer';
 
 const fetchRecipeDetails = async ({ queryKey }) => {
-  const [, id] = queryKey;
-  const response = await fetch(`http://localhost:5000/api/recipe/${id}`);
+  const [, id, source] = queryKey;
+  let url;
+  if (source === 'spoonacular') {
+    url = `http://localhost:5000/api/recipe/${id}`;
+  } else if (source === 'bangla') {
+    // For Bangla recipes, we need to fetch all bangla recipes and find the one with the matching ID
+    const response = await fetch('http://localhost:5000/api/bangla-recipes');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const banglaRecipes = await response.json();
+    const recipe = banglaRecipes.find(r => r.id.toString() === id);
+    if (!recipe) {
+      throw new Error('Recipe not found');
+    }
+    return recipe;
+  } else { // Default to local
+    url = `http://localhost:5000/api/recipes/${id}`;
+  }
+
+  const response = await fetch(url);
   if (!response.ok) {
     const errorData = await response.json();
     throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
@@ -16,7 +35,10 @@ const fetchRecipeDetails = async ({ queryKey }) => {
 };
 
 const fetchNutritionDetails = async ({ queryKey }) => {
-  const [, id] = queryKey;
+  const [, id, source] = queryKey;
+  if (source !== 'spoonacular') {
+    return null; // Nutrition data only available for Spoonacular recipes
+  }
   const response = await fetch(`http://localhost:5000/api/recipe/${id}/nutrition`);
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
@@ -44,8 +66,11 @@ function RecipeDetail({ showNotification }) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [unitSystem, setUnitSystem] = useState('metric');
 
+  const queryParams = new URLSearchParams(window.location.search);
+  const source = queryParams.get('source') || 'local'; // Default to 'local'
+
   const { data: recipe, error, isLoading } = useQuery({
-    queryKey: ['recipe', id],
+    queryKey: ['recipe', id, source],
     queryFn: fetchRecipeDetails,
     onSuccess: (data) => {
       setServings(data.servings || 1);
@@ -58,8 +83,9 @@ function RecipeDetail({ showNotification }) {
   });
 
   const { data: nutrition, error: nutritionError, isLoading: nutritionLoading } = useQuery({
-    queryKey: ['nutrition', id],
+    queryKey: ['nutrition', id, source],
     queryFn: fetchNutritionDetails,
+    enabled: source === 'spoonacular', // Only fetch nutrition for Spoonacular recipes
     onError: (err) => {
       showNotification(`Error loading nutrition data: ${err.message}`, 'error');
     },
@@ -162,18 +188,28 @@ function RecipeDetail({ showNotification }) {
   };
 
   const handleEditRecipe = () => {
-    navigate(`/edit-recipe/${id}`);
+    if (source === 'local') {
+      navigate(`/edit-recipe/${id}`);
+    } else {
+      showNotification('Only local recipes can be edited.', 'info');
+    }
   };
 
   const handleDeleteRecipe = () => {
-    if (window.confirm('Are you sure you want to delete this recipe?')) {
-      deleteMutation.mutate(id);
+    if (source === 'local') {
+      if (window.confirm('Are you sure you want to delete this recipe?')) {
+        deleteMutation.mutate(id);
+      }
+    } else {
+      showNotification('Only local recipes can be deleted.', 'info');
     }
   };
 
   const handleAddIngredientsToShoppingList = () => {
     const currentShoppingList = JSON.parse(localStorage.getItem('shoppingList') || '[]');
-    const newItems = recipe.extendedIngredients.map(ingredient => ({
+    const ingredientsToAdd = recipe.extendedIngredients || recipe.ingredients || [];
+
+    const newItems = ingredientsToAdd.map(ingredient => ({
       name: ingredient.name,
       quantity: getAdjustedQuantity(ingredient.amount, recipe.servings, ingredient.unit, unitSystem),
       unit: unitSystem,
