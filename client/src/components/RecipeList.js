@@ -122,7 +122,7 @@ function RecipeList({ darkMode, toggleDarkMode, favoritesOnly }) {
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
       />
-      <main className="container mx-auto p-6 pt-56">
+      <main className="container mx-auto pt-40 px-4">
         <section className="text-center py-16 bg-gradient-to-r from-primary to-accent2 text-white rounded-lg shadow-xl mb-8">
           <h1 className="text-h1 font-bold mb-4">Your Culinary Journey Starts Here</h1>
           <p className="text-body mb-6 max-w-2xl mx-auto">

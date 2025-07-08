@@ -139,7 +139,7 @@ function RecipeForm({ showNotification }) {
   }
 
   return (
-    <div className="container mx-auto p-4 page-content-padding">
+    <div className="container mx-auto pt-40">
       <h1 className="text-3xl font-bold mb-4 text-text dark:text-gray-100">{isEditMode ? 'Edit Recipe' : 'Add New Recipe'}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
       <div className="form-group">

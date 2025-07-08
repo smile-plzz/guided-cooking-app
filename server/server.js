@@ -157,6 +157,16 @@ app.get('/api/ingredient-substitutes', cacheMiddleware(3600), async (req, res) =
   }
 });
 
+// New endpoint for Bangla recipes
+app.get('/api/bangla-recipes', (req, res) => {
+  try {
+    const banglaRecipes = require('../bangla.txt'); // Assuming bangla.txt is in the root
+    res.json(banglaRecipes);
+  } catch (error) {
+    res.status(500).json({ message: 'Error loading Bangla recipes', error });
+  }
+});
+
 async function seedDatabase() {
   const recipeCount = await Recipe.count();
   if (recipeCount === 0) {

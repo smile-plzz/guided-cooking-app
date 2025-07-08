@@ -1,0 +1,2613 @@
+[
+  {
+    "id": 1000001,
+    "title": "সর্ষে ইলিশ (সর্ষে দিয়ে ইলিশ মাছ)",
+    "cuisine": "Bengali",
+    "description": "সর্ষে ইলিশ একটি ঐতিহ্যবাহী বাঙালি পদ, যেখানে ইলিশ মাছ সর্ষের ঝোলে রান্না করা হয়। এটি তার তীব্র স্বাদ এবং সর্ষের তেলের সুগন্ধের জন্য পরিচিত।",
+    "image": "shorshe_ilish.jpg",
+    "preparationTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 15009,
+        "aisle": "Seafood",
+        "image": "hilsa.png",
+        "consistency": "solid",
+        "name": "ইলিশ মাছ",
+        "nameClean": "ilish fish",
+        "original": "৪ টুকরা ইলিশ মাছ",
+        "originalName": "ইলিশ মাছ",
+        "amount": 4.0,
+        "unit": "টুকরা",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "pieces", "unitLong": "pieces" },
+          "metric": { "amount": 4.0, "unitShort": "টুকরা", "unitLong": "টুকরা" }
+        }
+      },
+      {
+        "id": 2046,
+        "aisle": "Spices and Seasonings",
+        "image": "mustard-seeds.png",
+        "consistency": "solid",
+        "name": "কালো সর্ষে",
+        "nameClean": "black mustard seeds",
+        "original": "২ টেবিল চামচ কালো সর্ষে",
+        "originalName": "কালো সর্ষে",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["কালো"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2046,
+        "aisle": "Spices and Seasonings",
+        "image": "mustard-seeds.png",
+        "consistency": "solid",
+        "name": "সাদা সর্ষে",
+        "nameClean": "yellow mustard seeds",
+        "original": "১ টেবিল চামচ সাদা সর্ষে",
+        "originalName": "সাদা সর্ষে",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["সাদা"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "৪-৫টি কাঁচা লঙ্কা",
+        "originalName": "কাঁচা লঙ্কা",
+        "amount": 4.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 4.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "৩ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 3.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 3.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "liquid",
+        "name": "জল",
+        "nameClean": "water",
+        "original": "১/২ কাপ জল",
+        "originalName": "জল",
+        "amount": 0.5,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "cup", "unitLong": "cups" },
+          "metric": { "amount": 118.294, "unitShort": "মিলি", "unitLong": "মিলিলিটার" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "কালো ও সাদা সর্ষে ৩০ মিনিটের জন্য জলে ভিজিয়ে রাখুন। জল ঝরিয়ে ২-৩টি কাঁচা লঙ্কা ও সামান্য লবণ দিয়ে মিহি করে বেটে নিন। বাটার সময় সামান্য জল ব্যবহার করতে পারেন।",
+            "ingredients": [
+              { "id": 2046, "name": "সাদা সর্ষে", "image": "mustard-seeds.png" },
+              { "id": 2046, "name": "কালো সর্ষে", "image": "mustard-seeds.png" },
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "ইলিশ মাছের টুকরোগুলো লবণ, হলুদ এবং অর্ধেক সর্ষে বাটা দিয়ে ১৫ মিনিট ম্যারিনেট করে রাখুন।",
+            "ingredients": [
+              { "id": 15009, "name": "ইলিশ মাছ", "image": "hilsa.png" },
+              { "id": 2043, "name": "হলুদ", "image": "turmeric.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 3,
+            "step": "একটি প্যানে সর্ষের তেল গরম করুন। সাবধানে ম্যারিনেট করা মাছের টুকরোগুলো দিয়ে প্রতি পাশে এক মিনিট করে ভাজুন।",
+            "ingredients": [
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 15009, "name": "মাছ", "image": "fish-fillet.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 4,
+            "step": "বাকি সর্ষে বাটা, চেরা কাঁচা লঙ্কা এবং ১/২ কাপ জল যোগ করুন। আলতোভাবে ফোটাতে শুরু করুন। ঢেকে কম আঁচে ১০-১২ মিনিট রান্না করুন যতক্ষণ না মাছ সেদ্ধ হয় এবং ঝোল ঘন হয়।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" },
+              { "id": 0, "name": "সর্ষে বাটা", "image": "mustard.jpg" },
+              { "id": 15009, "name": "মাছ", "image": "fish-fillet.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "গরম ভাতের সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000002,
+    "title": "কষা মাংস (খাসির মাংসের কারি)",
+    "cuisine": "Bengali",
+    "description": "একটি সুস্বাদু ও মশলাদার বাঙালি খাসির মাংসের কারি, যা ধীর আঁচে রান্না করা হয় যতক্ষণ না মাংস নরম হয় এবং ঝোল ঘন ও উজ্জ্বল হয়।",
+    "image": "kosha_mangsho.jpg",
+    "preparationTimeMinutes": 30,
+    "cookTimeMinutes": 90,
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": 17214,
+        "aisle": "Meat",
+        "image": "mutton.png",
+        "consistency": "solid",
+        "name": "খাসির মাংস",
+        "nameClean": "mutton",
+        "original": "১ কেজি খাসির মাংস (টুকরা করা)",
+        "originalName": "খাসির মাংস (টুকরা করা)",
+        "amount": 1.0,
+        "unit": "কেজি",
+        "meta": ["টুকরা করা"],
+        "measures": {
+          "us": { "amount": 2.205, "unitShort": "lb", "unitLong": "pounds" },
+          "metric": { "amount": 1.0, "unitShort": "কেজি", "unitLong": "কেজি" }
+        }
+      },
+      {
+        "id": 11282,
+        "aisle": "Produce",
+        "image": "brown-onion.png",
+        "consistency": "solid",
+        "name": "পেঁয়াজ",
+        "nameClean": "onion",
+        "original": "৩টি বড় পেঁয়াজ, পাতলা করে কাটা",
+        "originalName": "পেঁয়াজ, পাতলা করে কাটা",
+        "amount": 3.0,
+        "unit": "টি",
+        "meta": ["পাতলা করে কাটা", "বড়"],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 3.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 10011215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "solid",
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "original": "২ টেবিল চামচ আদা-রসুন বাটা",
+        "originalName": "আদা-রসুন বাটা",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2009,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "original": "১.৫ চা চামচ লাল লঙ্কার গুঁড়ো",
+        "originalName": "লাল লঙ্কার গুঁড়ো",
+        "amount": 1.5,
+        "unit": "চা চামচ",
+        "meta": ["লাল"],
+        "measures": {
+          "us": { "amount": 1.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 1.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2043,
+        "aisle": "Spices and Seasonings",
+        "image": "turmeric.jpg",
+        "consistency": "solid",
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "original": "১ চা চামচ হলুদ গুঁড়ো",
+        "originalName": "হলুদ গুঁড়ো",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2014,
+        "aisle": "Spices and Seasonings",
+        "image": "ground-cumin.jpg",
+        "consistency": "solid",
+        "name": "জিরে গুঁড়ো",
+        "nameClean": "cumin powder",
+        "original": "১.৫ চা চামচ জিরে গুঁড়ো",
+        "originalName": "জিরে গুঁড়ো",
+        "amount": 1.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 1.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2001,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "ধনে গুঁড়ো",
+        "nameClean": "coriander powder",
+        "original": "১.৫ চা চামচ ধনে গুঁড়ো",
+        "originalName": "ধনে গুঁড়ো",
+        "amount": 1.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 1.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 99228,
+        "aisle": "Spices and Seasonings",
+        "image": "garam-masala.jpg",
+        "consistency": "solid",
+        "name": "গরম মশলা গুঁড়ো",
+        "nameClean": "garam masala powder",
+        "original": "১ চা চামচ গরম মশলা গুঁড়ো",
+        "originalName": "গরম মশলা গুঁড়ো",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "৩-৪টি কাঁচা লঙ্কা, চেরা",
+        "originalName": "কাঁচা লঙ্কা, চেরা",
+        "amount": 3.0,
+        "unit": "টি",
+        "meta": ["চেরা"],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 3.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "৪ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 4.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 4.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 1002034,
+        "aisle": "Spices and Seasonings",
+        "image": "cinnamon.jpg",
+        "consistency": "solid",
+        "name": "দারচিনি",
+        "nameClean": "cinnamon stick",
+        "original": "২টি ছোট দারচিনি",
+        "originalName": "দারচিনি",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": ["ছোট"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 1002006,
+        "aisle": "Spices and Seasonings",
+        "image": "star-anise.jpg",
+        "consistency": "solid",
+        "name": "এলাচ",
+        "nameClean": "cardamom pods",
+        "original": "৪-৫টি সবুজ এলাচ",
+        "originalName": "সবুজ এলাচ",
+        "amount": 4.0,
+        "unit": "টি",
+        "meta": ["সবুজ"],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 4.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 2024,
+        "aisle": "Spices and Seasonings",
+        "image": "cloves.jpg",
+        "consistency": "solid",
+        "name": "লবঙ্গ",
+        "nameClean": "cloves",
+        "original": "৪-৫টি লবঙ্গ",
+        "originalName": "লবঙ্গ",
+        "amount": 4.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 4.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 1002030,
+        "aisle": "Spices and Seasonings",
+        "image": "pepper.jpg",
+        "consistency": "solid",
+        "name": "গোলমরিচ",
+        "nameClean": "whole black peppercorns",
+        "original": "১ চা চামচ গোলমরিচ",
+        "originalName": "গোলমরিচ",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": ["black"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "liquid",
+        "name": "গরম জল",
+        "nameClean": "water",
+        "original": "১ কাপ গরম জল",
+        "originalName": "গরম জল",
+        "amount": 1.0,
+        "unit": "কাপ",
+        "meta": ["গরম"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "cup", "unitLong": "cup" },
+          "metric": { "amount": 236.588, "unitShort": "মিলি", "unitLong": "মিলিলিটার" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "মাংস লবণ, হলুদ গুঁড়ো, লাল লঙ্কার গুঁড়ো, জিরে গুঁড়ো, ধনে গুঁড়ো, আদা-রসুন বাটা এবং ২ টেবিল চামচ সর্ষের তেল দিয়ে ম্যারিনেট করুন। কমপক্ষে ১ ঘন্টা বা সম্ভব হলে সারারাত ফ্রিজে রেখে দিন।",
+            "ingredients": [
+              { "id": 10011215, "name": "আদা-রসুন বাটা", "image": "ginger-garlic-paste.png" },
+              { "id": 2001, "name": "ধনে গুঁড়ো", "image": "chili-powder.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 2009, "name": "লাল লঙ্কার গুঁড়ো", "image": "chili-powder.jpg" },
+              { "id": 2014, "name": "জিরে গুঁড়ো", "image": "ground-cumin.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 17214, "name": "মাংস", "image": "mutton.png" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "একটি ভারী তলার প্যান বা কড়াইতে বাকি সর্ষের তেল গরম করুন। দারচিনি, এলাচ, লবঙ্গ এবং গোলমরিচ যোগ করুন। কয়েক সেকেন্ডের জন্য ভাজুন যতক্ষণ না সুগন্ধ বের হয়।",
+            "ingredients": [
+              { "id": 1002030, "name": "গোলমরিচ", "image": "pepper.jpg" },
+              { "id": 1002034, "name": "দারচিনি", "image": "cinnamon.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 1002006, "name": "এলাচ", "image": "star-anise.jpg" },
+              { "id": 2024, "name": "লবঙ্গ", "image": "cloves.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "পাতলা করে কাটা পেঁয়াজ যোগ করুন এবং মাঝারি আঁচে সোনালী বাদামী হওয়া পর্যন্ত ভাজুন, ঘন ঘন নাড়তে থাকুন। এটি তরকারির রঙ এবং স্বাদের জন্য গুরুত্বপূর্ণ।",
+            "ingredients": [
+              { "id": 11282, "name": "পেঁয়াজ", "image": "brown-onion.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 4,
+            "step": "ম্যারিনেট করা মাংস প্যানে যোগ করুন। আঁচ বাড়িয়ে ১০-১৫ মিনিট ভাজুন, ক্রমাগত নাড়তে থাকুন, যতক্ষণ না মাংসের রঙ পরিবর্তিত হয় এবং মশলা ভালোভাবে ভাজা হয়। এটি 'কষা' প্রক্রিয়া।",
+            "ingredients": [
+              { "id": 17214, "name": "মাংস", "image": "mutton.png" },
+              { "id": 2035, "name": "মশলা", "image": "garam-masala-powder.png" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 5,
+            "step": "আঁচ কমিয়ে দিন। ১ কাপ গরম জল যোগ করুন, ঢেকে দিন এবং ৬০-৭৫ মিনিট বা মাংস নরম না হওয়া পর্যন্ত কম আঁচে রান্না করুন। লেগে যাওয়া এড়াতে মাঝে মাঝে নাড়ুন। প্রয়োজন হলে রান্নার সময় অল্প অল্প গরম জল যোগ করুন।",
+            "ingredients": [
+              { "id": 17214, "name": "মাংস", "image": "mutton.png" },
+              { "id": 14412, "name": "গরম জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "মাংস নরম হয়ে গেলে এবং ঝোল আপনার পছন্দসই ঘনত্বের হলে, চেরা কাঁচা লঙ্কা এবং গরম মশলা গুঁড়ো যোগ করুন। আরও ৫ মিনিট রান্না করুন।",
+            "ingredients": [
+              { "id": 99228, "name": "গরম মশলা গুঁড়ো", "image": "garam-masala.jpg" },
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 17214, "name": "মাংস", "image": "mutton.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 7,
+            "step": "লুচি, পরোটা বা গরম ভাতের সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" },
+              { "id": 18364, "name": "পরোটা", "image": "naan.jpg" },
+              { "id": 0, "name": "লুচি", "image": "" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000003,
+    "title": "আলু পোস্ত (আলু ও পোস্ত দিয়ে)",
+    "cuisine": "Bengali",
+    "description": "আলু পোস্ত একটি ঐতিহ্যবাহী নিরামিষ বাঙালি পদ, যেখানে আলু পোস্ত বাটা দিয়ে রান্না করা হয়। এটি সহজ কিন্তু অবিশ্বাস্যভাবে সুস্বাদু।",
+    "image": "alu_posto.jpg",
+    "preparationTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 11352,
+        "aisle": "Produce",
+        "image": "potato.jpg",
+        "consistency": "solid",
+        "name": "আলু",
+        "nameClean": "potato",
+        "original": "৪-৫টি মাঝারি আলু, খোসা ছাড়ানো এবং ছোট টুকরা করা",
+        "originalName": "আলু, খোসা ছাড়ানো এবং ছোট টুকরা করা",
+        "amount": 4.0,
+        "unit": "টি",
+        "meta": ["ছোট টুকরা করা", "খোসা ছাড়ানো", "মাঝারি"],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 4.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 93681,
+        "aisle": "Produce",
+        "image": "poppy-seeds.png",
+        "consistency": "solid",
+        "name": "পোস্ত দানা",
+        "nameClean": "poppy seeds",
+        "original": "৪ টেবিল চামচ পোস্ত দানা",
+        "originalName": "পোস্ত দানা",
+        "amount": 4.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 4.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "২-৩টি কাঁচা লঙ্কা",
+        "originalName": "কাঁচা লঙ্কা",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 2046,
+        "aisle": "Spices and Seasonings",
+        "image": "mustard-seeds.png",
+        "consistency": "solid",
+        "name": "কালো জিরে",
+        "nameClean": "nigella seeds",
+        "original": "১ চা চামচ কালো জিরে",
+        "originalName": "কালো জিরে",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "২ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "liquid",
+        "name": "জল",
+        "nameClean": "water",
+        "original": "১/২ কাপ জল",
+        "originalName": "জল",
+        "amount": 0.5,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "cup", "unitLong": "cups" },
+          "metric": { "amount": 118.294, "unitShort": "মিলি", "unitLong": "মিলিলিটার" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "পোস্ত দানা গরম জলে ৩০ মিনিটের জন্য ভিজিয়ে রাখুন। জল ঝরিয়ে কাঁচা লঙ্কার সাথে মিহি করে বেটে নিন। বাটার সময় প্রয়োজনে সামান্য জল যোগ করুন।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 93681, "name": "পোস্ত দানা", "image": "poppy-seeds.png" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "একটি প্যানে সর্ষের তেল গরম করুন। কালো জিরে যোগ করুন এবং কয়েক সেকেন্ডের জন্য ফোটার জন্য অপেক্ষা করুন।",
+            "ingredients": [
+              { "id": 2046, "name": "কালো জিরে", "image": "mustard-seeds.png" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "টুকরা করা আলু যোগ করুন এবং ৫-৭ মিনিট ভাজুন যতক্ষণ না সামান্য সোনালী হয়। স্বাদমতো লবণ এবং সামান্য হলুদ (রঙের জন্য, ঐচ্ছিক) যোগ করুন।",
+            "ingredients": [
+              { "id": 11352, "name": "আলু", "image": "potato.jpg" },
+              { "id": 2043, "name": "হলুদ", "image": "turmeric.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 4,
+            "step": "বাটা পোস্ত যোগ করুন এবং আলুর সাথে ভালোভাবে মিশিয়ে নিন। কম আঁচে ২-৩ মিনিট ভাজুন, ক্রমাগত নাড়তে থাকুন, যতক্ষণ না পোস্তর কাঁচা গন্ধ চলে যায়।",
+            "ingredients": [
+              { "id": 93681, "name": "পোস্ত", "image": "poppy-seeds.png" },
+              { "id": 11352, "name": "আলু", "image": "potato.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "প্রায় ১/২ কাপ জল যোগ করুন, ঢেকে দিন এবং কম আঁচে রান্না করুন যতক্ষণ না আলু নরম হয় এবং ঝোল ঘন হয়। যদি ঝোল বেশি ঘন মনে হয়, তাহলে সামান্য আরও গরম জল যোগ করুন।",
+            "ingredients": [
+              { "id": 11352, "name": "আলু", "image": "potato.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "গরম ভাতের সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000004,
+    "title": "চিংড়ি মালাইকারি (নারকেলের দুধে চিংড়ি)",
+    "cuisine": "Bengali",
+    "description": "চিংড়ি মালাইকারি একটি জনপ্রিয় বাঙালি খাবার, যেখানে বড় চিংড়ি মাছ নারকেলের দুধ এবং হালকা মশলা দিয়ে রান্না করা হয়, যা এটিকে একটি ক্রিমি এবং সুস্বাদু স্বাদ দেয়।",
+    "image": "chingri_malaikari.jpg",
+    "preparationTimeMinutes": 25,
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 15225,
+        "aisle": "Seafood",
+        "image": "shrimp.png",
+        "consistency": "solid",
+        "name": "বড় চিংড়ি",
+        "nameClean": "shrimp",
+        "original": "৫০০ গ্রাম বড় চিংড়ি, খোসা ছাড়ানো ও শিরা পরিষ্কার করা",
+        "originalName": "বড় চিংড়ি, খোসা ছাড়ানো ও শিরা পরিষ্কার করা",
+        "amount": 500.0,
+        "unit": "গ্রাম",
+        "meta": ["খোসা ছাড়ানো ও শিরা পরিষ্কার করা", "বড়"],
+        "measures": {
+          "us": { "amount": 1.102, "unitShort": "lb", "unitLong": "pounds" },
+          "metric": { "amount": 500.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 12117,
+        "aisle": "Canned and Jarred",
+        "image": "coconut-milk.png",
+        "consistency": "liquid",
+        "name": "নারকেলের দুধ",
+        "nameClean": "coconut milk",
+        "original": "১ কাপ নারকেলের ঘন দুধ",
+        "originalName": "নারকেলের ঘন দুধ",
+        "amount": 1.0,
+        "unit": "কাপ",
+        "meta": ["ঘন"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "cup", "unitLong": "cup" },
+          "metric": { "amount": 236.588, "unitShort": "মিলি", "unitLong": "milliliters" }
+        }
+      },
+      {
+        "id": 11282,
+        "aisle": "Produce",
+        "image": "brown-onion.png",
+        "consistency": "solid",
+        "name": "পেঁয়াজ",
+        "nameClean": "onion",
+        "original": "১টি মাঝারি পেঁয়াজ, বাটা",
+        "originalName": "পেঁয়াজ, বাটা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["বাটা", "মাঝারি"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 10011215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "solid",
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "original": "১ টেবিল চামচ আদা-রসুন বাটা",
+        "originalName": "আদা-রসুন বাটা",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2043,
+        "aisle": "Spices and Seasonings",
+        "image": "turmeric.jpg",
+        "consistency": "solid",
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "original": "১/২ চা চামচ হলুদ গুঁড়ো",
+        "originalName": "হলুদ গুঁড়ো",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2009,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাশ্মীরি লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "original": "১ চা চামচ কাশ্মীরি লাল লঙ্কার গুঁড়ো (ঐচ্ছিক, রঙের জন্য)",
+        "originalName": "কাশ্মীরি লাল লঙ্কার গুঁড়ো (ঐচ্ছিক, রঙের জন্য)",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": ["কাশ্মীরি", "লাল", "(ঐচ্ছিক, রঙের জন্য)"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 99228,
+        "aisle": "Spices and Seasonings",
+        "image": "garam-masala.jpg",
+        "consistency": "solid",
+        "name": "গরম মশলা গুঁড়ো",
+        "nameClean": "garam masala powder",
+        "original": "১/২ চা চামচ গরম মশলা গুঁড়ো",
+        "originalName": "গরম মশলা গুঁড়ো",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "২ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 19335,
+        "aisle": "Baking",
+        "image": "sugar-cubes.jpg",
+        "consistency": "solid",
+        "name": "চিনি",
+        "nameClean": "sugar",
+        "original": "১/২ চা চামচ চিনি (ঐচ্ছিক)",
+        "originalName": "চিনি (ঐচ্ছিক)",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": ["(ঐচ্ছিক)"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 1002030,
+        "aisle": "Spices and Seasonings",
+        "image": "pepper.jpg",
+        "consistency": "solid",
+        "name": "তেজপাতা",
+        "nameClean": "black peppercorns",
+        "original": "২টি তেজপাতা",
+        "originalName": "তেজপাতা",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 2006,
+        "aisle": "Produce",
+        "image": "cumin-seeds.jpg",
+        "consistency": "solid",
+        "name": "আস্ত জিরে",
+        "nameClean": "cumin seeds",
+        "original": "১/২ চা চামচ আস্ত জিরে",
+        "originalName": "আস্ত জিরে",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": ["আস্ত"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 1002034,
+        "aisle": "Spices and Seasonings",
+        "image": "cinnamon.jpg",
+        "consistency": "solid",
+        "name": "দারচিনি",
+        "nameClean": "cinnamon stick",
+        "original": "১টি ছোট দারচিনি",
+        "originalName": "দারচিনি",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["ছোট"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 1002006,
+        "aisle": "Spices and Seasonings",
+        "image": "star-anise.jpg",
+        "consistency": "solid",
+        "name": "এলাচ",
+        "nameClean": "cardamom pods",
+        "original": "২টি সবুজ এলাচ",
+        "originalName": "সবুজ এলাচ",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": ["সবুজ"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 2024,
+        "aisle": "Spices and Seasonings",
+        "image": "cloves.jpg",
+        "consistency": "solid",
+        "name": "লবঙ্গ",
+        "nameClean": "cloves",
+        "original": "২টি লবঙ্গ",
+        "originalName": "লবঙ্গ",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "চিংড়ি মাছ লবণ এবং হলুদ গুঁড়ো দিয়ে মাখিয়ে ৫-১০ মিনিট রেখে দিন।",
+            "ingredients": [
+              { "id": 15225, "name": "চিংড়ি মাছ", "image": "shrimp.png" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "একটি প্যানে ১ টেবিল চামচ সর্ষের তেল গরম করুন। চিংড়ি মাছ হালকা করে ভেজে তুলে নিন। বেশি ভাজবেন না, শক্ত হয়ে যেতে পারে।",
+            "ingredients": [
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 15225, "name": "চিংড়ি মাছ", "image": "shrimp.png" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "একই প্যানে বাকি সর্ষের তেল যোগ করুন। তেজপাতা, আস্ত জিরে, দারচিনি, এলাচ এবং লবঙ্গ ফোড়ন দিন। সুগন্ধ বের হলে পেঁয়াজ বাটা যোগ করুন এবং সোনালী হওয়া পর্যন্ত ভাজুন।",
+            "ingredients": [
+              { "id": 1002030, "name": "তেজপাতা", "image": "pepper.jpg" },
+              { "id": 1002034, "name": "দারচিনি", "image": "cinnamon.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 2006, "name": "আস্ত জিরে", "image": "cumin-seeds.jpg" },
+              { "id": 1002006, "name": "এলাচ", "image": "star-anise.jpg" },
+              { "id": 11282, "name": "পেঁয়াজ", "image": "brown-onion.png" },
+              { "id": 2024, "name": "লবঙ্গ", "image": "cloves.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 4,
+            "step": "আদা-রসুন বাটা যোগ করে ১-২ মিনিট ভাজুন যতক্ষণ না কাঁচা গন্ধ চলে যায়। এরপর হলুদ গুঁড়ো এবং কাশ্মীরি লাল লঙ্কার গুঁড়ো (যদি ব্যবহার করেন) যোগ করে ভালোভাবে মিশিয়ে নিন।",
+            "ingredients": [
+              { "id": 10011215, "name": "আদা-রসুন বাটা", "image": "ginger-garlic-paste.png" },
+              { "id": 2009, "name": "কাশ্মীরি লাল লঙ্কার গুঁড়ো", "image": "chili-powder.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "নারকেলের দুধ যোগ করুন এবং নেড়েচেড়ে মসলা মিশিয়ে নিন। লবণ এবং চিনি (যদি ব্যবহার করেন) যোগ করুন। মিশ্রণটি ফুটে উঠলে ভেজে রাখা চিংড়ি মাছ যোগ করুন।",
+            "ingredients": [
+              { "id": 12117, "name": "নারকেলের দুধ", "image": "coconut-milk.png" },
+              { "id": 15225, "name": "চিংড়ি মাছ", "image": "shrimp.png" },
+              { "id": 19335, "name": "চিনি", "image": "sugar-cubes.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "কম আঁচে ৫-৭ মিনিট বা চিংড়ি সেদ্ধ হওয়া পর্যন্ত রান্না করুন এবং ঝোল ঘন হয়ে আসা পর্যন্ত অপেক্ষা করুন। শেষে গরম মশলা গুঁড়ো ছড়িয়ে দিন।",
+            "ingredients": [
+              { "id": 99228, "name": "গরম মশলা গুঁড়ো", "image": "garam-masala.jpg" },
+              { "id": 15225, "name": "চিংড়ি", "image": "shrimp.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 7,
+            "step": "গরম ভাতের সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000005,
+    "title": "মিষ্টি দই (ঘরে তৈরি)",
+    "cuisine": "Bengali",
+    "description": "মিষ্টি দই বাংলার একটি ঐতিহ্যবাহী মিষ্টি খাবার, যা ঘন দুধ এবং চিনি দিয়ে তৈরি হয় এবং এর একটি অনন্য পোড়া ক্যারামেলের স্বাদ থাকে।",
+    "image": "mishti_doi.jpg",
+    "preparationTimeMinutes": 15,
+    "cookTimeMinutes": 45,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 1077,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "milk.png",
+        "consistency": "liquid",
+        "name": "পূর্ণ ননীযুক্ত দুধ (ফুল ফ্যাট দুধ)",
+        "nameClean": "milk",
+        "original": "১ লিটার পূর্ণ ননীযুক্ত দুধ (ফুল ফ্যাট দুধ)",
+        "originalName": "পূর্ণ ননীযুক্ত দুধ (ফুল ফ্যাট দুধ)",
+        "amount": 1.0,
+        "unit": "লিটার",
+        "meta": ["(ফুল ফ্যাট দুধ)", "পূর্ণ ননীযুক্ত"],
+        "measures": {
+          "us": { "amount": 4.227, "unitShort": "cups", "unitLong": "cups" },
+          "metric": { "amount": 1.0, "unitShort": "L", "unitLong": "liter" }
+        }
+      },
+      {
+        "id": 19335,
+        "aisle": "Baking",
+        "image": "sugar-cubes.png",
+        "consistency": "solid",
+        "name": "চিনি",
+        "nameClean": "sugar",
+        "original": "১/২ কাপ চিনি (বা স্বাদমতো)",
+        "originalName": "চিনি (বা স্বাদমতো)",
+        "amount": 0.5,
+        "unit": "কাপ",
+        "meta": ["(বা স্বাদমতো)"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "cup", "unitLong": "cups" },
+          "metric": { "amount": 100.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 1116,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "plain-yogurt.jpg",
+        "consistency": "liquid",
+        "name": "টক দই",
+        "nameClean": "plain yogurt",
+        "original": "২ টেবিল চামচ টক দই (বীজ বা স্টার্টার, জল ঝরানো)",
+        "originalName": "টক দই (বীজ বা স্টার্টার, জল ঝরানো)",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["জল ঝরানো", "(বীজ বা স্টার্টার)"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "একটি ভারী তলার সসপ্যানে দুধ নিয়ে মাঝারি আঁচে গরম করুন। দুধ ফোটা শুরু করলে আঁচ কমিয়ে দিন এবং দুধ অর্ধেক না হওয়া পর্যন্ত ৩০-৪০ মিনিট নাড়তে থাকুন। মাঝে মাঝে নেড়ে দিতে ভুলবেন না যাতে নিচে লেগে না যায়।",
+            "ingredients": [
+              { "id": 1077, "name": "দুধ", "image": "milk.png" }
+            ],
+            "equipment": [{ "id": 404752, "name": "সসপ্যান", "image": "sauce-pan.jpg" }]
+          },
+          {
+            "number": 2,
+            "step": "অন্য একটি ছোট প্যানে ২ টেবিল চামচ চিনি নিয়ে মাঝারি আঁচে ক্যারামেলাইজ করুন। চিনি গলে সোনালী বাদামী রঙ ধারণ করবে। সাবধানে ক্যারামেলকে ফুটন্ত দুধে যোগ করুন এবং দ্রুত নাড়ুন যাতে মিশে যায়।",
+            "ingredients": [
+              { "id": 19335, "name": "চিনি", "image": "sugar-cubes.jpg" },
+              { "id": 1077, "name": "দুধ", "image": "milk.png" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "বাকি চিনি দুধে যোগ করুন এবং ভালোভাবে মিশিয়ে নিন। দুধ ঠাণ্ডা হতে দিন যতক্ষণ না এটি উষ্ণ (আঙ্গুল ডুবানো যায় কিন্তু গরম নয়) হয়।",
+            "ingredients": [
+              { "id": 19335, "name": "চিনি", "image": "sugar-cubes.jpg" },
+              { "id": 1077, "name": "দুধ", "image": "milk.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 4,
+            "step": "একটি পাত্রে জল ঝরানো টক দই নিয়ে ভালোভাবে ফেটিয়ে নিন। এটি বীজের কাজ করবে।",
+            "ingredients": [
+              { "id": 1116, "name": "টক দই", "image": "plain-yogurt.jpg" }
+            ],
+            "equipment": [{ "id": 404783, "name": "পাত্র", "image": "bowl.jpg" }]
+          },
+          {
+            "number": 5,
+            "step": "উষ্ণ দুধে ফেটানো দই যোগ করুন এবং খুব ভালোভাবে মেশান। দুধ এবং দই যেন পুরোপুরি মিশে যায়।",
+            "ingredients": [
+              { "id": 1116, "name": "দই", "image": "plain-yogurt.jpg" },
+              { "id": 1077, "name": "দুধ", "image": "milk.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "মিশ্রণটি মাটির পাত্রে বা সিরামিক বাটিতে ঢেলে দিন। একটি পরিষ্কার কাপড় বা ঢাকনা দিয়ে ঢেকে উষ্ণ জায়গায় ৬-৮ ঘন্টা বা দই ভালোভাবে জমে না যাওয়া পর্যন্ত রেখে দিন।",
+            "ingredients": [
+              { "id": 0, "name": "মিশ্রণ", "image": "" },
+              { "id": 1001116, "name": "দই", "image": "yogurt-plain.jpg" }
+            ],
+            "equipment": [{ "id": 404783, "name": "বাটি", "image": "bowl.jpg" }]
+          },
+          {
+            "number": 7,
+            "step": "দই জমে গেলে ফ্রিজে ২-৩ ঘন্টা ঠাণ্ডা করে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 1001116, "name": "দই", "image": "yogurt-plain.jpg" }
+            ],
+            "equipment": [{ "id": 404783, "name": "ফ্রিজ", "image": "fridge.jpg" }]
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000006,
+    "title": "মাছের ঝোল (বেঙ্গলি ফিশ কারি)",
+    "cuisine": "Bengali",
+    "description": "মাছের ঝোল একটি হালকা এবং সুস্বাদু বাঙালি মাছের কারি, যা সাধারণত রুই বা কাতলা মাছ দিয়ে তৈরি হয়। এটি গরম ভাতের সাথে একটি আদর্শ খাবার।",
+    "image": "macher_jhol.jpg",
+    "preparationTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 15010,
+        "aisle": "Seafood",
+        "image": "fish-fillet.jpg",
+        "consistency": "solid",
+        "name": "রুই বা কাতলা মাছ",
+        "nameClean": "rohufish",
+        "original": "৫০০ গ্রাম রুই বা কাতলা মাছের টুকরা",
+        "originalName": "রুই বা কাতলা মাছের টুকরা",
+        "amount": 500.0,
+        "unit": "গ্রাম",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.102, "unitShort": "lb", "unitLong": "pounds" },
+          "metric": { "amount": 500.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 11282,
+        "aisle": "Produce",
+        "image": "brown-onion.png",
+        "consistency": "solid",
+        "name": "পেঁয়াজ",
+        "nameClean": "onion",
+        "original": "১টি বড় পেঁয়াজ, বাটা",
+        "originalName": "পেঁয়াজ, বাটা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["বাটা", "বড়"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 10011215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "solid",
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "original": "১ টেবিল চামচ আদা-রসুন বাটা",
+        "originalName": "আদা-রসুন বাটা",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2043,
+        "aisle": "Spices and Seasonings",
+        "image": "turmeric.jpg",
+        "consistency": "solid",
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "original": "১ চা চামচ হলুদ গুঁড়ো",
+        "originalName": "হলুদ গুঁড়ো",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2009,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "original": "১ চা চামচ লাল লঙ্কার গুঁড়ো",
+        "originalName": "লাল লঙ্কার গুঁড়ো",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": ["লাল"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2014,
+        "aisle": "Spices and Seasonings",
+        "image": "ground-cumin.jpg",
+        "consistency": "solid",
+        "name": "জিরে গুঁড়ো",
+        "nameClean": "cumin powder",
+        "original": "১ চা চামচ জিরে গুঁড়ো",
+        "originalName": "জিরে গুঁড়ো",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2001,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "ধনে গুঁড়ো",
+        "nameClean": "coriander powder",
+        "original": "১ চা চামচ ধনে গুঁড়ো",
+        "originalName": "ধনে গুঁড়ো",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "৩ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 3.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 3.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "২-৩টি কাঁচা লঙ্কা, চেরা",
+        "originalName": "কাঁচা লঙ্কা, চেরা",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": ["চেরা"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "liquid",
+        "name": "জল",
+        "nameClean": "water",
+        "original": "২ কাপ জল",
+        "originalName": "জল",
+        "amount": 2.0,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "cups", "unitLong": "cups" },
+          "metric": { "amount": 473.176, "unitShort": "মিলি", "unitLong": "milliliters" }
+        }
+      },
+      {
+        "id": 11352,
+        "aisle": "Produce",
+        "image": "potato.jpg",
+        "consistency": "solid",
+        "name": "আলু",
+        "nameClean": "potato",
+        "original": "১টি মাঝারি আলু, লম্বা করে কাটা (ঐচ্ছিক)",
+        "originalName": "আলু, লম্বা করে কাটা (ঐচ্ছিক)",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["লম্বা করে কাটা", "মাঝারি", "(ঐচ্ছিক)"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "মাছের টুকরোগুলো লবণ ও হলুদ গুঁড়ো দিয়ে মাখিয়ে ১০-১৫ মিনিট রেখে দিন।",
+            "ingredients": [
+              { "id": 15010, "name": "মাছ", "image": "fish-fillet.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "একটি কড়াইতে সর্ষের তেল গরম করুন। মাছের টুকরোগুলো সোনালী হওয়া পর্যন্ত হালকা করে ভেজে তুলে নিন।",
+            "ingredients": [
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 15010, "name": "মাছ", "image": "fish-fillet.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "কড়াই", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "একই তেলে পেঁয়াজ বাটা যোগ করুন এবং সোনালী হওয়া পর্যন্ত ভাজুন। আদা-রসুন বাটা যোগ করে কাঁচা গন্ধ চলে যাওয়া পর্যন্ত ভাজুন।",
+            "ingredients": [
+              { "id": 10011215, "name": "আদা-রসুন বাটা", "image": "ginger-garlic-paste.png" },
+              { "id": 11282, "name": "পেঁয়াজ", "image": "brown-onion.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 4,
+            "step": "এবার হলুদ গুঁড়ো, লাল লঙ্কার গুঁড়ো, জিরে গুঁড়ো এবং ধনে গুঁড়ো যোগ করুন। সামান্য জল দিয়ে মশলা ভালোভাবে কষিয়ে নিন যতক্ষণ না তেল ছেড়ে আসে।",
+            "ingredients": [
+              { "id": 2009, "name": "লাল লঙ্কার গুঁড়ো", "image": "chili-powder.jpg" },
+              { "id": 2001, "name": "ধনে গুঁড়ো", "image": "chili-powder.jpg" },
+              { "id": 2014, "name": "জিরে গুঁড়ো", "image": "ground-cumin.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "যদি আলু ব্যবহার করেন, তাহলে এই পর্যায়ে লম্বা করে কাটা আলু যোগ করুন এবং মশলার সাথে ২-৩ মিনিট কষিয়ে নিন।",
+            "ingredients": [
+              { "id": 11352, "name": "আলু", "image": "potato.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "২ কাপ জল এবং স্বাদমতো লবণ যোগ করুন। ঝোল ফুটে উঠলে ভেজে রাখা মাছের টুকরোগুলো সাবধানে যোগ করুন।",
+            "ingredients": [
+              { "id": 15010, "name": "মাছ", "image": "fish-fillet.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 7,
+            "step": "ঢেকে মাঝারি আঁচে ১০-১২ মিনিট রান্না করুন যতক্ষণ না মাছ সেদ্ধ হয় এবং ঝোল ঘন হয়। শেষে চেরা কাঁচা লঙ্কা যোগ করে আরও ১-২ মিনিট রান্না করুন।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 15010, "name": "মাছ", "image": "fish-fillet.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 8,
+            "step": "গরম ভাতের সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000007,
+    "title": "ছোলার ডাল (নারকেল ও চিনি দিয়ে ছোলার ডাল)",
+    "cuisine": "Bengali",
+    "description": "ছোলার ডাল একটি মিষ্টি ও সুস্বাদু বাঙালি ডাল, যা নারকেল এবং সামান্য চিনি দিয়ে তৈরি হয়। এটি লুচি, পরোটা বা রুটির সাথে খুব জনপ্রিয়।",
+    "image": "cholar_dal.jpg",
+    "preparationTimeMinutes": 15,
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 16057,
+        "aisle": "Pasta and Rice",
+        "image": "chickpeas.png",
+        "consistency": "solid",
+        "name": "ছোলার ডাল",
+        "nameClean": "chickpeas",
+        "original": "১ কাপ ছোলার ডাল",
+        "originalName": "ছোলার ডাল",
+        "amount": 1.0,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "cup", "unitLong": "cup" },
+          "metric": { "amount": 198.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 12104,
+        "aisle": "Produce",
+        "image": "coconut-shredded.png",
+        "consistency": "solid",
+        "name": "নারকেল কুচি",
+        "nameClean": "shredded coconut",
+        "original": "১/৪ কাপ নারকেল কুচি",
+        "originalName": "নারকেল কুচি",
+        "amount": 0.25,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.25, "unitShort": "cup", "unitLong": "cups" },
+          "metric": { "amount": 25.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 19335,
+        "aisle": "Baking",
+        "image": "sugar-cubes.jpg",
+        "consistency": "solid",
+        "name": "চিনি",
+        "nameClean": "sugar",
+        "original": "১-২ চা চামচ চিনি (স্বাদমতো)",
+        "originalName": "চিনি (স্বাদমতো)",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": ["(স্বাদমতো)"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল বা ঘি",
+        "nameClean": "mustard oil",
+        "original": "২ টেবিল চামচ সর্ষের তেল বা ঘি",
+        "originalName": "সর্ষের তেল বা ঘি",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2006,
+        "aisle": "Produce",
+        "image": "cumin-seeds.jpg",
+        "consistency": "solid",
+        "name": "আস্ত জিরে",
+        "nameClean": "cumin seeds",
+        "original": "১/২ চা চামচ আস্ত জিরে",
+        "originalName": "আস্ত জিরে",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": ["আস্ত"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 1002034,
+        "aisle": "Spices and Seasonings",
+        "image": "cinnamon.jpg",
+        "consistency": "solid",
+        "name": "দারচিনি",
+        "nameClean": "cinnamon stick",
+        "original": "১টি ছোট দারচিনি",
+        "originalName": "দারচিনি",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["ছোট"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 1002006,
+        "aisle": "Spices and Seasonings",
+        "image": "star-anise.jpg",
+        "consistency": "solid",
+        "name": "এলাচ",
+        "nameClean": "cardamom pods",
+        "original": "২টি সবুজ এলাচ",
+        "originalName": "সবুজ এলাচ",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": ["সবুজ"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 1002030,
+        "aisle": "Spices and Seasonings",
+        "image": "pepper.jpg",
+        "consistency": "solid",
+        "name": "শুকনো লঙ্কা",
+        "nameClean": "black peppercorns",
+        "original": "২টি শুকনো লঙ্কা",
+        "originalName": "শুকনো লঙ্কা",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "১-২টি কাঁচা লঙ্কা, চেরা",
+        "originalName": "কাঁচা লঙ্কা, চেরা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["চেরা"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "solid",
+        "name": "আদা বাটা",
+        "nameClean": "ginger",
+        "original": "১ চা চামচ আদা বাটা",
+        "originalName": "আদা বাটা",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "liquid",
+        "name": "জল",
+        "nameClean": "water",
+        "original": "৩ কাপ জল",
+        "originalName": "জল",
+        "amount": 3.0,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "cups", "unitLong": "cups" },
+          "metric": { "amount": 709.764, "unitShort": "মিলি", "unitLong": "milliliters" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "ছোলার ডাল ৩০ মিনিট থেকে ১ ঘন্টা জলে ভিজিয়ে রাখুন। জল ঝরিয়ে নিন।",
+            "ingredients": [
+              { "id": 16057, "name": "ছোলার ডাল", "image": "chickpeas.png" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "একটি প্রেসার কুকারে বা সসপ্যানে ডাল, ৩ কাপ জল এবং সামান্য লবণ দিয়ে সেদ্ধ করুন। প্রেসার কুকারে ২-৩ সিটি দিন বা সসপ্যানে ডাল নরম হওয়া পর্যন্ত সেদ্ধ করুন।",
+            "ingredients": [
+              { "id": 16057, "name": "ডাল", "image": "lentils-brown.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": [
+              { "id": 404660, "name": "প্রেসার কুকার", "image": "pressure-cooker.jpg" },
+              { "id": 404752, "name": "সসপ্যান", "image": "sauce-pan.jpg" }
+            ]
+          },
+          {
+            "number": 3,
+            "step": "একটি কড়াইতে সর্ষের তেল বা ঘি গরম করুন। শুকনো লঙ্কা, আস্ত জিরে, দারচিনি এবং এলাচ ফোড়ন দিন।",
+            "ingredients": [
+              { "id": 1002030, "name": "শুকনো লঙ্কা", "image": "pepper.jpg" },
+              { "id": 1002034, "name": "দারচিনি", "image": "cinnamon.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 2006, "name": "আস্ত জিরে", "image": "cumin-seeds.jpg" },
+              { "id": 1002006, "name": "এলাচ", "image": "star-anise.jpg" },
+              { "id": 4053, "name": "ঘি", "image": "ghee.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "কড়াই", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 4,
+            "step": "আদা বাটা এবং চেরা কাঁচা লঙ্কা যোগ করুন। ১ মিনিট ভাজুন।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 11215, "name": "আদা বাটা", "image": "ginger.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "সেদ্ধ ডাল যোগ করুন এবং ভালোভাবে মিশিয়ে নিন। নারকেল কুচি এবং চিনি যোগ করুন।",
+            "ingredients": [
+              { "id": 12104, "name": "নারকেল কুচি", "image": "coconut-shredded.png" },
+              { "id": 19335, "name": "চিনি", "image": "sugar-cubes.jpg" },
+              { "id": 16057, "name": "ডাল", "image": "lentils-brown.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "কম আঁচে ৫-৭ মিনিট রান্না করুন যতক্ষণ না ডাল ঘন হয় এবং সমস্ত স্বাদ মিশে যায়।",
+            "ingredients": [
+              { "id": 16057, "name": "ডাল", "image": "lentils-brown.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 7,
+            "step": "গরম লুচি, পরোটা বা রুটির সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 18364, "name": "পরোটা", "image": "naan.jpg" },
+              { "id": 18079, "name": "রুটি", "image": "pita-bread.jpg" },
+              { "id": 0, "name": "লুচি", "image": "" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000008,
+    "title": "বেগুন ভাজা (ভাজা বেগুন)",
+    "cuisine": "Bengali",
+    "description": "বেগুন ভাজা একটি সহজ এবং জনপ্রিয় বাঙালি পদ, যেখানে বেগুনের টুকরোগুলো মশলা দিয়ে মেখে তেলে ভাজা হয়। এটি গরম ভাত বা খিচুড়ির সাথে একটি চমৎকার সাইড ডিশ।",
+    "image": "begun_bhaja.jpg",
+    "preparationTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": 11209,
+        "aisle": "Produce",
+        "image": "eggplant.png",
+        "consistency": "solid",
+        "name": "বেগুন",
+        "nameClean": "eggplant",
+        "original": "১টি বড় বা ২টি মাঝারি বেগুন, গোল করে কাটা",
+        "originalName": "বেগুন, গোল করে কাটা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["গোল করে কাটা", "বড়", "মাঝারি"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 2043,
+        "aisle": "Spices and Seasonings",
+        "image": "turmeric.jpg",
+        "consistency": "solid",
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "original": "১/২ চা চামচ হলুদ গুঁড়ো",
+        "originalName": "হলুদ গুঁড়ো",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2009,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "original": "১/২ চা চামচ লাল লঙ্কার গুঁড়ো (ঐচ্ছিক)",
+        "originalName": "লাল লঙ্কার গুঁড়ো (ঐচ্ছিক)",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": ["লাল", "(ঐচ্ছিক)"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2014,
+        "aisle": "Spices and Seasonings",
+        "image": "ground-cumin.jpg",
+        "consistency": "solid",
+        "name": "জিরে গুঁড়ো",
+        "nameClean": "cumin powder",
+        "original": "১/২ চা চামচ জিরে গুঁড়ো (ঐচ্ছিক)",
+        "originalName": "জিরে গুঁড়ো (ঐচ্ছিক)",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": ["(ঐচ্ছিক)"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "৩-৪ টেবিল চামচ সর্ষের তেল (ভাজার জন্য)",
+        "originalName": "সর্ষের তেল (ভাজার জন্য)",
+        "amount": 3.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["ভাজার জন্য"],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 3.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "বেগুন গোল বা লম্বা করে কেটে নিন। কাটার পর জলে ভিজিয়ে রাখুন যাতে কালো না হয়।",
+            "ingredients": [
+              { "id": 11209, "name": "বেগুন", "image": "eggplant.png" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "জল ঝরিয়ে বেগুনের টুকরোগুলো একটি পাত্রে নিন। এতে হলুদ গুঁড়ো, লাল লঙ্কার গুঁড়ো (যদি ব্যবহার করেন), জিরে গুঁড়ো (যদি ব্যবহার করেন) এবং স্বাদমতো লবণ দিয়ে ভালোভাবে মেখে নিন।",
+            "ingredients": [
+              { "id": 2009, "name": "লাল লঙ্কার গুঁড়ো", "image": "chili-powder.jpg" },
+              { "id": 2014, "name": "জিরে গুঁড়ো", "image": "ground-cumin.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 11209, "name": "বেগুন", "image": "eggplant.png" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": [{ "id": 404783, "name": "পাত্র", "image": "bowl.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "একটি প্যানে সর্ষের তেল গরম করুন। তেল ভালোভাবে গরম হলে মাঝারি আঁচে বেগুনের টুকরোগুলো সাবধানে দিন।",
+            "ingredients": [
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 11209, "name": "বেগুন", "image": "eggplant.png" }
+            ],
+            "equipment": [{ "id": 404645, "name": "প্যান", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 4,
+            "step": "প্রতি পাশে সোনালী বাদামী এবং নরম হওয়া পর্যন্ত ভাজুন। প্রয়োজনে আরও তেল যোগ করতে পারেন।",
+            "ingredients": [
+              { "id": 4053, "name": "তেল", "image": "vegetable-oil.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "ভাজা বেগুনগুলো টিস্যু পেপারে তুলে অতিরিক্ত তেল ঝরিয়ে নিন।",
+            "ingredients": [
+              { "id": 11209, "name": "বেগুন", "image": "eggplant.png" }
+            ],
+            "equipment": [{ "id": 405007, "name": "টিস্যু পেপার", "image": "paper-towels.jpg" }]
+          },
+          {
+            "number": 6,
+            "step": "গরম ভাত, ডাল বা খিচুড়ির সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" },
+              { "id": 16057, "name": "ডাল", "image": "lentils-brown.jpg" },
+              { "id": 0, "name": "খিচুড়ি", "image": "" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000009,
+    "title": "শুক্তো (মিশ্রি সবজির তেতো ঝোল)",
+    "cuisine": "Bengali",
+    "description": "শুক্তো একটি ঐতিহ্যবাহী বাঙালি নিরামিষ পদ, যা বিভিন্ন সবজি এবং তেতো স্বাদের মশলা দিয়ে তৈরি হয়। এটি খাবারের শুরুতে রুচি বর্ধক হিসেবে পরিবেশন করা হয়।",
+    "image": "shukto.jpg",
+    "preparationTimeMinutes": 25,
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 11007,
+        "aisle": "Produce",
+        "image": "bitter-melon.jpg",
+        "consistency": "solid",
+        "name": "করলা",
+        "nameClean": "bitter melon",
+        "original": "১টি মাঝারি করলা, পাতলা করে কাটা",
+        "originalName": "করলা, পাতলা করে কাটা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["পাতলা করে কাটা", "মাঝারি"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 11352,
+        "aisle": "Produce",
+        "image": "potato.jpg",
+        "consistency": "solid",
+        "name": "আলু",
+        "nameClean": "potato",
+        "original": "১টি মাঝারি আলু, লম্বা করে কাটা",
+        "originalName": "আলু, লম্বা করে কাটা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["লম্বা করে কাটা", "মাঝারি"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 11156,
+        "aisle": "Produce",
+        "image": "drumstick.png",
+        "consistency": "solid",
+        "name": "সজনে ডাঁটা",
+        "nameClean": "drumstick",
+        "original": "১টি সজনে ডাঁটা, ২ ইঞ্চি টুকরা করা",
+        "originalName": "সজনে ডাঁটা, ২ ইঞ্চি টুকরা করা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["২ ইঞ্চি টুকরা করা"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 11124,
+        "aisle": "Produce",
+        "image": "carrot.png",
+        "consistency": "solid",
+        "name": "গাজর",
+        "nameClean": "carrot",
+        "original": "১টি ছোট গাজর, লম্বা করে কাটা",
+        "originalName": "গাজর, লম্বা করে কাটা",
+        "amount": 1.0,
+        "unit": "টি",
+        "meta": ["লম্বা করে কাটা", "ছোট"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 1.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 11090,
+        "aisle": "Produce",
+        "image": "green-beans.jpg",
+        "consistency": "solid",
+        "name": "বরবটি",
+        "nameClean": "green beans",
+        "original": "১/২ কাপ বরবটি, টুকরা করা",
+        "originalName": "বরবটি, টুকরা করা",
+        "amount": 0.5,
+        "unit": "কাপ",
+        "meta": ["টুকরা করা"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "cup", "unitLong": "cups" },
+          "metric": { "amount": 60.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 11052,
+        "aisle": "Produce",
+        "image": "cabbage.png",
+        "consistency": "solid",
+        "name": "পেঁপে",
+        "nameClean": "cabbage",
+        "original": "১/২ কাপ কাঁচা পেঁপে, লম্বা করে কাটা",
+        "originalName": "কাঁচা পেঁপে, লম্বা করে কাটা",
+        "amount": 0.5,
+        "unit": "কাপ",
+        "meta": ["লম্বা করে কাটা", "কাঁচা"],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "cup", "unitLong": "cups" },
+          "metric": { "amount": 60.0, "unitShort": "g", "unitLong": "grams" }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "ginger.png",
+        "consistency": "solid",
+        "name": "আদা বাটা",
+        "nameClean": "ginger",
+        "original": "১ টেবিল চামচ আদা বাটা",
+        "originalName": "আদা বাটা",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2046,
+        "aisle": "Spices and Seasonings",
+        "image": "mustard-seeds.png",
+        "consistency": "solid",
+        "name": "সাদা সর্ষে",
+        "nameClean": "yellow mustard seeds",
+        "original": "১ টেবিল চামচ সাদা সর্ষে",
+        "originalName": "সাদা সর্ষে",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["সাদা"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 93681,
+        "aisle": "Produce",
+        "image": "poppy-seeds.png",
+        "consistency": "solid",
+        "name": "পোস্ত দানা",
+        "nameClean": "poppy seeds",
+        "original": "১ টেবিল চামচ পোস্ত দানা",
+        "originalName": "পোস্ত দানা",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "২টি কাঁচা লঙ্কা",
+        "originalName": "কাঁচা লঙ্কা",
+        "amount": 2.0,
+        "unit": "টি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 2.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "২ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 19335,
+        "aisle": "Baking",
+        "image": "sugar-cubes.jpg",
+        "consistency": "solid",
+        "name": "চিনি",
+        "nameClean": "sugar",
+        "original": "১ চা চামচ চিনি (স্বাদমতো)",
+        "originalName": "চিনি (স্বাদমতো)",
+        "amount": 1.0,
+        "unit": "চা চামচ",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+          "metric": { "amount": 1.0, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2006,
+        "aisle": "Produce",
+        "image": "cumin-seeds.jpg",
+        "consistency": "solid",
+        "name": "পাঁচ ফোড়ন",
+        "nameClean": "cumin seeds",
+        "original": "১/২ চা চামচ পাঁচ ফোড়ন",
+        "originalName": "পাঁচ ফোড়ন",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 2028,
+        "aisle": "Spices and Seasonings",
+        "image": "asafoetida.jpg",
+        "consistency": "solid",
+        "name": "হিং",
+        "nameClean": "asafoetida",
+        "original": "এক চিমটি হিং",
+        "originalName": "হিং",
+        "amount": 1.0,
+        "unit": "চিমটি",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "pinch", "unitLong": "pinch" },
+          "metric": { "amount": 1.0, "unitShort": "চিমটি", "unitLong": "চিমটি" }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "liquid",
+        "name": "জল",
+        "nameClean": "water",
+        "original": "১.৫ কাপ জল",
+        "originalName": "জল",
+        "amount": 1.5,
+        "unit": "কাপ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 1.5, "unitShort": "cups", "unitLong": "cups" },
+          "metric": { "amount": 354.882, "unitShort": "মিলি", "unitLong": "milliliters" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "সবজিগুলো (করলা, আলু, সজনে ডাঁটা, গাজর, বরবটি, পেঁপে) লম্বা বা আপনার পছন্দমতো আকারে কেটে নিন। করলা কেটে সামান্য লবণ মেখে ১০ মিনিট রেখে জল দিয়ে ধুয়ে নিন যাতে তেতো ভাব কিছুটা কমে।",
+            "ingredients": [
+              { "id": 11007, "name": "করলা", "image": "bitter-melon.jpg" },
+              { "id": 11156, "name": "সজনে ডাঁটা", "image": "drumstick.png" },
+              { "id": 11124, "name": "গাজর", "image": "carrot.png" },
+              { "id": 11090, "name": "বরবটি", "image": "green-beans.jpg" },
+              { "id": 11052, "name": "পেঁপে", "image": "cabbage.png" },
+              { "id": 11352, "name": "আলু", "image": "potato.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "সাদা সর্ষে, পোস্ত দানা এবং কাঁচা লঙ্কা সামান্য জল দিয়ে মিহি করে বেটে নিন।",
+            "ingredients": [
+              { "id": 2046, "name": "সাদা সর্ষে", "image": "mustard-seeds.png" },
+              { "id": 93681, "name": "পোস্ত দানা", "image": "poppy-seeds.png" },
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 3,
+            "step": "একটি কড়াইতে সর্ষের তেল গরম করুন। প্রথমে করলা হালকা সোনালী করে ভেজে তুলে নিন।",
+            "ingredients": [
+              { "id": 11007, "name": "করলা", "image": "bitter-melon.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" }
+            ],
+            "equipment": [{ "id": 404645, "name": "কড়াই", "image": "frying-pan.jpg" }]
+          },
+          {
+            "number": 4,
+            "step": "একই তেলে পাঁচ ফোড়ন এবং হিং ফোড়ন দিন। সুগন্ধ বের হলে আলু, সজনে ডাঁটা, গাজর, বরবটি, পেঁপে যোগ করুন। লবণ ও হলুদ গুঁড়ো দিয়ে ৫-৭ মিনিট ভাজুন।",
+            "ingredients": [
+              { "id": 11156, "name": "সজনে ডাঁটা", "image": "drumstick.png" },
+              { "id": 11124, "name": "গাজর", "image": "carrot.png" },
+              { "id": 11090, "name": "বরবটি", "image": "green-beans.jpg" },
+              { "id": 11052, "name": "পেঁপে", "image": "cabbage.png" },
+              { "id": 2006, "name": "পাঁচ ফোড়ন", "image": "cumin-seeds.jpg" },
+              { "id": 11352, "name": "আলু", "image": "potato.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 2028, "name": "হিং", "image": "asafoetida.jpg" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "আদা বাটা এবং বেটে রাখা সর্ষে-পোস্ত-কাঁচা লঙ্কার মিশ্রণ যোগ করুন। ভালোভাবে মিশিয়ে ২-৩ মিনিট কষিয়ে নিন।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 11215, "name": "আদা বাটা", "image": "ginger.png" },
+              { "id": 93681, "name": "পোস্ত", "image": "poppy-seeds.png" },
+              { "id": 2046, "name": "সর্ষে", "image": "mustard-seeds.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "১.৫ কাপ জল এবং চিনি যোগ করুন। ঢেকে সবজি নরম হওয়া পর্যন্ত রান্না করুন।",
+            "ingredients": [
+              { "id": 19335, "name": "চিনি", "image": "sugar-cubes.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 7,
+            "step": "সবজি সেদ্ধ হয়ে গেলে ভেজে রাখা করলা যোগ করুন এবং আলতোভাবে মিশিয়ে নিন। আরও ২-৩ মিনিট রান্না করুন।",
+            "ingredients": [
+              { "id": 11007, "name": "করলা", "image": "bitter-melon.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 8,
+            "step": "গরম ভাতের সাথে পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  },
+  {
+    "id": 1000010,
+    "title": "ভাপা ইলিশ (কলা পাতায় ভাপানো ইলিশ)",
+    "cuisine": "Bengali",
+    "description": "ভাপা ইলিশ একটি ক্লাসিক বাঙালি পদ, যেখানে ইলিশ মাছ সর্ষে, কাঁচা লঙ্কা এবং সর্ষের তেল দিয়ে মেখে কলা পাতায় মুড়ে ভাপানো হয়। এর অনন্য সুগন্ধ এবং স্বাদ অতুলনীয়।",
+    "image": "bhetki_paturi.jpg",
+    "preparationTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": 15009,
+        "aisle": "Seafood",
+        "image": "hilsa.png",
+        "consistency": "solid",
+        "name": "ইলিশ মাছ",
+        "nameClean": "hilsa fish",
+        "original": "৪ টুকরা ইলিশ মাছ",
+        "originalName": "ইলিশ মাছ",
+        "amount": 4.0,
+        "unit": "টুকরা",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "pieces", "unitLong": "pieces" },
+          "metric": { "amount": 4.0, "unitShort": "টুকরা", "unitLong": "টুকরা" }
+        }
+      },
+      {
+        "id": 2046,
+        "aisle": "Spices and Seasonings",
+        "image": "mustard-seeds.png",
+        "consistency": "solid",
+        "name": "কালো সর্ষে",
+        "nameClean": "black mustard seeds",
+        "original": "২ টেবিল চামচ কালো সর্ষে",
+        "originalName": "কালো সর্ষে",
+        "amount": 2.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["কালো"],
+        "measures": {
+          "us": { "amount": 2.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 2.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2046,
+        "aisle": "Spices and Seasonings",
+        "image": "mustard-seeds.png",
+        "consistency": "solid",
+        "name": "সাদা সর্ষে",
+        "nameClean": "yellow mustard seeds",
+        "original": "১ টেবিল চামচ সাদা সর্ষে",
+        "originalName": "সাদা সর্ষে",
+        "amount": 1.0,
+        "unit": "টেবিল চামচ",
+        "meta": ["সাদা"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 1.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 1002012,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "solid",
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili powder",
+        "original": "৪-৫টি কাঁচা লঙ্কা (২টি বাটার জন্য, বাকি চেরা)",
+        "originalName": "কাঁচা লঙ্কা (২টি বাটার জন্য, বাকি চেরা)",
+        "amount": 4.0,
+        "unit": "টি",
+        "meta": ["চেরা", "(২টি বাটার জন্য, বাকি)"],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 4.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "oil-red.jpg",
+        "consistency": "liquid",
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "original": "৩ টেবিল চামচ সর্ষের তেল",
+        "originalName": "সর্ষের তেল",
+        "amount": 3.0,
+        "unit": "টেবিল চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 3.0, "unitShort": "Tbs", "unitLong": "Tbsps" },
+          "metric": { "amount": 3.0, "unitShort": "টেবিল চামচ", "unitLong": "টেবিল চামচ" }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "solid",
+        "name": "লবণ",
+        "nameClean": "salt",
+        "original": "স্বাদমতো লবণ",
+        "originalName": "লবণ",
+        "amount": 1.0,
+        "unit": "পরিবেশন",
+        "meta": ["স্বাদমতো"],
+        "measures": {
+          "us": { "amount": 1.0, "unitShort": "serving", "unitLong": "serving" },
+          "metric": { "amount": 1.0, "unitShort": "পরিবেশন", "unitLong": "পরিবেশন" }
+        }
+      },
+      {
+        "id": 2043,
+        "aisle": "Spices and Seasonings",
+        "image": "turmeric.jpg",
+        "consistency": "solid",
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "original": "১/২ চা চামচ হলুদ গুঁড়ো",
+        "originalName": "হলুদ গুঁড়ো",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "meta": [],
+        "measures": {
+          "us": { "amount": 0.5, "unitShort": "tsp", "unitLong": "teaspoons" },
+          "metric": { "amount": 0.5, "unitShort": "চা চামচ", "unitLong": "চা চামচ" }
+        }
+      },
+      {
+        "id": 11116,
+        "aisle": "Produce",
+        "image": "banana-leaves.jpg",
+        "consistency": "solid",
+        "name": "কলা পাতা",
+        "nameClean": "banana leaves",
+        "original": "৪টি কলা পাতা (বর্গাকার টুকরা করা)",
+        "originalName": "কলা পাতা (বর্গাকার টুকরা করা)",
+        "amount": 4.0,
+        "unit": "টি",
+        "meta": ["বর্গাকার টুকরা করা"],
+        "measures": {
+          "us": { "amount": 4.0, "unitShort": "", "unitLong": "" },
+          "metric": { "amount": 4.0, "unitShort": "টি", "unitLong": "টি" }
+        }
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "কালো ও সাদা সর্ষে এবং ২টি কাঁচা লঙ্কা সামান্য জল দিয়ে মিহি করে বেটে নিন।",
+            "ingredients": [
+              { "id": 2046, "name": "সাদা সর্ষে", "image": "mustard-seeds.png" },
+              { "id": 2046, "name": "কালো সর্ষে", "image": "mustard-seeds.png" },
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "ইলিশ মাছের টুকরোগুলো একটি পাত্রে নিন। এতে বেটে রাখা সর্ষে-কাঁচা লঙ্কার পেস্ট, হলুদ গুঁড়ো, স্বাদমতো লবণ এবং ২ টেবিল চামচ সর্ষের তেল দিয়ে ভালোভাবে মেখে নিন।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 2043, "name": "হলুদ গুঁড়ো", "image": "turmeric.jpg" },
+              { "id": 15009, "name": "ইলিশ মাছ", "image": "hilsa.png" },
+              { "id": 2047, "name": "লবণ", "image": "salt.jpg" },
+              { "id": 0, "name": "সর্ষে", "image": "mustard.jpg" }
+            ],
+            "equipment": [{ "id": 404783, "name": "পাত্র", "image": "bowl.jpg" }]
+          },
+          {
+            "number": 3,
+            "step": "কলা পাতাগুলো আগুনে হালকা সেঁকে নিন যাতে নরম হয় এবং মুড়তে সুবিধা হয়।",
+            "ingredients": [
+              { "id": 11116, "name": "কলা পাতা", "image": "banana-leaves.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 4,
+            "step": "প্রতিটি কলা পাতার টুকরার মাঝখানে একটি করে ম্যারিনেট করা মাছের টুকরা রাখুন। উপরে একটি চেরা কাঁচা লঙ্কা এবং সামান্য সর্ষের তেল ছড়িয়ে দিন।",
+            "ingredients": [
+              { "id": 1002012, "name": "কাঁচা লঙ্কা", "image": "chili-powder.jpg" },
+              { "id": 4053, "name": "সর্ষের তেল", "image": "oil-red.jpg" },
+              { "id": 15009, "name": "মাছ", "image": "fish-fillet.jpg" },
+              { "id": 11116, "name": "কলা পাতা", "image": "banana-leaves.jpg" }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "কলা পাতাগুলো ভালোভাবে মুড়ে সুতা দিয়ে বেঁধে দিন বা টুথপিক দিয়ে আটকে দিন যাতে খুলে না যায়।",
+            "ingredients": [
+              { "id": 11116, "name": "কলা পাতা", "image": "banana-leaves.jpg" }
+            ],
+            "equipment": [{ "id": 404746, "name": "টুথপিক", "image": "toothpicks.jpg" }]
+          },
+          {
+            "number": 6,
+            "step": "একটি স্টিমারে জল গরম করুন। জল ফুটে উঠলে মুড়ানো মাছের প্যাকেটগুলো স্টিমারে বসিয়ে দিন। ঢেকে ১৫-২০ মিনিট ভাপিয়ে নিন।",
+            "ingredients": [
+              { "id": 15010, "name": "মাছ", "image": "fish-fillet.jpg" },
+              { "id": 14412, "name": "জল", "image": "water.png" }
+            ],
+            "equipment": [{ "id": 404706, "name": "স্টিমার", "image": "steamer.jpg" }]
+          },
+          {
+            "number": 7,
+            "step": "গরম ভাতের সাথে কলা পাতা সহ পরিবেশন করুন।",
+            "ingredients": [
+              { "id": 20444, "name": "ভাত", "image": "uncooked-white-rice.png" },
+              { "id": 11116, "name": "কলা পাতা", "image": "banana-leaves.jpg" }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-07-07T17:36:46.000Z",
+    "updatedAt": "2025-07-07T17:36:46.000Z"
+  }
+]
