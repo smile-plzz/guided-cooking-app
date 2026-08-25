@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { EmptyState, Modal, Stepper } from '../components/ui.jsx';
@@ -16,7 +16,7 @@ import {
 import { extractDurations, formatDuration } from '../lib/timers.js';
 import { scaleIngredient } from '../lib/units.js';
 import { displayTitle, useRecipe } from '../lib/recipes.js';
-import { KEYS, usePersistentState } from '../lib/storage.js';
+import { KEYS, readStorage, usePersistentState } from '../lib/storage.js';
 import { playAlarm, useTimers, useWakeLock } from '../lib/useTimers.js';
 import { useToast } from '../context/AppProviders.jsx';
 
@@ -91,7 +91,7 @@ export function CookMode() {
   const { notify } = useToast();
   const { data: recipe, isLoading, isError } = useRecipe(id);
 
-  const [progressStore, setProgressStore] = usePersistentState(KEYS.cookProgress, {});
+  const [, setProgressStore] = usePersistentState(KEYS.cookProgress, {});
   const [index, setIndex] = useState(0);
   const [done, setDone] = useState([]);
   const [servings, setServings] = useState(null);
@@ -110,18 +110,26 @@ export function CookMode() {
   useWakeLock(Boolean(recipe) && !finished);
 
   const steps = useMemo(() => recipe?.steps || [], [recipe]);
-  const saved = recipe ? progressStore[recipe.id] : null;
 
   // Offer to pick up where the last session stopped, rather than silently
-  // jumping to a step the cook may not have expected.
+  // jumping to a step the cook may not have expected. This reads the stored
+  // progress once, the first time the recipe resolves — watching the store
+  // itself would re-open the dialog on every step, since each step writes to it.
+  const offeredResume = useRef(false);
   useEffect(() => {
-    if (!recipe || !saved || saved.index <= 0 || saved.index >= steps.length) return;
-    setResumeOffer(saved);
-  }, [recipe, saved, steps.length]);
+    if (!recipe || offeredResume.current) return;
+    offeredResume.current = true;
+    const stored = readStorage(KEYS.cookProgress, {})[recipe.id];
+    if (stored && stored.index > 0 && stored.index < steps.length) {
+      setResumeOffer(stored);
+    }
+  }, [recipe, steps.length]);
 
   // Persist progress as the cook moves, so closing the tab is recoverable.
   useEffect(() => {
-    if (!recipe || finished) return;
+    // Nothing to record before the first step is done, and writing here would
+    // erase the very progress the resume prompt is about to offer.
+    if (!recipe || finished || (index === 0 && done.length === 0)) return;
     setProgressStore((current) => ({
       ...current,
       [recipe.id]: { index, done, at: Date.now() },
