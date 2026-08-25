@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { EmptyState } from '../components/ui.jsx';
+import { EmptyState, InfoTip } from '../components/ui.jsx';
 import { Alert, ArrowLeft, Check, Plus, Trash } from '../components/icons.jsx';
 import {
   blankRecipe,
@@ -206,8 +206,12 @@ export function RecipeForm() {
             </select>
           </div>
           <div>
-            <label htmlFor="minutes" className="label">
+            <label htmlFor="minutes" className="inline-flex items-center gap-1.5 label">
               Total minutes
+              <InfoTip label="About this field">
+                Prep plus cook time combined, shown as a clock badge on the
+                recipe.
+              </InfoTip>
             </label>
             <input
               id="minutes"
@@ -253,7 +257,13 @@ export function RecipeForm() {
 
       <section className="card space-y-3 p-5">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold">Ingredients</h2>
+          <h2 className="inline-flex items-center gap-1.5 text-lg font-semibold">
+            Ingredients
+            <InfoTip label="About these fields">
+              Amount and unit are optional but let the app scale this
+              ingredient when someone changes servings or switches units.
+            </InfoTip>
+          </h2>
           <button type="button" onClick={addIngredient} className="btn-secondary">
             <Plus size={15} />
             Add

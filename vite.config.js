@@ -78,6 +78,10 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           motion: ['framer-motion'],
+          // The bundled recipe catalog is ~1.8MB of static data that rarely
+          // changes between deploys; splitting it out lets browsers keep it
+          // cached across app-code releases instead of re-downloading it.
+          catalog: ['@data/catalog.js'],
         },
       },
     },

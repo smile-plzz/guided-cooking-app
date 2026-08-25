@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { EmptyState } from '../components/ui.jsx';
+import { EmptyState, InfoTip } from '../components/ui.jsx';
 import { Basket, Check, Plus, Trash, X } from '../components/icons.jsx';
 import { formatAmount } from '../lib/units.js';
 import { KEYS, usePersistentState } from '../lib/storage.js';
@@ -139,6 +139,10 @@ export function ShoppingList() {
               <Check size={16} />
               Move ticked to pantry
             </button>
+            <InfoTip label="About this button">
+              Moves every ticked item into your pantry and removes it from
+              this list — for things you&apos;ve just bought.
+            </InfoTip>
             <button
               type="button"
               onClick={() => {

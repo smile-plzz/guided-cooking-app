@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import RecipeImage from '../components/RecipeImage.jsx';
-import { EmptyState, Modal, Segmented, Stepper } from '../components/ui.jsx';
+import { EmptyState, InfoTip, Modal, Segmented, Stepper } from '../components/ui.jsx';
 import {
   Alert,
   ArrowLeft,
@@ -284,7 +284,13 @@ export function RecipeDetail() {
 
           <div className="mt-4 space-y-3 border-b border-[color:var(--border-soft)] pb-4">
             <div className="flex items-center justify-between gap-3">
-              <span className="text-sm text-muted">Servings</span>
+              <span className="inline-flex items-center gap-1.5 text-sm text-muted">
+                Servings
+                <InfoTip label="About scaling">
+                  Recalculates every ingredient amount below. Cooking times
+                  don&apos;t change — larger batches may need a little longer.
+                </InfoTip>
+              </span>
               <Stepper
                 value={currentServings}
                 onChange={setServings}
@@ -292,7 +298,14 @@ export function RecipeDetail() {
               />
             </div>
             <div className="flex items-center justify-between gap-3">
-              <span className="text-sm text-muted">Units</span>
+              <span className="inline-flex items-center gap-1.5 text-sm text-muted">
+                Units
+                <InfoTip label="About units">
+                  Switch between the recipe&apos;s original units, metric
+                  (grams, ml), or US customary (cups, oz). Converted amounts
+                  are approximate.
+                </InfoTip>
+              </span>
               <Segmented
                 label="Unit system"
                 options={UNIT_OPTIONS}

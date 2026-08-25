@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import { X, Alert, Check, Info } from './icons.jsx';
@@ -214,6 +214,63 @@ export function Toaster() {
       </AnimatePresence>
     </div>,
     document.body
+  );
+}
+
+/**
+ * Small "i" icon that reveals a short explanation on hover, focus, or tap.
+ * Use next to a control or label whose purpose, behaviour, or terminology
+ * isn't obvious at a glance — keep the text to one or two sentences.
+ * Keyboard/screen-reader accessible: it's a real button with `aria-describedby`
+ * pointing at the tooltip text, and the tooltip closes on Escape or blur.
+ */
+export function InfoTip({ label = 'More info', children, side = 'top' }) {
+  const [open, setOpen] = useState(false);
+  const id = useId();
+
+  const position =
+    side === 'bottom'
+      ? 'top-full mt-2'
+      : side === 'left'
+        ? 'right-full mr-2 top-1/2 -translate-y-1/2'
+        : side === 'right'
+          ? 'left-full ml-2 top-1/2 -translate-y-1/2'
+          : 'bottom-full mb-2';
+
+  return (
+    <span className="relative inline-flex">
+      <button
+        type="button"
+        aria-describedby={open ? id : undefined}
+        aria-label={label}
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+        onFocus={() => setOpen(true)}
+        onBlur={() => setOpen(false)}
+        onClick={() => setOpen((v) => !v)}
+        onKeyDown={(e) => {
+          if (e.key === 'Escape') setOpen(false);
+        }}
+        className="inline-flex items-center justify-center rounded-full p-0.5 text-[color:var(--text-muted)] outline-none transition hover:text-[color:var(--text-strong)] focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]"
+      >
+        <Info size={14} />
+      </button>
+      <AnimatePresence>
+        {open ? (
+          <motion.span
+            id={id}
+            role="tooltip"
+            initial={{ opacity: 0, y: side === 'bottom' ? -4 : 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.12 }}
+            className={`pointer-events-none absolute z-50 w-56 rounded-xl border border-[color:var(--border-soft)] bg-[color:var(--surface-card)] px-3 py-2 text-xs leading-relaxed text-strong shadow-lift ${position}`}
+          >
+            {children}
+          </motion.span>
+        ) : null}
+      </AnimatePresence>
+    </span>
   );
 }
 

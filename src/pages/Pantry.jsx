@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import RecipeCard from '../components/RecipeCard.jsx';
-import { EmptyState, SectionHeading } from '../components/ui.jsx';
+import { EmptyState, InfoTip, SectionHeading } from '../components/ui.jsx';
 import { Fridge, Plus, Trash, X } from '../components/icons.jsx';
 import { BUNDLED, matchAgainstPantry } from '../lib/catalog.js';
 import { KEYS, useIdSet, usePersistentState } from '../lib/storage.js';
@@ -163,7 +163,15 @@ export function Pantry() {
         <section>
           <SectionHeading
             eyebrow="Nothing to buy"
-            title="You can cook these right now"
+            title={
+              <span className="inline-flex items-center gap-1.5">
+                You can cook these right now
+                <InfoTip label="What does this mean?">
+                  Every ingredient these recipes call for is already in your pantry
+                  list.
+                </InfoTip>
+              </span>
+            }
           />
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {readyNow.map((match, index) => (
@@ -183,7 +191,15 @@ export function Pantry() {
         <section>
           <SectionHeading
             eyebrow="Almost there"
-            title="A short shop away"
+            title={
+              <span className="inline-flex items-center gap-1.5">
+                A short shop away
+                <InfoTip label="What does this mean?">
+                  These recipes are missing 3 ingredients or fewer from your
+                  pantry. The count on each card is have/total.
+                </InfoTip>
+              </span>
+            }
           />
           <ul className="grid gap-3 sm:grid-cols-2">
             {almost.map((match) => (
