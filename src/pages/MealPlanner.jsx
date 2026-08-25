@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import RecipePicker from '../components/RecipePicker.jsx';
-import { EmptyState } from '../components/ui.jsx';
+import { EmptyState, InfoTip } from '../components/ui.jsx';
 import {
   Basket,
   Calendar,
@@ -150,6 +150,11 @@ export function MealPlanner() {
             <Basket size={16} />
             Build shopping list
           </button>
+          <InfoTip label="About this button">
+            Combines every ingredient from this week&apos;s planned meals into
+            one merged shopping list, scaled to each meal&apos;s planned
+            servings.
+          </InfoTip>
           {entries.length ? (
             <button type="button" onClick={clearWeek} className="btn-ghost">
               <Trash size={16} />
@@ -210,7 +215,10 @@ export function MealPlanner() {
                             >
                               {entry.title}
                             </Link>
-                            <span className="shrink-0 text-2xs text-muted">
+                            <span
+                              className="shrink-0 text-2xs text-muted"
+                              title={`Planned for ${entry.servings} serving${entry.servings === 1 ? '' : 's'}`}
+                            >
                               ×{entry.servings}
                             </span>
                             <button

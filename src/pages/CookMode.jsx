@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { EmptyState, Modal, Stepper } from '../components/ui.jsx';
+import { EmptyState, InfoTip, Modal, Stepper } from '../components/ui.jsx';
 import {
   Alert,
   Check,
@@ -307,7 +307,12 @@ export function CookMode() {
             </p>
 
             {durations.length ? (
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap items-center gap-2">
+                <InfoTip label="About these timers" side="right">
+                  Detected automatically from the step text. Tap to start a
+                  countdown — it keeps running (with an alarm at the end) even
+                  as you move to other steps.
+                </InfoTip>
                 {durations.map((duration) => (
                   <button
                     key={duration.seconds}
@@ -367,7 +372,13 @@ export function CookMode() {
         size="sm"
       >
         <div className="mb-4 flex items-center justify-between gap-3 border-b border-[color:var(--border-soft)] pb-4">
-          <span className="text-sm text-muted">Servings</span>
+          <span className="inline-flex items-center gap-1.5 text-sm text-muted">
+            Servings
+            <InfoTip label="About scaling">
+              Adjusts every ingredient amount for this cooking session only —
+              it does not change the recipe itself.
+            </InfoTip>
+          </span>
           <Stepper value={currentServings} onChange={setServings} label="servings" />
         </div>
         <ul className="space-y-2">

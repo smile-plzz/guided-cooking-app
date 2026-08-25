@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import RecipeCard from '../components/RecipeCard.jsx';
-import { EmptyState, GridSkeleton, SectionHeading } from '../components/ui.jsx';
+import { EmptyState, GridSkeleton, InfoTip, SectionHeading } from '../components/ui.jsx';
 import { Search, Sparkle, Wifi, Plus, Fridge } from '../components/icons.jsx';
 import { BUNDLED_FACETS, searchBundled } from '../lib/catalog.js';
 import { searchOnline } from '../lib/api.js';
@@ -17,11 +17,14 @@ const COLLECTIONS = [
   { value: 'mealdb', label: 'Community' },
 ];
 
-function FilterRail({ label, options, value, onChange }) {
+function FilterRail({ label, hint, options, value, onChange }) {
   if (!options.length) return null;
   return (
     <div>
-      <p className="label">{label}</p>
+      <p className="label inline-flex items-center gap-1.5">
+        {label}
+        {hint ? <InfoTip label={`About ${label.toLowerCase()}`}>{hint}</InfoTip> : null}
+      </p>
       <div className="scrollbar-none -mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
         {options.map((option) => {
           const optionValue = typeof option === 'string' ? option : option.value;
@@ -234,6 +237,7 @@ export function Discover() {
         <div className="grid gap-4 sm:grid-cols-3">
           <FilterRail
             label="Collection"
+            hint="Where the recipe comes from: the Bengali collection, house recipes written for this app, recipes you've written, or results from the community catalogue (TheMealDB)."
             options={COLLECTIONS}
             value={collection}
             onChange={(value) => setParam('from', value)}
@@ -293,7 +297,16 @@ export function Discover() {
         <section>
           <SectionHeading
             eyebrow="Community recipes"
-            title={query ? 'More from the wider catalogue' : 'Something to try tonight'}
+            title={
+              <span className="inline-flex items-center gap-1.5">
+                {query ? 'More from the wider catalogue' : 'Something to try tonight'}
+                <InfoTip label="Where these come from">
+                  Fetched live from TheMealDB, a free community recipe
+                  database, and shown alongside the app&apos;s bundled
+                  collection.
+                </InfoTip>
+              </span>
+            }
           />
           {online.isLoading ? (
             <GridSkeleton count={4} />
