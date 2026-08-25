@@ -16,6 +16,7 @@ const bangla = read('sources/bangla.json');
 const local = read('sources/local.json');
 const curated = read('sources/curated.json');
 const imported = read('sources/imported.json');
+const bengaliExtra = read('sources/bengali-extra.json');
 // Optional: only present after running `node scripts/fetch-mealdb.mjs`.
 const mealdbPath = path.join(ROOT, 'sources/mealdb.json');
 const mealdb = fs.existsSync(mealdbPath) ? JSON.parse(fs.readFileSync(mealdbPath, 'utf8')) : [];
@@ -98,16 +99,24 @@ function usableImage(image) {
   return /^https?:\/\//.test(image) ? image : null;
 }
 
-// The seed file accumulated a couple of throwaway rows during development.
+// sources/local.json is old dev seed data that accumulated a couple of
+// throwaway rows (e.g. a title of "asdsadsadsad") during development; require
+// a multi-word title there as a sanity check. Hand-authored/imported sources
+// are already trusted, so this stays local.json-only — a real single-word
+// Bengali dish name like "Labra" or "Sandesh" would otherwise get dropped.
 const isRealRecipe = (r) =>
   (r.extendedIngredients || []).length > 2 &&
   (r.title || '').trim().length > 3 &&
   /\s/.test((r.title || '').trim());
 
-/** Both sources/local.json (dev seed data) and sources/curated.json (hand-authored
- * real recipes) share this Spoonacular-like shape, so one mapper covers both. */
-function mapLocalShaped(list, { idPrefix, source }) {
-  return list.filter(isRealRecipe).map((r) => ({
+const hasIngredientsAndTitle = (r) =>
+  (r.extendedIngredients || []).length > 0 && (r.title || '').trim().length > 0;
+
+/** sources/local.json, sources/curated.json, sources/imported.json, and
+ * sources/bengali-extra.json all share this Spoonacular-like shape, so one
+ * mapper covers them; `filter` lets each source apply its own sanity check. */
+function mapLocalShaped(list, { idPrefix, source, filter = hasIngredientsAndTitle }) {
+  return list.filter(filter).map((r) => ({
     id: `${idPrefix}-${r.id}`,
     source,
     lang: 'en',
@@ -136,15 +145,17 @@ function mapLocalShaped(list, { idPrefix, source }) {
   }));
 }
 
-const localRecipes = mapLocalShaped(local, { idPrefix: 'lc', source: 'local' });
+const localRecipes = mapLocalShaped(local, { idPrefix: 'lc', source: 'local', filter: isRealRecipe });
 const curatedRecipes = mapLocalShaped(curated, { idPrefix: 'cu', source: 'curated' });
 const importedRecipes = mapLocalShaped(imported, { idPrefix: 'im', source: 'imported' });
+const bengaliExtraRecipes = mapLocalShaped(bengaliExtra, { idPrefix: 'bx', source: 'curated' });
 const mealdbRecipes = mealdb.map((meal) => normalizeMeal(meal));
 
 const catalog = [
   ...localRecipes,
   ...curatedRecipes,
   ...importedRecipes,
+  ...bengaliExtraRecipes,
   ...banglaRecipes,
   ...mealdbRecipes,
 ].map((r) => ({

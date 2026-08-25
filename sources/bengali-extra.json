@@ -1,0 +1,1850 @@
+[
+  {
+    "id": 6000001,
+    "cuisine": "Bengali",
+    "title": "Murgir Jhol",
+    "subtitle": "Everyday thin Bengali chicken curry with potatoes",
+    "category": "Main",
+    "difficulty": "Easy",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken, bone-in pieces",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "name": "Potato",
+        "amount": 2,
+        "unit": "quartered"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "sliced"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "amount": 3,
+        "unit": "whole"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate chicken with turmeric and a little salt for 15 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Heat mustard oil until it just smokes, then lightly fry the potatoes until golden; set aside."
+          },
+          {
+            "number": 3,
+            "step": "In the same oil, fry sliced onion until golden brown."
+          },
+          {
+            "number": 4,
+            "step": "Add ginger-garlic paste and cook until the raw smell is gone, then add cumin powder and a splash of water to keep spices from burning."
+          },
+          {
+            "number": 5,
+            "step": "Add chicken and cook, stirring, until it changes color and the oil separates."
+          },
+          {
+            "number": 6,
+            "step": "Add fried potatoes, whole green chilies, and enough hot water to make a thin curry; simmer 20-25 minutes until chicken and potato are tender."
+          },
+          {
+            "number": 7,
+            "step": "Serve hot with steamed rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000002,
+    "cuisine": "Bengali",
+    "title": "Alur Dom",
+    "subtitle": "Baby potatoes simmered in a spiced curry",
+    "category": "Vegetarian",
+    "difficulty": "Easy",
+    "readyInMinutes": 35,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Baby potatoes",
+        "amount": 500,
+        "unit": "g, boiled and peeled"
+      },
+      {
+        "name": "Tomato",
+        "amount": 2,
+        "unit": "puréed"
+      },
+      {
+        "name": "Ginger paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Panch phoron",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Kashmiri chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bay leaf",
+        "amount": 1,
+        "unit": "leaf"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Prick the boiled baby potatoes a few times with a fork so they absorb the sauce."
+          },
+          {
+            "number": 2,
+            "step": "Heat mustard oil, temper with panch phoron and bay leaf until fragrant."
+          },
+          {
+            "number": 3,
+            "step": "Add ginger paste, turmeric, and chili powder, stir briefly, then add tomato purée."
+          },
+          {
+            "number": 4,
+            "step": "Cook the masala until oil separates from the sides."
+          },
+          {
+            "number": 5,
+            "step": "Add potatoes and enough water for a semi-thick gravy, season with salt."
+          },
+          {
+            "number": 6,
+            "step": "Simmer 10-12 minutes until the potatoes are well coated and the sauce thickens."
+          },
+          {
+            "number": 7,
+            "step": "Serve with luchi (fried flatbread) or rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000003,
+    "cuisine": "Bengali",
+    "title": "Doi Maach",
+    "subtitle": "Fish simmered in a mild yogurt curry",
+    "category": "Fish",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Rohu or any firm white fish",
+        "amount": 6,
+        "unit": "pieces"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 200,
+        "unit": "g whisked"
+      },
+      {
+        "name": "Onion paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "amount": 3,
+        "unit": "slit"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Rub fish pieces with turmeric and salt, then shallow-fry in mustard oil until lightly golden; set aside."
+          },
+          {
+            "number": 2,
+            "step": "In the same oil, fry onion paste until golden, then add ginger paste, turmeric, and cumin powder."
+          },
+          {
+            "number": 3,
+            "step": "Cook the masala until fragrant and the oil separates."
+          },
+          {
+            "number": 4,
+            "step": "Lower the heat, then stir in whisked yogurt gradually to prevent curdling."
+          },
+          {
+            "number": 5,
+            "step": "Add a little water to loosen the sauce and bring to a gentle simmer, never a rolling boil."
+          },
+          {
+            "number": 6,
+            "step": "Slide in the fried fish and slit green chilies, simmer 8-10 minutes."
+          },
+          {
+            "number": 7,
+            "step": "Serve hot with steamed rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000004,
+    "cuisine": "Bengali",
+    "title": "Chingri Bhuna",
+    "subtitle": "Dry-fried prawns in a thick spiced masala",
+    "category": "Seafood",
+    "difficulty": "Medium",
+    "readyInMinutes": 35,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Prawns, peeled and deveined",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "finely sliced"
+      },
+      {
+        "name": "Tomato",
+        "amount": 2,
+        "unit": "chopped"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 1.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate prawns briefly with turmeric and salt."
+          },
+          {
+            "number": 2,
+            "step": "Heat mustard oil and quickly sear the prawns until just pink; remove and set aside."
+          },
+          {
+            "number": 3,
+            "step": "In the same oil, temper cumin seeds, then fry onions until deep golden."
+          },
+          {
+            "number": 4,
+            "step": "Add ginger-garlic paste and cook until fragrant, then add tomato, turmeric, and chili powder."
+          },
+          {
+            "number": 5,
+            "step": "Cook the masala down until thick and the oil separates from the sides."
+          },
+          {
+            "number": 6,
+            "step": "Return prawns to the pan and toss on high heat for 3-4 minutes until coated and nearly dry."
+          },
+          {
+            "number": 7,
+            "step": "Serve hot as a side with rice or khichuri."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000005,
+    "cuisine": "Bengali",
+    "title": "Kacchi Biryani",
+    "subtitle": "Slow-cooked layered rice and marinated mutton, a Dhaka classic",
+    "category": "Main",
+    "difficulty": "Hard",
+    "readyInMinutes": 150,
+    "servings": 8,
+    "extendedIngredients": [
+      {
+        "name": "Mutton, bone-in",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "Basmati rice",
+        "amount": 700,
+        "unit": "g soaked"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Fried onions",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Potato",
+        "amount": 4,
+        "unit": "whole, fried"
+      },
+      {
+        "name": "Saffron milk",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Whole spices",
+        "amount": 1,
+        "unit": "set (cinnamon, cardamom, star anise, mace)"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate mutton overnight in yogurt, ginger-garlic paste, half the fried onions, and whole spice powder."
+          },
+          {
+            "number": 2,
+            "step": "Parboil the soaked rice with whole spices until about 70% cooked, then drain."
+          },
+          {
+            "number": 3,
+            "step": "Arrange marinated mutton and fried potatoes in the bottom of a heavy pot."
+          },
+          {
+            "number": 4,
+            "step": "Layer the parboiled rice evenly over the meat."
+          },
+          {
+            "number": 5,
+            "step": "Drizzle with ghee, saffron milk, and remaining fried onions."
+          },
+          {
+            "number": 6,
+            "step": "Seal the pot tightly (dough-sealed lid or foil) and cook on very low heat (dum) for 45-60 minutes."
+          },
+          {
+            "number": 7,
+            "step": "Rest 10 minutes before opening, then gently mix from the bottom up and serve."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000006,
+    "cuisine": "Bengali",
+    "title": "Morog Polao",
+    "subtitle": "Fragrant chicken pilaf with ghee and whole spices",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 60,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Chicken, bone-in pieces",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "Polao/basmati rice",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Fried onions",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "Whole spices",
+        "amount": 1,
+        "unit": "set (cinnamon, cardamom, cloves, bay leaf)"
+      },
+      {
+        "name": "Kewra water",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate chicken in yogurt, ginger-garlic paste, and salt for 30 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Heat ghee, temper whole spices until fragrant, then add chicken and cook until browned."
+          },
+          {
+            "number": 3,
+            "step": "Remove chicken pieces, leaving the flavored fat in the pot."
+          },
+          {
+            "number": 4,
+            "step": "Add rinsed rice to the pot and stir gently to coat each grain in ghee."
+          },
+          {
+            "number": 5,
+            "step": "Return the chicken to the pot, add hot water, and bring to a boil."
+          },
+          {
+            "number": 6,
+            "step": "Cover and cook on low heat until rice is fluffy and water is absorbed, about 20 minutes."
+          },
+          {
+            "number": 7,
+            "step": "Sprinkle with kewra water and fried onions, then rest 5 minutes before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000007,
+    "cuisine": "Bengali",
+    "title": "Chicken Rezala",
+    "subtitle": "Mild, creamy white curry with yogurt and whole spices",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 50,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken, bone-in pieces",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Cashew paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ghee",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole garam masala",
+        "amount": 1,
+        "unit": "set (cardamom, cinnamon, cloves)"
+      },
+      {
+        "name": "Kewra water",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate chicken in yogurt and a little salt for 20 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Heat ghee, temper whole garam masala until fragrant."
+          },
+          {
+            "number": 3,
+            "step": "Add onion paste and cook gently without browning, keeping the curry pale."
+          },
+          {
+            "number": 4,
+            "step": "Add cashew paste and green chili paste, cook 2-3 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Add marinated chicken and cook, stirring, until it releases its juices."
+          },
+          {
+            "number": 6,
+            "step": "Cover and simmer on low heat until chicken is tender and the sauce is creamy, about 20-25 minutes."
+          },
+          {
+            "number": 7,
+            "step": "Finish with a splash of kewra water and serve with polao or plain rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000008,
+    "cuisine": "Bengali",
+    "title": "Mutton Kala Bhuna",
+    "subtitle": "Deeply dark, slow-fried Chittagong-style mutton curry",
+    "category": "Beef",
+    "difficulty": "Hard",
+    "readyInMinutes": 150,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Mutton, bone-in",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "Onion",
+        "amount": 4,
+        "unit": "thinly sliced"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 6,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole spices",
+        "amount": 1,
+        "unit": "set (bay leaf, cinnamon, cardamom)"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri chili powder",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate mutton with ginger-garlic paste, chili powder, and salt for at least 1 hour."
+          },
+          {
+            "number": 2,
+            "step": "Heat mustard oil in a heavy pot and fry the sliced onions very slowly until deep, dark brown, almost black at the edges."
+          },
+          {
+            "number": 3,
+            "step": "Add marinated mutton and whole spices, cook on high heat until browned all over."
+          },
+          {
+            "number": 4,
+            "step": "Reduce heat to low, cover, and cook the mutton in its own juices, stirring occasionally, for 1.5-2 hours until very tender."
+          },
+          {
+            "number": 5,
+            "step": "Once tender, uncover and cook on medium-high heat, stirring frequently, until the liquid dries up and the meat is coated in a thick, dark, almost dry masala."
+          },
+          {
+            "number": 6,
+            "step": "Finish with roasted cumin powder and serve with paratha or rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000009,
+    "cuisine": "Bengali",
+    "title": "Dim Bhuna",
+    "subtitle": "Hard-boiled eggs simmered in a rich onion-tomato masala",
+    "category": "Vegetarian",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Eggs",
+        "amount": 6,
+        "unit": "hard-boiled and peeled"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "finely chopped"
+      },
+      {
+        "name": "Tomato",
+        "amount": 2,
+        "unit": "chopped"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Prick the boiled eggs lightly and shallow-fry in mustard oil until spotted golden brown; set aside."
+          },
+          {
+            "number": 2,
+            "step": "In the same oil, fry chopped onion until golden."
+          },
+          {
+            "number": 3,
+            "step": "Add ginger-garlic paste and cook until fragrant, then stir in tomato, turmeric, and chili powder."
+          },
+          {
+            "number": 4,
+            "step": "Cook the masala until thick and the oil separates from the sides."
+          },
+          {
+            "number": 5,
+            "step": "Add enough water for a medium gravy, season with salt, and simmer 5 minutes."
+          },
+          {
+            "number": 6,
+            "step": "Slide in the fried eggs, simmer 5 more minutes so they soak up the sauce."
+          },
+          {
+            "number": 7,
+            "step": "Serve hot with rice or paratha."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000010,
+    "cuisine": "Bengali",
+    "title": "Muri Ghonto",
+    "subtitle": "Fish head cooked with rice and vegetables",
+    "category": "Fish",
+    "difficulty": "Medium",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Fish head (rohu or katla)",
+        "amount": 1,
+        "unit": "whole, cut into pieces"
+      },
+      {
+        "name": "Rice",
+        "amount": 100,
+        "unit": "g washed"
+      },
+      {
+        "name": "Potato",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Ginger paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Panch phoron",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Rub fish head pieces with turmeric and salt, then fry in mustard oil until browned; set aside."
+          },
+          {
+            "number": 2,
+            "step": "In the same oil, temper panch phoron until fragrant, then fry onion until golden."
+          },
+          {
+            "number": 3,
+            "step": "Add ginger paste and diced potato, cook a few minutes."
+          },
+          {
+            "number": 4,
+            "step": "Add washed rice and stir gently to coat in the spices."
+          },
+          {
+            "number": 5,
+            "step": "Return fried fish head to the pot, add hot water, and season with salt."
+          },
+          {
+            "number": 6,
+            "step": "Cover and simmer until rice and potato are fully cooked and the mixture is soft and well combined, about 20 minutes."
+          },
+          {
+            "number": 7,
+            "step": "Serve hot as part of a rice meal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000011,
+    "cuisine": "Bengali",
+    "title": "Labra",
+    "subtitle": "Mixed vegetable medley cooked with panch phoron",
+    "category": "Vegetarian",
+    "difficulty": "Easy",
+    "readyInMinutes": 35,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Pumpkin",
+        "amount": 200,
+        "unit": "g diced"
+      },
+      {
+        "name": "Potato",
+        "amount": 200,
+        "unit": "g diced"
+      },
+      {
+        "name": "Eggplant",
+        "amount": 150,
+        "unit": "g diced"
+      },
+      {
+        "name": "Flat beans",
+        "amount": 100,
+        "unit": "g chopped"
+      },
+      {
+        "name": "Panch phoron",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Bay leaf",
+        "amount": 1,
+        "unit": "leaf"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Heat mustard oil and temper panch phoron and bay leaf until they start to pop."
+          },
+          {
+            "number": 2,
+            "step": "Add all the chopped vegetables together with turmeric and a pinch of salt."
+          },
+          {
+            "number": 3,
+            "step": "Stir well to coat everything in the spices."
+          },
+          {
+            "number": 4,
+            "step": "Cover and cook on low heat, stirring occasionally, letting the vegetables release their own moisture, about 20-25 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Mash lightly with the back of the spoon so the mixture turns soft and slightly stewy, not a dry stir-fry."
+          },
+          {
+            "number": 6,
+            "step": "Serve warm with rice and dal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000012,
+    "cuisine": "Bengali",
+    "title": "Aloo Bhorta",
+    "subtitle": "Mashed potato with mustard oil, onion, and green chili",
+    "category": "Side",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Potato",
+        "amount": 4,
+        "unit": "boiled"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "finely chopped"
+      },
+      {
+        "name": "Green chili",
+        "amount": 2,
+        "unit": "finely chopped"
+      },
+      {
+        "name": "Cilantro",
+        "amount": 2,
+        "unit": "tbsp chopped"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Peel and mash the boiled potatoes while still warm, until smooth."
+          },
+          {
+            "number": 2,
+            "step": "Add mustard oil, chopped onion, green chili, and cilantro."
+          },
+          {
+            "number": 3,
+            "step": "Season with salt and mix everything together thoroughly with your hand or a spoon until well combined."
+          },
+          {
+            "number": 4,
+            "step": "Taste and adjust chili or salt."
+          },
+          {
+            "number": 5,
+            "step": "Serve at room temperature with hot rice and dal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000013,
+    "cuisine": "Bengali",
+    "title": "Beguni",
+    "subtitle": "Batter-fried eggplant slices, a classic iftar snack",
+    "category": "Snack",
+    "difficulty": "Easy",
+    "readyInMinutes": 25,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Eggplant",
+        "amount": 1,
+        "unit": "large, sliced into rounds"
+      },
+      {
+        "name": "Gram flour (besan)",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Rice flour",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Baking soda",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 2,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Whisk gram flour, rice flour, turmeric, chili powder, baking soda, and water into a smooth, thick batter."
+          },
+          {
+            "number": 2,
+            "step": "Salt the eggplant slices and let them sit 10 minutes, then pat dry."
+          },
+          {
+            "number": 3,
+            "step": "Heat oil until shimmering."
+          },
+          {
+            "number": 4,
+            "step": "Dip each eggplant slice fully in the batter, letting excess drip off."
+          },
+          {
+            "number": 5,
+            "step": "Fry until golden and crisp on both sides, about 3-4 minutes total."
+          },
+          {
+            "number": 6,
+            "step": "Drain on paper towels and serve hot with muri or chutney."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000014,
+    "cuisine": "Bengali",
+    "title": "Piyaju",
+    "subtitle": "Crisp lentil and onion fritters",
+    "category": "Snack",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Split red lentils (masoor dal)",
+        "amount": 200,
+        "unit": "g soaked"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "thinly sliced"
+      },
+      {
+        "name": "Green chili",
+        "amount": 3,
+        "unit": "chopped"
+      },
+      {
+        "name": "Cilantro",
+        "amount": 2,
+        "unit": "tbsp chopped"
+      },
+      {
+        "name": "Cumin seeds",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 2,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Drain soaked lentils and grind coarsely in a food processor, without adding water — the mixture should be thick."
+          },
+          {
+            "number": 2,
+            "step": "Mix in sliced onion, green chili, cilantro, cumin seeds, and salt."
+          },
+          {
+            "number": 3,
+            "step": "Heat oil until hot."
+          },
+          {
+            "number": 4,
+            "step": "Scoop small portions of the mixture and flatten slightly before sliding into the oil."
+          },
+          {
+            "number": 5,
+            "step": "Fry until deep golden and crisp, about 3-4 minutes, turning once."
+          },
+          {
+            "number": 6,
+            "step": "Drain and serve hot, ideally at iftar with dates and chutney."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000015,
+    "cuisine": "Bengali",
+    "title": "Nimki",
+    "subtitle": "Crisp savory diamond-cut fried snack",
+    "category": "Snack",
+    "difficulty": "Easy",
+    "readyInMinutes": 40,
+    "servings": 8,
+    "extendedIngredients": [
+      {
+        "name": "All-purpose flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Nigella seeds (kalonji)",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 3,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Mix flour with nigella seeds and salt, then rub in the ghee until the mixture resembles coarse crumbs."
+          },
+          {
+            "number": 2,
+            "step": "Knead into a firm dough with cold water, then rest 15 minutes."
+          },
+          {
+            "number": 3,
+            "step": "Roll the dough into a thin sheet and cut into small diamond shapes with a knife."
+          },
+          {
+            "number": 4,
+            "step": "Heat oil to medium-low heat, then fry the pieces in batches, stirring occasionally, until light golden and crisp, about 8-10 minutes — low heat keeps them crunchy all the way through."
+          },
+          {
+            "number": 5,
+            "step": "Drain and cool completely before storing in an airtight container."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000016,
+    "cuisine": "Bengali",
+    "title": "Payesh",
+    "subtitle": "Bengali rice pudding with milk and jaggery",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "readyInMinutes": 60,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Full-fat milk",
+        "amount": 1.5,
+        "unit": "liters"
+      },
+      {
+        "name": "Gobindobhog or short-grain rice",
+        "amount": 100,
+        "unit": "g washed"
+      },
+      {
+        "name": "Jaggery or sugar",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom pods",
+        "amount": 4,
+        "unit": "crushed"
+      },
+      {
+        "name": "Bay leaf",
+        "amount": 1,
+        "unit": "leaf"
+      },
+      {
+        "name": "Cashews and raisins",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Bring milk to a boil in a heavy-bottomed pot, then reduce to a steady simmer."
+          },
+          {
+            "number": 2,
+            "step": "Add washed rice, bay leaf, and cardamom, stirring occasionally to prevent sticking."
+          },
+          {
+            "number": 3,
+            "step": "Simmer, stirring frequently, until the rice is fully soft and the milk has reduced and thickened, about 35-40 minutes."
+          },
+          {
+            "number": 4,
+            "step": "Remove from heat and stir in jaggery or sugar until dissolved (add off the heat if using jaggery, to prevent the milk from splitting)."
+          },
+          {
+            "number": 5,
+            "step": "Stir in cashews and raisins."
+          },
+          {
+            "number": 6,
+            "step": "Serve warm or chilled."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000017,
+    "cuisine": "Bengali",
+    "title": "Sandesh",
+    "subtitle": "Delicate sweet made from fresh paneer and sugar",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 30,
+    "servings": 12,
+    "extendedIngredients": [
+      {
+        "name": "Fresh paneer (chhena)",
+        "amount": 400,
+        "unit": "g crumbled"
+      },
+      {
+        "name": "Powdered sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Saffron strands",
+        "amount": 1,
+        "unit": "pinch (optional)"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Knead the crumbled fresh paneer on a flat surface with the heel of your hand until completely smooth, with no graininess, about 8-10 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Transfer to a non-stick pan with the powdered sugar and cardamom."
+          },
+          {
+            "number": 3,
+            "step": "Cook on low heat, stirring constantly, until the mixture comes together into a soft dough and just starts to leave the sides of the pan, 4-5 minutes — do not overcook or it turns crumbly."
+          },
+          {
+            "number": 4,
+            "step": "Cool slightly, then shape into small discs or press into decorative molds."
+          },
+          {
+            "number": 5,
+            "step": "Garnish with a strand of saffron and let set at room temperature before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000018,
+    "cuisine": "Bengali",
+    "title": "Chomchom",
+    "subtitle": "Soft, oval milk-based sweet soaked in sugar syrup",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "readyInMinutes": 60,
+    "servings": 12,
+    "extendedIngredients": [
+      {
+        "name": "Whole milk",
+        "amount": 2,
+        "unit": "liters"
+      },
+      {
+        "name": "Lemon juice or vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "amount": 1,
+        "unit": "liter for syrup"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Bring milk to a boil, then add lemon juice gradually to curdle it into chhena; strain through cloth and rinse well to remove sourness."
+          },
+          {
+            "number": 2,
+            "step": "Hang the chhena to drain excess water for 30 minutes, then knead thoroughly with a spoon of flour until smooth and pliable."
+          },
+          {
+            "number": 3,
+            "step": "Shape into small oval logs."
+          },
+          {
+            "number": 4,
+            "step": "Boil sugar and water into a syrup, then gently drop in the chomchom shapes."
+          },
+          {
+            "number": 5,
+            "step": "Cover and cook on medium heat for 15-20 minutes, occasionally splashing cold water into the syrup to help them expand and cook through evenly."
+          },
+          {
+            "number": 6,
+            "step": "Let cool in the syrup, finish with a splash of rose water, and serve chilled or at room temperature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000019,
+    "cuisine": "Bengali",
+    "title": "Bhapa Pitha",
+    "subtitle": "Steamed rice flour cake with coconut and jaggery filling",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Rice flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Grated coconut",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery",
+        "amount": 100,
+        "unit": "g grated"
+      },
+      {
+        "name": "Salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Water",
+        "amount": 1,
+        "unit": "cup, as needed"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Mix rice flour with a little salt and just enough water, rubbing between your fingers, until it turns into a moist, crumbly texture — not a wet dough."
+          },
+          {
+            "number": 2,
+            "step": "Sieve the mixture to remove any lumps."
+          },
+          {
+            "number": 3,
+            "step": "Mix grated coconut with jaggery for the filling."
+          },
+          {
+            "number": 4,
+            "step": "Fill a small round cloth or a pitha mould with a layer of rice flour, add a spoon of coconut-jaggery filling in the center, then cover with more rice flour."
+          },
+          {
+            "number": 5,
+            "step": "Steam over boiling water for 10-12 minutes until the cake is set and no longer sticky."
+          },
+          {
+            "number": 6,
+            "step": "Unmould carefully and serve warm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000020,
+    "cuisine": "Bengali",
+    "title": "Panta Ilish",
+    "subtitle": "Fermented rice served with fried hilsa, a Pohela Boishakh classic",
+    "category": "Fish",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Cooked rice, soaked overnight in water",
+        "amount": 4,
+        "unit": "cups"
+      },
+      {
+        "name": "Hilsa fish",
+        "amount": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "amount": 4,
+        "unit": "whole"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Rub hilsa pieces with turmeric and salt, then shallow-fry in mustard oil until crisp and golden on both sides."
+          },
+          {
+            "number": 2,
+            "step": "Drain the panta (fermented, water-soaked) rice slightly, keeping a little of the tangy liquid."
+          },
+          {
+            "number": 3,
+            "step": "Serve the rice in a bowl with its soaking liquid, a drizzle of mustard oil, and salt to taste."
+          },
+          {
+            "number": 4,
+            "step": "Plate the fried hilsa alongside, with sliced onion and whole green chilies."
+          },
+          {
+            "number": 5,
+            "step": "Eat traditionally with your hands, mixing rice and fish together bite by bite."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000021,
+    "cuisine": "Bengali",
+    "title": "Shutki Bhuna",
+    "subtitle": "Pungent, richly spiced dried fish stir-fry",
+    "category": "Fish",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Dried fish (shutki)",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "sliced"
+      },
+      {
+        "name": "Garlic",
+        "amount": 6,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Ginger paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Dried red chili",
+        "amount": 4,
+        "unit": "whole"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Soak dried fish in warm water for 15-20 minutes to soften, then clean thoroughly and remove any bones or scales."
+          },
+          {
+            "number": 2,
+            "step": "Lightly roast the fish pieces in a dry pan to reduce the sharp smell, then set aside."
+          },
+          {
+            "number": 3,
+            "step": "Heat mustard oil, fry onions until golden, then add garlic, ginger paste, and dried red chilies."
+          },
+          {
+            "number": 4,
+            "step": "Add turmeric and the roasted dried fish, stirring well to coat in the masala."
+          },
+          {
+            "number": 5,
+            "step": "Cook on medium-low heat, stirring frequently, until the fish is well fried and the masala clings to it, about 15 minutes."
+          },
+          {
+            "number": 6,
+            "step": "Serve as a side dish with plain rice and dal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000022,
+    "cuisine": "Bengali",
+    "title": "Lau Chingri",
+    "subtitle": "Bottle gourd cooked with small prawns",
+    "category": "Vegetarian",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Bottle gourd (lau)",
+        "amount": 500,
+        "unit": "g peeled and diced"
+      },
+      {
+        "name": "Small prawns",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Panch phoron",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Green chili",
+        "amount": 2,
+        "unit": "slit"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Heat mustard oil and lightly fry the prawns with a pinch of turmeric and salt until just pink; set aside."
+          },
+          {
+            "number": 2,
+            "step": "In the same oil, temper panch phoron until fragrant."
+          },
+          {
+            "number": 3,
+            "step": "Add diced bottle gourd, turmeric, and a pinch of salt, stir well to coat."
+          },
+          {
+            "number": 4,
+            "step": "Cover and cook on low heat, letting the gourd release its own water, stirring occasionally, about 12-15 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Once the gourd is soft, add the fried prawns and slit green chilies."
+          },
+          {
+            "number": 6,
+            "step": "Cook uncovered a few more minutes until any excess liquid reduces, then serve warm with rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000023,
+    "cuisine": "Bengali",
+    "title": "Chirar Pulao",
+    "subtitle": "Flattened rice sautéed with vegetables and peanuts",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 3,
+    "extendedIngredients": [
+      {
+        "name": "Thick flattened rice (chira)",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Peas",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Peanuts",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Rinse the flattened rice briefly in a strainer under running water, then drain well and let it soften for a few minutes."
+          },
+          {
+            "number": 2,
+            "step": "Heat oil, temper mustard seeds and peanuts until the peanuts turn golden."
+          },
+          {
+            "number": 3,
+            "step": "Add onion and cook until soft, then add peas and turmeric."
+          },
+          {
+            "number": 4,
+            "step": "Add the softened flattened rice and toss gently to combine, being careful not to mash it."
+          },
+          {
+            "number": 5,
+            "step": "Season with salt and cook, stirring gently, for 3-4 minutes until heated through."
+          },
+          {
+            "number": 6,
+            "step": "Serve warm as a light breakfast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6000024,
+    "cuisine": "Bengali",
+    "title": "Beef Rezala",
+    "subtitle": "Slow-cooked beef in a rich, mildly spiced yogurt gravy",
+    "category": "Beef",
+    "difficulty": "Medium",
+    "readyInMinutes": 100,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Beef, cubed",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Onion paste",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ghee",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole garam masala",
+        "amount": 1,
+        "unit": "set (cardamom, cinnamon, cloves)"
+      },
+      {
+        "name": "Green chili paste",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate beef in yogurt, ginger-garlic paste, and salt for at least 1 hour."
+          },
+          {
+            "number": 2,
+            "step": "Heat ghee, temper whole garam masala until fragrant."
+          },
+          {
+            "number": 3,
+            "step": "Add onion paste and cook gently until soft but not browned."
+          },
+          {
+            "number": 4,
+            "step": "Add marinated beef and green chili paste, cook on medium heat until the beef releases its juices."
+          },
+          {
+            "number": 5,
+            "step": "Cover and simmer on low heat, stirring occasionally, until the beef is very tender, about 1.5 hours, adding water as needed."
+          },
+          {
+            "number": 6,
+            "step": "Once tender, reduce the sauce to a thick, creamy consistency and serve with polao or paratha."
+          }
+        ]
+      }
+    ]
+  }
+]

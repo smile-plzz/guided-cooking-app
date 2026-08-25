@@ -10,10 +10,10 @@ parsed out of the text.
 
 ## What it does
 
-- **Discover** — search a bundled catalog of 650+ real recipes (hand-curated
-  international dishes, a large imported collection, and a Bengali collection)
-  and a wider community catalogue at the same time. Filter by collection,
-  cuisine or course.
+- **Discover** — search a bundled catalog of 700+ real recipes (hand-curated
+  international dishes, a large imported collection, and a 34-recipe Bengali
+  collection) and a wider community catalogue at the same time. Filter by
+  collection, cuisine or course.
 - **Scale and convert** — change the serving count and every quantity follows.
   Switch between the units as written, metric, or US.
 - **Guided cooking** — full-screen step-by-step mode. Durations mentioned in a
@@ -72,6 +72,8 @@ sources/                 Raw recipe sources, edited by hand
   bangla.json            The Bengali collection
   local.json             The original curated English recipes
   curated.json           68 hand-authored real recipes across world cuisines
+  bengali-extra.json     24 additional hand-authored Bengali/Bangladeshi
+                          recipes (everyday curries, biryani, snacks, sweets)
   imported.json          600 real recipes imported from the MIT-licensed
                           dpapathanasiou/recipes dataset (github.com/
                           dpapathanasiou/recipes), re-run via
