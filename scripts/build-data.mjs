@@ -79,6 +79,19 @@ const banglaRecipes = bangla.map((r) => {
   };
 });
 
+/**
+ * The seed data carries three kinds of useless image reference: absolute URLs
+ * to the old dev server, 1x1 base64 placeholders, and names of files that were
+ * committed empty. None of them render, so they resolve to null and the app
+ * draws its generated plate instead. Only a real remote URL survives.
+ */
+function usableImage(image) {
+  if (typeof image !== 'string' || !image.trim()) return null;
+  if (image.startsWith('data:')) return null;
+  if (/^https?:\/\/(localhost|127\.0\.0\.1)/.test(image)) return null;
+  return /^https?:\/\//.test(image) ? image : null;
+}
+
 // The seed file accumulated a couple of throwaway rows during development.
 const isRealRecipe = (r) =>
   (r.extendedIngredients || []).length > 2 &&
@@ -93,8 +106,7 @@ const localRecipes = local.filter(isRealRecipe).map((r) => ({
   titleEn: r.title,
   subtitle: r.subtitle || null,
   description: r.description || '',
-  // Early seed data pointed at the dev server; keep only the public path.
-  image: r.image ? `/images/${r.image.split('/').pop()}` : null,
+  image: usableImage(r.image),
   cuisine: r.cuisine || 'International',
   category: r.category || 'Main',
   tags: [r.difficulty].filter(Boolean),

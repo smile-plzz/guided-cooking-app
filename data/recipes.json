@@ -7,7 +7,7 @@
     "titleEn": "Spaghetti Aglio e Olio",
     "subtitle": null,
     "description": "",
-    "image": "/images/spaghetti.jpg",
+    "image": null,
     "cuisine": "International",
     "category": "Main",
     "tags": [
@@ -120,7 +120,7 @@
     "titleEn": "Classic Pancakes",
     "subtitle": null,
     "description": "",
-    "image": "/images/pancakes.jpg",
+    "image": null,
     "cuisine": "International",
     "category": "Main",
     "tags": [
@@ -229,7 +229,7 @@
     "titleEn": "Gourmet Grilled Cheese",
     "subtitle": null,
     "description": "",
-    "image": "/images/grilled-cheese.jpg",
+    "image": null,
     "cuisine": "International",
     "category": "Main",
     "tags": [
@@ -322,7 +322,7 @@
     "titleEn": "Chicken Stir-Fry",
     "subtitle": null,
     "description": "",
-    "image": "/images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+    "image": null,
     "cuisine": "International",
     "category": "Main",
     "tags": [
@@ -423,7 +423,7 @@
     "titleEn": "Tomato Basil Pasta",
     "subtitle": null,
     "description": "",
-    "image": "/images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+    "image": null,
     "cuisine": "International",
     "category": "Main",
     "tags": [

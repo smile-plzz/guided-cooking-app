@@ -41,6 +41,10 @@ export function writeStorage(key, value) {
 /**
  * localStorage-backed state that stays in sync across every component using the
  * same key, and across browser tabs.
+ *
+ * The updater form must stay pure. The write to localStorage happens after the
+ * updater returns, so anything that throws inside it — notably calling another
+ * component's setState, such as firing a toast — silently loses the write.
  */
 export function usePersistentState(key, fallback) {
   const [value, setValue] = useState(() => readStorage(key, fallback));

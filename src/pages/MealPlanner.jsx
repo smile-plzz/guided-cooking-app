@@ -32,7 +32,10 @@ export function MealPlanner() {
   const navigate = useNavigate();
   const { notify } = useToast();
   const [plan, setPlan] = usePersistentState(KEYS.mealPlan, {});
-  const [, setShoppingList] = usePersistentState(KEYS.shoppingList, []);
+  const [shoppingItems, setShoppingList] = usePersistentState(
+    KEYS.shoppingList,
+    []
+  );
   const [weekStart, setWeekStart] = useState(() => startOfWeek(new Date()));
   const [picking, setPicking] = useState(null);
 
@@ -69,30 +72,32 @@ export function MealPlanner() {
     });
 
     const merged = aggregateIngredients(flattened);
-    setShoppingList((current) => {
-      const existing = new Set(current.map((item) => item.name.toLowerCase()));
-      const additions = merged
-        .filter((item) => !existing.has(item.name.toLowerCase()))
-        .map((item, index) => ({
-          id: `plan-${Date.now()}-${index}`,
-          name: item.name,
-          amount: item.amount,
-          unit: item.unit || '',
-          aisle: item.aisle || 'Other',
-          from: item.sources.slice(0, 2).join(', ') +
-            (item.sources.length > 2 ? ` +${item.sources.length - 2} more` : ''),
-          checked: false,
-        }));
+    const existing = new Set(
+      shoppingItems.map((item) => item.name.toLowerCase())
+    );
+    const additions = merged
+      .filter((item) => !existing.has(item.name.toLowerCase()))
+      .map((item, index) => ({
+        id: `plan-${Date.now()}-${index}`,
+        name: item.name,
+        amount: item.amount,
+        unit: item.unit || '',
+        aisle: item.aisle || 'Other',
+        from:
+          item.sources.slice(0, 2).join(', ') +
+          (item.sources.length > 2 ? ` +${item.sources.length - 2} more` : ''),
+        checked: false,
+      }));
 
-      if (!additions.length) {
-        notify('Everything from this plan is already on your list.');
-        return current;
-      }
-      notify(`${additions.length} items added to your shopping list.`, {
-        tone: 'success',
-        action: { label: 'View', onClick: () => navigate('/shopping-list') },
-      });
-      return [...current, ...additions];
+    if (!additions.length) {
+      notify('Everything from this plan is already on your list.');
+      return;
+    }
+
+    setShoppingList([...shoppingItems, ...additions]);
+    notify(`${additions.length} items added to your shopping list.`, {
+      tone: 'success',
+      action: { label: 'View', onClick: () => navigate('/shopping-list') },
     });
   };
 

@@ -38,19 +38,27 @@ export function addWeeks(date, count) {
   return next;
 }
 
+/**
+ * "24 – 30 Aug" within one month, "28 Aug – 3 Sep" across two. The month name
+ * is never left stranded on only the second date, which reads as a typo.
+ */
 export function formatWeekRange(weekStart) {
   const end = new Date(weekStart);
   end.setDate(weekStart.getDate() + 6);
+
   const sameMonth = weekStart.getMonth() === end.getMonth();
+  const showYear = end.getFullYear() !== new Date().getFullYear();
+
   const startText = weekStart.toLocaleDateString(undefined, {
     day: 'numeric',
-    month: sameMonth ? undefined : 'short',
+    ...(sameMonth ? {} : { month: 'short' }),
   });
   const endText = end.toLocaleDateString(undefined, {
     day: 'numeric',
     month: 'short',
-    year: end.getFullYear() === new Date().getFullYear() ? undefined : 'numeric',
+    ...(showYear ? { year: 'numeric' } : {}),
   });
+
   return `${startText} – ${endText}`;
 }
 

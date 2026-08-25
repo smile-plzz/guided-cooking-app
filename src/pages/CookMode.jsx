@@ -20,12 +20,16 @@ import { KEYS, usePersistentState } from '../lib/storage.js';
 import { playAlarm, useTimers, useWakeLock } from '../lib/useTimers.js';
 import { useToast } from '../context/AppProviders.jsx';
 
-/** Floating rail of running timers — visible on every step, not just the one that started it. */
+/**
+ * Rail of running timers — visible on every step, not just the one that started
+ * it. It sits in the flow directly under the cook-mode header rather than
+ * floating, so it can never end up behind the app's sticky header.
+ */
 function TimerRail({ timers, onPause, onResume, onReset, onDismiss }) {
   if (!timers.length) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-3 z-30 flex flex-col items-center gap-2 px-3">
+    <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-2 px-4 pt-3 sm:px-6">
       <AnimatePresence initial={false}>
         {timers.map((timer) => (
           <motion.div
@@ -34,7 +38,7 @@ function TimerRail({ timers, onPause, onResume, onReset, onDismiss }) {
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className={`pointer-events-auto flex w-full max-w-sm items-center gap-3 rounded-2xl px-4 py-2.5 shadow-lift ${
+            className={`flex w-full max-w-sm items-center gap-3 rounded-2xl px-4 py-2.5 shadow-lift ${
               timer.finished
                 ? 'bg-ember-600 text-white'
                 : 'surface text-[color:var(--text-strong)]'
@@ -230,14 +234,6 @@ export function CookMode() {
 
   return (
     <div className="relative flex min-h-[calc(100vh-8rem)] flex-col">
-      <TimerRail
-        timers={timers}
-        onPause={pause}
-        onResume={resume}
-        onReset={reset}
-        onDismiss={dismiss}
-      />
-
       <header className="border-b border-[color:var(--border-soft)]">
         <div className="mx-auto flex w-full max-w-3xl items-center gap-3 px-4 py-3 sm:px-6">
           <button type="button" onClick={exit} className="btn-ghost -ml-2 rounded-full p-2" aria-label="Leave guided mode">
@@ -269,11 +265,20 @@ export function CookMode() {
         >
           <motion.div
             className="h-full bg-ember-600"
+            initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.3 }}
           />
         </div>
       </header>
+
+      <TimerRail
+        timers={timers}
+        onPause={pause}
+        onResume={resume}
+        onReset={reset}
+        onDismiss={dismiss}
+      />
 
       <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col px-4 py-8 sm:px-6">
         <AnimatePresence mode="wait">

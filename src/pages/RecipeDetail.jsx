@@ -55,7 +55,10 @@ export function RecipeDetail() {
 
   const favorites = useIdSet(KEYS.favorites);
   const [notes, setNotes] = usePersistentState(KEYS.notes, {});
-  const [, setShoppingList] = usePersistentState(KEYS.shoppingList, []);
+  const [shoppingItems, setShoppingList] = usePersistentState(
+    KEYS.shoppingList,
+    []
+  );
   const { remove: removeMyRecipe } = useMyRecipes();
 
   const [servings, setServings] = useState(null);
@@ -123,18 +126,18 @@ export function RecipeDetail() {
       checked: false,
     }));
 
-    setShoppingList((current) => {
-      const existing = new Set(current.map((item) => item.id));
-      const added = entries.filter((entry) => !existing.has(entry.id));
-      if (!added.length) {
-        notify('Those ingredients are already on your list.');
-        return current;
-      }
-      notify(`Added ${added.length} ingredients to your shopping list.`, {
-        tone: 'success',
-        action: { label: 'View', onClick: () => navigate('/shopping-list') },
-      });
-      return [...current, ...added];
+    const existing = new Set(shoppingItems.map((item) => item.id));
+    const added = entries.filter((entry) => !existing.has(entry.id));
+
+    if (!added.length) {
+      notify('Those ingredients are already on your list.');
+      return;
+    }
+
+    setShoppingList([...shoppingItems, ...added]);
+    notify(`Added ${added.length} ingredients to your shopping list.`, {
+      tone: 'success',
+      action: { label: 'View', onClick: () => navigate('/shopping-list') },
     });
   };
 
@@ -148,9 +151,12 @@ export function RecipeDetail() {
       from: displayTitle(recipe),
       checked: false,
     };
-    setShoppingList((current) =>
-      current.some((item) => item.id === entry.id) ? current : [...current, entry]
-    );
+    if (shoppingItems.some((item) => item.id === entry.id)) {
+      notify(`${ingredient.name} is already on your list.`);
+      return;
+    }
+
+    setShoppingList([...shoppingItems, entry]);
     notify(`${ingredient.name} added to your list.`, { tone: 'success' });
   };
 
