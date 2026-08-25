@@ -1030,6 +1030,99 @@
     "slug": "caprese-salad"
   },
   {
+    "id": "cu-5000006",
+    "source": "curated",
+    "lang": "en",
+    "title": "Tiramisu",
+    "titleEn": "Tiramisu",
+    "subtitle": "Coffee-soaked ladyfingers, mascarpone cream",
+    "description": "",
+    "image": null,
+    "cuisine": "Italian",
+    "category": "Dessert",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 30,
+    "servings": 8,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Ladyfinger biscuits",
+        "nameClean": "ladyfinger biscuits",
+        "amount": 24,
+        "unit": "pieces",
+        "original": "24 pieces Ladyfinger biscuits",
+        "aisle": "Other"
+      },
+      {
+        "name": "Strong espresso",
+        "nameClean": "strong espresso",
+        "amount": 300,
+        "unit": "ml cooled",
+        "original": "300 ml cooled Strong espresso",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mascarpone",
+        "nameClean": "mascarpone",
+        "amount": 500,
+        "unit": "g",
+        "original": "500 g Mascarpone",
+        "aisle": "Other"
+      },
+      {
+        "name": "Eggs",
+        "nameClean": "eggs",
+        "amount": 4,
+        "unit": "separated",
+        "original": "4 separated Eggs",
+        "aisle": "Other"
+      },
+      {
+        "name": "Sugar",
+        "nameClean": "sugar",
+        "amount": 100,
+        "unit": "g",
+        "original": "100 g Sugar",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cocoa powder",
+        "nameClean": "cocoa powder",
+        "amount": 2,
+        "unit": "tbsp for dusting",
+        "original": "2 tbsp for dusting Cocoa powder",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Whisk egg yolks with sugar until pale, then fold in mascarpone until smooth."
+      },
+      {
+        "number": 2,
+        "text": "In a separate bowl, whisk egg whites to stiff peaks and gently fold into the mascarpone mixture."
+      },
+      {
+        "number": 3,
+        "text": "Dip each ladyfinger briefly in cooled espresso and arrange a layer in a dish."
+      },
+      {
+        "number": 4,
+        "text": "Spread half the mascarpone cream over the biscuits, then repeat with another biscuit layer and cream."
+      },
+      {
+        "number": 5,
+        "text": "Dust generously with cocoa powder and refrigerate at least 4 hours, ideally overnight."
+      }
+    ],
+    "slug": "tiramisu"
+  },
+  {
     "id": "cu-5000007",
     "source": "curated",
     "lang": "en",
@@ -1238,6 +1331,95 @@
       }
     ],
     "slug": "beef-barbacoa"
+  },
+  {
+    "id": "cu-5000009",
+    "source": "curated",
+    "lang": "en",
+    "title": "Guacamole",
+    "titleEn": "Guacamole",
+    "subtitle": "Avocado, lime, jalapeño, cilantro",
+    "description": "",
+    "image": null,
+    "cuisine": "Mexican",
+    "category": "Side",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 10,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Ripe avocados",
+        "nameClean": "ripe avocados",
+        "amount": 3,
+        "unit": "large",
+        "original": "3 large Ripe avocados",
+        "aisle": "Other"
+      },
+      {
+        "name": "Lime juice",
+        "nameClean": "lime juice",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Lime juice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Red onion",
+        "nameClean": "red onion",
+        "amount": 0.25,
+        "unit": "cup finely diced",
+        "original": "0.25 cup finely diced Red onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Jalapeño",
+        "nameClean": "jalapeño",
+        "amount": 1,
+        "unit": "seeded and minced",
+        "original": "1 seeded and minced Jalapeño",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cilantro",
+        "nameClean": "cilantro",
+        "amount": 3,
+        "unit": "tbsp chopped",
+        "original": "3 tbsp chopped Cilantro",
+        "aisle": "Other"
+      },
+      {
+        "name": "Salt",
+        "nameClean": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Salt",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Halve and pit the avocados, then scoop flesh into a bowl."
+      },
+      {
+        "number": 2,
+        "text": "Mash to your preferred texture, chunky or smooth, with a fork."
+      },
+      {
+        "number": 3,
+        "text": "Stir in lime juice, onion, jalapeño, cilantro, and salt."
+      },
+      {
+        "number": 4,
+        "text": "Taste and adjust salt and lime, then serve immediately with tortilla chips."
+      }
+    ],
+    "slug": "guacamole"
   },
   {
     "id": "cu-5000010",
@@ -3409,6 +3591,111 @@
     "slug": "chicken-shawarma"
   },
   {
+    "id": "cu-5000031",
+    "source": "curated",
+    "lang": "en",
+    "title": "Falafel",
+    "titleEn": "Falafel",
+    "subtitle": "Crispy chickpea fritters",
+    "description": "",
+    "image": null,
+    "cuisine": "Middle Eastern",
+    "category": "Vegetarian",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 40,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Dried chickpeas",
+        "nameClean": "dried chickpeas",
+        "amount": 250,
+        "unit": "g soaked overnight",
+        "original": "250 g soaked overnight Dried chickpeas",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 0.5,
+        "unit": "roughly chopped",
+        "original": "0.5 roughly chopped Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Garlic",
+        "nameClean": "garlic",
+        "amount": 3,
+        "unit": "cloves",
+        "original": "3 cloves Garlic",
+        "aisle": "Other"
+      },
+      {
+        "name": "Parsley",
+        "nameClean": "parsley",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup Parsley",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin",
+        "nameClean": "cumin",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cumin",
+        "aisle": "Other"
+      },
+      {
+        "name": "Coriander powder",
+        "nameClean": "coriander powder",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Coriander powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Baking powder",
+        "nameClean": "baking powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Baking powder",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Drain soaked (uncooked) chickpeas and pulse in a food processor with onion, garlic, and parsley until finely ground but not pasty."
+      },
+      {
+        "number": 2,
+        "text": "Mix in cumin, coriander, salt, and baking powder."
+      },
+      {
+        "number": 3,
+        "text": "Chill the mixture 30 minutes so it holds together."
+      },
+      {
+        "number": 4,
+        "text": "Shape into small patties or balls."
+      },
+      {
+        "number": 5,
+        "text": "Fry in hot oil until deeply golden and crisp, about 3-4 minutes."
+      },
+      {
+        "number": 6,
+        "text": "Drain and serve in pita with tahini sauce and salad."
+      }
+    ],
+    "slug": "falafel"
+  },
+  {
     "id": "cu-5000032",
     "source": "curated",
     "lang": "en",
@@ -3528,6 +3815,95 @@
       }
     ],
     "slug": "greek-moussaka"
+  },
+  {
+    "id": "cu-5000033",
+    "source": "curated",
+    "lang": "en",
+    "title": "Hummus",
+    "titleEn": "Hummus",
+    "subtitle": "Creamy chickpea and tahini dip",
+    "description": "",
+    "image": null,
+    "cuisine": "Middle Eastern",
+    "category": "Side",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 10,
+    "servings": 6,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "nameClean": "chickpeas",
+        "amount": 2,
+        "unit": "cans (400g each), drained",
+        "original": "2 cans (400g each), drained Chickpeas",
+        "aisle": "Other"
+      },
+      {
+        "name": "Tahini",
+        "nameClean": "tahini",
+        "amount": 0.33,
+        "unit": "cup",
+        "original": "0.33 cup Tahini",
+        "aisle": "Other"
+      },
+      {
+        "name": "Lemon juice",
+        "nameClean": "lemon juice",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Lemon juice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Garlic",
+        "nameClean": "garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "original": "2 cloves Garlic",
+        "aisle": "Other"
+      },
+      {
+        "name": "Olive oil",
+        "nameClean": "olive oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Olive oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin",
+        "nameClean": "cumin",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Cumin",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Blend chickpeas, tahini, lemon juice, garlic, and cumin in a food processor until smooth."
+      },
+      {
+        "number": 2,
+        "text": "With the motor running, drizzle in olive oil and a splash of cold water until light and creamy."
+      },
+      {
+        "number": 3,
+        "text": "Taste and adjust salt, lemon, or water for consistency."
+      },
+      {
+        "number": 4,
+        "text": "Spread onto a plate, drizzle with more olive oil, and serve with pita or vegetables."
+      }
+    ],
+    "slug": "hummus"
   },
   {
     "id": "cu-5000034",
@@ -4350,6 +4726,111 @@
     "slug": "french-onion-soup"
   },
   {
+    "id": "cu-5000042",
+    "source": "curated",
+    "lang": "en",
+    "title": "Ratatouille",
+    "titleEn": "Ratatouille",
+    "subtitle": "Stewed Provençal vegetables",
+    "description": "",
+    "image": null,
+    "cuisine": "French",
+    "category": "Vegetarian",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 60,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "nameClean": "eggplant",
+        "amount": 1,
+        "unit": "diced",
+        "original": "1 diced Eggplant",
+        "aisle": "Other"
+      },
+      {
+        "name": "Zucchini",
+        "nameClean": "zucchini",
+        "amount": 2,
+        "unit": "diced",
+        "original": "2 diced Zucchini",
+        "aisle": "Other"
+      },
+      {
+        "name": "Bell peppers",
+        "nameClean": "bell peppers",
+        "amount": 2,
+        "unit": "diced",
+        "original": "2 diced Bell peppers",
+        "aisle": "Other"
+      },
+      {
+        "name": "Tomatoes",
+        "nameClean": "tomatoes",
+        "amount": 4,
+        "unit": "diced",
+        "original": "4 diced Tomatoes",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "diced",
+        "original": "1 diced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Garlic",
+        "nameClean": "garlic",
+        "amount": 3,
+        "unit": "cloves minced",
+        "original": "3 cloves minced Garlic",
+        "aisle": "Other"
+      },
+      {
+        "name": "Herbes de Provence",
+        "nameClean": "herbes de provence",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Herbes de Provence",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Sauté onion and garlic in olive oil until soft."
+      },
+      {
+        "number": 2,
+        "text": "Add eggplant and cook until it starts to soften, about 5 minutes."
+      },
+      {
+        "number": 3,
+        "text": "Stir in zucchini and bell peppers, cook 5 more minutes."
+      },
+      {
+        "number": 4,
+        "text": "Add tomatoes and herbes de Provence, season with salt and pepper."
+      },
+      {
+        "number": 5,
+        "text": "Cover and simmer gently for 30-35 minutes, stirring occasionally, until vegetables are tender and stew-like."
+      },
+      {
+        "number": 6,
+        "text": "Serve warm or at room temperature, with crusty bread."
+      }
+    ],
+    "slug": "ratatouille"
+  },
+  {
     "id": "cu-5000043",
     "source": "curated",
     "lang": "en",
@@ -4855,6 +5336,119 @@
     "slug": "fuchka-bengali-pani-puri"
   },
   {
+    "id": "cu-5000048",
+    "source": "curated",
+    "lang": "en",
+    "title": "Bibimbap",
+    "titleEn": "Bibimbap",
+    "subtitle": "Mixed rice bowl with vegetables and gochujang",
+    "description": "",
+    "image": null,
+    "cuisine": "Korean",
+    "category": "Main",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 45,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Cooked rice",
+        "nameClean": "cooked rice",
+        "amount": 4,
+        "unit": "cups",
+        "original": "4 cups Cooked rice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ground beef",
+        "nameClean": "ground beef",
+        "amount": 300,
+        "unit": "g",
+        "original": "300 g Ground beef",
+        "aisle": "Other"
+      },
+      {
+        "name": "Spinach",
+        "nameClean": "spinach",
+        "amount": 150,
+        "unit": "g blanched",
+        "original": "150 g blanched Spinach",
+        "aisle": "Other"
+      },
+      {
+        "name": "Carrot",
+        "nameClean": "carrot",
+        "amount": 1,
+        "unit": "julienned",
+        "original": "1 julienned Carrot",
+        "aisle": "Other"
+      },
+      {
+        "name": "Bean sprouts",
+        "nameClean": "bean sprouts",
+        "amount": 150,
+        "unit": "g blanched",
+        "original": "150 g blanched Bean sprouts",
+        "aisle": "Other"
+      },
+      {
+        "name": "Eggs",
+        "nameClean": "eggs",
+        "amount": 4,
+        "unit": "fried",
+        "original": "4 fried Eggs",
+        "aisle": "Other"
+      },
+      {
+        "name": "Gochujang",
+        "nameClean": "gochujang",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Gochujang",
+        "aisle": "Other"
+      },
+      {
+        "name": "Sesame oil",
+        "nameClean": "sesame oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Sesame oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Season beef with soy sauce, garlic, and a little sesame oil, then stir-fry until browned."
+      },
+      {
+        "number": 2,
+        "text": "Sauté carrot briefly until just tender, keeping each vegetable separate."
+      },
+      {
+        "number": 3,
+        "text": "Season blanched spinach and bean sprouts each with a little salt and sesame oil."
+      },
+      {
+        "number": 4,
+        "text": "Divide rice among bowls and arrange beef and vegetables in sections on top."
+      },
+      {
+        "number": 5,
+        "text": "Top each bowl with a fried egg, sunny-side up."
+      },
+      {
+        "number": 6,
+        "text": "Serve with a spoonful of gochujang on the side to mix in before eating."
+      }
+    ],
+    "slug": "bibimbap"
+  },
+  {
     "id": "cu-5000049",
     "source": "curated",
     "lang": "en",
@@ -5358,6 +5952,107 @@
       }
     ],
     "slug": "bun-cha"
+  },
+  {
+    "id": "cu-5000054",
+    "source": "curated",
+    "lang": "en",
+    "title": "Shakshuka",
+    "titleEn": "Shakshuka",
+    "subtitle": "Eggs poached in spiced tomato sauce",
+    "description": "",
+    "image": null,
+    "cuisine": "Middle Eastern",
+    "category": "Breakfast",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 30,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "nameClean": "eggs",
+        "amount": 6,
+        "unit": "large",
+        "original": "6 large Eggs",
+        "aisle": "Other"
+      },
+      {
+        "name": "Crushed tomatoes",
+        "nameClean": "crushed tomatoes",
+        "amount": 800,
+        "unit": "g",
+        "original": "800 g Crushed tomatoes",
+        "aisle": "Other"
+      },
+      {
+        "name": "Bell pepper",
+        "nameClean": "bell pepper",
+        "amount": 1,
+        "unit": "diced",
+        "original": "1 diced Bell pepper",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "diced",
+        "original": "1 diced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Garlic",
+        "nameClean": "garlic",
+        "amount": 3,
+        "unit": "cloves minced",
+        "original": "3 cloves minced Garlic",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin",
+        "nameClean": "cumin",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cumin",
+        "aisle": "Other"
+      },
+      {
+        "name": "Paprika",
+        "nameClean": "paprika",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Paprika",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Sauté onion and bell pepper until soft, then add garlic, cumin, and paprika."
+      },
+      {
+        "number": 2,
+        "text": "Pour in crushed tomatoes, season, and simmer 15 minutes until thickened."
+      },
+      {
+        "number": 3,
+        "text": "Make small wells in the sauce and crack an egg into each."
+      },
+      {
+        "number": 4,
+        "text": "Cover and cook until egg whites are set but yolks remain runny, about 6-8 minutes."
+      },
+      {
+        "number": 5,
+        "text": "Garnish with fresh herbs and serve straight from the pan with crusty bread."
+      }
+    ],
+    "slug": "shakshuka"
   },
   {
     "id": "cu-5000055",
@@ -5936,6 +6631,111 @@
       }
     ],
     "slug": "banana-bread"
+  },
+  {
+    "id": "cu-5000061",
+    "source": "curated",
+    "lang": "en",
+    "title": "Baklava",
+    "titleEn": "Baklava",
+    "subtitle": "Layered phyllo pastry with nuts and honey syrup",
+    "description": "",
+    "image": null,
+    "cuisine": "Middle Eastern",
+    "category": "Dessert",
+    "tags": [
+      "Hard"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 75,
+    "servings": 12,
+    "difficulty": "Hard",
+    "ingredients": [
+      {
+        "name": "Phyllo dough",
+        "nameClean": "phyllo dough",
+        "amount": 20,
+        "unit": "sheets",
+        "original": "20 sheets Phyllo dough",
+        "aisle": "Other"
+      },
+      {
+        "name": "Walnuts or pistachios",
+        "nameClean": "walnuts or pistachios",
+        "amount": 400,
+        "unit": "g finely chopped",
+        "original": "400 g finely chopped Walnuts or pistachios",
+        "aisle": "Other"
+      },
+      {
+        "name": "Butter",
+        "nameClean": "butter",
+        "amount": 200,
+        "unit": "g melted",
+        "original": "200 g melted Butter",
+        "aisle": "Other"
+      },
+      {
+        "name": "Honey",
+        "nameClean": "honey",
+        "amount": 200,
+        "unit": "g",
+        "original": "200 g Honey",
+        "aisle": "Other"
+      },
+      {
+        "name": "Sugar",
+        "nameClean": "sugar",
+        "amount": 150,
+        "unit": "g",
+        "original": "150 g Sugar",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cinnamon",
+        "nameClean": "cinnamon",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cinnamon",
+        "aisle": "Other"
+      },
+      {
+        "name": "Lemon juice",
+        "nameClean": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Lemon juice",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Mix chopped nuts with cinnamon."
+      },
+      {
+        "number": 2,
+        "text": "Layer about 8 sheets of phyllo in a buttered baking dish, brushing each sheet with melted butter."
+      },
+      {
+        "number": 3,
+        "text": "Spread half the nut mixture over the phyllo, add more buttered phyllo sheets, then the rest of the nuts, then a final stack of buttered phyllo on top."
+      },
+      {
+        "number": 4,
+        "text": "Cut into diamond shapes before baking."
+      },
+      {
+        "number": 5,
+        "text": "Bake at 160°C/325°F for 45-50 minutes until golden and crisp."
+      },
+      {
+        "number": 6,
+        "text": "Simmer sugar, honey, and lemon juice into a syrup, then pour evenly over the hot baklava as soon as it comes out of the oven; let it soak in fully before serving."
+      }
+    ],
+    "slug": "baklava"
   },
   {
     "id": "cu-5000062",
@@ -33058,6 +33858,65 @@
     "slug": "burger-sauce"
   },
   {
+    "id": "im-9000232",
+    "source": "imported",
+    "lang": "en",
+    "title": "Bushranger",
+    "titleEn": "Bushranger",
+    "subtitle": null,
+    "description": "",
+    "image": null,
+    "cuisine": "International",
+    "category": "Main",
+    "tags": [],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": null,
+    "servings": 4,
+    "difficulty": null,
+    "ingredients": [
+      {
+        "name": "s light rum",
+        "nameClean": "s light rum",
+        "amount": 1.5,
+        "unit": "ounce",
+        "original": "1.5 ounce s light rum",
+        "aisle": "Other"
+      },
+      {
+        "name": "to 1 1/2 ounces Dubonnet",
+        "nameClean": "to 1 1/2 ounces dubonnet",
+        "amount": 1,
+        "unit": "",
+        "original": "1 to 1 1/2 ounces Dubonnet",
+        "aisle": "Other"
+      },
+      {
+        "name": "es Angostura bitters",
+        "nameClean": "es angostura bitters",
+        "amount": 2,
+        "unit": "dash",
+        "original": "2 dash es Angostura bitters",
+        "aisle": "Other"
+      },
+      {
+        "name": "or 4 ice cubes",
+        "nameClean": "or 4 ice cubes",
+        "amount": 3,
+        "unit": "",
+        "original": "3 or 4 ice cubes",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Combine all ingredients in a cocktail shaker and shake vigorously. Strain into a cocktail glass."
+      }
+    ],
+    "slug": "bushranger"
+  },
+  {
     "id": "im-9000233",
     "source": "imported",
     "lang": "en",
@@ -59328,6 +60187,65 @@
     "slug": "cornmeal-pancakes-with-honey-pecan-butter"
   },
   {
+    "id": "im-9000459",
+    "source": "imported",
+    "lang": "en",
+    "title": "Cosmopolitans",
+    "titleEn": "Cosmopolitans",
+    "subtitle": null,
+    "description": "",
+    "image": null,
+    "cuisine": "International",
+    "category": "Main",
+    "tags": [],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": null,
+    "servings": 4,
+    "difficulty": null,
+    "ingredients": [
+      {
+        "name": "vodka",
+        "nameClean": "vodka",
+        "amount": 1,
+        "unit": "cup",
+        "original": "1 cup vodka",
+        "aisle": "Other"
+      },
+      {
+        "name": "triple sec",
+        "nameClean": "triple sec",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup triple sec",
+        "aisle": "Other"
+      },
+      {
+        "name": "cranberry juice",
+        "nameClean": "cranberry juice",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup cranberry juice",
+        "aisle": "Other"
+      },
+      {
+        "name": "freshly squeezed lime juice",
+        "nameClean": "freshly squeezed lime juice",
+        "amount": 0.25,
+        "unit": "cup",
+        "original": "0.25 cup freshly squeezed lime juice",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Pour all ingredients into a cocktail shaker with ice. Shake well and pour through a strainer into four martini glasses."
+      }
+    ],
+    "slug": "cosmopolitans"
+  },
+  {
     "id": "im-9000460",
     "source": "imported",
     "lang": "en",
@@ -59588,6 +60506,113 @@
       }
     ],
     "slug": "country-ham-and-cheddar-pretzel-bites-with-jalapeno-mustard"
+  },
+  {
+    "id": "im-9000462",
+    "source": "imported",
+    "lang": "en",
+    "title": "Court-Bouillon",
+    "titleEn": "Court-Bouillon",
+    "subtitle": null,
+    "description": "",
+    "image": null,
+    "cuisine": "International",
+    "category": "Main",
+    "tags": [],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": null,
+    "servings": 4,
+    "difficulty": null,
+    "ingredients": [
+      {
+        "name": "s water",
+        "nameClean": "s water",
+        "amount": 4,
+        "unit": "cup",
+        "original": "4 cup s water",
+        "aisle": "Other"
+      },
+      {
+        "name": "red wine vinegar",
+        "nameClean": "red wine vinegar",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup red wine vinegar",
+        "aisle": "Other"
+      },
+      {
+        "name": "thyme sprig",
+        "nameClean": "thyme sprig",
+        "amount": 1,
+        "unit": "",
+        "original": "1 thyme sprig",
+        "aisle": "Other"
+      },
+      {
+        "name": "flat-leaf parsley sprigs",
+        "nameClean": "flat-leaf parsley sprigs",
+        "amount": 2,
+        "unit": "",
+        "original": "2 flat-leaf parsley sprigs",
+        "aisle": "Other"
+      },
+      {
+        "name": "bay leaf",
+        "nameClean": "bay leaf",
+        "amount": 1,
+        "unit": "",
+        "original": "1 bay leaf",
+        "aisle": "Other"
+      },
+      {
+        "name": "arlic cloves",
+        "nameClean": "arlic cloves",
+        "amount": 3,
+        "unit": "g",
+        "original": "3 g arlic cloves",
+        "aisle": "Other"
+      },
+      {
+        "name": "carrot, peeled",
+        "nameClean": "carrot, peeled",
+        "amount": 0.5,
+        "unit": "",
+        "original": "0.5 carrot, peeled",
+        "aisle": "Other"
+      },
+      {
+        "name": "onion",
+        "nameClean": "onion",
+        "amount": 0.5,
+        "unit": "",
+        "original": "0.5 onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "peppercorns",
+        "nameClean": "peppercorns",
+        "amount": 1,
+        "unit": "tablespoon",
+        "original": "1 tablespoon peppercorns",
+        "aisle": "Other"
+      },
+      {
+        "name": "Fine sea salt",
+        "nameClean": "fine sea salt",
+        "amount": null,
+        "unit": "",
+        "original": "Fine sea salt",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Place all the ingredients except the salt in a pot and bring to a boil. Lower the heat and simmer for to minutes. Strain and season to taste with salt."
+      }
+    ],
+    "slug": "court-bouillon"
   },
   {
     "id": "im-9000463",
@@ -68759,6 +69784,73 @@
     "slug": "dill-pickle-soup"
   },
   {
+    "id": "im-9000550",
+    "source": "imported",
+    "lang": "en",
+    "title": "Dinah",
+    "titleEn": "Dinah",
+    "subtitle": null,
+    "description": "",
+    "image": null,
+    "cuisine": "International",
+    "category": "Main",
+    "tags": [],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": null,
+    "servings": 4,
+    "difficulty": null,
+    "ingredients": [
+      {
+        "name": "s whiskey",
+        "nameClean": "s whiskey",
+        "amount": 1.5,
+        "unit": "ounce",
+        "original": "1.5 ounce s whiskey",
+        "aisle": "Other"
+      },
+      {
+        "name": "lemon juice",
+        "nameClean": "lemon juice",
+        "amount": 1,
+        "unit": "tablespoon",
+        "original": "1 tablespoon lemon juice",
+        "aisle": "Other"
+      },
+      {
+        "name": "superfine sugar",
+        "nameClean": "superfine sugar",
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "original": "0.5 teaspoon superfine sugar",
+        "aisle": "Other"
+      },
+      {
+        "name": "or 3 sprigs fresh mint",
+        "nameClean": "or 3 sprigs fresh mint",
+        "amount": 2,
+        "unit": "",
+        "original": "2 or 3 sprigs fresh mint",
+        "aisle": "Other"
+      },
+      {
+        "name": "crushed ice",
+        "nameClean": "crushed ice",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup crushed ice",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Put all ingredients in a cocktail shaker, reserving one mint leaf, and shake vigorously. Strain into a cocktail glass, float the mint leaves on top."
+      }
+    ],
+    "slug": "dinah"
+  },
+  {
     "id": "im-9000551",
     "source": "imported",
     "lang": "en",
@@ -73803,6 +74895,2514 @@
       }
     ],
     "slug": "edamame-fresca"
+  },
+  {
+    "id": "bx-6000001",
+    "source": "curated",
+    "lang": "en",
+    "title": "Murgir Jhol",
+    "titleEn": "Murgir Jhol",
+    "subtitle": "Everyday thin Bengali chicken curry with potatoes",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Main",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 45,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Chicken, bone-in pieces",
+        "nameClean": "chicken, bone-in pieces",
+        "amount": 800,
+        "unit": "g",
+        "original": "800 g Chicken, bone-in pieces",
+        "aisle": "Other"
+      },
+      {
+        "name": "Potato",
+        "nameClean": "potato",
+        "amount": 2,
+        "unit": "quartered",
+        "original": "2 quartered Potato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 2,
+        "unit": "sliced",
+        "original": "2 sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "nameClean": "ginger-garlic paste",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Ginger-garlic paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin powder",
+        "nameClean": "cumin powder",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cumin powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili",
+        "nameClean": "green chili",
+        "amount": 3,
+        "unit": "whole",
+        "original": "3 whole Green chili",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate chicken with turmeric and a little salt for 15 minutes."
+      },
+      {
+        "number": 2,
+        "text": "Heat mustard oil until it just smokes, then lightly fry the potatoes until golden; set aside."
+      },
+      {
+        "number": 3,
+        "text": "In the same oil, fry sliced onion until golden brown."
+      },
+      {
+        "number": 4,
+        "text": "Add ginger-garlic paste and cook until the raw smell is gone, then add cumin powder and a splash of water to keep spices from burning."
+      },
+      {
+        "number": 5,
+        "text": "Add chicken and cook, stirring, until it changes color and the oil separates."
+      },
+      {
+        "number": 6,
+        "text": "Add fried potatoes, whole green chilies, and enough hot water to make a thin curry; simmer 20-25 minutes until chicken and potato are tender."
+      },
+      {
+        "number": 7,
+        "text": "Serve hot with steamed rice."
+      }
+    ],
+    "slug": "murgir-jhol"
+  },
+  {
+    "id": "bx-6000002",
+    "source": "curated",
+    "lang": "en",
+    "title": "Alur Dom",
+    "titleEn": "Alur Dom",
+    "subtitle": "Baby potatoes simmered in a spiced curry",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 35,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Baby potatoes",
+        "nameClean": "baby potatoes",
+        "amount": 500,
+        "unit": "g, boiled and peeled",
+        "original": "500 g, boiled and peeled Baby potatoes",
+        "aisle": "Other"
+      },
+      {
+        "name": "Tomato",
+        "nameClean": "tomato",
+        "amount": 2,
+        "unit": "puréed",
+        "original": "2 puréed Tomato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger paste",
+        "nameClean": "ginger paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Ginger paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Panch phoron",
+        "nameClean": "panch phoron",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Panch phoron",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Kashmiri chili powder",
+        "nameClean": "kashmiri chili powder",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Kashmiri chili powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Bay leaf",
+        "nameClean": "bay leaf",
+        "amount": 1,
+        "unit": "leaf",
+        "original": "1 leaf Bay leaf",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Prick the boiled baby potatoes a few times with a fork so they absorb the sauce."
+      },
+      {
+        "number": 2,
+        "text": "Heat mustard oil, temper with panch phoron and bay leaf until fragrant."
+      },
+      {
+        "number": 3,
+        "text": "Add ginger paste, turmeric, and chili powder, stir briefly, then add tomato purée."
+      },
+      {
+        "number": 4,
+        "text": "Cook the masala until oil separates from the sides."
+      },
+      {
+        "number": 5,
+        "text": "Add potatoes and enough water for a semi-thick gravy, season with salt."
+      },
+      {
+        "number": 6,
+        "text": "Simmer 10-12 minutes until the potatoes are well coated and the sauce thickens."
+      },
+      {
+        "number": 7,
+        "text": "Serve with luchi (fried flatbread) or rice."
+      }
+    ],
+    "slug": "alur-dom"
+  },
+  {
+    "id": "bx-6000003",
+    "source": "curated",
+    "lang": "en",
+    "title": "Doi Maach",
+    "titleEn": "Doi Maach",
+    "subtitle": "Fish simmered in a mild yogurt curry",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Fish",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 40,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Rohu or any firm white fish",
+        "nameClean": "rohu or any firm white fish",
+        "amount": 6,
+        "unit": "pieces",
+        "original": "6 pieces Rohu or any firm white fish",
+        "aisle": "Other"
+      },
+      {
+        "name": "Yogurt",
+        "nameClean": "yogurt",
+        "amount": 200,
+        "unit": "g whisked",
+        "original": "200 g whisked Yogurt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion paste",
+        "nameClean": "onion paste",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Onion paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger paste",
+        "nameClean": "ginger paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Ginger paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin powder",
+        "nameClean": "cumin powder",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cumin powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 4,
+        "unit": "tbsp",
+        "original": "4 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili",
+        "nameClean": "green chili",
+        "amount": 3,
+        "unit": "slit",
+        "original": "3 slit Green chili",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Rub fish pieces with turmeric and salt, then shallow-fry in mustard oil until lightly golden; set aside."
+      },
+      {
+        "number": 2,
+        "text": "In the same oil, fry onion paste until golden, then add ginger paste, turmeric, and cumin powder."
+      },
+      {
+        "number": 3,
+        "text": "Cook the masala until fragrant and the oil separates."
+      },
+      {
+        "number": 4,
+        "text": "Lower the heat, then stir in whisked yogurt gradually to prevent curdling."
+      },
+      {
+        "number": 5,
+        "text": "Add a little water to loosen the sauce and bring to a gentle simmer, never a rolling boil."
+      },
+      {
+        "number": 6,
+        "text": "Slide in the fried fish and slit green chilies, simmer 8-10 minutes."
+      },
+      {
+        "number": 7,
+        "text": "Serve hot with steamed rice."
+      }
+    ],
+    "slug": "doi-maach"
+  },
+  {
+    "id": "bx-6000004",
+    "source": "curated",
+    "lang": "en",
+    "title": "Chingri Bhuna",
+    "titleEn": "Chingri Bhuna",
+    "subtitle": "Dry-fried prawns in a thick spiced masala",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Seafood",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 35,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Prawns, peeled and deveined",
+        "nameClean": "prawns, peeled and deveined",
+        "amount": 500,
+        "unit": "g",
+        "original": "500 g Prawns, peeled and deveined",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 2,
+        "unit": "finely sliced",
+        "original": "2 finely sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Tomato",
+        "nameClean": "tomato",
+        "amount": 2,
+        "unit": "chopped",
+        "original": "2 chopped Tomato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "nameClean": "ginger-garlic paste",
+        "amount": 1.5,
+        "unit": "tbsp",
+        "original": "1.5 tbsp Ginger-garlic paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Red chili powder",
+        "nameClean": "red chili powder",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Red chili powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 4,
+        "unit": "tbsp",
+        "original": "4 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin seeds",
+        "nameClean": "cumin seeds",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cumin seeds",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate prawns briefly with turmeric and salt."
+      },
+      {
+        "number": 2,
+        "text": "Heat mustard oil and quickly sear the prawns until just pink; remove and set aside."
+      },
+      {
+        "number": 3,
+        "text": "In the same oil, temper cumin seeds, then fry onions until deep golden."
+      },
+      {
+        "number": 4,
+        "text": "Add ginger-garlic paste and cook until fragrant, then add tomato, turmeric, and chili powder."
+      },
+      {
+        "number": 5,
+        "text": "Cook the masala down until thick and the oil separates from the sides."
+      },
+      {
+        "number": 6,
+        "text": "Return prawns to the pan and toss on high heat for 3-4 minutes until coated and nearly dry."
+      },
+      {
+        "number": 7,
+        "text": "Serve hot as a side with rice or khichuri."
+      }
+    ],
+    "slug": "chingri-bhuna"
+  },
+  {
+    "id": "bx-6000005",
+    "source": "curated",
+    "lang": "en",
+    "title": "Kacchi Biryani",
+    "titleEn": "Kacchi Biryani",
+    "subtitle": "Slow-cooked layered rice and marinated mutton, a Dhaka classic",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Main",
+    "tags": [
+      "Hard"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 150,
+    "servings": 8,
+    "difficulty": "Hard",
+    "ingredients": [
+      {
+        "name": "Mutton, bone-in",
+        "nameClean": "mutton, bone-in",
+        "amount": 1,
+        "unit": "kg",
+        "original": "1 kg Mutton, bone-in",
+        "aisle": "Other"
+      },
+      {
+        "name": "Basmati rice",
+        "nameClean": "basmati rice",
+        "amount": 700,
+        "unit": "g soaked",
+        "original": "700 g soaked Basmati rice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Yogurt",
+        "nameClean": "yogurt",
+        "amount": 250,
+        "unit": "g",
+        "original": "250 g Yogurt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Fried onions",
+        "nameClean": "fried onions",
+        "amount": 150,
+        "unit": "g",
+        "original": "150 g Fried onions",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ghee",
+        "nameClean": "ghee",
+        "amount": 100,
+        "unit": "g",
+        "original": "100 g Ghee",
+        "aisle": "Other"
+      },
+      {
+        "name": "Potato",
+        "nameClean": "potato",
+        "amount": 4,
+        "unit": "whole, fried",
+        "original": "4 whole, fried Potato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Saffron milk",
+        "nameClean": "saffron milk",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup Saffron milk",
+        "aisle": "Other"
+      },
+      {
+        "name": "Whole spices",
+        "nameClean": "whole spices",
+        "amount": 1,
+        "unit": "set (cinnamon, cardamom, star anise, mace)",
+        "original": "1 set (cinnamon, cardamom, star anise, mace) Whole spices",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate mutton overnight in yogurt, ginger-garlic paste, half the fried onions, and whole spice powder."
+      },
+      {
+        "number": 2,
+        "text": "Parboil the soaked rice with whole spices until about 70% cooked, then drain."
+      },
+      {
+        "number": 3,
+        "text": "Arrange marinated mutton and fried potatoes in the bottom of a heavy pot."
+      },
+      {
+        "number": 4,
+        "text": "Layer the parboiled rice evenly over the meat."
+      },
+      {
+        "number": 5,
+        "text": "Drizzle with ghee, saffron milk, and remaining fried onions."
+      },
+      {
+        "number": 6,
+        "text": "Seal the pot tightly (dough-sealed lid or foil) and cook on very low heat (dum) for 45-60 minutes."
+      },
+      {
+        "number": 7,
+        "text": "Rest 10 minutes before opening, then gently mix from the bottom up and serve."
+      }
+    ],
+    "slug": "kacchi-biryani"
+  },
+  {
+    "id": "bx-6000006",
+    "source": "curated",
+    "lang": "en",
+    "title": "Morog Polao",
+    "titleEn": "Morog Polao",
+    "subtitle": "Fragrant chicken pilaf with ghee and whole spices",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Main",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 60,
+    "servings": 6,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Chicken, bone-in pieces",
+        "nameClean": "chicken, bone-in pieces",
+        "amount": 1,
+        "unit": "kg",
+        "original": "1 kg Chicken, bone-in pieces",
+        "aisle": "Other"
+      },
+      {
+        "name": "Polao/basmati rice",
+        "nameClean": "polao/basmati rice",
+        "amount": 500,
+        "unit": "g",
+        "original": "500 g Polao/basmati rice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Yogurt",
+        "nameClean": "yogurt",
+        "amount": 100,
+        "unit": "g",
+        "original": "100 g Yogurt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Fried onions",
+        "nameClean": "fried onions",
+        "amount": 100,
+        "unit": "g",
+        "original": "100 g Fried onions",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ghee",
+        "nameClean": "ghee",
+        "amount": 80,
+        "unit": "g",
+        "original": "80 g Ghee",
+        "aisle": "Other"
+      },
+      {
+        "name": "Whole spices",
+        "nameClean": "whole spices",
+        "amount": 1,
+        "unit": "set (cinnamon, cardamom, cloves, bay leaf)",
+        "original": "1 set (cinnamon, cardamom, cloves, bay leaf) Whole spices",
+        "aisle": "Other"
+      },
+      {
+        "name": "Kewra water",
+        "nameClean": "kewra water",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Kewra water",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate chicken in yogurt, ginger-garlic paste, and salt for 30 minutes."
+      },
+      {
+        "number": 2,
+        "text": "Heat ghee, temper whole spices until fragrant, then add chicken and cook until browned."
+      },
+      {
+        "number": 3,
+        "text": "Remove chicken pieces, leaving the flavored fat in the pot."
+      },
+      {
+        "number": 4,
+        "text": "Add rinsed rice to the pot and stir gently to coat each grain in ghee."
+      },
+      {
+        "number": 5,
+        "text": "Return the chicken to the pot, add hot water, and bring to a boil."
+      },
+      {
+        "number": 6,
+        "text": "Cover and cook on low heat until rice is fluffy and water is absorbed, about 20 minutes."
+      },
+      {
+        "number": 7,
+        "text": "Sprinkle with kewra water and fried onions, then rest 5 minutes before serving."
+      }
+    ],
+    "slug": "morog-polao"
+  },
+  {
+    "id": "bx-6000007",
+    "source": "curated",
+    "lang": "en",
+    "title": "Chicken Rezala",
+    "titleEn": "Chicken Rezala",
+    "subtitle": "Mild, creamy white curry with yogurt and whole spices",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Main",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 50,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Chicken, bone-in pieces",
+        "nameClean": "chicken, bone-in pieces",
+        "amount": 800,
+        "unit": "g",
+        "original": "800 g Chicken, bone-in pieces",
+        "aisle": "Other"
+      },
+      {
+        "name": "Yogurt",
+        "nameClean": "yogurt",
+        "amount": 200,
+        "unit": "g",
+        "original": "200 g Yogurt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cashew paste",
+        "nameClean": "cashew paste",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Cashew paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion paste",
+        "nameClean": "onion paste",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Onion paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili paste",
+        "nameClean": "green chili paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Green chili paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ghee",
+        "nameClean": "ghee",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Ghee",
+        "aisle": "Other"
+      },
+      {
+        "name": "Whole garam masala",
+        "nameClean": "whole garam masala",
+        "amount": 1,
+        "unit": "set (cardamom, cinnamon, cloves)",
+        "original": "1 set (cardamom, cinnamon, cloves) Whole garam masala",
+        "aisle": "Other"
+      },
+      {
+        "name": "Kewra water",
+        "nameClean": "kewra water",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Kewra water",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate chicken in yogurt and a little salt for 20 minutes."
+      },
+      {
+        "number": 2,
+        "text": "Heat ghee, temper whole garam masala until fragrant."
+      },
+      {
+        "number": 3,
+        "text": "Add onion paste and cook gently without browning, keeping the curry pale."
+      },
+      {
+        "number": 4,
+        "text": "Add cashew paste and green chili paste, cook 2-3 minutes."
+      },
+      {
+        "number": 5,
+        "text": "Add marinated chicken and cook, stirring, until it releases its juices."
+      },
+      {
+        "number": 6,
+        "text": "Cover and simmer on low heat until chicken is tender and the sauce is creamy, about 20-25 minutes."
+      },
+      {
+        "number": 7,
+        "text": "Finish with a splash of kewra water and serve with polao or plain rice."
+      }
+    ],
+    "slug": "chicken-rezala"
+  },
+  {
+    "id": "bx-6000008",
+    "source": "curated",
+    "lang": "en",
+    "title": "Mutton Kala Bhuna",
+    "titleEn": "Mutton Kala Bhuna",
+    "subtitle": "Deeply dark, slow-fried Chittagong-style mutton curry",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Beef",
+    "tags": [
+      "Hard"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 150,
+    "servings": 6,
+    "difficulty": "Hard",
+    "ingredients": [
+      {
+        "name": "Mutton, bone-in",
+        "nameClean": "mutton, bone-in",
+        "amount": 1,
+        "unit": "kg",
+        "original": "1 kg Mutton, bone-in",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 4,
+        "unit": "thinly sliced",
+        "original": "4 thinly sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "nameClean": "ginger-garlic paste",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Ginger-garlic paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 6,
+        "unit": "tbsp",
+        "original": "6 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Whole spices",
+        "nameClean": "whole spices",
+        "amount": 1,
+        "unit": "set (bay leaf, cinnamon, cardamom)",
+        "original": "1 set (bay leaf, cinnamon, cardamom) Whole spices",
+        "aisle": "Other"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "nameClean": "roasted cumin powder",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Roasted cumin powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Kashmiri chili powder",
+        "nameClean": "kashmiri chili powder",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Kashmiri chili powder",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate mutton with ginger-garlic paste, chili powder, and salt for at least 1 hour."
+      },
+      {
+        "number": 2,
+        "text": "Heat mustard oil in a heavy pot and fry the sliced onions very slowly until deep, dark brown, almost black at the edges."
+      },
+      {
+        "number": 3,
+        "text": "Add marinated mutton and whole spices, cook on high heat until browned all over."
+      },
+      {
+        "number": 4,
+        "text": "Reduce heat to low, cover, and cook the mutton in its own juices, stirring occasionally, for 1.5-2 hours until very tender."
+      },
+      {
+        "number": 5,
+        "text": "Once tender, uncover and cook on medium-high heat, stirring frequently, until the liquid dries up and the meat is coated in a thick, dark, almost dry masala."
+      },
+      {
+        "number": 6,
+        "text": "Finish with roasted cumin powder and serve with paratha or rice."
+      }
+    ],
+    "slug": "mutton-kala-bhuna"
+  },
+  {
+    "id": "bx-6000009",
+    "source": "curated",
+    "lang": "en",
+    "title": "Dim Bhuna",
+    "titleEn": "Dim Bhuna",
+    "subtitle": "Hard-boiled eggs simmered in a rich onion-tomato masala",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 30,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "nameClean": "eggs",
+        "amount": 6,
+        "unit": "hard-boiled and peeled",
+        "original": "6 hard-boiled and peeled Eggs",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 2,
+        "unit": "finely chopped",
+        "original": "2 finely chopped Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Tomato",
+        "nameClean": "tomato",
+        "amount": 2,
+        "unit": "chopped",
+        "original": "2 chopped Tomato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "nameClean": "ginger-garlic paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Ginger-garlic paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Red chili powder",
+        "nameClean": "red chili powder",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Red chili powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Prick the boiled eggs lightly and shallow-fry in mustard oil until spotted golden brown; set aside."
+      },
+      {
+        "number": 2,
+        "text": "In the same oil, fry chopped onion until golden."
+      },
+      {
+        "number": 3,
+        "text": "Add ginger-garlic paste and cook until fragrant, then stir in tomato, turmeric, and chili powder."
+      },
+      {
+        "number": 4,
+        "text": "Cook the masala until thick and the oil separates from the sides."
+      },
+      {
+        "number": 5,
+        "text": "Add enough water for a medium gravy, season with salt, and simmer 5 minutes."
+      },
+      {
+        "number": 6,
+        "text": "Slide in the fried eggs, simmer 5 more minutes so they soak up the sauce."
+      },
+      {
+        "number": 7,
+        "text": "Serve hot with rice or paratha."
+      }
+    ],
+    "slug": "dim-bhuna"
+  },
+  {
+    "id": "bx-6000010",
+    "source": "curated",
+    "lang": "en",
+    "title": "Muri Ghonto",
+    "titleEn": "Muri Ghonto",
+    "subtitle": "Fish head cooked with rice and vegetables",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Fish",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 45,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Fish head (rohu or katla)",
+        "nameClean": "fish head (rohu or katla)",
+        "amount": 1,
+        "unit": "whole, cut into pieces",
+        "original": "1 whole, cut into pieces Fish head (rohu or katla)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Rice",
+        "nameClean": "rice",
+        "amount": 100,
+        "unit": "g washed",
+        "original": "100 g washed Rice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Potato",
+        "nameClean": "potato",
+        "amount": 1,
+        "unit": "diced",
+        "original": "1 diced Potato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "sliced",
+        "original": "1 sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger paste",
+        "nameClean": "ginger paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Ginger paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Panch phoron",
+        "nameClean": "panch phoron",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Panch phoron",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Rub fish head pieces with turmeric and salt, then fry in mustard oil until browned; set aside."
+      },
+      {
+        "number": 2,
+        "text": "In the same oil, temper panch phoron until fragrant, then fry onion until golden."
+      },
+      {
+        "number": 3,
+        "text": "Add ginger paste and diced potato, cook a few minutes."
+      },
+      {
+        "number": 4,
+        "text": "Add washed rice and stir gently to coat in the spices."
+      },
+      {
+        "number": 5,
+        "text": "Return fried fish head to the pot, add hot water, and season with salt."
+      },
+      {
+        "number": 6,
+        "text": "Cover and simmer until rice and potato are fully cooked and the mixture is soft and well combined, about 20 minutes."
+      },
+      {
+        "number": 7,
+        "text": "Serve hot as part of a rice meal."
+      }
+    ],
+    "slug": "muri-ghonto"
+  },
+  {
+    "id": "bx-6000011",
+    "source": "curated",
+    "lang": "en",
+    "title": "Labra",
+    "titleEn": "Labra",
+    "subtitle": "Mixed vegetable medley cooked with panch phoron",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 35,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Pumpkin",
+        "nameClean": "pumpkin",
+        "amount": 200,
+        "unit": "g diced",
+        "original": "200 g diced Pumpkin",
+        "aisle": "Other"
+      },
+      {
+        "name": "Potato",
+        "nameClean": "potato",
+        "amount": 200,
+        "unit": "g diced",
+        "original": "200 g diced Potato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Eggplant",
+        "nameClean": "eggplant",
+        "amount": 150,
+        "unit": "g diced",
+        "original": "150 g diced Eggplant",
+        "aisle": "Other"
+      },
+      {
+        "name": "Flat beans",
+        "nameClean": "flat beans",
+        "amount": 100,
+        "unit": "g chopped",
+        "original": "100 g chopped Flat beans",
+        "aisle": "Other"
+      },
+      {
+        "name": "Panch phoron",
+        "nameClean": "panch phoron",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Panch phoron",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Bay leaf",
+        "nameClean": "bay leaf",
+        "amount": 1,
+        "unit": "leaf",
+        "original": "1 leaf Bay leaf",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Heat mustard oil and temper panch phoron and bay leaf until they start to pop."
+      },
+      {
+        "number": 2,
+        "text": "Add all the chopped vegetables together with turmeric and a pinch of salt."
+      },
+      {
+        "number": 3,
+        "text": "Stir well to coat everything in the spices."
+      },
+      {
+        "number": 4,
+        "text": "Cover and cook on low heat, stirring occasionally, letting the vegetables release their own moisture, about 20-25 minutes."
+      },
+      {
+        "number": 5,
+        "text": "Mash lightly with the back of the spoon so the mixture turns soft and slightly stewy, not a dry stir-fry."
+      },
+      {
+        "number": 6,
+        "text": "Serve warm with rice and dal."
+      }
+    ],
+    "slug": "labra"
+  },
+  {
+    "id": "bx-6000012",
+    "source": "curated",
+    "lang": "en",
+    "title": "Aloo Bhorta",
+    "titleEn": "Aloo Bhorta",
+    "subtitle": "Mashed potato with mustard oil, onion, and green chili",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Side",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 20,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Potato",
+        "nameClean": "potato",
+        "amount": 4,
+        "unit": "boiled",
+        "original": "4 boiled Potato",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "finely chopped",
+        "original": "1 finely chopped Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili",
+        "nameClean": "green chili",
+        "amount": 2,
+        "unit": "finely chopped",
+        "original": "2 finely chopped Green chili",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cilantro",
+        "nameClean": "cilantro",
+        "amount": 2,
+        "unit": "tbsp chopped",
+        "original": "2 tbsp chopped Cilantro",
+        "aisle": "Other"
+      },
+      {
+        "name": "Salt",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Salt",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Peel and mash the boiled potatoes while still warm, until smooth."
+      },
+      {
+        "number": 2,
+        "text": "Add mustard oil, chopped onion, green chili, and cilantro."
+      },
+      {
+        "number": 3,
+        "text": "Season with salt and mix everything together thoroughly with your hand or a spoon until well combined."
+      },
+      {
+        "number": 4,
+        "text": "Taste and adjust chili or salt."
+      },
+      {
+        "number": 5,
+        "text": "Serve at room temperature with hot rice and dal."
+      }
+    ],
+    "slug": "aloo-bhorta"
+  },
+  {
+    "id": "bx-6000013",
+    "source": "curated",
+    "lang": "en",
+    "title": "Beguni",
+    "titleEn": "Beguni",
+    "subtitle": "Batter-fried eggplant slices, a classic iftar snack",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Snack",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 25,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "nameClean": "eggplant",
+        "amount": 1,
+        "unit": "large, sliced into rounds",
+        "original": "1 large, sliced into rounds Eggplant",
+        "aisle": "Other"
+      },
+      {
+        "name": "Gram flour (besan)",
+        "nameClean": "gram flour (besan)",
+        "amount": 1,
+        "unit": "cup",
+        "original": "1 cup Gram flour (besan)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Rice flour",
+        "nameClean": "rice flour",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Rice flour",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Red chili powder",
+        "nameClean": "red chili powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Red chili powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Baking soda",
+        "nameClean": "baking soda",
+        "amount": 0.25,
+        "unit": "tsp",
+        "original": "0.25 tsp Baking soda",
+        "aisle": "Other"
+      },
+      {
+        "name": "Vegetable oil",
+        "nameClean": "vegetable oil",
+        "amount": 2,
+        "unit": "cups for frying",
+        "original": "2 cups for frying Vegetable oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Whisk gram flour, rice flour, turmeric, chili powder, baking soda, and water into a smooth, thick batter."
+      },
+      {
+        "number": 2,
+        "text": "Salt the eggplant slices and let them sit 10 minutes, then pat dry."
+      },
+      {
+        "number": 3,
+        "text": "Heat oil until shimmering."
+      },
+      {
+        "number": 4,
+        "text": "Dip each eggplant slice fully in the batter, letting excess drip off."
+      },
+      {
+        "number": 5,
+        "text": "Fry until golden and crisp on both sides, about 3-4 minutes total."
+      },
+      {
+        "number": 6,
+        "text": "Drain on paper towels and serve hot with muri or chutney."
+      }
+    ],
+    "slug": "beguni"
+  },
+  {
+    "id": "bx-6000014",
+    "source": "curated",
+    "lang": "en",
+    "title": "Piyaju",
+    "titleEn": "Piyaju",
+    "subtitle": "Crisp lentil and onion fritters",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Snack",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 30,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Split red lentils (masoor dal)",
+        "nameClean": "split red lentils (masoor dal)",
+        "amount": 200,
+        "unit": "g soaked",
+        "original": "200 g soaked Split red lentils (masoor dal)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "thinly sliced",
+        "original": "1 thinly sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili",
+        "nameClean": "green chili",
+        "amount": 3,
+        "unit": "chopped",
+        "original": "3 chopped Green chili",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cilantro",
+        "nameClean": "cilantro",
+        "amount": 2,
+        "unit": "tbsp chopped",
+        "original": "2 tbsp chopped Cilantro",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cumin seeds",
+        "nameClean": "cumin seeds",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Cumin seeds",
+        "aisle": "Other"
+      },
+      {
+        "name": "Vegetable oil",
+        "nameClean": "vegetable oil",
+        "amount": 2,
+        "unit": "cups for frying",
+        "original": "2 cups for frying Vegetable oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Drain soaked lentils and grind coarsely in a food processor, without adding water — the mixture should be thick."
+      },
+      {
+        "number": 2,
+        "text": "Mix in sliced onion, green chili, cilantro, cumin seeds, and salt."
+      },
+      {
+        "number": 3,
+        "text": "Heat oil until hot."
+      },
+      {
+        "number": 4,
+        "text": "Scoop small portions of the mixture and flatten slightly before sliding into the oil."
+      },
+      {
+        "number": 5,
+        "text": "Fry until deep golden and crisp, about 3-4 minutes, turning once."
+      },
+      {
+        "number": 6,
+        "text": "Drain and serve hot, ideally at iftar with dates and chutney."
+      }
+    ],
+    "slug": "piyaju"
+  },
+  {
+    "id": "bx-6000015",
+    "source": "curated",
+    "lang": "en",
+    "title": "Nimki",
+    "titleEn": "Nimki",
+    "subtitle": "Crisp savory diamond-cut fried snack",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Snack",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 40,
+    "servings": 8,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "All-purpose flour",
+        "nameClean": "all-purpose flour",
+        "amount": 300,
+        "unit": "g",
+        "original": "300 g All-purpose flour",
+        "aisle": "Other"
+      },
+      {
+        "name": "Nigella seeds (kalonji)",
+        "nameClean": "nigella seeds (kalonji)",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Nigella seeds (kalonji)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ghee",
+        "nameClean": "ghee",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Ghee",
+        "aisle": "Other"
+      },
+      {
+        "name": "Salt",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Salt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Vegetable oil",
+        "nameClean": "vegetable oil",
+        "amount": 3,
+        "unit": "cups for frying",
+        "original": "3 cups for frying Vegetable oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Mix flour with nigella seeds and salt, then rub in the ghee until the mixture resembles coarse crumbs."
+      },
+      {
+        "number": 2,
+        "text": "Knead into a firm dough with cold water, then rest 15 minutes."
+      },
+      {
+        "number": 3,
+        "text": "Roll the dough into a thin sheet and cut into small diamond shapes with a knife."
+      },
+      {
+        "number": 4,
+        "text": "Heat oil to medium-low heat, then fry the pieces in batches, stirring occasionally, until light golden and crisp, about 8-10 minutes — low heat keeps them crunchy all the way through."
+      },
+      {
+        "number": 5,
+        "text": "Drain and cool completely before storing in an airtight container."
+      }
+    ],
+    "slug": "nimki"
+  },
+  {
+    "id": "bx-6000016",
+    "source": "curated",
+    "lang": "en",
+    "title": "Payesh",
+    "titleEn": "Payesh",
+    "subtitle": "Bengali rice pudding with milk and jaggery",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Dessert",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 60,
+    "servings": 6,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Full-fat milk",
+        "nameClean": "full-fat milk",
+        "amount": 1.5,
+        "unit": "liters",
+        "original": "1.5 liters Full-fat milk",
+        "aisle": "Other"
+      },
+      {
+        "name": "Gobindobhog or short-grain rice",
+        "nameClean": "gobindobhog or short-grain rice",
+        "amount": 100,
+        "unit": "g washed",
+        "original": "100 g washed Gobindobhog or short-grain rice",
+        "aisle": "Other"
+      },
+      {
+        "name": "Jaggery or sugar",
+        "nameClean": "jaggery or sugar",
+        "amount": 150,
+        "unit": "g",
+        "original": "150 g Jaggery or sugar",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cardamom pods",
+        "nameClean": "cardamom pods",
+        "amount": 4,
+        "unit": "crushed",
+        "original": "4 crushed Cardamom pods",
+        "aisle": "Other"
+      },
+      {
+        "name": "Bay leaf",
+        "nameClean": "bay leaf",
+        "amount": 1,
+        "unit": "leaf",
+        "original": "1 leaf Bay leaf",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cashews and raisins",
+        "nameClean": "cashews and raisins",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Cashews and raisins",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Bring milk to a boil in a heavy-bottomed pot, then reduce to a steady simmer."
+      },
+      {
+        "number": 2,
+        "text": "Add washed rice, bay leaf, and cardamom, stirring occasionally to prevent sticking."
+      },
+      {
+        "number": 3,
+        "text": "Simmer, stirring frequently, until the rice is fully soft and the milk has reduced and thickened, about 35-40 minutes."
+      },
+      {
+        "number": 4,
+        "text": "Remove from heat and stir in jaggery or sugar until dissolved (add off the heat if using jaggery, to prevent the milk from splitting)."
+      },
+      {
+        "number": 5,
+        "text": "Stir in cashews and raisins."
+      },
+      {
+        "number": 6,
+        "text": "Serve warm or chilled."
+      }
+    ],
+    "slug": "payesh"
+  },
+  {
+    "id": "bx-6000017",
+    "source": "curated",
+    "lang": "en",
+    "title": "Sandesh",
+    "titleEn": "Sandesh",
+    "subtitle": "Delicate sweet made from fresh paneer and sugar",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Dessert",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 30,
+    "servings": 12,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Fresh paneer (chhena)",
+        "nameClean": "fresh paneer (chhena)",
+        "amount": 400,
+        "unit": "g crumbled",
+        "original": "400 g crumbled Fresh paneer (chhena)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Powdered sugar",
+        "nameClean": "powdered sugar",
+        "amount": 100,
+        "unit": "g",
+        "original": "100 g Powdered sugar",
+        "aisle": "Other"
+      },
+      {
+        "name": "Cardamom powder",
+        "nameClean": "cardamom powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Cardamom powder",
+        "aisle": "Other"
+      },
+      {
+        "name": "Saffron strands",
+        "nameClean": "saffron strands",
+        "amount": 1,
+        "unit": "pinch (optional)",
+        "original": "1 pinch (optional) Saffron strands",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Knead the crumbled fresh paneer on a flat surface with the heel of your hand until completely smooth, with no graininess, about 8-10 minutes."
+      },
+      {
+        "number": 2,
+        "text": "Transfer to a non-stick pan with the powdered sugar and cardamom."
+      },
+      {
+        "number": 3,
+        "text": "Cook on low heat, stirring constantly, until the mixture comes together into a soft dough and just starts to leave the sides of the pan, 4-5 minutes — do not overcook or it turns crumbly."
+      },
+      {
+        "number": 4,
+        "text": "Cool slightly, then shape into small discs or press into decorative molds."
+      },
+      {
+        "number": 5,
+        "text": "Garnish with a strand of saffron and let set at room temperature before serving."
+      }
+    ],
+    "slug": "sandesh"
+  },
+  {
+    "id": "bx-6000018",
+    "source": "curated",
+    "lang": "en",
+    "title": "Chomchom",
+    "titleEn": "Chomchom",
+    "subtitle": "Soft, oval milk-based sweet soaked in sugar syrup",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Dessert",
+    "tags": [
+      "Hard"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 60,
+    "servings": 12,
+    "difficulty": "Hard",
+    "ingredients": [
+      {
+        "name": "Whole milk",
+        "nameClean": "whole milk",
+        "amount": 2,
+        "unit": "liters",
+        "original": "2 liters Whole milk",
+        "aisle": "Other"
+      },
+      {
+        "name": "Lemon juice or vinegar",
+        "nameClean": "lemon juice or vinegar",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Lemon juice or vinegar",
+        "aisle": "Other"
+      },
+      {
+        "name": "Sugar",
+        "nameClean": "sugar",
+        "amount": 400,
+        "unit": "g",
+        "original": "400 g Sugar",
+        "aisle": "Other"
+      },
+      {
+        "name": "Water",
+        "nameClean": "water",
+        "amount": 1,
+        "unit": "liter for syrup",
+        "original": "1 liter for syrup Water",
+        "aisle": "Other"
+      },
+      {
+        "name": "All-purpose flour",
+        "nameClean": "all-purpose flour",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp All-purpose flour",
+        "aisle": "Other"
+      },
+      {
+        "name": "Rose water",
+        "nameClean": "rose water",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Rose water",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Bring milk to a boil, then add lemon juice gradually to curdle it into chhena; strain through cloth and rinse well to remove sourness."
+      },
+      {
+        "number": 2,
+        "text": "Hang the chhena to drain excess water for 30 minutes, then knead thoroughly with a spoon of flour until smooth and pliable."
+      },
+      {
+        "number": 3,
+        "text": "Shape into small oval logs."
+      },
+      {
+        "number": 4,
+        "text": "Boil sugar and water into a syrup, then gently drop in the chomchom shapes."
+      },
+      {
+        "number": 5,
+        "text": "Cover and cook on medium heat for 15-20 minutes, occasionally splashing cold water into the syrup to help them expand and cook through evenly."
+      },
+      {
+        "number": 6,
+        "text": "Let cool in the syrup, finish with a splash of rose water, and serve chilled or at room temperature."
+      }
+    ],
+    "slug": "chomchom"
+  },
+  {
+    "id": "bx-6000019",
+    "source": "curated",
+    "lang": "en",
+    "title": "Bhapa Pitha",
+    "titleEn": "Bhapa Pitha",
+    "subtitle": "Steamed rice flour cake with coconut and jaggery filling",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Dessert",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 40,
+    "servings": 6,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Rice flour",
+        "nameClean": "rice flour",
+        "amount": 300,
+        "unit": "g",
+        "original": "300 g Rice flour",
+        "aisle": "Other"
+      },
+      {
+        "name": "Grated coconut",
+        "nameClean": "grated coconut",
+        "amount": 150,
+        "unit": "g",
+        "original": "150 g Grated coconut",
+        "aisle": "Other"
+      },
+      {
+        "name": "Jaggery",
+        "nameClean": "jaggery",
+        "amount": 100,
+        "unit": "g grated",
+        "original": "100 g grated Jaggery",
+        "aisle": "Other"
+      },
+      {
+        "name": "Salt",
+        "nameClean": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Salt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Water",
+        "nameClean": "water",
+        "amount": 1,
+        "unit": "cup, as needed",
+        "original": "1 cup, as needed Water",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Mix rice flour with a little salt and just enough water, rubbing between your fingers, until it turns into a moist, crumbly texture — not a wet dough."
+      },
+      {
+        "number": 2,
+        "text": "Sieve the mixture to remove any lumps."
+      },
+      {
+        "number": 3,
+        "text": "Mix grated coconut with jaggery for the filling."
+      },
+      {
+        "number": 4,
+        "text": "Fill a small round cloth or a pitha mould with a layer of rice flour, add a spoon of coconut-jaggery filling in the center, then cover with more rice flour."
+      },
+      {
+        "number": 5,
+        "text": "Steam over boiling water for 10-12 minutes until the cake is set and no longer sticky."
+      },
+      {
+        "number": 6,
+        "text": "Unmould carefully and serve warm."
+      }
+    ],
+    "slug": "bhapa-pitha"
+  },
+  {
+    "id": "bx-6000020",
+    "source": "curated",
+    "lang": "en",
+    "title": "Panta Ilish",
+    "titleEn": "Panta Ilish",
+    "subtitle": "Fermented rice served with fried hilsa, a Pohela Boishakh classic",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Fish",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 20,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Cooked rice, soaked overnight in water",
+        "nameClean": "cooked rice, soaked overnight in water",
+        "amount": 4,
+        "unit": "cups",
+        "original": "4 cups Cooked rice, soaked overnight in water",
+        "aisle": "Other"
+      },
+      {
+        "name": "Hilsa fish",
+        "nameClean": "hilsa fish",
+        "amount": 4,
+        "unit": "pieces",
+        "original": "4 pieces Hilsa fish",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili",
+        "nameClean": "green chili",
+        "amount": 4,
+        "unit": "whole",
+        "original": "4 whole Green chili",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "sliced",
+        "original": "1 sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Salt",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Salt",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Rub hilsa pieces with turmeric and salt, then shallow-fry in mustard oil until crisp and golden on both sides."
+      },
+      {
+        "number": 2,
+        "text": "Drain the panta (fermented, water-soaked) rice slightly, keeping a little of the tangy liquid."
+      },
+      {
+        "number": 3,
+        "text": "Serve the rice in a bowl with its soaking liquid, a drizzle of mustard oil, and salt to taste."
+      },
+      {
+        "number": 4,
+        "text": "Plate the fried hilsa alongside, with sliced onion and whole green chilies."
+      },
+      {
+        "number": 5,
+        "text": "Eat traditionally with your hands, mixing rice and fish together bite by bite."
+      }
+    ],
+    "slug": "panta-ilish"
+  },
+  {
+    "id": "bx-6000021",
+    "source": "curated",
+    "lang": "en",
+    "title": "Shutki Bhuna",
+    "titleEn": "Shutki Bhuna",
+    "subtitle": "Pungent, richly spiced dried fish stir-fry",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Fish",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 40,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Dried fish (shutki)",
+        "nameClean": "dried fish (shutki)",
+        "amount": 200,
+        "unit": "g",
+        "original": "200 g Dried fish (shutki)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 2,
+        "unit": "sliced",
+        "original": "2 sliced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Garlic",
+        "nameClean": "garlic",
+        "amount": 6,
+        "unit": "cloves minced",
+        "original": "6 cloves minced Garlic",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger paste",
+        "nameClean": "ginger paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Ginger paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Dried red chili",
+        "nameClean": "dried red chili",
+        "amount": 4,
+        "unit": "whole",
+        "original": "4 whole Dried red chili",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 4,
+        "unit": "tbsp",
+        "original": "4 tbsp Mustard oil",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Turmeric",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Soak dried fish in warm water for 15-20 minutes to soften, then clean thoroughly and remove any bones or scales."
+      },
+      {
+        "number": 2,
+        "text": "Lightly roast the fish pieces in a dry pan to reduce the sharp smell, then set aside."
+      },
+      {
+        "number": 3,
+        "text": "Heat mustard oil, fry onions until golden, then add garlic, ginger paste, and dried red chilies."
+      },
+      {
+        "number": 4,
+        "text": "Add turmeric and the roasted dried fish, stirring well to coat in the masala."
+      },
+      {
+        "number": 5,
+        "text": "Cook on medium-low heat, stirring frequently, until the fish is well fried and the masala clings to it, about 15 minutes."
+      },
+      {
+        "number": 6,
+        "text": "Serve as a side dish with plain rice and dal."
+      }
+    ],
+    "slug": "shutki-bhuna"
+  },
+  {
+    "id": "bx-6000022",
+    "source": "curated",
+    "lang": "en",
+    "title": "Lau Chingri",
+    "titleEn": "Lau Chingri",
+    "subtitle": "Bottle gourd cooked with small prawns",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 30,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Bottle gourd (lau)",
+        "nameClean": "bottle gourd (lau)",
+        "amount": 500,
+        "unit": "g peeled and diced",
+        "original": "500 g peeled and diced Bottle gourd (lau)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Small prawns",
+        "nameClean": "small prawns",
+        "amount": 150,
+        "unit": "g",
+        "original": "150 g Small prawns",
+        "aisle": "Other"
+      },
+      {
+        "name": "Panch phoron",
+        "nameClean": "panch phoron",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Panch phoron",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili",
+        "nameClean": "green chili",
+        "amount": 2,
+        "unit": "slit",
+        "original": "2 slit Green chili",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard oil",
+        "nameClean": "mustard oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Mustard oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Heat mustard oil and lightly fry the prawns with a pinch of turmeric and salt until just pink; set aside."
+      },
+      {
+        "number": 2,
+        "text": "In the same oil, temper panch phoron until fragrant."
+      },
+      {
+        "number": 3,
+        "text": "Add diced bottle gourd, turmeric, and a pinch of salt, stir well to coat."
+      },
+      {
+        "number": 4,
+        "text": "Cover and cook on low heat, letting the gourd release its own water, stirring occasionally, about 12-15 minutes."
+      },
+      {
+        "number": 5,
+        "text": "Once the gourd is soft, add the fried prawns and slit green chilies."
+      },
+      {
+        "number": 6,
+        "text": "Cook uncovered a few more minutes until any excess liquid reduces, then serve warm with rice."
+      }
+    ],
+    "slug": "lau-chingri"
+  },
+  {
+    "id": "bx-6000023",
+    "source": "curated",
+    "lang": "en",
+    "title": "Chirar Pulao",
+    "titleEn": "Chirar Pulao",
+    "subtitle": "Flattened rice sautéed with vegetables and peanuts",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Breakfast",
+    "tags": [
+      "Easy"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 20,
+    "servings": 3,
+    "difficulty": "Easy",
+    "ingredients": [
+      {
+        "name": "Thick flattened rice (chira)",
+        "nameClean": "thick flattened rice (chira)",
+        "amount": 200,
+        "unit": "g",
+        "original": "200 g Thick flattened rice (chira)",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "diced",
+        "original": "1 diced Onion",
+        "aisle": "Other"
+      },
+      {
+        "name": "Peas",
+        "nameClean": "peas",
+        "amount": 0.5,
+        "unit": "cup",
+        "original": "0.5 cup Peas",
+        "aisle": "Other"
+      },
+      {
+        "name": "Peanuts",
+        "nameClean": "peanuts",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Peanuts",
+        "aisle": "Other"
+      },
+      {
+        "name": "Mustard seeds",
+        "nameClean": "mustard seeds",
+        "amount": 1,
+        "unit": "tsp",
+        "original": "1 tsp Mustard seeds",
+        "aisle": "Other"
+      },
+      {
+        "name": "Turmeric",
+        "nameClean": "turmeric",
+        "amount": 0.5,
+        "unit": "tsp",
+        "original": "0.5 tsp Turmeric",
+        "aisle": "Other"
+      },
+      {
+        "name": "Vegetable oil",
+        "nameClean": "vegetable oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Vegetable oil",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Rinse the flattened rice briefly in a strainer under running water, then drain well and let it soften for a few minutes."
+      },
+      {
+        "number": 2,
+        "text": "Heat oil, temper mustard seeds and peanuts until the peanuts turn golden."
+      },
+      {
+        "number": 3,
+        "text": "Add onion and cook until soft, then add peas and turmeric."
+      },
+      {
+        "number": 4,
+        "text": "Add the softened flattened rice and toss gently to combine, being careful not to mash it."
+      },
+      {
+        "number": 5,
+        "text": "Season with salt and cook, stirring gently, for 3-4 minutes until heated through."
+      },
+      {
+        "number": 6,
+        "text": "Serve warm as a light breakfast."
+      }
+    ],
+    "slug": "chirar-pulao"
+  },
+  {
+    "id": "bx-6000024",
+    "source": "curated",
+    "lang": "en",
+    "title": "Beef Rezala",
+    "titleEn": "Beef Rezala",
+    "subtitle": "Slow-cooked beef in a rich, mildly spiced yogurt gravy",
+    "description": "",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Beef",
+    "tags": [
+      "Medium"
+    ],
+    "prepMinutes": null,
+    "cookMinutes": null,
+    "readyInMinutes": 100,
+    "servings": 6,
+    "difficulty": "Medium",
+    "ingredients": [
+      {
+        "name": "Beef, cubed",
+        "nameClean": "beef, cubed",
+        "amount": 800,
+        "unit": "g",
+        "original": "800 g Beef, cubed",
+        "aisle": "Other"
+      },
+      {
+        "name": "Yogurt",
+        "nameClean": "yogurt",
+        "amount": 250,
+        "unit": "g",
+        "original": "250 g Yogurt",
+        "aisle": "Other"
+      },
+      {
+        "name": "Onion paste",
+        "nameClean": "onion paste",
+        "amount": 4,
+        "unit": "tbsp",
+        "original": "4 tbsp Onion paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "nameClean": "ginger-garlic paste",
+        "amount": 2,
+        "unit": "tbsp",
+        "original": "2 tbsp Ginger-garlic paste",
+        "aisle": "Other"
+      },
+      {
+        "name": "Ghee",
+        "nameClean": "ghee",
+        "amount": 3,
+        "unit": "tbsp",
+        "original": "3 tbsp Ghee",
+        "aisle": "Other"
+      },
+      {
+        "name": "Whole garam masala",
+        "nameClean": "whole garam masala",
+        "amount": 1,
+        "unit": "set (cardamom, cinnamon, cloves)",
+        "original": "1 set (cardamom, cinnamon, cloves) Whole garam masala",
+        "aisle": "Other"
+      },
+      {
+        "name": "Green chili paste",
+        "nameClean": "green chili paste",
+        "amount": 1,
+        "unit": "tbsp",
+        "original": "1 tbsp Green chili paste",
+        "aisle": "Other"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "Marinate beef in yogurt, ginger-garlic paste, and salt for at least 1 hour."
+      },
+      {
+        "number": 2,
+        "text": "Heat ghee, temper whole garam masala until fragrant."
+      },
+      {
+        "number": 3,
+        "text": "Add onion paste and cook gently until soft but not browned."
+      },
+      {
+        "number": 4,
+        "text": "Add marinated beef and green chili paste, cook on medium heat until the beef releases its juices."
+      },
+      {
+        "number": 5,
+        "text": "Cover and simmer on low heat, stirring occasionally, until the beef is very tender, about 1.5 hours, adding water as needed."
+      },
+      {
+        "number": 6,
+        "text": "Once tender, reduce the sauce to a thick, creamy consistency and serve with polao or paratha."
+      }
+    ],
+    "slug": "beef-rezala"
   },
   {
     "id": "bn-1000001",
