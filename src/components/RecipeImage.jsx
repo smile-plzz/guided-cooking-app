@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useRecipePhoto } from '../lib/recipePhoto.js';
 
 /**
  * Many recipes in the catalog have no photograph, and the external source's
  * images occasionally 404. Rather than a broken frame or a grey box, missing
  * art falls back to a generated plate: a warm gradient keyed off the title, so
  * a given recipe always looks the same and a grid of them still looks composed.
+ * If no image ships with the recipe, useRecipePhoto looks one up lazily once
+ * the card is near the viewport and swaps it in when found.
  */
 
 const PALETTES = [
@@ -32,7 +35,8 @@ function initials(title) {
 export function RecipeImage({ recipe, className = '', sizes, priority = false }) {
   const [failed, setFailed] = useState(false);
   const title = recipe?.titleEn || recipe?.title || '';
-  const src = recipe?.image;
+  const { src: lookedUp, ref } = useRecipePhoto(recipe?.image ? null : recipe);
+  const src = recipe?.image || lookedUp;
 
   if (src && !failed) {
     return (
@@ -52,6 +56,7 @@ export function RecipeImage({ recipe, className = '', sizes, priority = false })
 
   return (
     <div
+      ref={ref}
       role="img"
       aria-label={title ? `${title} — no photograph available` : 'No photograph'}
       className={`flex h-full w-full items-center justify-center ${className}`}

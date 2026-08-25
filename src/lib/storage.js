@@ -15,6 +15,7 @@ export const KEYS = {
   cookProgress: 'mise.cookProgress',
   units: 'mise.units',
   recentSearches: 'mise.recentSearches',
+  photoCache: 'mise.photoCache.v1',
 };
 
 export function readStorage(key, fallback) {
