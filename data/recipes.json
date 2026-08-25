@@ -78741,5 +78741,1115 @@
       }
     ],
     "slug": "bhapa-ilish"
+  },
+  {
+    "id": "bn-1000011",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "ভুনা খিচুড়ি (মুগ ডাল ও চালের খিচুড়ি)",
+    "titleEn": "Bhuna Khichuri",
+    "subtitle": "Fried rice and lentil khichuri",
+    "description": "ভুনা খিচুড়ি একটি আরামদায়ক বাঙালি পদ, যেখানে চাল ও মুগ ডাল ভেজে মশলা দিয়ে রান্না করা হয়। বৃষ্টির দিনে ইলিশ ভাজা বা ডিম ভাজার সাথে এটি সবচেয়ে জনপ্রিয়।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Main",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 35,
+    "readyInMinutes": 50,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "চাল",
+        "nameClean": "rice",
+        "amount": 1,
+        "unit": "কাপ",
+        "original": "১ কাপ চাল",
+        "aisle": "Grains"
+      },
+      {
+        "name": "মুগ ডাল",
+        "nameClean": "moong dal",
+        "amount": 1,
+        "unit": "কাপ",
+        "original": "১ কাপ মুগ ডাল, শুকনো ভাজা",
+        "aisle": "Legumes"
+      },
+      {
+        "name": "পেঁয়াজ",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "টি",
+        "original": "১টি পেঁয়াজ, কুচি করা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "amount": 1,
+        "unit": "টেবিল চামচ",
+        "original": "১ টেবিল চামচ আদা-রসুন বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "original": "১/২ চা চামচ হলুদ গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "দারচিনি ও এলাচ",
+        "nameClean": "whole garam masala",
+        "amount": 1,
+        "unit": "সেট",
+        "original": "১ সেট দারচিনি, এলাচ, তেজপাতা",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "সয়াবিন তেল",
+        "nameClean": "oil",
+        "amount": 4,
+        "unit": "টেবিল চামচ",
+        "original": "৪ টেবিল চামচ সয়াবিন তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "গরম জল",
+        "nameClean": "water",
+        "amount": 3,
+        "unit": "কাপ",
+        "original": "৩ কাপ গরম জল",
+        "aisle": "Beverages"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "মুগ ডাল শুকনো প্যানে হালকা বাদামী রং ও সুগন্ধ না আসা পর্যন্ত ভেজে নিন। চাল ধুয়ে ডালের সাথে মিশিয়ে রাখুন।"
+      },
+      {
+        "number": 2,
+        "text": "একটি পাত্রে তেল গরম করে দারচিনি, এলাচ ও তেজপাতা ফোড়ন দিন। কুচি করা পেঁয়াজ দিয়ে সোনালী হওয়া পর্যন্ত ভাজুন।"
+      },
+      {
+        "number": 3,
+        "text": "আদা-রসুন বাটা ও হলুদ গুঁড়ো দিয়ে কষিয়ে নিন যতক্ষণ না কাঁচা গন্ধ চলে যায়।"
+      },
+      {
+        "number": 4,
+        "text": "চাল-ডালের মিশ্রণ দিয়ে ৩-৪ মিনিট ভালোভাবে ভুনে নিন যাতে প্রতিটি দানা মশলায় মাখামাখি হয়।"
+      },
+      {
+        "number": 5,
+        "text": "গরম জল ও লবণ দিয়ে ফুটিয়ে নিন। ঢেকে কম আঁচে ১৫-২০ মিনিট রান্না করুন যতক্ষণ না চাল-ডাল সেদ্ধ হয় ও মাখা মাখা হয়ে আসে। মাঝে মাঝে নেড়ে দিন যাতে তলায় লেগে না যায়।"
+      },
+      {
+        "number": 6,
+        "text": "ডিম ভাজা বা বেগুন ভাজার সাথে গরম গরম পরিবেশন করুন।"
+      }
+    ],
+    "slug": "bhuna-khichuri"
+  },
+  {
+    "id": "bn-1000012",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "মুসুর ডাল (প্রতিদিনের ডাল)",
+    "titleEn": "Musur Dal",
+    "subtitle": "Everyday red lentil dal",
+    "description": "মুসুর ডাল বাঙালি রান্নাঘরের রোজকার তরকারি, রসুন ও শুকনো লঙ্কার ফোড়নে যা সহজ কিন্তু অত্যন্ত সুস্বাদু হয়ে ওঠে।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 5,
+    "cookMinutes": 20,
+    "readyInMinutes": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "মুসুর ডাল",
+        "nameClean": "red lentils",
+        "amount": 1,
+        "unit": "কাপ",
+        "original": "১ কাপ মুসুর ডাল",
+        "aisle": "Legumes"
+      },
+      {
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "original": "১/২ চা চামচ হলুদ গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "রসুন",
+        "nameClean": "garlic",
+        "amount": 4,
+        "unit": "কোয়া",
+        "original": "৪-৫ কোয়া রসুন, থেঁতো করা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "শুকনো লঙ্কা",
+        "nameClean": "dried red chili",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২টি শুকনো লঙ্কা",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "জিরে",
+        "nameClean": "cumin seeds",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "original": "১/২ চা চামচ জিরে",
+        "aisle": "Produce"
+      },
+      {
+        "name": "সয়াবিন তেল",
+        "nameClean": "oil",
+        "amount": 2,
+        "unit": "টেবিল চামচ",
+        "original": "২ টেবিল চামচ সয়াবিন তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "জল",
+        "nameClean": "water",
+        "amount": 3,
+        "unit": "কাপ",
+        "original": "৩ কাপ জল",
+        "aisle": "Beverages"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "মুসুর ডাল ধুয়ে জল, হলুদ গুঁড়ো ও লবণ দিয়ে সেদ্ধ বসান। ঢেকে মাঝারি আঁচে ১৫-২০ মিনিট রান্না করুন যতক্ষণ না ডাল নরম হয় ও ফেটে যায়।"
+      },
+      {
+        "number": 2,
+        "text": "একটি ছোট প্যানে তেল গরম করুন। জিরে ও শুকনো লঙ্কা ফোড়ন দিয়ে কয়েক সেকেন্ড ভাজুন যতক্ষণ না সুগন্ধ বের হয়।"
+      },
+      {
+        "number": 3,
+        "text": "থেঁতো করা রসুন দিয়ে হালকা বাদামী হওয়া পর্যন্ত ভাজুন।"
+      },
+      {
+        "number": 4,
+        "text": "গরম তেল ও রসুনের ফোড়ন সেদ্ধ ডালের উপর ছড়িয়ে দিন। ঢাকনা দিয়ে ১ মিনিট রেখে দিন যাতে সুগন্ধ ধরে রাখে।"
+      },
+      {
+        "number": 5,
+        "text": "গরম ভাতের সাথে পরিবেশন করুন।"
+      }
+    ],
+    "slug": "musur-dal"
+  },
+  {
+    "id": "bn-1000013",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "বেগুন ভর্তা",
+    "titleEn": "Begun Bhorta",
+    "subtitle": "Smoky mashed roasted eggplant",
+    "description": "আগুনে পোড়ানো বেগুন সরিষার তেল, কাঁচা লঙ্কা ও পেঁয়াজ দিয়ে মাখানো একটি ধোঁয়াটে স্বাদের ভর্তা, ডাল-ভাতের সাথে অতি জনপ্রিয়।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Side",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "readyInMinutes": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "বেগুন",
+        "nameClean": "eggplant",
+        "amount": 1,
+        "unit": "টি",
+        "original": "১টি বড় বেগুন",
+        "aisle": "Produce"
+      },
+      {
+        "name": "পেঁয়াজ",
+        "nameClean": "onion",
+        "amount": 1,
+        "unit": "টি",
+        "original": "১টি পেঁয়াজ, কুচি করা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২-৩টি কাঁচা লঙ্কা, কুচি করা",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "ধনেপাতা",
+        "nameClean": "coriander leaves",
+        "amount": 2,
+        "unit": "টেবিল চামচ",
+        "original": "২ টেবিল চামচ কুচি করা ধনেপাতা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "amount": 2,
+        "unit": "টেবিল চামচ",
+        "original": "২ টেবিল চামচ সর্ষের তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "বেগুনের গায়ে সামান্য তেল মাখিয়ে সরাসরি চুলার আঁচে বা গ্যাসের ওপর প্রতি পাশে ৫-৬ মিনিট করে পুড়িয়ে নিন যতক্ষণ না খোসা কালো হয়ে ভেতরটা নরম হয়।"
+      },
+      {
+        "number": 2,
+        "text": "পোড়া বেগুন ঠান্ডা হতে দিন, তারপর পোড়া খোসা ছাড়িয়ে ফেলুন। কাঁটাচামচ দিয়ে ভেতরের অংশ ভালোভাবে চটকে নিন।"
+      },
+      {
+        "number": 3,
+        "text": "চটকানো বেগুনের সাথে কুচি করা পেঁয়াজ, কাঁচা লঙ্কা, ধনেপাতা, সর্ষের তেল ও লবণ মিশিয়ে ভালোভাবে মেখে নিন।"
+      },
+      {
+        "number": 4,
+        "text": "গরম ভাত ও ডালের সাথে ঘরের তাপমাত্রায় পরিবেশন করুন।"
+      }
+    ],
+    "slug": "begun-bhorta"
+  },
+  {
+    "id": "bn-1000014",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "পালং শাক ভাজি",
+    "titleEn": "Palong Shaak Bhaji",
+    "subtitle": "Garlic-fried spinach",
+    "description": "রসুন ও শুকনো লঙ্কার ফোড়নে দ্রুত ভাজা পালং শাক, একটি সহজ ও স্বাস্থ্যকর নিরামিষ পদ।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 10,
+    "readyInMinutes": 20,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "পালং শাক",
+        "nameClean": "spinach",
+        "amount": 500,
+        "unit": "গ্রাম",
+        "original": "৫০০ গ্রাম পালং শাক, ধুয়ে কুচি করা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "রসুন",
+        "nameClean": "garlic",
+        "amount": 4,
+        "unit": "কোয়া",
+        "original": "৪ কোয়া রসুন, কুচি করা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "শুকনো লঙ্কা",
+        "nameClean": "dried red chili",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২টি শুকনো লঙ্কা",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "কালো জিরে",
+        "nameClean": "nigella seeds",
+        "amount": 0.25,
+        "unit": "চা চামচ",
+        "original": "১/৪ চা চামচ কালো জিরে",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "amount": 2,
+        "unit": "টেবিল চামচ",
+        "original": "২ টেবিল চামচ সর্ষের তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "একটি কড়াইতে সর্ষের তেল গরম করুন। কালো জিরে ও শুকনো লঙ্কা ফোড়ন দিন।"
+      },
+      {
+        "number": 2,
+        "text": "কুচি করা রসুন দিয়ে হালকা বাদামী হওয়া পর্যন্ত ভাজুন।"
+      },
+      {
+        "number": 3,
+        "text": "কুচি করা পালং শাক ও লবণ দিয়ে আঁচ বাড়িয়ে নাড়তে থাকুন যতক্ষণ না শাক নেতিয়ে যায়, প্রায় ৫-৬ মিনিট।"
+      },
+      {
+        "number": 4,
+        "text": "জল শুকিয়ে গেলে নামিয়ে গরম ভাতের সাথে পরিবেশন করুন।"
+      }
+    ],
+    "slug": "palong-shaak-bhaji"
+  },
+  {
+    "id": "bn-1000015",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "রুই মাছের কালিয়া",
+    "titleEn": "Rui Macher Kalia",
+    "subtitle": "Rohu fish in a rich onion curry",
+    "description": "পেঁয়াজ-আলু ও গরম মশলার ঘন ঝোলে রান্না করা রুই মাছ, উৎসব-অনুষ্ঠানের ভোজে একটি ধ্রুপদী পদ।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Fish",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "readyInMinutes": 50,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "রুই মাছ",
+        "nameClean": "rohu fish",
+        "amount": 4,
+        "unit": "টুকরা",
+        "original": "৪ টুকরা রুই মাছ",
+        "aisle": "Seafood"
+      },
+      {
+        "name": "আলু",
+        "nameClean": "potato",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২টি আলু, অর্ধেক করে কাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "পেঁয়াজ বাটা",
+        "nameClean": "onion paste",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২টি পেঁয়াজ, বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "amount": 1,
+        "unit": "টেবিল চামচ",
+        "original": "১ টেবিল চামচ আদা-রসুন বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ হলুদ গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ লাল লঙ্কার গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "গরম মশলা গুঁড়ো",
+        "nameClean": "garam masala powder",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ গরম মশলা গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "সর্ষের তেল",
+        "nameClean": "mustard oil",
+        "amount": 4,
+        "unit": "টেবিল চামচ",
+        "original": "৪ টেবিল চামচ সর্ষের তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "গরম জল",
+        "nameClean": "water",
+        "amount": 1.5,
+        "unit": "কাপ",
+        "original": "১.৫ কাপ গরম জল",
+        "aisle": "Beverages"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "মাছের টুকরোগুলো লবণ ও হলুদ দিয়ে মাখিয়ে ১০ মিনিট রেখে দিন। একটি প্যানে তেল গরম করে মাছ হালকা বাদামী করে ভেজে তুলে রাখুন।"
+      },
+      {
+        "number": 2,
+        "text": "একই তেলে আলুর টুকরোগুলো হালকা সোনালী করে ভেজে তুলে রাখুন।"
+      },
+      {
+        "number": 3,
+        "text": "বাকি তেলে পেঁয়াজ বাটা মাঝারি আঁচে সোনালী বাদামী হওয়া পর্যন্ত কষান।"
+      },
+      {
+        "number": 4,
+        "text": "আদা-রসুন বাটা, হলুদ গুঁড়ো ও লাল লঙ্কার গুঁড়ো দিয়ে সামান্য জল ছিটিয়ে মশলা তেল ছাড়া পর্যন্ত কষিয়ে নিন।"
+      },
+      {
+        "number": 5,
+        "text": "ভাজা আলু ও গরম জল দিয়ে ফুটিয়ে নিন। ঢেকে ৮-১০ মিনিট রান্না করুন যতক্ষণ না আলু নরম হয়।"
+      },
+      {
+        "number": 6,
+        "text": "ভাজা মাছ ও লবণ দিয়ে দিন। ৫-৭ মিনিট ফুটতে দিন যতক্ষণ না ঝোল ঘন হয়। উপরে গরম মশলা গুঁড়ো ছড়িয়ে নামিয়ে নিন।"
+      },
+      {
+        "number": 7,
+        "text": "গরম ভাতের সাথে পরিবেশন করুন।"
+      }
+    ],
+    "slug": "rui-macher-kalia"
+  },
+  {
+    "id": "bn-1000016",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "মুরগির ভুনা",
+    "titleEn": "Chicken Bhuna",
+    "subtitle": "Slow-fried chicken curry",
+    "description": "পেঁয়াজ ও মশলায় কষিয়ে রান্না করা ঘন ঝোলের মুরগির ভুনা, বাঙালি হেঁশেলের নিত্যদিনের প্রিয় পদ।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Chicken",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 20,
+    "cookMinutes": 35,
+    "readyInMinutes": 55,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "মুরগির মাংস",
+        "nameClean": "chicken",
+        "amount": 1,
+        "unit": "কেজি",
+        "original": "১ কেজি মুরগির মাংস, টুকরা করা",
+        "aisle": "Meat"
+      },
+      {
+        "name": "পেঁয়াজ বাটা",
+        "nameClean": "onion paste",
+        "amount": 3,
+        "unit": "টি",
+        "original": "৩টি পেঁয়াজ, বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "amount": 2,
+        "unit": "টেবিল চামচ",
+        "original": "২ টেবিল চামচ আদা-রসুন বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "টক দই",
+        "nameClean": "plain yogurt",
+        "amount": 0.25,
+        "unit": "কাপ",
+        "original": "১/৪ কাপ টক দই",
+        "aisle": "Milk, Eggs, Other Dairy"
+      },
+      {
+        "name": "লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ লাল লঙ্কার গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ হলুদ গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "জিরে গুঁড়ো",
+        "nameClean": "cumin powder",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ জিরে গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "গরম মশলা গুঁড়ো",
+        "nameClean": "garam masala powder",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "original": "১/২ চা চামচ গরম মশলা গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "সয়াবিন তেল",
+        "nameClean": "oil",
+        "amount": 4,
+        "unit": "টেবিল চামচ",
+        "original": "৪ টেবিল চামচ সয়াবিন তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "মুরগির মাংস টক দই, লবণ, হলুদ ও লঙ্কার গুঁড়ো দিয়ে মেখে ৩০ মিনিট ম্যারিনেট করুন।"
+      },
+      {
+        "number": 2,
+        "text": "একটি কড়াইতে তেল গরম করে পেঁয়াজ বাটা মাঝারি আঁচে বাদামী রং হওয়া পর্যন্ত ভাজুন।"
+      },
+      {
+        "number": 3,
+        "text": "আদা-রসুন বাটা, জিরে গুঁড়ো দিয়ে সামান্য জল ছিটিয়ে ২-৩ মিনিট কষান যতক্ষণ না তেল ছেড়ে আসে।"
+      },
+      {
+        "number": 4,
+        "text": "ম্যারিনেট করা মুরগি দিয়ে আঁচ বাড়িয়ে ১০-১২ মিনিট ভুনুন, ক্রমাগত নাড়তে থাকুন, যতক্ষণ না মাংসের রং বদলে যায় ও মশলা ভালোভাবে মেশে।"
+      },
+      {
+        "number": 5,
+        "text": "ঢেকে কম আঁচে ১৫-২০ মিনিট রান্না করুন যতক্ষণ না মুরগি সেদ্ধ হয় ও ঘন ঝোল তৈরি হয়। প্রয়োজনে সামান্য জল যোগ করুন।"
+      },
+      {
+        "number": 6,
+        "text": "গরম মশলা গুঁড়ো ছড়িয়ে আরও ২ মিনিট রেখে নামিয়ে নিন।"
+      },
+      {
+        "number": 7,
+        "text": "গরম ভাত বা পরোটার সাথে পরিবেশন করুন।"
+      }
+    ],
+    "slug": "chicken-bhuna"
+  },
+  {
+    "id": "bn-1000017",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "গরুর মাংস ভুনা",
+    "titleEn": "Beef Bhuna",
+    "subtitle": "Slow-cooked dry-fried beef curry",
+    "description": "ধীর আঁচে কষানো মশলাদার গরুর মাংস ভুনা, ঘন ও তেল-ছাড়া ঝোলের এই পদ পরোটা বা খিচুড়ির আদর্শ সঙ্গী।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Beef",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 20,
+    "cookMinutes": 90,
+    "readyInMinutes": 110,
+    "servings": 6,
+    "ingredients": [
+      {
+        "name": "গরুর মাংস",
+        "nameClean": "beef",
+        "amount": 1,
+        "unit": "কেজি",
+        "original": "১ কেজি গরুর মাংস, টুকরা করা",
+        "aisle": "Meat"
+      },
+      {
+        "name": "পেঁয়াজ বাটা",
+        "nameClean": "onion paste",
+        "amount": 4,
+        "unit": "টি",
+        "original": "৪টি পেঁয়াজ, বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "আদা-রসুন বাটা",
+        "nameClean": "ginger garlic paste",
+        "amount": 3,
+        "unit": "টেবিল চামচ",
+        "original": "৩ টেবিল চামচ আদা-রসুন বাটা",
+        "aisle": "Produce"
+      },
+      {
+        "name": "লাল লঙ্কার গুঁড়ো",
+        "nameClean": "chili powder",
+        "amount": 2,
+        "unit": "চা চামচ",
+        "original": "২ চা চামচ লাল লঙ্কার গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "হলুদ গুঁড়ো",
+        "nameClean": "turmeric",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ হলুদ গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "ধনে গুঁড়ো",
+        "nameClean": "coriander powder",
+        "amount": 2,
+        "unit": "চা চামচ",
+        "original": "২ চা চামচ ধনে গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "গরম মশলা গুঁড়ো",
+        "nameClean": "garam masala powder",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ গরম মশলা গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "দারচিনি ও এলাচ",
+        "nameClean": "whole garam masala",
+        "amount": 1,
+        "unit": "সেট",
+        "original": "১ সেট দারচিনি, এলাচ, তেজপাতা",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "সয়াবিন তেল",
+        "nameClean": "oil",
+        "amount": 5,
+        "unit": "টেবিল চামচ",
+        "original": "৫ টেবিল চামচ সয়াবিন তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "পরিবেশন",
+        "original": "স্বাদমতো লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "গরম জল",
+        "nameClean": "water",
+        "amount": 1,
+        "unit": "কাপ",
+        "original": "১ কাপ গরম জল",
+        "aisle": "Beverages"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "গরুর মাংস লবণ, হলুদ, লঙ্কার গুঁড়ো, ধনে গুঁড়ো ও আদা-রসুন বাটা দিয়ে মেখে কমপক্ষে ৩০ মিনিট রেখে দিন।"
+      },
+      {
+        "number": 2,
+        "text": "একটি ভারী পাত্রে তেল গরম করে দারচিনি, এলাচ ও তেজপাতা দিয়ে সুগন্ধ ছাড়ুন।"
+      },
+      {
+        "number": 3,
+        "text": "পেঁয়াজ বাটা দিয়ে মাঝারি আঁচে গাঢ় বাদামী রং হওয়া পর্যন্ত ভাজুন, এটি স্বাদ ও রঙের জন্য গুরুত্বপূর্ণ।"
+      },
+      {
+        "number": 4,
+        "text": "ম্যারিনেট করা মাংস দিয়ে আঁচ বাড়িয়ে ১৫ মিনিট ভুনুন যতক্ষণ না মশলা মাংসের সাথে ভালোভাবে মিশে যায়।"
+      },
+      {
+        "number": 5,
+        "text": "গরম জল দিয়ে ঢেকে কম আঁচে ৬০-৭০ মিনিট রান্না করুন যতক্ষণ না মাংস নরম হয়। মাঝে মাঝে নেড়ে দিন এবং প্রয়োজনে অল্প অল্প জল যোগ করুন।"
+      },
+      {
+        "number": 6,
+        "text": "ঝোল কাঙ্ক্ষিত ঘনত্বে এলে গরম মশলা গুঁড়ো ছড়িয়ে ৫ মিনিট রেখে নামিয়ে নিন।"
+      },
+      {
+        "number": 7,
+        "text": "পরোটা বা গরম ভাতের সাথে পরিবেশন করুন।"
+      }
+    ],
+    "slug": "beef-bhuna"
+  },
+  {
+    "id": "bn-1000018",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "ফুচকা",
+    "titleEn": "Fuchka",
+    "subtitle": "Crisp puris with spiced tamarind water",
+    "description": "মুচমুচে পুরি, মশলাদার তেঁতুল জল ও আলু-ছোলার পুর দিয়ে তৈরি বাংলাদেশের জনপ্রিয় রাস্তার খাবার।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Snack",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 30,
+    "cookMinutes": 10,
+    "readyInMinutes": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "ফুচকার খোল",
+        "nameClean": "puri shells",
+        "amount": 25,
+        "unit": "টি",
+        "original": "২৫-৩০টি তৈরি ফুচকার খোল",
+        "aisle": "Bakery"
+      },
+      {
+        "name": "আলু সেদ্ধ",
+        "nameClean": "boiled potato",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২টি আলু সেদ্ধ করে চটকানো",
+        "aisle": "Produce"
+      },
+      {
+        "name": "সেদ্ধ ছোলা",
+        "nameClean": "boiled chickpeas",
+        "amount": 1,
+        "unit": "কাপ",
+        "original": "১ কাপ সেদ্ধ ছোলা",
+        "aisle": "Legumes"
+      },
+      {
+        "name": "তেঁতুল",
+        "nameClean": "tamarind pulp",
+        "amount": 50,
+        "unit": "গ্রাম",
+        "original": "৫০ গ্রাম তেঁতুলের ক্বাথ",
+        "aisle": "Produce"
+      },
+      {
+        "name": "কাঁচা লঙ্কা",
+        "nameClean": "green chili",
+        "amount": 2,
+        "unit": "টি",
+        "original": "২টি কাঁচা লঙ্কা, কুচি করা",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "ভাজা জিরে গুঁড়ো",
+        "nameClean": "roasted cumin powder",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ ভাজা জিরে গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "বিট লবণ",
+        "nameClean": "black salt",
+        "amount": 1,
+        "unit": "চা চামচ",
+        "original": "১ চা চামচ বিট লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "জল",
+        "nameClean": "water",
+        "amount": 3,
+        "unit": "কাপ",
+        "original": "৩ কাপ ঠান্ডা জল",
+        "aisle": "Beverages"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "তেঁতুলের ক্বাথ জলে গুলে বিট লবণ, ভাজা জিরে গুঁড়ো ও কুচি করা কাঁচা লঙ্কা মিশিয়ে টক-ঝাল জল তৈরি করুন। ছেঁকে ফ্রিজে ঠান্ডা করুন।"
+      },
+      {
+        "number": 2,
+        "text": "চটকানো আলু ও সেদ্ধ ছোলা একসাথে মিশিয়ে সামান্য বিট লবণ দিয়ে পুর তৈরি করুন।"
+      },
+      {
+        "number": 3,
+        "text": "প্রতিটি ফুচকার খোলের মাঝখানে আলতো করে টোকা দিয়ে ছিদ্র করুন।"
+      },
+      {
+        "number": 4,
+        "text": "প্রতিটি খোলে এক চামচ আলু-ছোলার পুর ভরে দিন।"
+      },
+      {
+        "number": 5,
+        "text": "পরিবেশনের ঠিক আগে ঠান্ডা তেঁতুল জলে চুবিয়ে সাথে সাথে খেয়ে ফেলুন যাতে মুচমুচে ভাব বজায় থাকে।"
+      }
+    ],
+    "slug": "fuchka"
+  },
+  {
+    "id": "bn-1000019",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "লুচি",
+    "titleEn": "Luchi",
+    "subtitle": "Puffed deep-fried flatbread",
+    "description": "ময়দা দিয়ে তৈরি ফোলানো, তেলে ভাজা নরম রুটি, বাঙালি সকালের নাস্তা বা উৎসবের খাবারের অপরিহার্য অংশ।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Breakfast",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 20,
+    "cookMinutes": 20,
+    "readyInMinutes": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "ময়দা",
+        "nameClean": "all-purpose flour",
+        "amount": 2,
+        "unit": "কাপ",
+        "original": "২ কাপ ময়দা",
+        "aisle": "Baking"
+      },
+      {
+        "name": "তেল (ময়ানের জন্য)",
+        "nameClean": "oil for dough",
+        "amount": 2,
+        "unit": "টেবিল চামচ",
+        "original": "২ টেবিল চামচ তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 0.5,
+        "unit": "চা চামচ",
+        "original": "১/২ চা চামচ লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "ঈষদুষ্ণ জল",
+        "nameClean": "warm water",
+        "amount": 0.5,
+        "unit": "কাপ",
+        "original": "১/২ কাপ ঈষদুষ্ণ জল",
+        "aisle": "Beverages"
+      },
+      {
+        "name": "ভাজার তেল",
+        "nameClean": "oil for frying",
+        "amount": 2,
+        "unit": "কাপ",
+        "original": "ভাজার জন্য পর্যাপ্ত তেল",
+        "aisle": "Oil, Vinegar, Salad Dressing"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "ময়দার সাথে লবণ ও ২ টেবিল চামচ তেল ভালোভাবে মিশিয়ে ময়ান দিন যতক্ষণ না মিশ্রণ ঝুরঝুরে হয়।"
+      },
+      {
+        "number": 2,
+        "text": "অল্প অল্প ঈষদুষ্ণ জল দিয়ে শক্ত করে খামির তৈরি করুন। ঢেকে ১৫-২০ মিনিট রেখে দিন।"
+      },
+      {
+        "number": 3,
+        "text": "খামির থেকে ছোট ছোট বল তৈরি করে সামান্য তেল মাখিয়ে গোল ও পাতলা করে বেলে নিন।"
+      },
+      {
+        "number": 4,
+        "text": "একটি কড়াইতে তেল গরম করুন। তেল গরম হলে একটি করে লুচি ছেড়ে চামচ দিয়ে হালকা চাপ দিয়ে ফুলিয়ে নিন।"
+      },
+      {
+        "number": 5,
+        "text": "উল্টে দুই পাশ হালকা সোনালী হওয়া পর্যন্ত ভেজে ঝাঁঝরি দিয়ে তুলে নিন।"
+      },
+      {
+        "number": 6,
+        "text": "আলুর দম বা ছোলার ডালের সাথে গরম গরম পরিবেশন করুন।"
+      }
+    ],
+    "slug": "luchi"
+  },
+  {
+    "id": "bn-1000020",
+    "source": "bangla",
+    "lang": "bn",
+    "title": "পুলি পিঠা (নারকেলের পুর ভরা পিঠা)",
+    "titleEn": "Puli Pitha",
+    "subtitle": "Coconut and date-jaggery filled rice dumplings",
+    "description": "চালের গুঁড়োর খোলে নারকেল ও গুড়ের পুর ভরে ভাপে বা দুধে সেদ্ধ করা শীতকালীন বাংলাদেশি পিঠা।",
+    "image": null,
+    "cuisine": "Bengali",
+    "category": "Dessert",
+    "tags": [
+      "Bengali",
+      "Bangladeshi"
+    ],
+    "prepMinutes": 40,
+    "cookMinutes": 25,
+    "readyInMinutes": 65,
+    "servings": 6,
+    "ingredients": [
+      {
+        "name": "চালের গুঁড়ো",
+        "nameClean": "rice flour",
+        "amount": 2,
+        "unit": "কাপ",
+        "original": "২ কাপ চালের গুঁড়ো",
+        "aisle": "Grains"
+      },
+      {
+        "name": "জল",
+        "nameClean": "water",
+        "amount": 2,
+        "unit": "কাপ",
+        "original": "২ কাপ জল",
+        "aisle": "Beverages"
+      },
+      {
+        "name": "লবণ",
+        "nameClean": "salt",
+        "amount": 1,
+        "unit": "চিমটি",
+        "original": "এক চিমটি লবণ",
+        "aisle": "Spices and Seasonings"
+      },
+      {
+        "name": "নারকেল কোরানো",
+        "nameClean": "grated coconut",
+        "amount": 2,
+        "unit": "কাপ",
+        "original": "২ কাপ নারকেল কোরানো",
+        "aisle": "Produce"
+      },
+      {
+        "name": "খেজুর গুড়",
+        "nameClean": "date palm jaggery",
+        "amount": 1,
+        "unit": "কাপ",
+        "original": "১ কাপ খেজুর গুড়, গুঁড়া করা",
+        "aisle": "Baking"
+      },
+      {
+        "name": "এলাচ গুঁড়ো",
+        "nameClean": "cardamom powder",
+        "amount": 0.25,
+        "unit": "চা চামচ",
+        "original": "১/৪ চা চামচ এলাচ গুঁড়ো",
+        "aisle": "Spices and Seasonings"
+      }
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": "কোরানো নারকেল ও খেজুর গুড় একটি প্যানে মাঝারি আঁচে নাড়তে থাকুন যতক্ষণ না মিশ্রণ ঘন ও আঠালো হয়। এলাচ গুঁড়ো মিশিয়ে ঠান্ডা হতে দিন — এটি পুর।"
+      },
+      {
+        "number": 2,
+        "text": "জল ও লবণ ফুটিয়ে নিন। ফুটন্ত জলে চালের গুঁড়ো ঢেলে দ্রুত নেড়ে ঢেকে ২ মিনিট দমে রাখুন।"
+      },
+      {
+        "number": 3,
+        "text": "মিশ্রণটি হাতে সহ্য করার মতো ঠান্ডা হলে ভালোভাবে মেখে মসৃণ খামির তৈরি করুন।"
+      },
+      {
+        "number": 4,
+        "text": "খামির থেকে ছোট বল নিয়ে হাতের তালুতে চ্যাপ্টা করে গোল খোল তৈরি করুন। মাঝখানে এক চামচ নারকেলের পুর দিয়ে অর্ধচন্দ্রাকারে ভাঁজ করে কিনারা চেপে আটকে দিন।"
+      },
+      {
+        "number": 5,
+        "text": "একটি স্টিমারে জল ফুটিয়ে পিঠাগুলো ১০-১২ মিনিট ভাপে সেদ্ধ করুন যতক্ষণ না খোল স্বচ্ছ দেখায়।"
+      },
+      {
+        "number": 6,
+        "text": "গরম গরম বা ঠান্ডা করে পরিবেশন করুন।"
+      }
+    ],
+    "slug": "puli-pitha"
   }
 ]

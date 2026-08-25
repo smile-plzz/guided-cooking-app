@@ -33,6 +33,16 @@ const BN_META = {
   1000008: ['Begun Bhaja', 'Pan-fried aubergine', 'Side'],
   1000009: ['Shukto', 'Mixed vegetable bitter stew', 'Vegetarian'],
   1000010: ['Bhapa Ilish', 'Hilsa steamed in banana leaf', 'Fish'],
+  1000011: ['Bhuna Khichuri', 'Fried rice and lentil khichuri', 'Main'],
+  1000012: ['Musur Dal', 'Everyday red lentil dal', 'Vegetarian'],
+  1000013: ['Begun Bhorta', 'Smoky mashed roasted eggplant', 'Side'],
+  1000014: ['Palong Shaak Bhaji', 'Garlic-fried spinach', 'Vegetarian'],
+  1000015: ['Rui Macher Kalia', 'Rohu fish in a rich onion curry', 'Fish'],
+  1000016: ['Chicken Bhuna', 'Slow-fried chicken curry', 'Chicken'],
+  1000017: ['Beef Bhuna', 'Slow-cooked dry-fried beef curry', 'Beef'],
+  1000018: ['Fuchka', 'Crisp puris with spiced tamarind water', 'Snack'],
+  1000019: ['Luchi', 'Puffed deep-fried flatbread', 'Breakfast'],
+  1000020: ['Puli Pitha', 'Coconut and date-jaggery filled rice dumplings', 'Dessert'],
 };
 
 const slugify = (s) =>
