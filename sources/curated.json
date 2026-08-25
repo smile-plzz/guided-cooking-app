@@ -1,0 +1,5046 @@
+[
+  {
+    "id": 5000001,
+    "title": "Classic Margherita Pizza",
+    "subtitle": "San Marzano tomatoes, mozzarella, basil",
+    "cuisine": "Italian",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Pizza dough",
+        "amount": 1,
+        "unit": "ball (500g)"
+      },
+      {
+        "name": "San Marzano tomatoes",
+        "amount": 1,
+        "unit": "can (400g)"
+      },
+      {
+        "name": "Fresh mozzarella",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Fresh basil leaves",
+        "amount": 10,
+        "unit": "leaves"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Preheat oven to its highest setting (250°C/480°F or higher) with a pizza stone or upturned tray inside."
+          },
+          {
+            "number": 2,
+            "step": "Crush the tomatoes by hand and season with salt; this is your sauce, no cooking needed."
+          },
+          {
+            "number": 3,
+            "step": "Stretch the dough into a 12-inch round on a floured surface or peel."
+          },
+          {
+            "number": 4,
+            "step": "Spread a thin layer of tomato sauce, leaving a border for the crust."
+          },
+          {
+            "number": 5,
+            "step": "Tear the mozzarella into pieces and scatter over the sauce, drizzle with olive oil."
+          },
+          {
+            "number": 6,
+            "step": "Slide onto the hot stone and bake 8-10 minutes until the crust is charred in spots."
+          },
+          {
+            "number": 7,
+            "step": "Top with fresh basil leaves right out of the oven and serve immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000002,
+    "title": "Spaghetti Carbonara",
+    "subtitle": "Eggs, pecorino, guanciale, black pepper",
+    "cuisine": "Italian",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 25,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Spaghetti",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Guanciale or pancetta",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "Pecorino Romano",
+        "amount": 80,
+        "unit": "g grated"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 1,
+        "unit": "tsp coarsely ground"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Bring a large pot of salted water to a boil and cook spaghetti until al dente."
+          },
+          {
+            "number": 2,
+            "step": "While pasta cooks, cut guanciale into small strips and render in a cold pan over medium heat until crisp."
+          },
+          {
+            "number": 3,
+            "step": "Whisk eggs, grated pecorino, and black pepper together in a bowl."
+          },
+          {
+            "number": 4,
+            "step": "Reserve 1 cup pasta water, then drain pasta and add to the pan with guanciale off the heat."
+          },
+          {
+            "number": 5,
+            "step": "Quickly stir in the egg mixture, adding splashes of pasta water until glossy and creamy."
+          },
+          {
+            "number": 6,
+            "step": "Serve immediately with extra pecorino and black pepper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000003,
+    "title": "Creamy Mushroom Risotto",
+    "subtitle": "Arborio rice, parmesan, white wine",
+    "cuisine": "Italian",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Arborio rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Mixed mushrooms",
+        "amount": 300,
+        "unit": "g sliced"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 1.2,
+        "unit": "liters warm"
+      },
+      {
+        "name": "White wine",
+        "amount": 120,
+        "unit": "ml"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "finely diced"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 60,
+        "unit": "g grated"
+      },
+      {
+        "name": "Butter",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Sauté mushrooms in a splash of oil until golden, season, and set aside."
+          },
+          {
+            "number": 2,
+            "step": "In the same pan, melt half the butter and cook onion until soft."
+          },
+          {
+            "number": 3,
+            "step": "Add rice and toast for 1-2 minutes, stirring, until edges turn translucent."
+          },
+          {
+            "number": 4,
+            "step": "Pour in wine and stir until absorbed."
+          },
+          {
+            "number": 5,
+            "step": "Add warm stock one ladle at a time, stirring constantly, waiting until absorbed before adding more, about 18-20 minutes."
+          },
+          {
+            "number": 6,
+            "step": "Stir in mushrooms, remaining butter, and parmesan; season to taste and rest 2 minutes before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000004,
+    "title": "Lasagna alla Bolognese",
+    "subtitle": "Layered pasta with meat ragù and béchamel",
+    "cuisine": "Italian",
+    "category": "Main",
+    "difficulty": "Hard",
+    "readyInMinutes": 120,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Lasagna sheets",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Ground beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Crushed tomatoes",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Carrot",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Celery",
+        "amount": 1,
+        "unit": "stalk diced"
+      },
+      {
+        "name": "Milk",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Butter",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Flour",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 100,
+        "unit": "g grated"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Sauté onion, carrot, and celery until soft, then brown the ground beef."
+          },
+          {
+            "number": 2,
+            "step": "Add crushed tomatoes, season, and simmer the ragù uncovered for 45-60 minutes."
+          },
+          {
+            "number": 3,
+            "step": "For the béchamel, melt butter, whisk in flour, then gradually whisk in warm milk until thickened; season with nutmeg and salt."
+          },
+          {
+            "number": 4,
+            "step": "Cook lasagna sheets if not oven-ready, per package directions."
+          },
+          {
+            "number": 5,
+            "step": "Layer sauce, pasta sheets, and béchamel in a baking dish, repeating to fill, finishing with béchamel and parmesan on top."
+          },
+          {
+            "number": 6,
+            "step": "Bake at 190°C/375°F for 30-35 minutes until bubbling and golden. Rest 10 minutes before slicing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000005,
+    "title": "Caprese Salad",
+    "subtitle": "Tomato, mozzarella, basil, balsamic glaze",
+    "cuisine": "Italian",
+    "category": "Salad",
+    "difficulty": "Easy",
+    "readyInMinutes": 10,
+    "servings": 2,
+    "extendedIngredients": [
+      {
+        "name": "Ripe tomatoes",
+        "amount": 3,
+        "unit": "large"
+      },
+      {
+        "name": "Fresh mozzarella",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Fresh basil leaves",
+        "amount": 12,
+        "unit": "leaves"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Balsamic glaze",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Slice tomatoes and mozzarella into rounds of similar thickness."
+          },
+          {
+            "number": 2,
+            "step": "Arrange alternating slices of tomato and mozzarella on a plate, tucking basil leaves between."
+          },
+          {
+            "number": 3,
+            "step": "Drizzle with olive oil and balsamic glaze."
+          },
+          {
+            "number": 4,
+            "step": "Season with salt and freshly cracked pepper, and serve immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000006,
+    "title": "Tiramisu",
+    "subtitle": "Coffee-soaked ladyfingers, mascarpone cream",
+    "cuisine": "Italian",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 30,
+    "servings": 8,
+    "extendedIngredients": [
+      {
+        "name": "Ladyfinger biscuits",
+        "amount": 24,
+        "unit": "pieces"
+      },
+      {
+        "name": "Strong espresso",
+        "amount": 300,
+        "unit": "ml cooled"
+      },
+      {
+        "name": "Mascarpone",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "separated"
+      },
+      {
+        "name": "Sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Cocoa powder",
+        "amount": 2,
+        "unit": "tbsp for dusting"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Whisk egg yolks with sugar until pale, then fold in mascarpone until smooth."
+          },
+          {
+            "number": 2,
+            "step": "In a separate bowl, whisk egg whites to stiff peaks and gently fold into the mascarpone mixture."
+          },
+          {
+            "number": 3,
+            "step": "Dip each ladyfinger briefly in cooled espresso and arrange a layer in a dish."
+          },
+          {
+            "number": 4,
+            "step": "Spread half the mascarpone cream over the biscuits, then repeat with another biscuit layer and cream."
+          },
+          {
+            "number": 5,
+            "step": "Dust generously with cocoa powder and refrigerate at least 4 hours, ideally overnight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000007,
+    "title": "Chicken Tacos al Pastor",
+    "subtitle": "Marinated chicken, pineapple, cilantro",
+    "cuisine": "Mexican",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken thighs",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "name": "Achiote paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pineapple",
+        "amount": 150,
+        "unit": "g diced"
+      },
+      {
+        "name": "Corn tortillas",
+        "amount": 12,
+        "unit": "small"
+      },
+      {
+        "name": "White onion",
+        "amount": 0.5,
+        "unit": "diced"
+      },
+      {
+        "name": "Cilantro",
+        "amount": 0.25,
+        "unit": "cup chopped"
+      },
+      {
+        "name": "Lime",
+        "amount": 2,
+        "unit": "wedges"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate chicken thighs in achiote paste, lime juice, and a splash of oil for at least 30 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Sear chicken in a hot skillet until charred and cooked through, then dice."
+          },
+          {
+            "number": 3,
+            "step": "Quickly char pineapple pieces in the same pan for extra caramelization."
+          },
+          {
+            "number": 4,
+            "step": "Warm tortillas over a flame or dry skillet until pliable."
+          },
+          {
+            "number": 5,
+            "step": "Fill tortillas with chicken, pineapple, onion, and cilantro."
+          },
+          {
+            "number": 6,
+            "step": "Serve with lime wedges to squeeze over the top."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000008,
+    "title": "Beef Barbacoa",
+    "subtitle": "Slow-cooked, chipotle-spiced shredded beef",
+    "cuisine": "Mexican",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 240,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Beef chuck roast",
+        "amount": 1.2,
+        "unit": "kg"
+      },
+      {
+        "name": "Chipotles in adobo",
+        "amount": 3,
+        "unit": "peppers"
+      },
+      {
+        "name": "Garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "Cumin",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Beef broth",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "Bay leaves",
+        "amount": 2,
+        "unit": "leaves"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Blend chipotles, garlic, cumin, and lime juice with a little broth into a smooth paste."
+          },
+          {
+            "number": 2,
+            "step": "Sear the beef on all sides in a hot pot until browned."
+          },
+          {
+            "number": 3,
+            "step": "Pour the chipotle paste and remaining broth over the beef, add bay leaves."
+          },
+          {
+            "number": 4,
+            "step": "Cover and cook low and slow (slow cooker on low for 8 hours, or oven at 150°C/300°F for 4 hours) until fork-tender."
+          },
+          {
+            "number": 5,
+            "step": "Shred the beef with two forks directly in the cooking liquid to soak up flavor."
+          },
+          {
+            "number": 6,
+            "step": "Serve in tacos, bowls, or over rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000009,
+    "title": "Guacamole",
+    "subtitle": "Avocado, lime, jalapeño, cilantro",
+    "cuisine": "Mexican",
+    "category": "Side",
+    "difficulty": "Easy",
+    "readyInMinutes": 10,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Ripe avocados",
+        "amount": 3,
+        "unit": "large"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red onion",
+        "amount": 0.25,
+        "unit": "cup finely diced"
+      },
+      {
+        "name": "Jalapeño",
+        "amount": 1,
+        "unit": "seeded and minced"
+      },
+      {
+        "name": "Cilantro",
+        "amount": 3,
+        "unit": "tbsp chopped"
+      },
+      {
+        "name": "Salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Halve and pit the avocados, then scoop flesh into a bowl."
+          },
+          {
+            "number": 2,
+            "step": "Mash to your preferred texture, chunky or smooth, with a fork."
+          },
+          {
+            "number": 3,
+            "step": "Stir in lime juice, onion, jalapeño, cilantro, and salt."
+          },
+          {
+            "number": 4,
+            "step": "Taste and adjust salt and lime, then serve immediately with tortilla chips."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000010,
+    "title": "Chiles Rellenos",
+    "subtitle": "Poblano peppers stuffed with cheese, fried in egg batter",
+    "cuisine": "Mexican",
+    "category": "Main",
+    "difficulty": "Hard",
+    "readyInMinutes": 60,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Poblano peppers",
+        "amount": 6,
+        "unit": "whole"
+      },
+      {
+        "name": "Oaxaca or Monterey Jack cheese",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "separated"
+      },
+      {
+        "name": "Flour",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tomato sauce",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 3,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Char peppers over an open flame or under a broiler until blackened all over, then steam in a covered bowl 10 minutes and peel."
+          },
+          {
+            "number": 2,
+            "step": "Slit each pepper lengthwise and remove seeds, keeping the stem intact, then stuff with cheese."
+          },
+          {
+            "number": 3,
+            "step": "Whisk egg whites to stiff peaks, then fold in yolks and flour to make a light batter."
+          },
+          {
+            "number": 4,
+            "step": "Dredge stuffed peppers in a little flour, then dip fully in the egg batter."
+          },
+          {
+            "number": 5,
+            "step": "Fry in hot oil, turning gently, until golden on all sides, then drain on paper towels."
+          },
+          {
+            "number": 6,
+            "step": "Serve warm, topped with warmed tomato sauce."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000011,
+    "title": "Mexican Street Corn (Elote)",
+    "subtitle": "Grilled corn with crema, cotija, chili",
+    "cuisine": "Mexican",
+    "category": "Side",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Corn on the cob",
+        "amount": 4,
+        "unit": "ears"
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cotija cheese",
+        "amount": 60,
+        "unit": "g crumbled"
+      },
+      {
+        "name": "Chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Lime",
+        "amount": 1,
+        "unit": "cut into wedges"
+      },
+      {
+        "name": "Cilantro",
+        "amount": 2,
+        "unit": "tbsp chopped"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Grill or char corn over medium-high heat, turning occasionally, until charred in spots, about 10-12 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Brush each ear with mayonnaise while still warm."
+          },
+          {
+            "number": 3,
+            "step": "Sprinkle generously with cotija cheese and chili powder."
+          },
+          {
+            "number": 4,
+            "step": "Garnish with cilantro and serve with lime wedges to squeeze over."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000012,
+    "title": "Butter Chicken (Murgh Makhani)",
+    "subtitle": "Creamy tomato curry with charred chicken",
+    "cuisine": "Indian",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 50,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken thighs",
+        "amount": 600,
+        "unit": "g cubed"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Tomato purée",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 120,
+        "unit": "ml"
+      },
+      {
+        "name": "Garam masala",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate chicken in yogurt, half the ginger-garlic paste, chili powder, and salt for at least 30 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Sear marinated chicken in a hot pan until charred at the edges; set aside."
+          },
+          {
+            "number": 3,
+            "step": "In the same pan, melt butter and cook remaining ginger-garlic paste until fragrant."
+          },
+          {
+            "number": 4,
+            "step": "Add tomato purée and garam masala, simmer 15 minutes until thickened."
+          },
+          {
+            "number": 5,
+            "step": "Stir in cream and return chicken to the pan, simmering until cooked through."
+          },
+          {
+            "number": 6,
+            "step": "Finish with a knob of butter and serve with rice or naan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000013,
+    "title": "Chana Masala",
+    "subtitle": "Spiced chickpea curry",
+    "cuisine": "Indian",
+    "category": "Vegetarian",
+    "difficulty": "Easy",
+    "readyInMinutes": 35,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chickpeas",
+        "amount": 2,
+        "unit": "cans (400g each), drained"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Tomatoes",
+        "amount": 2,
+        "unit": "diced"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander powder",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Heat oil and sizzle cumin seeds until fragrant."
+          },
+          {
+            "number": 2,
+            "step": "Add onion and cook until golden, then stir in ginger-garlic paste."
+          },
+          {
+            "number": 3,
+            "step": "Add tomatoes, turmeric, and coriander powder; cook until tomatoes break down."
+          },
+          {
+            "number": 4,
+            "step": "Add chickpeas and enough water to just cover, simmer 15-20 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Mash a few chickpeas to thicken the sauce, stir in garam masala."
+          },
+          {
+            "number": 6,
+            "step": "Garnish with fresh cilantro and serve with rice or roti."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000014,
+    "title": "Vegetable Biryani",
+    "subtitle": "Fragrant layered rice with spiced vegetables",
+    "cuisine": "Indian",
+    "category": "Main",
+    "difficulty": "Hard",
+    "readyInMinutes": 75,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Basmati rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Mixed vegetables",
+        "amount": 400,
+        "unit": "g (carrot, beans, peas, potato)"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Fried onions",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Saffron",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "Whole spices",
+        "amount": 1,
+        "unit": "set (cinnamon, cloves, cardamom, bay leaf)"
+      },
+      {
+        "name": "Mint and cilantro",
+        "amount": 1,
+        "unit": "cup chopped"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Soak rice for 30 minutes, then parboil with whole spices until 70% cooked; drain."
+          },
+          {
+            "number": 2,
+            "step": "Sauté vegetables with ginger-garlic paste and biryani spice blend until just tender."
+          },
+          {
+            "number": 3,
+            "step": "Stir yogurt, half the fried onions, and herbs into the vegetables to make the base layer."
+          },
+          {
+            "number": 4,
+            "step": "Layer par-cooked rice over the vegetable mixture in a heavy pot."
+          },
+          {
+            "number": 5,
+            "step": "Top with remaining fried onions, herbs, and a splash of saffron-infused milk."
+          },
+          {
+            "number": 6,
+            "step": "Cover tightly and cook on low heat (dum) for 20-25 minutes, then rest 5 minutes before fluffing and serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000015,
+    "title": "Palak Paneer",
+    "subtitle": "Paneer cubes in a creamy spinach curry",
+    "cuisine": "Indian",
+    "category": "Vegetarian",
+    "difficulty": "Medium",
+    "readyInMinutes": 35,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Fresh spinach",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Paneer",
+        "amount": 250,
+        "unit": "g cubed"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Tomato",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cream",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garam masala",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Blanch spinach in boiling water for 2 minutes, then blend into a smooth purée."
+          },
+          {
+            "number": 2,
+            "step": "Lightly pan-fry paneer cubes until golden; set aside."
+          },
+          {
+            "number": 3,
+            "step": "Sauté onion until golden, add ginger-garlic paste and tomato, cook until soft."
+          },
+          {
+            "number": 4,
+            "step": "Stir in the spinach purée and garam masala, simmer 5-8 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Add paneer and cream, simmer 2-3 minutes more."
+          },
+          {
+            "number": 6,
+            "step": "Serve hot with naan or rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000016,
+    "title": "Masala Dosa",
+    "subtitle": "Fermented rice-lentil crepe with spiced potato filling",
+    "cuisine": "Indian",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Dosa batter",
+        "amount": 4,
+        "unit": "cups (fermented rice-lentil)"
+      },
+      {
+        "name": "Potatoes",
+        "amount": 4,
+        "unit": "boiled and cubed"
+      },
+      {
+        "name": "Mustard seeds",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "amount": 10,
+        "unit": "leaves"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Temper mustard seeds and curry leaves in hot oil until they pop."
+          },
+          {
+            "number": 2,
+            "step": "Add onion and cook until soft, then stir in turmeric."
+          },
+          {
+            "number": 3,
+            "step": "Add boiled potatoes, mash lightly, and season with salt; this is the filling."
+          },
+          {
+            "number": 4,
+            "step": "Heat a flat griddle and spread a ladle of dosa batter into a thin circle."
+          },
+          {
+            "number": 5,
+            "step": "Drizzle oil around the edges and cook until crisp and golden underneath."
+          },
+          {
+            "number": 6,
+            "step": "Spoon potato filling onto one side, fold the dosa over, and serve hot with chutney and sambar."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000017,
+    "title": "Kung Pao Chicken",
+    "subtitle": "Stir-fried chicken, peanuts, chili",
+    "cuisine": "Chinese",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken breast",
+        "amount": 500,
+        "unit": "g diced"
+      },
+      {
+        "name": "Roasted peanuts",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "Dried red chilies",
+        "amount": 8,
+        "unit": "whole"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rice vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Spring onion",
+        "amount": 3,
+        "unit": "chopped"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate diced chicken in a spoon of soy sauce and a little cornstarch for 15 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Stir-fry chicken in hot oil until just cooked, then remove."
+          },
+          {
+            "number": 3,
+            "step": "Fry dried chilies and garlic briefly in the same wok until fragrant, careful not to burn."
+          },
+          {
+            "number": 4,
+            "step": "Return chicken to the wok, add remaining soy sauce and rice vinegar, toss to coat."
+          },
+          {
+            "number": 5,
+            "step": "Stir in peanuts and spring onion, tossing 1 more minute."
+          },
+          {
+            "number": 6,
+            "step": "Serve immediately over steamed rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000018,
+    "title": "Vegetable Fried Rice",
+    "subtitle": "Wok-fried rice with egg and vegetables",
+    "cuisine": "Chinese",
+    "category": "Main",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Cooked, chilled rice",
+        "amount": 4,
+        "unit": "cups"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "beaten"
+      },
+      {
+        "name": "Mixed vegetables",
+        "amount": 1.5,
+        "unit": "cups (peas, carrot, corn)"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Spring onion",
+        "amount": 3,
+        "unit": "chopped"
+      },
+      {
+        "name": "Sesame oil",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Heat oil in a wok and scramble the eggs until just set; remove and set aside."
+          },
+          {
+            "number": 2,
+            "step": "Add a little more oil, sauté garlic and vegetables until crisp-tender."
+          },
+          {
+            "number": 3,
+            "step": "Add the cold rice, breaking up clumps, and stir-fry until heated through."
+          },
+          {
+            "number": 4,
+            "step": "Push rice to the sides, pour soy sauce into the center, then toss everything together."
+          },
+          {
+            "number": 5,
+            "step": "Fold in the scrambled egg and spring onion, drizzle with sesame oil, and serve hot."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000019,
+    "title": "Mapo Tofu",
+    "subtitle": "Silken tofu in spicy Sichuan sauce",
+    "cuisine": "Chinese",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 25,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Silken tofu",
+        "amount": 400,
+        "unit": "g cubed"
+      },
+      {
+        "name": "Ground pork",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Doubanjiang (chili bean paste)",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Ginger",
+        "amount": 1,
+        "unit": "tbsp minced"
+      },
+      {
+        "name": "Sichuan peppercorns",
+        "amount": 1,
+        "unit": "tsp ground"
+      },
+      {
+        "name": "Spring onion",
+        "amount": 2,
+        "unit": "chopped"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Brown the ground pork in hot oil until crispy at the edges."
+          },
+          {
+            "number": 2,
+            "step": "Add garlic, ginger, and doubanjiang, stir-fry until fragrant and oil turns red."
+          },
+          {
+            "number": 3,
+            "step": "Pour in a cup of stock or water and bring to a simmer."
+          },
+          {
+            "number": 4,
+            "step": "Gently slide in the tofu cubes and simmer 5 minutes without stirring hard, to keep tofu intact."
+          },
+          {
+            "number": 5,
+            "step": "Thicken with a cornstarch slurry, then sprinkle with ground Sichuan peppercorn and spring onion."
+          },
+          {
+            "number": 6,
+            "step": "Serve hot over steamed rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000020,
+    "title": "Hot and Sour Soup",
+    "subtitle": "Tangy, spicy soup with tofu and mushrooms",
+    "cuisine": "Chinese",
+    "category": "Soup",
+    "difficulty": "Easy",
+    "readyInMinutes": 25,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken or vegetable stock",
+        "amount": 1,
+        "unit": "liter"
+      },
+      {
+        "name": "Firm tofu",
+        "amount": 200,
+        "unit": "g julienned"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "amount": 100,
+        "unit": "g sliced"
+      },
+      {
+        "name": "Rice vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "White pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Egg",
+        "amount": 1,
+        "unit": "beaten"
+      },
+      {
+        "name": "Cornstarch",
+        "amount": 2,
+        "unit": "tbsp mixed with water"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Bring stock to a simmer and add tofu and mushrooms, cook 5 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Stir in vinegar, soy sauce, and white pepper; taste and adjust for tang and heat."
+          },
+          {
+            "number": 3,
+            "step": "Thicken the soup by stirring in the cornstarch slurry until glossy."
+          },
+          {
+            "number": 4,
+            "step": "Slowly drizzle in beaten egg while stirring gently to form ribbons."
+          },
+          {
+            "number": 5,
+            "step": "Ladle into bowls and top with sesame oil and spring onion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000021,
+    "title": "Char Siu Pork",
+    "subtitle": "Cantonese barbecue-glazed pork",
+    "cuisine": "Chinese",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 240,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Pork shoulder",
+        "amount": 800,
+        "unit": "g cut into strips"
+      },
+      {
+        "name": "Hoisin sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Honey",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chinese five spice",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Red food coloring",
+        "amount": 1,
+        "unit": "few drops (optional)"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Whisk hoisin, soy sauce, half the honey, five spice, and garlic into a marinade."
+          },
+          {
+            "number": 2,
+            "step": "Marinate pork strips at least 4 hours or overnight in the fridge."
+          },
+          {
+            "number": 3,
+            "step": "Roast on a rack at 190°C/375°F for 25 minutes, turning and basting halfway."
+          },
+          {
+            "number": 4,
+            "step": "Brush with remaining honey and broil 2-3 minutes until caramelized and slightly charred."
+          },
+          {
+            "number": 5,
+            "step": "Rest 5 minutes, then slice and serve with steamed rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000022,
+    "title": "Green Curry Chicken",
+    "subtitle": "Coconut curry with Thai basil",
+    "cuisine": "Thai",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 35,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken thighs",
+        "amount": 500,
+        "unit": "g sliced"
+      },
+      {
+        "name": "Green curry paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coconut milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "Thai eggplant",
+        "amount": 150,
+        "unit": "g quartered"
+      },
+      {
+        "name": "Fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Palm sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Thai basil",
+        "amount": 0.5,
+        "unit": "cup leaves"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Fry curry paste in a spoon of coconut cream until fragrant and oil separates."
+          },
+          {
+            "number": 2,
+            "step": "Add chicken and stir to coat in the paste, cooking until color changes."
+          },
+          {
+            "number": 3,
+            "step": "Pour in remaining coconut milk, bring to a gentle simmer."
+          },
+          {
+            "number": 4,
+            "step": "Add eggplant, fish sauce, and palm sugar; simmer 10-12 minutes until chicken is cooked through."
+          },
+          {
+            "number": 5,
+            "step": "Stir in Thai basil leaves just before serving."
+          },
+          {
+            "number": 6,
+            "step": "Serve with steamed jasmine rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000023,
+    "title": "Pad Thai",
+    "subtitle": "Stir-fried rice noodles with shrimp, tamarind",
+    "cuisine": "Thai",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Flat rice noodles",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Shrimp",
+        "amount": 300,
+        "unit": "g peeled"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "beaten"
+      },
+      {
+        "name": "Tamarind paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Palm sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bean sprouts",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Crushed peanuts",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Soak rice noodles in warm water until pliable but still firm, then drain."
+          },
+          {
+            "number": 2,
+            "step": "Mix tamarind paste, fish sauce, and palm sugar into a sauce."
+          },
+          {
+            "number": 3,
+            "step": "Stir-fry shrimp in hot oil until pink, push to one side, then scramble the eggs in the same pan."
+          },
+          {
+            "number": 4,
+            "step": "Add drained noodles and sauce, toss constantly until noodles soften and absorb the sauce."
+          },
+          {
+            "number": 5,
+            "step": "Fold in bean sprouts and toss 1 more minute."
+          },
+          {
+            "number": 6,
+            "step": "Plate and top with crushed peanuts, lime wedges, and extra bean sprouts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000024,
+    "title": "Tom Yum Goong",
+    "subtitle": "Hot and sour shrimp soup with lemongrass",
+    "cuisine": "Thai",
+    "category": "Soup",
+    "difficulty": "Medium",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Shrimp",
+        "amount": 400,
+        "unit": "g peeled, shells reserved"
+      },
+      {
+        "name": "Lemongrass",
+        "amount": 2,
+        "unit": "stalks bruised"
+      },
+      {
+        "name": "Kaffir lime leaves",
+        "amount": 5,
+        "unit": "leaves"
+      },
+      {
+        "name": "Galangal",
+        "amount": 4,
+        "unit": "slices"
+      },
+      {
+        "name": "Thai chilies",
+        "amount": 4,
+        "unit": "crushed"
+      },
+      {
+        "name": "Fish sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Simmer shrimp shells in water 10 minutes to make a quick stock, then strain."
+          },
+          {
+            "number": 2,
+            "step": "Return stock to the pot and add lemongrass, kaffir lime leaves, and galangal; simmer 5 minutes."
+          },
+          {
+            "number": 3,
+            "step": "Add shrimp and mushrooms, cook until shrimp turns pink."
+          },
+          {
+            "number": 4,
+            "step": "Remove from heat and stir in fish sauce, lime juice, and crushed chilies."
+          },
+          {
+            "number": 5,
+            "step": "Taste and balance sour, salty, and spicy before serving hot."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000025,
+    "title": "Thai Basil Beef Stir-Fry (Pad Krapow)",
+    "subtitle": "Minced beef, holy basil, chili, garlic",
+    "cuisine": "Thai",
+    "category": "Main",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 3,
+    "extendedIngredients": [
+      {
+        "name": "Ground beef",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Thai holy basil",
+        "amount": 1,
+        "unit": "cup leaves"
+      },
+      {
+        "name": "Garlic",
+        "amount": 5,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Thai chilies",
+        "amount": 4,
+        "unit": "sliced"
+      },
+      {
+        "name": "Fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Egg",
+        "amount": 1,
+        "unit": "per serving, fried"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Pound garlic and chilies together into a rough paste using a mortar or knife."
+          },
+          {
+            "number": 2,
+            "step": "Fry the garlic-chili paste in hot oil until fragrant, about 30 seconds."
+          },
+          {
+            "number": 3,
+            "step": "Add ground beef and stir-fry over high heat until browned and cooked through."
+          },
+          {
+            "number": 4,
+            "step": "Season with fish sauce and soy sauce, tossing to coat."
+          },
+          {
+            "number": 5,
+            "step": "Remove from heat and fold in basil leaves until just wilted."
+          },
+          {
+            "number": 6,
+            "step": "Serve over steamed rice topped with a crispy fried egg."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000026,
+    "title": "Chicken Katsu Curry",
+    "subtitle": "Crispy breaded chicken, Japanese curry sauce",
+    "cuisine": "Japanese",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken breast",
+        "amount": 4,
+        "unit": "pieces, pounded thin"
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "amount": 1.5,
+        "unit": "cups"
+      },
+      {
+        "name": "Japanese curry roux",
+        "amount": 1,
+        "unit": "block (about 100g)"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Carrot",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Potato",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "beaten"
+      },
+      {
+        "name": "Flour",
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Simmer onion, carrot, and potato in water until tender, about 15 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Break curry roux into the pot and stir until dissolved into a thick sauce; keep warm."
+          },
+          {
+            "number": 3,
+            "step": "Dredge chicken in flour, then egg, then panko, pressing to coat evenly."
+          },
+          {
+            "number": 4,
+            "step": "Shallow-fry breaded chicken until golden and cooked through, about 3-4 minutes per side."
+          },
+          {
+            "number": 5,
+            "step": "Slice the chicken katsu into strips."
+          },
+          {
+            "number": 6,
+            "step": "Serve over steamed rice, ladled generously with curry sauce."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000027,
+    "title": "Miso Ramen",
+    "subtitle": "Rich miso broth, noodles, soft egg",
+    "cuisine": "Japanese",
+    "category": "Soup",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 2,
+    "extendedIngredients": [
+      {
+        "name": "Ramen noodles",
+        "amount": 2,
+        "unit": "portions"
+      },
+      {
+        "name": "Chicken or pork stock",
+        "amount": 1,
+        "unit": "liter"
+      },
+      {
+        "name": "Miso paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soft-boiled eggs",
+        "amount": 2,
+        "unit": "halved"
+      },
+      {
+        "name": "Corn kernels",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Spring onion",
+        "amount": 2,
+        "unit": "sliced"
+      },
+      {
+        "name": "Sesame oil",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Bring stock to a simmer and whisk in miso paste until dissolved."
+          },
+          {
+            "number": 2,
+            "step": "Cook ramen noodles separately according to package directions, then drain."
+          },
+          {
+            "number": 3,
+            "step": "Divide noodles between two bowls and ladle the hot miso broth over."
+          },
+          {
+            "number": 4,
+            "step": "Top each bowl with a halved soft-boiled egg, corn, and spring onion."
+          },
+          {
+            "number": 5,
+            "step": "Finish with a drizzle of sesame oil and serve immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000028,
+    "title": "Teriyaki Salmon",
+    "subtitle": "Pan-glazed salmon in sweet soy sauce",
+    "cuisine": "Japanese",
+    "category": "Main",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 2,
+    "extendedIngredients": [
+      {
+        "name": "Salmon fillets",
+        "amount": 2,
+        "unit": "pieces"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sake",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Whisk soy sauce, mirin, sake, and sugar together for the teriyaki sauce."
+          },
+          {
+            "number": 2,
+            "step": "Pan-sear salmon skin-side down in a hot pan until crisp, then flip."
+          },
+          {
+            "number": 3,
+            "step": "Pour the sauce into the pan and let it bubble, spooning it over the salmon as it thickens."
+          },
+          {
+            "number": 4,
+            "step": "Cook until salmon is just cooked through and the glaze coats it thickly, about 2-3 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Sprinkle with sesame seeds and serve with steamed rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000029,
+    "title": "Vegetable Tempura",
+    "subtitle": "Light, crispy battered vegetables",
+    "cuisine": "Japanese",
+    "category": "Side",
+    "difficulty": "Medium",
+    "readyInMinutes": 25,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Mixed vegetables",
+        "amount": 400,
+        "unit": "g (sweet potato, eggplant, pepper)"
+      },
+      {
+        "name": "Flour",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Cornstarch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ice-cold water",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Egg",
+        "amount": 1,
+        "unit": "cold"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 3,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Slice vegetables into thin, even pieces so they cook quickly."
+          },
+          {
+            "number": 2,
+            "step": "Whisk egg into ice-cold water, then gently fold in flour and cornstarch; leave the batter lumpy."
+          },
+          {
+            "number": 3,
+            "step": "Heat oil to 180°C/350°F."
+          },
+          {
+            "number": 4,
+            "step": "Dip vegetable pieces in batter and fry a few at a time until light golden and crisp, about 2 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Drain on a rack and serve immediately with dipping sauce or salt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000030,
+    "title": "Chicken Shawarma",
+    "subtitle": "Spiced roasted chicken, garlic sauce, pita",
+    "cuisine": "Middle Eastern",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken thighs",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Garlic",
+        "amount": 4,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Cumin",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Pita bread",
+        "amount": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Mix yogurt, half the garlic, spices, and lemon juice into a marinade."
+          },
+          {
+            "number": 2,
+            "step": "Coat chicken thighs thoroughly and marinate at least 1 hour, or overnight."
+          },
+          {
+            "number": 3,
+            "step": "Roast at 220°C/425°F or grill until charred at the edges and cooked through, about 25-30 minutes."
+          },
+          {
+            "number": 4,
+            "step": "Rest, then slice the chicken thinly."
+          },
+          {
+            "number": 5,
+            "step": "Whisk remaining garlic into extra yogurt to make a quick garlic sauce."
+          },
+          {
+            "number": 6,
+            "step": "Serve sliced chicken in warm pita with garlic sauce and pickled vegetables."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000031,
+    "title": "Falafel",
+    "subtitle": "Crispy chickpea fritters",
+    "cuisine": "Middle Eastern",
+    "category": "Vegetarian",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Dried chickpeas",
+        "amount": 250,
+        "unit": "g soaked overnight"
+      },
+      {
+        "name": "Onion",
+        "amount": 0.5,
+        "unit": "roughly chopped"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "Parsley",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Cumin",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Baking powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Drain soaked (uncooked) chickpeas and pulse in a food processor with onion, garlic, and parsley until finely ground but not pasty."
+          },
+          {
+            "number": 2,
+            "step": "Mix in cumin, coriander, salt, and baking powder."
+          },
+          {
+            "number": 3,
+            "step": "Chill the mixture 30 minutes so it holds together."
+          },
+          {
+            "number": 4,
+            "step": "Shape into small patties or balls."
+          },
+          {
+            "number": 5,
+            "step": "Fry in hot oil until deeply golden and crisp, about 3-4 minutes."
+          },
+          {
+            "number": 6,
+            "step": "Drain and serve in pita with tahini sauce and salad."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000032,
+    "title": "Greek Moussaka",
+    "subtitle": "Layered eggplant, spiced meat, béchamel",
+    "cuisine": "Greek",
+    "category": "Main",
+    "difficulty": "Hard",
+    "readyInMinutes": 90,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Eggplant",
+        "amount": 2,
+        "unit": "large, sliced"
+      },
+      {
+        "name": "Ground lamb or beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Crushed tomatoes",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Milk",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Flour",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Parmesan or kefalotyri",
+        "amount": 80,
+        "unit": "g grated"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Salt sliced eggplant and let sit 20 minutes to draw out moisture, then pat dry and brush with oil, roast until soft."
+          },
+          {
+            "number": 2,
+            "step": "Brown the meat with onion, then add crushed tomatoes and cinnamon, simmer 20 minutes."
+          },
+          {
+            "number": 3,
+            "step": "Make béchamel by whisking flour into melted butter, then gradually adding milk until thick; stir in cheese."
+          },
+          {
+            "number": 4,
+            "step": "Layer roasted eggplant and meat sauce in a baking dish, repeating."
+          },
+          {
+            "number": 5,
+            "step": "Top with béchamel, spreading evenly to the edges."
+          },
+          {
+            "number": 6,
+            "step": "Bake at 190°C/375°F for 35-40 minutes until golden on top; rest 15 minutes before slicing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000033,
+    "title": "Hummus",
+    "subtitle": "Creamy chickpea and tahini dip",
+    "cuisine": "Middle Eastern",
+    "category": "Side",
+    "difficulty": "Easy",
+    "readyInMinutes": 10,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Chickpeas",
+        "amount": 2,
+        "unit": "cans (400g each), drained"
+      },
+      {
+        "name": "Tahini",
+        "amount": 0.33,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Blend chickpeas, tahini, lemon juice, garlic, and cumin in a food processor until smooth."
+          },
+          {
+            "number": 2,
+            "step": "With the motor running, drizzle in olive oil and a splash of cold water until light and creamy."
+          },
+          {
+            "number": 3,
+            "step": "Taste and adjust salt, lemon, or water for consistency."
+          },
+          {
+            "number": 4,
+            "step": "Spread onto a plate, drizzle with more olive oil, and serve with pita or vegetables."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000034,
+    "title": "Greek Salad",
+    "subtitle": "Tomato, cucumber, olives, feta",
+    "cuisine": "Greek",
+    "category": "Salad",
+    "difficulty": "Easy",
+    "readyInMinutes": 15,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Tomatoes",
+        "amount": 4,
+        "unit": "cut into wedges"
+      },
+      {
+        "name": "Cucumber",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Red onion",
+        "amount": 0.5,
+        "unit": "thinly sliced"
+      },
+      {
+        "name": "Kalamata olives",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Feta cheese",
+        "amount": 200,
+        "unit": "g in a block"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Dried oregano",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Combine tomatoes, cucumber, red onion, and olives in a large bowl."
+          },
+          {
+            "number": 2,
+            "step": "Toss with olive oil, a squeeze of lemon if you like, and season with salt."
+          },
+          {
+            "number": 3,
+            "step": "Place the block of feta on top rather than crumbling it, in the traditional style."
+          },
+          {
+            "number": 4,
+            "step": "Sprinkle with dried oregano and a final drizzle of olive oil before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000035,
+    "title": "Classic Cheeseburger",
+    "subtitle": "Juicy beef patty, cheddar, all the fixings",
+    "cuisine": "American",
+    "category": "Main",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Ground beef (80/20)",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "name": "Burger buns",
+        "amount": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "Cheddar cheese",
+        "amount": 4,
+        "unit": "slices"
+      },
+      {
+        "name": "Lettuce",
+        "amount": 4,
+        "unit": "leaves"
+      },
+      {
+        "name": "Tomato",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Onion",
+        "amount": 0.5,
+        "unit": "sliced"
+      },
+      {
+        "name": "Salt and pepper",
+        "amount": 1,
+        "unit": "to taste"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Divide beef into 4 portions and shape into patties slightly wider than the buns; season both sides generously."
+          },
+          {
+            "number": 2,
+            "step": "Heat a skillet or grill to high heat."
+          },
+          {
+            "number": 3,
+            "step": "Cook patties 3-4 minutes per side for medium, adding cheese in the last minute to melt."
+          },
+          {
+            "number": 4,
+            "step": "Toast the buns cut-side down until lightly golden."
+          },
+          {
+            "number": 5,
+            "step": "Build the burger with lettuce, patty, tomato, and onion."
+          },
+          {
+            "number": 6,
+            "step": "Serve immediately with your favorite condiments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000036,
+    "title": "Buttermilk Fried Chicken",
+    "subtitle": "Crispy, spiced Southern-style fried chicken",
+    "cuisine": "American",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 60,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken pieces",
+        "amount": 1,
+        "unit": "kg (thighs and drumsticks)"
+      },
+      {
+        "name": "Buttermilk",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Flour",
+        "amount": 2,
+        "unit": "cups"
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic powder",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cayenne pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": 4,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate chicken in buttermilk with a pinch of salt for at least 4 hours or overnight."
+          },
+          {
+            "number": 2,
+            "step": "Mix flour with paprika, garlic powder, cayenne, and salt in a wide dish."
+          },
+          {
+            "number": 3,
+            "step": "Remove chicken from buttermilk, letting excess drip off, then dredge thoroughly in the seasoned flour."
+          },
+          {
+            "number": 4,
+            "step": "Heat oil to 170°C/340°F and fry chicken in batches, turning occasionally, until deep golden, about 12-15 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Check internal temperature reaches 74°C/165°F, then drain on a rack."
+          },
+          {
+            "number": 6,
+            "step": "Rest 5 minutes before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000037,
+    "title": "Mac and Cheese",
+    "subtitle": "Baked pasta in a rich cheese sauce",
+    "cuisine": "American",
+    "category": "Main",
+    "difficulty": "Easy",
+    "readyInMinutes": 40,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Elbow macaroni",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Cheddar cheese",
+        "amount": 300,
+        "unit": "g grated"
+      },
+      {
+        "name": "Milk",
+        "amount": 600,
+        "unit": "ml"
+      },
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Flour",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Breadcrumbs",
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Cook macaroni in salted boiling water until al dente, then drain."
+          },
+          {
+            "number": 2,
+            "step": "Melt butter, whisk in flour, and cook 1 minute to make a roux."
+          },
+          {
+            "number": 3,
+            "step": "Gradually whisk in milk until smooth, simmer until thickened."
+          },
+          {
+            "number": 4,
+            "step": "Remove from heat and stir in most of the cheese until melted."
+          },
+          {
+            "number": 5,
+            "step": "Fold in the macaroni, transfer to a baking dish, top with remaining cheese and breadcrumbs."
+          },
+          {
+            "number": 6,
+            "step": "Bake at 190°C/375°F for 20 minutes until bubbling and golden on top."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000038,
+    "title": "BBQ Pulled Pork",
+    "subtitle": "Slow-cooked pork shoulder in tangy barbecue sauce",
+    "cuisine": "American",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 300,
+    "servings": 8,
+    "extendedIngredients": [
+      {
+        "name": "Pork shoulder",
+        "amount": 2,
+        "unit": "kg"
+      },
+      {
+        "name": "Brown sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Paprika",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Barbecue sauce",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Apple cider vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Burger buns",
+        "amount": 8,
+        "unit": "for serving"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Rub pork shoulder generously with brown sugar, paprika, salt, and pepper."
+          },
+          {
+            "number": 2,
+            "step": "Slow-cook (150°C/300°F in the oven, or low in a slow cooker) for 5-6 hours until the meat pulls apart easily."
+          },
+          {
+            "number": 3,
+            "step": "Rest the pork, then shred with two forks, discarding excess fat."
+          },
+          {
+            "number": 4,
+            "step": "Toss shredded pork with barbecue sauce and a splash of vinegar for brightness."
+          },
+          {
+            "number": 5,
+            "step": "Pile onto toasted buns and serve with coleslaw."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000039,
+    "title": "New York Cheesecake",
+    "subtitle": "Dense, creamy baked cheesecake",
+    "cuisine": "American",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 90,
+    "servings": 10,
+    "extendedIngredients": [
+      {
+        "name": "Cream cheese",
+        "amount": 900,
+        "unit": "g softened"
+      },
+      {
+        "name": "Sugar",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "Sour cream",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Digestive biscuits",
+        "amount": 200,
+        "unit": "g crushed"
+      },
+      {
+        "name": "Butter",
+        "amount": 80,
+        "unit": "g melted"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Mix crushed biscuits with melted butter and press firmly into a springform pan; chill."
+          },
+          {
+            "number": 2,
+            "step": "Beat cream cheese and sugar until smooth and lump-free."
+          },
+          {
+            "number": 3,
+            "step": "Add eggs one at a time, beating gently after each addition — do not overmix."
+          },
+          {
+            "number": 4,
+            "step": "Stir in sour cream and vanilla, then pour the batter over the chilled crust."
+          },
+          {
+            "number": 5,
+            "step": "Bake at 160°C/325°F using a water bath for about 55-65 minutes, until the center is just set with a slight jiggle."
+          },
+          {
+            "number": 6,
+            "step": "Cool completely, then refrigerate at least 4 hours before slicing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000040,
+    "title": "Coq au Vin",
+    "subtitle": "Chicken braised in red wine with mushrooms",
+    "cuisine": "French",
+    "category": "Main",
+    "difficulty": "Hard",
+    "readyInMinutes": 90,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken pieces",
+        "amount": 1.2,
+        "unit": "kg"
+      },
+      {
+        "name": "Red wine",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Bacon lardons",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Pearl onions",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Mushrooms",
+        "amount": 250,
+        "unit": "g quartered"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "Thyme",
+        "amount": 3,
+        "unit": "sprigs"
+      },
+      {
+        "name": "Butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "Flour",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Brown bacon lardons in a heavy pot, then remove and brown chicken pieces in the fat."
+          },
+          {
+            "number": 2,
+            "step": "Add pearl onions and mushrooms, cook until lightly browned."
+          },
+          {
+            "number": 3,
+            "step": "Return chicken and bacon to the pot, sprinkle with flour, and stir to coat."
+          },
+          {
+            "number": 4,
+            "step": "Pour in red wine, add garlic and thyme, bring to a simmer."
+          },
+          {
+            "number": 5,
+            "step": "Cover and braise gently for 45-60 minutes until chicken is tender."
+          },
+          {
+            "number": 6,
+            "step": "Finish by stirring in a knob of butter for a glossy sauce, then serve."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000041,
+    "title": "French Onion Soup",
+    "subtitle": "Caramelized onions, beef broth, melted gruyère",
+    "cuisine": "French",
+    "category": "Soup",
+    "difficulty": "Medium",
+    "readyInMinutes": 75,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Onions",
+        "amount": 6,
+        "unit": "large, thinly sliced"
+      },
+      {
+        "name": "Beef stock",
+        "amount": 1.5,
+        "unit": "liters"
+      },
+      {
+        "name": "Butter",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Dry white wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "Baguette",
+        "amount": 4,
+        "unit": "slices"
+      },
+      {
+        "name": "Gruyère cheese",
+        "amount": 150,
+        "unit": "g grated"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Melt butter in a heavy pot and cook onions low and slow, stirring often, for 40-45 minutes until deep golden and caramelized."
+          },
+          {
+            "number": 2,
+            "step": "Deglaze with white wine, scraping up browned bits."
+          },
+          {
+            "number": 3,
+            "step": "Add beef stock, bring to a simmer, and cook 20 minutes to develop flavor."
+          },
+          {
+            "number": 4,
+            "step": "Ladle soup into oven-safe bowls, top each with a slice of toasted baguette and a generous pile of gruyère."
+          },
+          {
+            "number": 5,
+            "step": "Broil until the cheese is melted and bubbling with brown spots."
+          },
+          {
+            "number": 6,
+            "step": "Serve immediately, careful — the bowls will be hot."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000042,
+    "title": "Ratatouille",
+    "subtitle": "Stewed Provençal vegetables",
+    "cuisine": "French",
+    "category": "Vegetarian",
+    "difficulty": "Medium",
+    "readyInMinutes": 60,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Eggplant",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Zucchini",
+        "amount": 2,
+        "unit": "diced"
+      },
+      {
+        "name": "Bell peppers",
+        "amount": 2,
+        "unit": "diced"
+      },
+      {
+        "name": "Tomatoes",
+        "amount": 4,
+        "unit": "diced"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Herbes de Provence",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Sauté onion and garlic in olive oil until soft."
+          },
+          {
+            "number": 2,
+            "step": "Add eggplant and cook until it starts to soften, about 5 minutes."
+          },
+          {
+            "number": 3,
+            "step": "Stir in zucchini and bell peppers, cook 5 more minutes."
+          },
+          {
+            "number": 4,
+            "step": "Add tomatoes and herbes de Provence, season with salt and pepper."
+          },
+          {
+            "number": 5,
+            "step": "Cover and simmer gently for 30-35 minutes, stirring occasionally, until vegetables are tender and stew-like."
+          },
+          {
+            "number": 6,
+            "step": "Serve warm or at room temperature, with crusty bread."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000043,
+    "title": "Crème Brûlée",
+    "subtitle": "Silky custard with a crackling caramel top",
+    "cuisine": "French",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 60,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Heavy cream",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Egg yolks",
+        "amount": 5,
+        "unit": "large"
+      },
+      {
+        "name": "Sugar",
+        "amount": 100,
+        "unit": "g plus extra for topping"
+      },
+      {
+        "name": "Vanilla bean or extract",
+        "amount": 1,
+        "unit": "pod or 1 tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Heat cream with vanilla until just steaming, then remove from heat."
+          },
+          {
+            "number": 2,
+            "step": "Whisk egg yolks with sugar until pale, then slowly whisk in the warm cream."
+          },
+          {
+            "number": 3,
+            "step": "Strain the mixture and divide among ramekins."
+          },
+          {
+            "number": 4,
+            "step": "Bake in a water bath at 150°C/300°F for about 35-40 minutes until just set with a slight wobble."
+          },
+          {
+            "number": 5,
+            "step": "Chill at least 2 hours."
+          },
+          {
+            "number": 6,
+            "step": "Sprinkle a thin layer of sugar on top and caramelize with a kitchen torch (or under a broiler) just before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000044,
+    "title": "Beef Tehari",
+    "subtitle": "Fragrant mustard-oil rice with tender beef",
+    "cuisine": "Bengali",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 75,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Beef, cubed",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "name": "Basmati rice",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Mustard oil",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "sliced"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Whole spices",
+        "amount": 1,
+        "unit": "set (cinnamon, cardamom, bay leaf)"
+      },
+      {
+        "name": "Potato",
+        "amount": 3,
+        "unit": "quartered"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate beef in yogurt, ginger-garlic paste, and salt for 30 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Heat mustard oil and fry onions until deep golden; remove half for garnish."
+          },
+          {
+            "number": 3,
+            "step": "Add whole spices and marinated beef, cook until browned."
+          },
+          {
+            "number": 4,
+            "step": "Add potatoes and enough water to cover, simmer until beef is tender, about 40 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Add soaked rice and enough hot water to cook it through, cover, and cook on low heat until rice is done."
+          },
+          {
+            "number": 6,
+            "step": "Fluff gently and garnish with reserved fried onions before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000045,
+    "title": "Bhuna Khichuri",
+    "subtitle": "Rice and lentils cooked with ghee and spices",
+    "cuisine": "Bengali",
+    "category": "Vegetarian",
+    "difficulty": "Easy",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Rice",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Moong dal (split lentils)",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "sliced"
+      },
+      {
+        "name": "Bay leaf",
+        "amount": 2,
+        "unit": "leaves"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Dry-roast the moong dal in a pan until lightly fragrant, then rinse with the rice."
+          },
+          {
+            "number": 2,
+            "step": "Heat ghee and fry onion, bay leaf, and cumin seeds until onion softens."
+          },
+          {
+            "number": 3,
+            "step": "Add rice and dal, stir to coat in the ghee and turmeric."
+          },
+          {
+            "number": 4,
+            "step": "Pour in hot water (about double the volume of rice and dal), season with salt."
+          },
+          {
+            "number": 5,
+            "step": "Simmer covered until rice and dal are soft and the khichuri is thick, stirring occasionally, about 20-25 minutes."
+          },
+          {
+            "number": 6,
+            "step": "Serve hot with a drizzle of extra ghee, alongside fried eggplant or an egg."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000046,
+    "title": "Shingara (Bengali Samosa)",
+    "subtitle": "Crisp pastry filled with spiced potato and peanuts",
+    "cuisine": "Bengali",
+    "category": "Snack",
+    "difficulty": "Medium",
+    "readyInMinutes": 60,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "All-purpose flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Potato",
+        "amount": 3,
+        "unit": "boiled and cubed"
+      },
+      {
+        "name": "Peanuts",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cauliflower",
+        "amount": 0.5,
+        "unit": "cup chopped"
+      },
+      {
+        "name": "Cumin seeds",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "amount": 3,
+        "unit": "cups for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Rub ghee into flour with a pinch of salt, then knead with water into a firm dough; rest 20 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Sauté cumin seeds, cauliflower, and peanuts, then fold in cubed potato and mash lightly, season well."
+          },
+          {
+            "number": 3,
+            "step": "Divide dough into balls, roll into ovals, and cut in half to make two cones per piece."
+          },
+          {
+            "number": 4,
+            "step": "Fold each half into a cone, fill with the potato mixture, and seal the edges with a little water."
+          },
+          {
+            "number": 5,
+            "step": "Deep-fry the samosas on medium heat, turning, until golden and crisp, about 8-10 minutes."
+          },
+          {
+            "number": 6,
+            "step": "Drain and serve hot with tamarind chutney."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000047,
+    "title": "Fuchka (Bengali Pani Puri)",
+    "subtitle": "Crisp shells filled with tangy tamarind water and chickpeas",
+    "cuisine": "Bengali",
+    "category": "Snack",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Puri shells",
+        "amount": 24,
+        "unit": "pieces, store-bought or homemade"
+      },
+      {
+        "name": "Boiled chickpeas",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Potato",
+        "amount": 2,
+        "unit": "boiled and diced"
+      },
+      {
+        "name": "Tamarind pulp",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mint leaves",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Green chili",
+        "amount": 2,
+        "unit": "chopped"
+      },
+      {
+        "name": "Chaat masala",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Blend tamarind pulp, mint, green chili, chaat masala, and cold water into a tangy, spiced water; strain and chill."
+          },
+          {
+            "number": 2,
+            "step": "Mix boiled chickpeas and diced potato with a pinch of chaat masala for the filling."
+          },
+          {
+            "number": 3,
+            "step": "Tap a hole in the top of each puri shell with your thumb."
+          },
+          {
+            "number": 4,
+            "step": "Fill each shell with the potato-chickpea mixture."
+          },
+          {
+            "number": 5,
+            "step": "Just before eating, dip or fill each puri with the tamarind water and eat immediately so they stay crisp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000048,
+    "title": "Bibimbap",
+    "subtitle": "Mixed rice bowl with vegetables and gochujang",
+    "cuisine": "Korean",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Cooked rice",
+        "amount": 4,
+        "unit": "cups"
+      },
+      {
+        "name": "Ground beef",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Spinach",
+        "amount": 150,
+        "unit": "g blanched"
+      },
+      {
+        "name": "Carrot",
+        "amount": 1,
+        "unit": "julienned"
+      },
+      {
+        "name": "Bean sprouts",
+        "amount": 150,
+        "unit": "g blanched"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "fried"
+      },
+      {
+        "name": "Gochujang",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Season beef with soy sauce, garlic, and a little sesame oil, then stir-fry until browned."
+          },
+          {
+            "number": 2,
+            "step": "Sauté carrot briefly until just tender, keeping each vegetable separate."
+          },
+          {
+            "number": 3,
+            "step": "Season blanched spinach and bean sprouts each with a little salt and sesame oil."
+          },
+          {
+            "number": 4,
+            "step": "Divide rice among bowls and arrange beef and vegetables in sections on top."
+          },
+          {
+            "number": 5,
+            "step": "Top each bowl with a fried egg, sunny-side up."
+          },
+          {
+            "number": 6,
+            "step": "Serve with a spoonful of gochujang on the side to mix in before eating."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000049,
+    "title": "Korean Fried Chicken",
+    "subtitle": "Double-fried chicken in a sticky gochujang glaze",
+    "cuisine": "Korean",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 50,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Chicken wings",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "Cornstarch",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Gochujang",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Honey",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Sesame seeds",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Toss chicken wings in cornstarch until evenly coated."
+          },
+          {
+            "number": 2,
+            "step": "Fry at 160°C/320°F for 8 minutes, remove and rest 5 minutes."
+          },
+          {
+            "number": 3,
+            "step": "Fry a second time at 190°C/375°F for 3-4 minutes until deeply crisp."
+          },
+          {
+            "number": 4,
+            "step": "Whisk gochujang, honey, soy sauce, and garlic in a pan and warm until glossy."
+          },
+          {
+            "number": 5,
+            "step": "Toss the double-fried wings in the glaze until fully coated."
+          },
+          {
+            "number": 6,
+            "step": "Sprinkle with sesame seeds and serve immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000050,
+    "title": "Kimchi Jjigae",
+    "subtitle": "Spicy fermented kimchi and pork stew",
+    "cuisine": "Korean",
+    "category": "Soup",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Ripe kimchi",
+        "amount": 2,
+        "unit": "cups with juice"
+      },
+      {
+        "name": "Pork belly",
+        "amount": 200,
+        "unit": "g sliced"
+      },
+      {
+        "name": "Tofu",
+        "amount": 200,
+        "unit": "g cubed"
+      },
+      {
+        "name": "Gochugaru",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Spring onion",
+        "amount": 2,
+        "unit": "chopped"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Stir-fry pork belly in a pot until it renders some fat and browns lightly."
+          },
+          {
+            "number": 2,
+            "step": "Add kimchi and its juice, cook 5 minutes to deepen the flavor."
+          },
+          {
+            "number": 3,
+            "step": "Pour in water or stock to cover, add gochugaru and garlic, and simmer 15 minutes."
+          },
+          {
+            "number": 4,
+            "step": "Add tofu and simmer 5 more minutes without stirring too hard."
+          },
+          {
+            "number": 5,
+            "step": "Top with spring onion and serve bubbling hot with rice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000051,
+    "title": "Beef Pho",
+    "subtitle": "Fragrant beef noodle soup",
+    "cuisine": "Vietnamese",
+    "category": "Soup",
+    "difficulty": "Hard",
+    "readyInMinutes": 180,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Beef bones",
+        "amount": 1.5,
+        "unit": "kg"
+      },
+      {
+        "name": "Beef sirloin",
+        "amount": 300,
+        "unit": "g thinly sliced"
+      },
+      {
+        "name": "Rice noodles",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Star anise",
+        "amount": 4,
+        "unit": "whole"
+      },
+      {
+        "name": "Cinnamon stick",
+        "amount": 1,
+        "unit": "stick"
+      },
+      {
+        "name": "Ginger",
+        "amount": 1,
+        "unit": "piece charred"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "charred"
+      },
+      {
+        "name": "Fish sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Blanch beef bones in boiling water 5 minutes to remove impurities, then rinse."
+          },
+          {
+            "number": 2,
+            "step": "Simmer bones with charred ginger and onion for 2-3 hours, skimming regularly."
+          },
+          {
+            "number": 3,
+            "step": "Toast star anise and cinnamon in a dry pan, then add to the simmering broth for the last 30 minutes."
+          },
+          {
+            "number": 4,
+            "step": "Season broth with fish sauce and salt, then strain."
+          },
+          {
+            "number": 5,
+            "step": "Soak rice noodles until soft, blanch briefly, and divide among bowls."
+          },
+          {
+            "number": 6,
+            "step": "Top noodles with raw sliced beef, ladle boiling broth over to cook it, and serve with herbs, lime, and bean sprouts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000052,
+    "title": "Vietnamese Spring Rolls (Gỏi Cuốn)",
+    "subtitle": "Fresh rice paper rolls with shrimp and herbs",
+    "cuisine": "Vietnamese",
+    "category": "Appetizer",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Rice paper wrappers",
+        "amount": 12,
+        "unit": "sheets"
+      },
+      {
+        "name": "Cooked shrimp",
+        "amount": 200,
+        "unit": "g halved"
+      },
+      {
+        "name": "Rice vermicelli",
+        "amount": 100,
+        "unit": "g cooked"
+      },
+      {
+        "name": "Lettuce",
+        "amount": 6,
+        "unit": "leaves"
+      },
+      {
+        "name": "Mint and cilantro",
+        "amount": 1,
+        "unit": "cup mixed"
+      },
+      {
+        "name": "Peanut sauce",
+        "amount": 0.5,
+        "unit": "cup for dipping"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Dip a rice paper wrapper briefly in warm water until just pliable."
+          },
+          {
+            "number": 2,
+            "step": "Lay it flat and place lettuce, vermicelli, herbs, and two shrimp halves near the bottom edge."
+          },
+          {
+            "number": 3,
+            "step": "Fold the sides in and roll tightly from the bottom, like a burrito."
+          },
+          {
+            "number": 4,
+            "step": "Repeat with remaining wrappers and filling."
+          },
+          {
+            "number": 5,
+            "step": "Serve fresh with peanut sauce for dipping."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000053,
+    "title": "Bún Chả",
+    "subtitle": "Grilled pork with rice noodles and dipping sauce",
+    "cuisine": "Vietnamese",
+    "category": "Main",
+    "difficulty": "Medium",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Pork shoulder",
+        "amount": 500,
+        "unit": "g sliced thin"
+      },
+      {
+        "name": "Rice vermicelli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Fish sauce",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Lettuce and herbs",
+        "amount": 2,
+        "unit": "cups"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Marinate pork in a spoon each of fish sauce, sugar, and minced garlic for 20 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Grill or pan-sear pork slices until charred and cooked through."
+          },
+          {
+            "number": 3,
+            "step": "Whisk remaining fish sauce, sugar, lime juice, and garlic with warm water into a dipping sauce (nuoc cham)."
+          },
+          {
+            "number": 4,
+            "step": "Cook rice vermicelli according to package directions, then rinse and drain."
+          },
+          {
+            "number": 5,
+            "step": "Serve grilled pork alongside vermicelli, lettuce, and herbs, with the dipping sauce for combining at the table."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000054,
+    "title": "Shakshuka",
+    "subtitle": "Eggs poached in spiced tomato sauce",
+    "cuisine": "Middle Eastern",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Eggs",
+        "amount": 6,
+        "unit": "large"
+      },
+      {
+        "name": "Crushed tomatoes",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "name": "Bell pepper",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves minced"
+      },
+      {
+        "name": "Cumin",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Sauté onion and bell pepper until soft, then add garlic, cumin, and paprika."
+          },
+          {
+            "number": 2,
+            "step": "Pour in crushed tomatoes, season, and simmer 15 minutes until thickened."
+          },
+          {
+            "number": 3,
+            "step": "Make small wells in the sauce and crack an egg into each."
+          },
+          {
+            "number": 4,
+            "step": "Cover and cook until egg whites are set but yolks remain runny, about 6-8 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Garnish with fresh herbs and serve straight from the pan with crusty bread."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000055,
+    "title": "Overnight Oats",
+    "subtitle": "No-cook oats soaked with fruit and yogurt",
+    "cuisine": "International",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "readyInMinutes": 5,
+    "servings": 1,
+    "extendedIngredients": [
+      {
+        "name": "Rolled oats",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Milk",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Yogurt",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Honey",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chia seeds",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Berries",
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Combine oats, milk, yogurt, honey, and chia seeds in a jar."
+          },
+          {
+            "number": 2,
+            "step": "Stir well to make sure the oats are fully submerged."
+          },
+          {
+            "number": 3,
+            "step": "Cover and refrigerate overnight, or at least 4 hours."
+          },
+          {
+            "number": 4,
+            "step": "Top with fresh berries before eating, cold or gently warmed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000056,
+    "title": "Belgian Waffles",
+    "subtitle": "Crisp, deep-pocketed waffles",
+    "cuisine": "Belgian",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "readyInMinutes": 25,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Flour",
+        "amount": 2,
+        "unit": "cups"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "separated"
+      },
+      {
+        "name": "Milk",
+        "amount": 1.75,
+        "unit": "cups"
+      },
+      {
+        "name": "Butter",
+        "amount": 100,
+        "unit": "g melted"
+      },
+      {
+        "name": "Sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Baking powder",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Whisk flour, sugar, and baking powder together in a bowl."
+          },
+          {
+            "number": 2,
+            "step": "In another bowl, whisk egg yolks, milk, and melted butter, then stir into the dry ingredients."
+          },
+          {
+            "number": 3,
+            "step": "Beat egg whites to soft peaks and gently fold into the batter."
+          },
+          {
+            "number": 4,
+            "step": "Preheat and grease a waffle iron, then pour in batter per the iron's instructions."
+          },
+          {
+            "number": 5,
+            "step": "Cook until golden and crisp, about 4-5 minutes, and serve immediately with syrup and fruit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000057,
+    "title": "Huevos Rancheros",
+    "subtitle": "Fried eggs over tortillas with salsa and beans",
+    "cuisine": "Mexican",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 2,
+    "extendedIngredients": [
+      {
+        "name": "Corn tortillas",
+        "amount": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "Refried beans",
+        "amount": 1,
+        "unit": "cup warmed"
+      },
+      {
+        "name": "Salsa",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Queso fresco",
+        "amount": 50,
+        "unit": "g crumbled"
+      },
+      {
+        "name": "Avocado",
+        "amount": 1,
+        "unit": "sliced"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Warm tortillas in a dry skillet until pliable, then spread with refried beans."
+          },
+          {
+            "number": 2,
+            "step": "Fry eggs sunny-side up in a lightly oiled pan."
+          },
+          {
+            "number": 3,
+            "step": "Warm the salsa in a small pan."
+          },
+          {
+            "number": 4,
+            "step": "Place a fried egg on each bean-topped tortilla and spoon salsa over."
+          },
+          {
+            "number": 5,
+            "step": "Top with crumbled queso fresco and sliced avocado, and serve immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000058,
+    "title": "Classic French Toast",
+    "subtitle": "Custard-soaked bread, pan-fried golden",
+    "cuisine": "French",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Thick bread slices",
+        "amount": 8,
+        "unit": "pieces (brioche or challah)"
+      },
+      {
+        "name": "Eggs",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "Milk",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "amount": 30,
+        "unit": "g for frying"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Whisk eggs, milk, cinnamon, and vanilla together in a wide, shallow dish."
+          },
+          {
+            "number": 2,
+            "step": "Soak each bread slice for about 20 seconds per side, letting excess drip off."
+          },
+          {
+            "number": 3,
+            "step": "Melt butter in a skillet over medium heat."
+          },
+          {
+            "number": 4,
+            "step": "Fry soaked bread until golden brown, 2-3 minutes per side."
+          },
+          {
+            "number": 5,
+            "step": "Serve warm with maple syrup, fresh fruit, or powdered sugar."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000059,
+    "title": "Classic Chocolate Chip Cookies",
+    "subtitle": "Chewy centers, crisp edges",
+    "cuisine": "American",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "readyInMinutes": 30,
+    "servings": 24,
+    "extendedIngredients": [
+      {
+        "name": "Butter",
+        "amount": 225,
+        "unit": "g softened"
+      },
+      {
+        "name": "Brown sugar",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "White sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "name": "Flour",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "name": "Baking soda",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chocolate chips",
+        "amount": 300,
+        "unit": "g"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Cream butter with both sugars until light and fluffy."
+          },
+          {
+            "number": 2,
+            "step": "Beat in eggs one at a time."
+          },
+          {
+            "number": 3,
+            "step": "Whisk flour, baking soda, and a pinch of salt, then fold into the wet mixture."
+          },
+          {
+            "number": 4,
+            "step": "Stir in chocolate chips."
+          },
+          {
+            "number": 5,
+            "step": "Scoop onto a lined baking sheet and bake at 180°C/350°F for 10-12 minutes until edges are golden."
+          },
+          {
+            "number": 6,
+            "step": "Cool on the tray a few minutes before transferring to a rack."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000060,
+    "title": "Banana Bread",
+    "subtitle": "Moist, spiced loaf with ripe bananas",
+    "cuisine": "American",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "readyInMinutes": 70,
+    "servings": 8,
+    "extendedIngredients": [
+      {
+        "name": "Ripe bananas",
+        "amount": 3,
+        "unit": "mashed"
+      },
+      {
+        "name": "Flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "amount": 100,
+        "unit": "g melted"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "name": "Baking soda",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Mix mashed bananas with melted butter and sugar."
+          },
+          {
+            "number": 2,
+            "step": "Beat in eggs, then whisk in baking soda, cinnamon, and a pinch of salt."
+          },
+          {
+            "number": 3,
+            "step": "Fold in flour just until combined, don't overmix."
+          },
+          {
+            "number": 4,
+            "step": "Pour into a greased loaf pan."
+          },
+          {
+            "number": 5,
+            "step": "Bake at 175°C/350°F for 55-60 minutes until a skewer comes out clean."
+          },
+          {
+            "number": 6,
+            "step": "Cool in the pan 10 minutes, then turn out onto a rack to cool fully before slicing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000061,
+    "title": "Baklava",
+    "subtitle": "Layered phyllo pastry with nuts and honey syrup",
+    "cuisine": "Middle Eastern",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "readyInMinutes": 75,
+    "servings": 12,
+    "extendedIngredients": [
+      {
+        "name": "Phyllo dough",
+        "amount": 20,
+        "unit": "sheets"
+      },
+      {
+        "name": "Walnuts or pistachios",
+        "amount": 400,
+        "unit": "g finely chopped"
+      },
+      {
+        "name": "Butter",
+        "amount": 200,
+        "unit": "g melted"
+      },
+      {
+        "name": "Honey",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Mix chopped nuts with cinnamon."
+          },
+          {
+            "number": 2,
+            "step": "Layer about 8 sheets of phyllo in a buttered baking dish, brushing each sheet with melted butter."
+          },
+          {
+            "number": 3,
+            "step": "Spread half the nut mixture over the phyllo, add more buttered phyllo sheets, then the rest of the nuts, then a final stack of buttered phyllo on top."
+          },
+          {
+            "number": 4,
+            "step": "Cut into diamond shapes before baking."
+          },
+          {
+            "number": 5,
+            "step": "Bake at 160°C/325°F for 45-50 minutes until golden and crisp."
+          },
+          {
+            "number": 6,
+            "step": "Simmer sugar, honey, and lemon juice into a syrup, then pour evenly over the hot baklava as soon as it comes out of the oven; let it soak in fully before serving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000062,
+    "title": "Churros with Chocolate Sauce",
+    "subtitle": "Fried dough sticks dusted in cinnamon sugar",
+    "cuisine": "Mexican",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 40,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Water",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Flour",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "name": "Sugar",
+        "amount": 100,
+        "unit": "g mixed with cinnamon"
+      },
+      {
+        "name": "Dark chocolate",
+        "amount": 150,
+        "unit": "g for sauce"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Bring water and butter to a boil, then remove from heat and beat in flour until a smooth dough forms."
+          },
+          {
+            "number": 2,
+            "step": "Beat in eggs one at a time until the dough is glossy and stretchy."
+          },
+          {
+            "number": 3,
+            "step": "Pipe strips of dough directly into hot oil using a star-tipped piping bag, frying until golden."
+          },
+          {
+            "number": 4,
+            "step": "Drain and toss immediately in cinnamon sugar while warm."
+          },
+          {
+            "number": 5,
+            "step": "Melt chocolate with a splash of cream for a dipping sauce."
+          },
+          {
+            "number": 6,
+            "step": "Serve churros warm alongside the chocolate sauce."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000063,
+    "title": "Mango Sticky Rice",
+    "subtitle": "Sweet coconut sticky rice with fresh mango",
+    "cuisine": "Thai",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "readyInMinutes": 40,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Glutinous rice",
+        "amount": 250,
+        "unit": "g soaked"
+      },
+      {
+        "name": "Coconut milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ripe mangoes",
+        "amount": 2,
+        "unit": "sliced"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Steam soaked glutinous rice over simmering water for 20-25 minutes until tender."
+          },
+          {
+            "number": 2,
+            "step": "Warm coconut milk with sugar and salt until dissolved, reserving a little for topping."
+          },
+          {
+            "number": 3,
+            "step": "Stir most of the sweetened coconut milk into the hot rice and let it absorb, about 10 minutes."
+          },
+          {
+            "number": 4,
+            "step": "Plate the sticky rice alongside sliced mango."
+          },
+          {
+            "number": 5,
+            "step": "Drizzle with the reserved coconut milk and serve warm or at room temperature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000064,
+    "title": "Apple Pie",
+    "subtitle": "Flaky crust, cinnamon-spiced apple filling",
+    "cuisine": "American",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "readyInMinutes": 90,
+    "servings": 8,
+    "extendedIngredients": [
+      {
+        "name": "Pie dough",
+        "amount": 2,
+        "unit": "discs (top and bottom)"
+      },
+      {
+        "name": "Apples",
+        "amount": 6,
+        "unit": "peeled and sliced"
+      },
+      {
+        "name": "Sugar",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Flour",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Butter",
+        "amount": 30,
+        "unit": "g diced"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Toss sliced apples with sugar, cinnamon, and flour."
+          },
+          {
+            "number": 2,
+            "step": "Line a pie dish with one disc of dough, trimming the excess."
+          },
+          {
+            "number": 3,
+            "step": "Fill with the apple mixture and dot with butter."
+          },
+          {
+            "number": 4,
+            "step": "Cover with the second disc of dough, crimp the edges to seal, and cut a few vents on top."
+          },
+          {
+            "number": 5,
+            "step": "Bake at 200°C/400°F for 20 minutes, then reduce to 180°C/350°F and bake 35-40 minutes more until golden and bubbling."
+          },
+          {
+            "number": 6,
+            "step": "Cool at least 2 hours before slicing so the filling sets."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000065,
+    "title": "Classic Minestrone",
+    "subtitle": "Hearty Italian vegetable and bean soup",
+    "cuisine": "Italian",
+    "category": "Soup",
+    "difficulty": "Easy",
+    "readyInMinutes": 45,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Cannellini beans",
+        "amount": 1,
+        "unit": "can drained"
+      },
+      {
+        "name": "Carrot",
+        "amount": 2,
+        "unit": "diced"
+      },
+      {
+        "name": "Celery",
+        "amount": 2,
+        "unit": "stalks diced"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Crushed tomatoes",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 1.2,
+        "unit": "liters"
+      },
+      {
+        "name": "Small pasta",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Parmesan rind",
+        "amount": 1,
+        "unit": "piece (optional)"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Sauté onion, carrot, and celery until softened, about 8 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Add crushed tomatoes and stock, along with parmesan rind if using."
+          },
+          {
+            "number": 3,
+            "step": "Simmer 15 minutes to let the vegetables soften further."
+          },
+          {
+            "number": 4,
+            "step": "Add pasta and beans, cook until pasta is tender, about 10 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Season to taste and serve with grated parmesan and crusty bread."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000066,
+    "title": "Chicken Noodle Soup",
+    "subtitle": "Comforting broth with chicken and vegetables",
+    "cuisine": "American",
+    "category": "Soup",
+    "difficulty": "Easy",
+    "readyInMinutes": 45,
+    "servings": 6,
+    "extendedIngredients": [
+      {
+        "name": "Chicken breast or thighs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Carrot",
+        "amount": 2,
+        "unit": "sliced"
+      },
+      {
+        "name": "Celery",
+        "amount": 2,
+        "unit": "stalks sliced"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "diced"
+      },
+      {
+        "name": "Egg noodles",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Chicken stock",
+        "amount": 1.5,
+        "unit": "liters"
+      },
+      {
+        "name": "Thyme",
+        "amount": 2,
+        "unit": "sprigs"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Simmer chicken in stock with onion, carrot, celery, and thyme until cooked through, about 20 minutes."
+          },
+          {
+            "number": 2,
+            "step": "Remove chicken, shred it, and return it to the pot."
+          },
+          {
+            "number": 3,
+            "step": "Bring the broth back to a simmer and add egg noodles."
+          },
+          {
+            "number": 4,
+            "step": "Cook until noodles are tender, about 8-10 minutes."
+          },
+          {
+            "number": 5,
+            "step": "Season with salt and pepper and serve hot."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000067,
+    "title": "Caesar Salad",
+    "subtitle": "Crisp romaine, parmesan, garlicky dressing, croutons",
+    "cuisine": "American",
+    "category": "Salad",
+    "difficulty": "Easy",
+    "readyInMinutes": 20,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Romaine lettuce",
+        "amount": 2,
+        "unit": "heads chopped"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 60,
+        "unit": "g shaved"
+      },
+      {
+        "name": "Bread",
+        "amount": 2,
+        "unit": "cups cubed for croutons"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 0.33,
+        "unit": "cup"
+      },
+      {
+        "name": "Anchovy fillets",
+        "amount": 3,
+        "unit": "minced"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Toss bread cubes with olive oil and garlic, then bake or pan-toast until golden and crisp for croutons."
+          },
+          {
+            "number": 2,
+            "step": "Whisk mayonnaise, minced anchovy, minced garlic, lemon juice, and parmesan into a dressing."
+          },
+          {
+            "number": 3,
+            "step": "Toss romaine lettuce with the dressing until evenly coated."
+          },
+          {
+            "number": 4,
+            "step": "Top with croutons and extra shaved parmesan."
+          },
+          {
+            "number": 5,
+            "step": "Serve immediately while croutons are still crisp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5000068,
+    "title": "Roasted Tomato Soup",
+    "subtitle": "Rich, slow-roasted tomato soup with basil",
+    "cuisine": "International",
+    "category": "Soup",
+    "difficulty": "Easy",
+    "readyInMinutes": 55,
+    "servings": 4,
+    "extendedIngredients": [
+      {
+        "name": "Ripe tomatoes",
+        "amount": 1.2,
+        "unit": "kg halved"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "quartered"
+      },
+      {
+        "name": "Garlic",
+        "amount": 4,
+        "unit": "cloves unpeeled"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "Fresh basil",
+        "amount": 0.25,
+        "unit": "cup"
+      }
+    ],
+    "analyzedInstructions": [
+      {
+        "steps": [
+          {
+            "number": 1,
+            "step": "Roast tomatoes, onion, and garlic with olive oil at 200°C/400°F for 30-35 minutes until caramelized."
+          },
+          {
+            "number": 2,
+            "step": "Squeeze roasted garlic from its skin and blend everything with the stock until smooth."
+          },
+          {
+            "number": 3,
+            "step": "Return to a pot, stir in cream, and warm gently without boiling."
+          },
+          {
+            "number": 4,
+            "step": "Season to taste and stir in torn basil leaves just before serving."
+          },
+          {
+            "number": 5,
+            "step": "Serve with crusty bread or a grilled cheese sandwich."
+          }
+        ]
+      }
+    ]
+  }
+]
