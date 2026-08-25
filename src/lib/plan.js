@@ -39,8 +39,9 @@ export function addWeeks(date, count) {
 }
 
 /**
- * "24 – 30 Aug" within one month, "28 Aug – 3 Sep" across two. The month name
- * is never left stranded on only the second date, which reads as a typo.
+ * "Aug 24 – 30" within one month, "Aug 28 – Sep 3" across two. The month is
+ * carried by the first date and only repeated when it actually changes; the
+ * locale decides whether it leads or trails.
  */
 export function formatWeekRange(weekStart) {
   const end = new Date(weekStart);
@@ -51,11 +52,11 @@ export function formatWeekRange(weekStart) {
 
   const startText = weekStart.toLocaleDateString(undefined, {
     day: 'numeric',
-    ...(sameMonth ? {} : { month: 'short' }),
+    month: 'short',
   });
   const endText = end.toLocaleDateString(undefined, {
     day: 'numeric',
-    month: 'short',
+    ...(sameMonth ? {} : { month: 'short' }),
     ...(showYear ? { year: 'numeric' } : {}),
   });
 
@@ -78,6 +79,7 @@ export function planEntryFrom(recipe, servings) {
     baseServings: recipe.servings || 1,
     servings: servings || recipe.servings || 1,
     ingredients: (recipe.ingredients || []).map((i) => ({
+      lang: recipe.lang || 'en',
       name: i.name,
       nameClean: i.nameClean || (i.name || '').toLowerCase(),
       amount: i.amount ?? null,

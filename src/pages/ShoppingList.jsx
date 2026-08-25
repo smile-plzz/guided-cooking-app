@@ -209,6 +209,7 @@ export function ShoppingList() {
 
                   <div className={`min-w-0 flex-1 ${item.checked ? 'opacity-45' : ''}`}>
                     <p
+                      lang={item.lang === 'bn' ? 'bn' : undefined}
                       className={`text-sm text-strong ${item.checked ? 'line-through' : ''}`}
                     >
                       {item.amount || item.unit ? (
@@ -220,7 +221,12 @@ export function ShoppingList() {
                       {item.name}
                     </p>
                     {item.from ? (
-                      <p className="truncate text-xs text-muted">{item.from}</p>
+                      <p
+                        lang={item.lang === 'bn' ? 'bn' : undefined}
+                        className="truncate text-xs text-muted"
+                      >
+                        {item.from}
+                      </p>
                     ) : null}
                   </div>
 

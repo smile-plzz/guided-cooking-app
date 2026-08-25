@@ -83,6 +83,7 @@ export function MealPlanner() {
         amount: item.amount,
         unit: item.unit || '',
         aisle: item.aisle || 'Other',
+        lang: item.lang || 'en',
         from:
           item.sources.slice(0, 2).join(', ') +
           (item.sources.length > 2 ? ` +${item.sources.length - 2} more` : ''),

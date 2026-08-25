@@ -122,6 +122,7 @@ export function RecipeDetail() {
       amount: ingredient.scaledAmount ?? null,
       unit: ingredient.displayUnit || ingredient.unit || '',
       aisle: ingredient.aisle || 'Other',
+      lang: recipe.lang || 'en',
       from: displayTitle(recipe),
       checked: false,
     }));
@@ -148,6 +149,7 @@ export function RecipeDetail() {
       amount: ingredient.scaledAmount ?? null,
       unit: ingredient.displayUnit || ingredient.unit || '',
       aisle: ingredient.aisle || 'Other',
+      lang: recipe.lang || 'en',
       from: displayTitle(recipe),
       checked: false,
     };

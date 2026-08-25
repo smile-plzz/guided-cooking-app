@@ -169,6 +169,7 @@ export function aggregateIngredients(entries) {
         unit: entry.unit,
         amount: typeof entry.amount === 'number' ? entry.amount : null,
         aisle: entry.aisle || 'Other',
+        lang: entry.lang || 'en',
         sources: entry.from ? [entry.from] : [],
         originals: [entry.original].filter(Boolean),
       });

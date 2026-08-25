@@ -200,7 +200,10 @@ export function Pantry() {
                     {match.have}/{match.total}
                   </span>
                 </div>
-                <p className="mt-2 text-sm text-muted">
+                <p
+                  lang={match.recipe.lang === 'bn' ? 'bn' : undefined}
+                  className="mt-2 text-sm text-muted"
+                >
                   Missing: {match.missing.join(', ')}
                 </p>
               </li>
