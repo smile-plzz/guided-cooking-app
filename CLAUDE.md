@@ -79,6 +79,9 @@ Libraries — the parts worth knowing before editing anything:
 - `src/lib/plan.js` — week/slot maths and the plan mutations.
 - `src/lib/storage.js` — the entire persistence layer. `KEYS`, `usePersistentState`, export/import.
 - `src/lib/substitutions.js` — the offline substitution table.
+- `src/lib/recipePhoto.js` — `useRecipePhoto()` looks up a photo for a recipe with no `image` from
+  Wikimedia Commons, lazily (`IntersectionObserver`) and once per device (`localStorage`-cached).
+  Runs in the visitor's browser, not at build time — there is no server-side image pipeline.
 
 Pages are lazy-loaded from `src/App.jsx` except `Discover`, which is the landing route and ships in
 the main bundle.
@@ -108,7 +111,12 @@ A recipe id carries its origin as a prefix, and a lot of the app branches on it:
   there is erased by the next build.
 - **Never assume a recipe has a photograph.** Most bundled ones do not, and external URLs 404.
   Always render images through `src/components/RecipeImage.jsx`, which falls back to a generated
-  plate keyed off the title.
+  plate keyed off the title, or (for a recipe with no `image`) a lazy client-side Commons lookup
+  via `useRecipePhoto` — see `src/lib/recipePhoto.js`.
+- **`data/catalog.js` gets its own build chunk** (`vite.config.js` `manualChunks.catalog`) since
+  it is ~1.8MB of static data that changes far less often than app code. Keep it split out rather
+  than letting it fall back into the main bundle — that is what keeps a routine UI change from
+  forcing every visitor to re-download the whole catalog.
 - **Bengali text needs `lang="bn"`.** Inter has no Bengali coverage; the `:lang(bn)` rule in
   `src/index.css` is what switches it to Hind Siliguri. When an ingredient or title travels to a
   new surface (shopping list, meal plan, pantry), carry its `lang` with it — this has been lost

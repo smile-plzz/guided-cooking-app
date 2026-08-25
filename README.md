@@ -31,8 +31,19 @@ parsed out of the text.
   recipe.
 - **Substitutions** — an offline table covering 37 common ingredients, including
   Bengali staples (mustard oil, poppy seed, panch phoron).
+- **Recipe photos** — most bundled recipes ship with no photograph. When one is
+  missing, the app looks it up client-side from Wikimedia Commons the first
+  time the card scrolls into view, and caches the result in `localStorage` so
+  it is only ever looked up once per device. Recipes that never find a match
+  keep the generated title-card placeholder.
+- **Installable (PWA)** — Mise can be installed to a phone's home screen or a
+  desktop, and launches standalone (no browser chrome) with its own icon,
+  offline app-shell caching, and no separate app-store step.
 - Light and dark themes, keyboard-navigable, works on a phone propped against a
   pan.
+- Contextual `?` info tooltips next to controls and terms that aren't
+  self-explanatory (pantry matching, servings/units scaling, timers,
+  shopping-list actions, recipe sources).
 
 ## Stack
 
@@ -158,11 +169,27 @@ and header nav are real `<nav>` landmarks, every icon-only control has a label,
 `prefers-reduced-motion` is honoured, and Bengali text is marked `lang="bn"` so
 screen readers and the font stack both handle it correctly.
 
+## Installing the app
+
+Mise is a Progressive Web App (`vite-plugin-pwa`, workbox `generateSW` mode).
+On a phone, the browser offers "Add to Home Screen" / "Install app"; on
+desktop Chrome/Edge, an install icon appears in the address bar. Once
+installed it launches standalone with the app shell precached, so the UI (not
+network-only recipe search) loads instantly even offline. `index.html` also
+carries the iOS-specific meta tags Safari needs, since iOS does not read the
+web manifest. Icons live in `public/icons/`; regenerate them from
+`public/favicon.svg` if the mark ever changes (see `git log` for the sharp
+script used to produce them — it isn't checked in, since it's a one-off).
+
 ## Known limits
 
 - Nutrition data is not shown. The v1 build sourced it from a paid API; rather
   than estimate it and be wrong, it was dropped.
 - Community recipes carry no timings, so their cooking time is estimated from
   the number of steps and labelled as an estimate.
-- Many bundled recipes have no photograph; those render a generated plate keyed
-  off the title rather than a broken frame.
+- Recipe photo lookup (Wikimedia Commons) depends on the visitor's own network
+  reaching `commons.wikimedia.org`; if it can't (offline, a restrictive
+  network), the generated title-card placeholder is shown instead — the app
+  never blocks or shows a broken image.
+- Photo-match quality is not curated: it is a best-effort text search against
+  an open image library, not a hand-picked photo per recipe.
