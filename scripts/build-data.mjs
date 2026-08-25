@@ -7,12 +7,16 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { normalizeMeal } from '../api/_lib/mealdb.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 
 const bangla = read('sources/bangla.json');
 const local = read('sources/local.json');
+// Optional: only present after running `node scripts/fetch-mealdb.mjs`.
+const mealdbPath = path.join(ROOT, 'sources/mealdb.json');
+const mealdb = fs.existsSync(mealdbPath) ? JSON.parse(fs.readFileSync(mealdbPath, 'utf8')) : [];
 
 // Romanised titles let the Bengali recipes surface in English-language search.
 const BN_META = {
@@ -126,7 +130,9 @@ const localRecipes = local.filter(isRealRecipe).map((r) => ({
   steps: flattenSteps(r.analyzedInstructions),
 }));
 
-const catalog = [...localRecipes, ...banglaRecipes].map((r) => ({
+const mealdbRecipes = mealdb.map((meal) => normalizeMeal(meal));
+
+const catalog = [...localRecipes, ...banglaRecipes, ...mealdbRecipes].map((r) => ({
   ...r,
   slug: slugify(r.titleEn || r.title) || r.id,
 }));
