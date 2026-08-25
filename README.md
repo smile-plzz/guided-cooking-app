@@ -10,9 +10,10 @@ parsed out of the text.
 
 ## What it does
 
-- **Discover** — search a bundled catalog (curated English recipes plus a
-  Bengali collection) and a wider community catalogue at the same time. Filter
-  by collection, cuisine or course.
+- **Discover** — search a bundled catalog of 650+ real recipes (hand-curated
+  international dishes, a large imported collection, and a Bengali collection)
+  and a wider community catalogue at the same time. Filter by collection,
+  cuisine or course.
 - **Scale and convert** — change the serving count and every quantity follows.
   Switch between the units as written, metric, or US.
 - **Guided cooking** — full-screen step-by-step mode. Durations mentioned in a
@@ -70,6 +71,13 @@ api/                     Vercel serverless functions
 sources/                 Raw recipe sources, edited by hand
   bangla.json            The Bengali collection
   local.json             The original curated English recipes
+  curated.json           68 hand-authored real recipes across world cuisines
+  imported.json          600 real recipes imported from the MIT-licensed
+                          dpapathanasiou/recipes dataset (github.com/
+                          dpapathanasiou/recipes), re-run via
+                          scripts/import-dpapathanasiou.mjs
+  mealdb.json            Optional — only present after running
+                          scripts/fetch-mealdb.mjs against TheMealDB
 scripts/build-data.mjs   Normalises sources/ into the unified catalog
 data/                    Generated — catalog.js (imported) + recipes.json (readable)
 src/

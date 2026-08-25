@@ -14,6 +14,8 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 
 const bangla = read('sources/bangla.json');
 const local = read('sources/local.json');
+const curated = read('sources/curated.json');
+const imported = read('sources/imported.json');
 // Optional: only present after running `node scripts/fetch-mealdb.mjs`.
 const mealdbPath = path.join(ROOT, 'sources/mealdb.json');
 const mealdb = fs.existsSync(mealdbPath) ? JSON.parse(fs.readFileSync(mealdbPath, 'utf8')) : [];
@@ -102,37 +104,50 @@ const isRealRecipe = (r) =>
   (r.title || '').trim().length > 3 &&
   /\s/.test((r.title || '').trim());
 
-const localRecipes = local.filter(isRealRecipe).map((r) => ({
-  id: `lc-${r.id}`,
-  source: 'local',
-  lang: 'en',
-  title: r.title,
-  titleEn: r.title,
-  subtitle: r.subtitle || null,
-  description: r.description || '',
-  image: usableImage(r.image),
-  cuisine: r.cuisine || 'International',
-  category: r.category || 'Main',
-  tags: [r.difficulty].filter(Boolean),
-  prepMinutes: null,
-  cookMinutes: null,
-  readyInMinutes: r.readyInMinutes || null,
-  servings: r.servings || 2,
-  difficulty: r.difficulty || null,
-  ingredients: (r.extendedIngredients || []).map((i) => ({
-    name: i.name,
-    nameClean: (i.name || '').toLowerCase(),
-    amount: typeof i.amount === 'number' ? i.amount : null,
-    unit: i.unit || '',
-    original: [i.amount, i.unit, i.name].filter(Boolean).join(' '),
-    aisle: i.aisle || 'Other',
-  })),
-  steps: flattenSteps(r.analyzedInstructions),
-}));
+/** Both sources/local.json (dev seed data) and sources/curated.json (hand-authored
+ * real recipes) share this Spoonacular-like shape, so one mapper covers both. */
+function mapLocalShaped(list, { idPrefix, source }) {
+  return list.filter(isRealRecipe).map((r) => ({
+    id: `${idPrefix}-${r.id}`,
+    source,
+    lang: 'en',
+    title: r.title,
+    titleEn: r.title,
+    subtitle: r.subtitle || null,
+    description: r.description || '',
+    image: usableImage(r.image),
+    cuisine: r.cuisine || 'International',
+    category: r.category || 'Main',
+    tags: [r.difficulty].filter(Boolean),
+    prepMinutes: null,
+    cookMinutes: null,
+    readyInMinutes: r.readyInMinutes || null,
+    servings: r.servings || 2,
+    difficulty: r.difficulty || null,
+    ingredients: (r.extendedIngredients || []).map((i) => ({
+      name: i.name,
+      nameClean: (i.name || '').toLowerCase(),
+      amount: typeof i.amount === 'number' ? i.amount : null,
+      unit: i.unit || '',
+      original: [i.amount, i.unit, i.name].filter(Boolean).join(' '),
+      aisle: i.aisle || 'Other',
+    })),
+    steps: flattenSteps(r.analyzedInstructions),
+  }));
+}
 
+const localRecipes = mapLocalShaped(local, { idPrefix: 'lc', source: 'local' });
+const curatedRecipes = mapLocalShaped(curated, { idPrefix: 'cu', source: 'curated' });
+const importedRecipes = mapLocalShaped(imported, { idPrefix: 'im', source: 'imported' });
 const mealdbRecipes = mealdb.map((meal) => normalizeMeal(meal));
 
-const catalog = [...localRecipes, ...banglaRecipes, ...mealdbRecipes].map((r) => ({
+const catalog = [
+  ...localRecipes,
+  ...curatedRecipes,
+  ...importedRecipes,
+  ...banglaRecipes,
+  ...mealdbRecipes,
+].map((r) => ({
   ...r,
   slug: slugify(r.titleEn || r.title) || r.id,
 }));
