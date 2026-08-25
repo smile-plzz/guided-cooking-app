@@ -1,7 +1,0 @@
-.appContainer {
-  @apply text-center;
-}
-
-.darkMode {
-  @apply bg-gray-900 text-gray-100;
-}

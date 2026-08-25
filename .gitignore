@@ -1,15 +1,7 @@
-# Node modules
-node_modules/
-
-# Environment variables
+node_modules
+dist
+.vercel
 .env
-
-# Build artifacts
-build/
-
-# Logs
+.env.local
 *.log
-
-# OS generated files
 .DS_Store
-thumbs.db

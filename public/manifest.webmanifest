@@ -1,0 +1,12 @@
+{
+  "name": "Mise — Guided Cooking",
+  "short_name": "Mise",
+  "description": "Find a recipe, scale it, and cook it hands-free with guided steps and timers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF8F5",
+  "theme_color": "#D25334",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
